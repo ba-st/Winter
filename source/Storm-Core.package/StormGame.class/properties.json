@@ -1,0 +1,20 @@
+{
+	"category" : "Storm-Core-Base",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"window",
+		"engine",
+		"players",
+		"scenes",
+		"currentScene",
+		"surfaceContainer",
+		"stepWalker" ],
+	"name" : "StormGame",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

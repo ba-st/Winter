@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "Storm2DShape",
+	"category" : "Storm-Examples-FallingBall",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"color",
+		"radius",
+		"graphicsPath",
+		"graphicsPaint"
+	],
+	"name" : "StormBallShape",
+	"type" : "normal"
+}

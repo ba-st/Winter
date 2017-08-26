@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "StormWallShape",
+	"category" : "Storm-Examples-Resources",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"vertices"
+	],
+	"name" : "StormPolygonWallShape",
+	"type" : "normal"
+}

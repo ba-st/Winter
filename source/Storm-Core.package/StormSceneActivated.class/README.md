@@ -1,0 +1,1 @@
+I notify that my scene has just been made active.

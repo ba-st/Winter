@@ -1,0 +1,15 @@
+{
+	"category" : "Athens-Playground",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"workspace",
+		"attributeBindings" ],
+	"name" : "PlaygroundModel",
+	"pools" : [
+		 ],
+	"super" : "TextModel",
+	"type" : "normal" }

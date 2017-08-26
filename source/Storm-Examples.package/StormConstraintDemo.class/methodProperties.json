@@ -1,0 +1,29 @@
+{
+	"instance" : {
+		"createWallShapes" : " 8/19/2017 12:13:23",
+		"buildPinJointPanelOn:" : " 8/19/2017 12:13:23",
+		"newSlide:" : " 8/19/2017 12:13:23",
+		"floatMorphOn:title:" : " 8/19/2017 12:13:23",
+		"buildPivotJointPanelOn:" : " 8/19/2017 12:13:23",
+		"initialize" : " 8/19/2017 12:13:23",
+		"vectorMorphOn:title:" : " 8/19/2017 12:13:23",
+		"buildDampedSpringPanelOn:" : " 8/19/2017 12:13:23",
+		"newPin:" : " 8/19/2017 12:13:23",
+		"buildWindow" : " 8/19/2017 12:13:23",
+		"createBall1" : " 8/19/2017 12:13:23",
+		"newDampedRotarySpring:" : " 8/19/2017 12:13:23",
+		"buildDampedRotarySpringPanelOn:" : " 8/19/2017 12:13:23",
+		"dimensions" : " 8/19/2017 12:13:23",
+		"buildSlideJointPanelOn:" : " 8/19/2017 12:13:23",
+		"newDampedSpring:" : " 8/19/2017 12:13:23",
+		"createBodyOne" : " 8/19/2017 12:13:23",
+		"newPivot:" : " 8/19/2017 12:13:23",
+		"title" : " 8/19/2017 12:13:23",
+		"createBallShapes" : " 8/19/2017 12:13:23",
+		"vectorMorphOn:" : " 8/19/2017 12:13:23",
+		"createBall2" : " 8/19/2017 12:13:23",
+		"initializeScenes" : " 8/19/2017 12:13:23",
+		"createBodyTwo" : " 8/19/2017 12:13:23"
+	},
+	"class" : { }
+}

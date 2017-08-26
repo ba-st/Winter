@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "CmExternalConstraint",
+	"category" : "Storm-Chipmunk2D-Chipmunk-ExpJoint",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CmExternalPivotJoint",
+	"type" : "variable"
+}

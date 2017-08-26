@@ -1,0 +1,3 @@
+testing
+isWorkspace
+	^ workspace value

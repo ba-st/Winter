@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Storm2DShape",
+	"category" : "Storm-Examples-Resources",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"color"
+	],
+	"name" : "StormWallShape",
+	"type" : "normal"
+}

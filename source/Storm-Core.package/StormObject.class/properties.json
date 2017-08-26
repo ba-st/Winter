@@ -1,0 +1,14 @@
+{
+	"category" : "Storm-Core-Base",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"game" ],
+	"name" : "StormObject",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

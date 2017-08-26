@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "StormGame",
+	"category" : "Storm-Examples-Running",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "StormRunning",
+	"type" : "normal"
+}

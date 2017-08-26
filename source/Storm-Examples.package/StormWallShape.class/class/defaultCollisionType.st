@@ -1,0 +1,3 @@
+defaults
+defaultCollisionType
+	^ 2

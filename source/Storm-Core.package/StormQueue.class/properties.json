@@ -1,0 +1,15 @@
+{
+	"category" : "Storm-Core-Base",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"objects",
+		"mutex" ],
+	"name" : "StormQueue",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

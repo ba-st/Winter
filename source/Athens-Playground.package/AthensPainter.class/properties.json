@@ -1,0 +1,19 @@
+{
+	"category" : "Athens-Playground",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"drawBlock",
+		"stepping",
+		"container",
+		"process",
+		"stepTime",
+		"setupBlock" ],
+	"name" : "AthensPainter",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

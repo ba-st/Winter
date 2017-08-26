@@ -1,0 +1,35 @@
+{
+	"instance" : {
+		"specialize" : " 8/19/2017 12:13:10",
+		"initialize" : " 8/19/2017 12:13:10",
+		"a" : " 8/19/2017 12:13:10",
+		"constraint" : " 8/19/2017 12:13:10",
+		"b" : " 8/19/2017 12:13:10"
+	},
+	"class" : {
+		"getSimpleMotorClass" : " 8/19/2017 12:13:10",
+		"finalizeResourceData:" : " 8/19/2017 12:13:10",
+		"getRotaryLimitJointClass" : " 8/19/2017 12:13:10",
+		"newPinJoint:with:anchor:andAnchor2:" : " 8/19/2017 12:13:10",
+		"newDampedSpring:with:anchor1:anchor2:restLength:stiffness:damping:" : " 8/19/2017 12:13:10",
+		"getRatchetJointClass" : " 8/19/2017 12:13:10",
+		"newSimpleMotor:with:rate:" : " 8/19/2017 12:13:10",
+		"getPivotJointClass" : " 8/19/2017 12:13:10",
+		"newGrooveJoint:with:anchor:grooveA:grooveB:" : " 8/19/2017 12:13:10",
+		"newGearJoint:with:phase:ratio:" : " 8/19/2017 12:13:10",
+		"getDampedRotarySpringClass" : " 8/19/2017 12:13:10",
+		"newPivotJoint:with:joinedTo:" : " 8/19/2017 12:13:10",
+		"newRotaryLimitJoint:with:min:max:" : " 8/19/2017 12:13:10",
+		"getDampedSpringClass" : " 8/19/2017 12:13:10",
+		"newFor:" : " 8/19/2017 12:13:10",
+		"primReleaseContraint:" : " 8/19/2017 12:13:10",
+		"getPinJointClass" : " 8/19/2017 12:13:10",
+		"getGearJointClass" : " 8/19/2017 12:13:10",
+		"newSlideJoint:with:anchor1:anchor2:min:max:" : " 8/19/2017 12:13:10",
+		"newRatchetJoint:with:phase:ratchet:" : " 8/19/2017 12:13:10",
+		"new" : " 8/19/2017 12:13:10",
+		"getGrooveJointClass" : " 8/19/2017 12:13:10",
+		"newDampedRotarySpring:with:restAngle:stiffness:damping:" : " 8/19/2017 12:13:10",
+		"getSlideJointClass" : " 8/19/2017 12:13:10"
+	}
+}

@@ -1,0 +1,3 @@
+accessing
+gravityCenter
+	^0

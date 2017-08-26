@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "StormGame",
+	"category" : "Storm-Examples-FallingBall",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"beginCallback",
+		"preCallback",
+		"postCallback",
+		"separateCallback"
+	],
+	"name" : "StormFallingBall",
+	"type" : "normal"
+}

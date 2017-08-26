@@ -1,0 +1,1 @@
+I am the base class for Smalltalk wrappers of objects on the Chipmunk side.

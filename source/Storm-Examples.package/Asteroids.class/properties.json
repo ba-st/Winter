@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "StormGame",
+	"category" : "Storm-Examples-Asteroids",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "Asteroids",
+	"type" : "normal"
+}

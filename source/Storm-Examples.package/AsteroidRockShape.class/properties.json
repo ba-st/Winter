@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Storm2DShape",
+	"category" : "Storm-Examples-Asteroids",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"delta",
+		"speed",
+		"rotated",
+		"scaled"
+	],
+	"name" : "AsteroidRockShape",
+	"type" : "normal"
+}

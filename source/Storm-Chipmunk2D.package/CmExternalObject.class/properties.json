@@ -1,0 +1,15 @@
+{
+	"classtraitcomposition" : "TChipmunkLibrary classTrait",
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CmExternalObject",
+	"commentStamp" : "<historical>",
+	"super" : "FFIExternalObject",
+	"traitcomposition" : "TChipmunkLibrary",
+	"type" : "normal",
+	"classinstvars" : [ ],
+	"pools" : [
+		"CmTypes"
+	],
+	"category" : "Storm-Chipmunk2D-Chipmunk"
+}

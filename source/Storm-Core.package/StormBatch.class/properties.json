@@ -1,0 +1,15 @@
+{
+	"category" : "Storm-Core-Base",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"process",
+		"batch" ],
+	"name" : "StormBatch",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

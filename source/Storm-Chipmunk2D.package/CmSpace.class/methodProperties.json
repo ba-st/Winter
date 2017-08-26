@@ -1,0 +1,29 @@
+{
+	"instance" : {
+		"primGravity" : "Anonymous 8/19/2017 21:37",
+		"addCollisionHandlerBetween:and:begin:preSolve:postSolve:separate:data:" : " 8/19/2017 12:13:10",
+		"setDefaultCollisionBegin:preSolve:postSolve:separate:data:" : " 8/19/2017 12:13:10",
+		"addBody:" : " 8/19/2017 12:13:10",
+		"primDamping:" : "Anonymous 8/19/2017 21:37",
+		"gravity" : " 8/19/2017 12:13:10",
+		"step:" : " 8/19/2017 12:13:10",
+		"primDamping" : "Anonymous 8/19/2017 21:37",
+		"gravity:" : " 8/19/2017 12:13:10",
+		"primStep:" : " 8/19/2017 12:13:10",
+		"staticBody" : "Alvaro 8/24/2017 21:24",
+		"damping" : " 8/19/2017 12:13:10",
+		"removeCollisionHandlerBetween:and:" : " 8/19/2017 12:13:10",
+		"primGravity:" : "Alvaro 8/24/2017 21:00",
+		"primNearestShapeFrom:maxDistance:layers:group:info:" : "Anonymous 8/19/2017 21:36",
+		"addShape:" : " 8/19/2017 12:13:10",
+		"nearestShapeFrom:maxDistance:" : " 8/19/2017 12:13:10",
+		"damping:" : " 8/19/2017 12:13:10",
+		"addConstraint:" : " 8/19/2017 12:13:10"
+	},
+	"class" : {
+		"finalizeResourceData:" : " 8/19/2017 12:13:10",
+		"new" : " 8/19/2017 12:13:10",
+		"primCpSpaceFree:" : " 8/19/2017 12:13:10",
+		"primCpSpaceNew" : "Alvaro 8/24/2017 21:00"
+	}
+}

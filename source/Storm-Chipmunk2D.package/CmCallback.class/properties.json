@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "FFICallback",
+	"category" : "Storm-Chipmunk2D-Chipmunk-ExpJoint",
+	"classinstvars" : [ ],
+	"pools" : [
+		"CmTypes"
+	],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CmCallback",
+	"type" : "normal"
+}

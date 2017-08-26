@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "StormComponent",
+	"category" : "Storm-Examples-Joints",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"color",
+		"constraint"
+	],
+	"name" : "StormSlideJointComponent",
+	"type" : "normal"
+}

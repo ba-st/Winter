@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "StormGame",
+	"category" : "Storm-Examples-Joints",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"morphPointers"
+	],
+	"name" : "StormConstraintDemo",
+	"type" : "normal"
+}

@@ -1,0 +1,16 @@
+{
+	"category" : "Storm-Core-Base",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"eventQueue",
+		"active",
+		"components" ],
+	"name" : "StormScene",
+	"pools" : [
+		 ],
+	"super" : "StormReactive",
+	"type" : "normal" }

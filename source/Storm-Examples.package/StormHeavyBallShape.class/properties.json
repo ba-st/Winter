@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "StormBallShape",
+	"category" : "Storm-Examples-FallingBall",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "StormHeavyBallShape",
+	"type" : "normal"
+}

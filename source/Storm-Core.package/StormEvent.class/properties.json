@@ -1,0 +1,14 @@
+{
+	"category" : "Storm-Core-Events",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"usingCanvas" ],
+	"name" : "StormEvent",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

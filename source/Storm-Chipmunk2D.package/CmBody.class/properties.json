@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "CmExternalObject",
+	"category" : "Storm-Chipmunk2D-Chipmunk",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CmBody",
+	"type" : "normal"
+}

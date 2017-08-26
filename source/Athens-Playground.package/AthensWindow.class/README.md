@@ -1,0 +1,1 @@
+A window wrapping drawing facilities and editor

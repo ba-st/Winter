@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "StormWallShape",
+	"category" : "Storm-Examples-Resources",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"extent",
+		"graphicsPath"
+	],
+	"name" : "StormTinyWallShape",
+	"type" : "normal"
+}

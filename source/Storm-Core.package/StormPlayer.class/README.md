@@ -1,0 +1,1 @@
+I am an active element taking part in a StormGame, either autonomous or controlled by external means, e.g. a human player interacting with the game.

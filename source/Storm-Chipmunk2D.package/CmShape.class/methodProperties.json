@@ -1,0 +1,27 @@
+{
+	"instance" : {
+		"elasticity" : "Anonymous 8/19/2017 22:13",
+		"elasticity:" : "Anonymous 8/19/2017 22:13",
+		"collisionType:" : "Anonymous 8/19/2017 22:12",
+		"layer" : "Anonymous 8/19/2017 22:18",
+		"layer:" : "Anonymous 8/19/2017 22:18",
+		"collisionType" : "Anonymous 8/19/2017 22:12",
+		"friction:" : "Anonymous 8/19/2017 22:14",
+		"friction" : "Anonymous 8/19/2017 22:14"
+	},
+	"class" : {
+		"primCpShapeFree:" : " 8/19/2017 12:13:10",
+		"primCpConvexHullCount:source:result:first:tolerance:" : " 8/19/2017 12:13:10",
+		"newPolygonBody:vertices:offset:" : " 8/19/2017 12:13:10",
+		"newBoxBody:boundingBox:" : "Anonymous 8/19/2017 21:54",
+		"primCpBoxNew:width:height:radius:" : "Anonymous 8/19/2017 21:51",
+		"primCpBoxNew:boundingBox:radius:" : "Anonymous 8/19/2017 21:54",
+		"newBoxBody:extent:" : "Anonymous 8/19/2017 21:53",
+		"finalizeResourceData:" : " 8/19/2017 12:13:10",
+		"newSegmentBody:from:to:radius:" : " 8/19/2017 12:13:10",
+		"primCpSegmentNew:from:to:radius:" : " 8/19/2017 12:13:10",
+		"primCpPolygonNew:verticesNumber:vertices:offset:" : "Anonymous 8/19/2017 22:11",
+		"primCpCircleShapeNew:radius:offset:" : " 8/19/2017 12:13:10",
+		"newCircleBody:radius:offset:" : " 8/19/2017 12:13:10"
+	}
+}

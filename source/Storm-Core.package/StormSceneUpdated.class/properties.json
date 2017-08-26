@@ -1,0 +1,14 @@
+{
+	"category" : "Storm-Core-Events",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "StormSceneUpdated",
+	"pools" : [
+		 ],
+	"super" : "StormSceneEvent",
+	"type" : "normal" }

@@ -1,0 +1,3 @@
+initialization
+initializeScenes
+	"Load scenes"
