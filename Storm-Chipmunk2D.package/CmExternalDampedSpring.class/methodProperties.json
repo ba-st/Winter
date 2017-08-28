@@ -1,10 +1,10 @@
 {
 	"instance" : {
-		"restLength" : " 8/19/2017 12:13:10",
-		"stiffness" : " 8/19/2017 12:13:10",
-		"anchr1" : " 8/19/2017 12:13:10",
-		"damping" : " 8/19/2017 12:13:10",
-		"anchr2" : " 8/19/2017 12:13:10"
+		"restLength" : "Alvaro 8/28/2017 19:57",
+		"stiffness" : "Alvaro 8/28/2017 19:57",
+		"anchr1" : "Alvaro 8/28/2017 19:56",
+		"damping" : "Alvaro 8/28/2017 19:57",
+		"anchr2" : "Alvaro 8/28/2017 19:56"
 	},
 	"class" : { }
 }

@@ -2,4 +2,4 @@ accessing
 rate
 	<primitive: #primitiveNativeCall module: #NativeBoostPlugin error: errorCode>
 
-	^ self indirectCall: #( cpFloat _cpSimpleMotorGetRate( self ))
+	^ self ffiCall:  #( cpFloat cpSimpleMotorGetRate( self ))
