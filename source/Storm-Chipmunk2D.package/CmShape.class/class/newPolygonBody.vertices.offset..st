@@ -17,5 +17,5 @@ newPolygonBody: aBody vertices: hullVertices offset: offsetPoint
 			primCpPolygonNew: aBody
 			verticesNumber: vertices size
 			vertices: vertices getHandle
-			offset: offsetPoint asCmVector)
+			radius: offsetPoint asCmVector)
 		initialize

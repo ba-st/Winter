@@ -2,4 +2,4 @@ accessing
 b
 	<primitive: #primitiveNativeCall module: #NativeBoostPlugin error: errorCode>
 
-	^ self indirectCall: #( CmBody _cpConstraintGetB( self ))
+	^ self ffiCall:  #( cpBody* cpConstraintGetBodyB( self ))

@@ -1,3 +1,3 @@
 private
 primPosition
-	^ self indirectCall: #( cpVect cpBodyGetPosition(self) )
+	^ self ffiCall:  #( cpVect cpBodyGetPosition(self) )

@@ -1,6 +1,6 @@
 private
 primApplyWorldImpulse: impulseVector atOffset: offsetVector
-	^ self indirectCall: #(
+	^ self ffiCall:  #(
 		void cpBodyApplyImpulseAtWorldPoint(self,
 			cpVect impulseVector,
 			cpVect offsetVector) )

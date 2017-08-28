@@ -1,3 +1,3 @@
 accessing
 collisionType
-	^ self indirectCall: #( cpCollisionType cpShapeGetCollisionType(self) )	
+	^ self ffiCall: #( cpCollisionType cpShapeGetCollisionType(self) )	

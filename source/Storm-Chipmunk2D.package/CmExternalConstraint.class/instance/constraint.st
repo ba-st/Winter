@@ -1,3 +1,4 @@
 accessing
 constraint
-	^CmConstraint fromPointer: (NBExternalAddress value: self handle). 
+self flag: 'Ver esto'.
+	"^CmConstraint fromPointer: (NBExternalAddress value: self handle). "

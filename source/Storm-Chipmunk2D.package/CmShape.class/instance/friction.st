@@ -1,3 +1,3 @@
 accessing
 friction
-	^ self indirectCall: #( cpFloat cpShapeGetFriction(self) )
+	^ self ffiCall:  #( cpFloat cpShapeGetFriction(self) )

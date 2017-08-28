@@ -1,3 +1,3 @@
 private
 primVelocity
-	^ self indirectCall: #( cpVect cpBodyGetVelocity(self) )
+	^ self ffiCall:  #( cpVect cpBodyGetVelocity(self) )

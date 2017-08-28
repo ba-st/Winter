@@ -1,3 +1,3 @@
 private
 primDamping: aFloat
-	^ self indirectCall: #( void cpSpaceSetDamping(self, cpFloat aFloat) )
+	^ self ffiCall:  #( void cpSpaceSetDamping(self, cpFloat aFloat) )

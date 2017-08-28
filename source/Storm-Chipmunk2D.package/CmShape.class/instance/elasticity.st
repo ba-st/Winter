@@ -1,3 +1,3 @@
 accessing
 elasticity
-	^ self indirectCall: #( cpFloat cpShapeGetElasticity(self) )
+	^ self ffiCall:  #( cpFloat cpShapeGetElasticity(self) )

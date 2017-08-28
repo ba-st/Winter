@@ -1,3 +1,0 @@
-accessing
-gravityCenter
-	^0

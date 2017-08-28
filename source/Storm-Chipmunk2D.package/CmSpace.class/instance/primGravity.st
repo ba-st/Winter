@@ -1,3 +1,3 @@
 private
 primGravity
-	^ self indirectCall: #( cpFloat cpSpaceGetGravity(self) )
+	^ self ffiCall:  #( cpFloat cpSpaceGetGravity(self) )

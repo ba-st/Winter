@@ -1,3 +1,3 @@
 accessing
 friction: aFloat
-	^ self indirectCall: #( void cpShapeSetFriction(self, cpFloat aFloat) )
+	^ self ffiCall:  #( void cpShapeSetFriction(self, cpFloat aFloat) )

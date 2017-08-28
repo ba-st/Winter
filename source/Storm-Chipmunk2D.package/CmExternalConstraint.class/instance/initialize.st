@@ -1,4 +1,5 @@
 initialization
 initialize
 	super initialize.
-	handle := NBExternalHandle new
+	self flag: 'Ver esto'.
+	"handle := NBExternalHandle new"

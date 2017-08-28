@@ -1,3 +1,3 @@
 private
 primAngularVelocity
-	^ self indirectCall: #( cpFloat cpBodyGetAngularVelocity(self) )
+	^ self ffiCall:  #( cpFloat cpBodyGetAngularVelocity(self) )

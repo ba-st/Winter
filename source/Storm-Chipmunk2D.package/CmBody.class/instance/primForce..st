@@ -1,4 +1,4 @@
 private
 primForce: aVector
-	^ self indirectCall: #( void cpBodySetForce(self, cpVect aVector) )
+	^ self ffiCall:  #( void cpBodySetForce(self, cpVect aVector) )
 	

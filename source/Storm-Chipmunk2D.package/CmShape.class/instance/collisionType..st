@@ -1,3 +1,3 @@
 accessing
 collisionType: anInteger
-	^ self indirectCall: #( void cpShapeSetCollisionType(self, cpCollisionType anInteger) )	
+	^ self ffiCall: #( void cpShapeSetCollisionType(self, cpCollisionType anInteger) )	

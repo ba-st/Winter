@@ -1,4 +1,4 @@
 private
 primSpace
-	^ self indirectCall: #( cpSpace * cpBodyGetSpace(self) )
+	^ self ffiCall:  #( cpSpace * cpBodyGetSpace(self) )
 	

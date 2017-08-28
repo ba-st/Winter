@@ -1,4 +1,4 @@
 private
 primForce
-	^ self indirectCall: #( cpVect cpBodyGetForce(self) )
+	^ self ffiCall:  #( cpVect cpBodyGetForce(self) )
 	

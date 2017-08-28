@@ -1,4 +1,4 @@
 constraint
 addConstraint: aConstraint
 	self flag: #todo.
-	^ self ffiCall: #(CmExternalConstraint cpSpaceAddConstraint(self, CmExternalConstraint aConstraint))
+	^ self ffiCall: #(cpConstraint cpSpaceAddConstraint(self, cpConstraint *aConstraint))

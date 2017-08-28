@@ -1,1 +1,0 @@
-I define mappings from the native Chipmunk types to NativeBoost / Smalltalk types.

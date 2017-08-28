@@ -2,4 +2,4 @@ accessing
 ratio
 	<primitive: #primitiveNativeCall module: #NativeBoostPlugin error: errorCode>
 
-	^ self indirectCall: #( cpFloat _cpGearJointGetRatio( self ))
+	^ self ffiCall:  #( cpFloat cpGearJointGetRatio( self ))

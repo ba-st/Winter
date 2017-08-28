@@ -4,7 +4,7 @@ primNearestShapeFrom: aVector maxDistance: aFloat layers: layersFilter group: aG
 			cpSpace self,
 			cpVect aVector,
 			cpFloat aFloat,
-			cpLayers layersFilter,
+			cpShapeFilter layersFilter,
 			cpGroup aGroup,
-			cpNearestPointQueryInfo *aNearestPointInfo
+			cpPointQueryInfo *aNearestPointInfo
 		) )

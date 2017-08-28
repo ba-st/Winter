@@ -1,3 +1,0 @@
-finalization
-finalizeResourceData: handle
-	self subclassResponsibility
