@@ -1,0 +1,23 @@
+{
+	"instance" : {
+		"macModuleName" : " 8/19/2017 12:13:10",
+		"unixModuleName" : " 8/19/2017 12:13:10"
+	},
+	"class" : {
+		"primCpMomentForPolyWithMass:numVertices:vertices:offset:" : " 8/19/2017 12:13:10",
+		"momentForCircleWithMass:innerRadius:outerRadius:offset:" : " 8/19/2017 12:13:10",
+		"primCpMomentForSegmentWithMass:from:to:" : " 8/19/2017 12:13:10",
+		"momentForSegmentWithMass:from:to:" : " 8/19/2017 12:13:10",
+		"ffiLibraryName" : " 8/19/2017 12:13:10",
+		"enableSegmentToSegmentCollisions" : " 8/19/2017 12:13:10",
+		"ffiBindingOf:" : " 8/19/2017 12:13:10",
+		"initializeTypeMap" : " 8/19/2017 12:13:10",
+		"primCpMomentForCircleWithMass:innerRadius:outerRadius:offset:" : " 8/19/2017 12:13:10",
+		"initialize" : " 8/19/2017 12:13:10",
+		"momentForPolyWithMass:vertices:offset:" : " 8/19/2017 12:13:10",
+		"primCpMomentForBoxWithMass:width:height:" : " 8/19/2017 12:13:10",
+		"momentForBoxWithMass:boundingBox:" : " 8/19/2017 12:13:10",
+		"momentForBoxWithMass:width:height:" : " 8/19/2017 12:13:10",
+		"primCpMomentForBox2WithMass:boundingBox:" : " 8/19/2017 12:13:10"
+	}
+}

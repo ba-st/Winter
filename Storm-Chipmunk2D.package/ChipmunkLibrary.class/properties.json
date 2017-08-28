@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "FFILibrary",
+	"category" : "Storm-Chipmunk2D-Chipmunk",
+	"classinstvars" : [ ],
+	"pools" : [
+		"CmTypes"
+	],
+	"classvars" : [
+		"TypeMap"
+	],
+	"instvars" : [ ],
+	"name" : "ChipmunkLibrary",
+	"type" : "normal"
+}

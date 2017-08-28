@@ -1,0 +1,3 @@
+private
+createPhysicShape
+	^self subclassResponsibility
