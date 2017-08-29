@@ -4,11 +4,11 @@ baseline: spec
 	spec for: #common do: [
 		spec
 			package: 'Storm-Core' with: [ spec requires: #('UnifiedFFI' 'Athens') ];
-			package: 'Storm-2D' with: [ spec requires: #('Storm-Core') ];
-			package: 'Storm-Morphic' with: [ spec requires: #('Storm-2D') ];
-			package: 'Storm-Tests' with: [ spec requires: #('Storm-2D') ];
+			package: 'Storm-Chipmunk2D' with: [ spec requires: #('Storm-Core') ];
+			package: 'Storm-Morphic' with: [ spec requires: #('Storm-Chipmunk2D') ];
+			package: 'Storm-Examples' with: [ spec requires: #('Storm-Chipmunk2D') ];
 			package: 'Athens-Playground' with: [ spec requires: #('Athens') ].
 		
-		self athens: spec.
-		self unifiedffi: spec.
+		"self athens: spec.
+		self unifiedffi: spec."
 	]
