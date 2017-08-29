@@ -3,7 +3,7 @@
 
  Storm2 is the second version of [Storm][] from [Esteban][] . It is a small 2D Game Framework Development using FFI with Chipmunk2D Physics Engine.
  
- ##Instructions
+ ## Instructions
   Build Chipmunk2D project, for Linux 64bits lib is in libs64 folder. Must put them in "Shared" folder inside pharo folder.
   
   - Then open a Playground and evaluate:
