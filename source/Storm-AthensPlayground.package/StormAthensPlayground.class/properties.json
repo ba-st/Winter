@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "ComposableModel",
+	"category" : "Storm-AthensPlayground",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"startButton",
+		"playground",
+		"title"
+	],
+	"name" : "StormAthensPlayground",
+	"type" : "normal"
+}

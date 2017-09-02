@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Storm-AthensPlayground",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"drawBlock",
+		"stepping",
+		"container",
+		"process",
+		"stepTime",
+		"setupBlock"
+	],
+	"name" : "AthensPainter",
+	"type" : "normal"
+}

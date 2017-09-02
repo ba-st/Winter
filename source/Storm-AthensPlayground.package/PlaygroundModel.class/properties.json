@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "TextModel",
+	"category" : "Storm-AthensPlayground",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"workspace",
+		"attributeBindings"
+	],
+	"name" : "PlaygroundModel",
+	"type" : "normal"
+}
