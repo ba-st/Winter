@@ -1,16 +1,15 @@
 {
-	"category" : "Storm-Core-Base",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
+	"super" : "StormObject",
+	"category" : "Storm-Core-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"steppingProcess",
 		"stepping",
-		"delayTime" ],
+		"delayTime"
+	],
 	"name" : "StormEngine",
-	"pools" : [
-		 ],
-	"super" : "StormObject",
-	"type" : "normal" }
+	"type" : "normal"
+}

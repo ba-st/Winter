@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "StormBallShape",
+	"category" : "Storm-Examples-FallingBall",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"xOffset",
+		"yOffset"
+	],
+	"name" : "StormBallShapeNoPhysics",
+	"type" : "normal"
+}

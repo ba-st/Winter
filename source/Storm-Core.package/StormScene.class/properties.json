@@ -1,16 +1,15 @@
 {
-	"category" : "Storm-Core-Base",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
+	"super" : "StormReactive",
+	"category" : "Storm-Core-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
 	"instvars" : [
 		"eventQueue",
 		"active",
-		"components" ],
+		"components"
+	],
 	"name" : "StormScene",
-	"pools" : [
-		 ],
-	"super" : "StormReactive",
-	"type" : "normal" }
+	"type" : "normal"
+}

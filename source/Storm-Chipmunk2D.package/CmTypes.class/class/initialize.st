@@ -28,3 +28,7 @@ initialize
 	cpBody := #CmBody.
 	cpShape := #CmShape.
 	cpBB := #CmBoundingBox.
+	cpCollisionBeginFunc := #CmCollisionBegin.
+	cpCollisionPreSolveFunc := #CmCollisionPreSolve.
+	cpCollisionPostSolveFunc :=#CmCollisionPostSolve.
+	cpCollisionSeparateFunc := #CmCollisionSeparate.

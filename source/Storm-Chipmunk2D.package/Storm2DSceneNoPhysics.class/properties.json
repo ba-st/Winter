@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "Storm2DScene",
+	"category" : "Storm-Chipmunk2D-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "Storm2DSceneNoPhysics",
+	"type" : "normal"
+}

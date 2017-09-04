@@ -1,3 +1,3 @@
 accessing
-gravityCenter 
-	^self radius
+gravityCenter
+	^ self radius/2.0

@@ -1,3 +1,3 @@
 private
 primAngle
-	^ self	ffiCall: #( cpFloat cpBodyGetAngle ( self) )
+	^ self	 ffiCall: #( cpFloat cpBodyGetAngle ( self) )

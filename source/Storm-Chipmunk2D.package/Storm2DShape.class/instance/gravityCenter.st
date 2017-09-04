@@ -1,3 +1,3 @@
 accessing
 gravityCenter
-	^0
+	^ 0

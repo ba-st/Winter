@@ -1,14 +1,11 @@
 {
-	"category" : "Storm-Core-Events",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		 ],
-	"name" : "StormSceneActivated",
-	"pools" : [
-		 ],
 	"super" : "StormSceneEvent",
-	"type" : "normal" }
+	"category" : "Storm-Core-Events",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "StormSceneActivated",
+	"type" : "normal"
+}

@@ -1,1 +1,1 @@
-(name 'Storm-Examples-Alvaro.1' message 'CHange names' id '0ad5853b-0c14-0d00-a497-fdfd09815ee6' date '26 August 2017' time '1:24:28.028717 pm' author 'Alvaro' ancestors () stepChildren ())
+(name 'Storm-Examples-Alvaro.2' message 'empty log message' id '83f1447f-b414-0d00-b851-cb2b03a29f4f' date '3 September 2017' time '10:09:19.13229 pm' author 'Alvaro' ancestors ((name 'Storm-Examples-Alvaro.1' message 'CHange names' id '0ad5853b-0c14-0d00-a497-fdfd09815ee6' date '26 August 2017' time '1:24:28.028717 pm' author 'Alvaro' ancestors () stepChildren ())) stepChildren ())

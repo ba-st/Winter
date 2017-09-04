@@ -1,14 +1,13 @@
 {
-	"category" : "Storm-Core-Base",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		"scene" ],
-	"name" : "StormComponent",
-	"pools" : [
-		 ],
 	"super" : "StormReactive",
-	"type" : "normal" }
+	"category" : "Storm-Core-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"scene"
+	],
+	"name" : "StormComponent",
+	"type" : "normal"
+}

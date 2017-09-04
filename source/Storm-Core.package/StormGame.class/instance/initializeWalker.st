@@ -1,3 +1,3 @@
 initialization
 initializeWalker
-	stepWalker := "StormBatch do:" [ self currentScene step ]
+	stepWalker := "StormBatch do:"[ self currentScene step ]

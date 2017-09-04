@@ -1,14 +1,11 @@
 {
-	"category" : "Storm-Core-Base",
-	"classinstvars" : [
-		 ],
-	"classvars" : [
-		 ],
 	"commentStamp" : "<historical>",
-	"instvars" : [
-		 ],
-	"name" : "StormPlayer",
-	"pools" : [
-		 ],
 	"super" : "StormObject",
-	"type" : "normal" }
+	"category" : "Storm-Core-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "StormPlayer",
+	"type" : "normal"
+}

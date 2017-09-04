@@ -1,3 +1,3 @@
 accessing
 position
-	^ self primPosition asPoint
+	^ self primPosition asPoint 

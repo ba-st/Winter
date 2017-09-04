@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "Alvaro 8/30/2017 19:31",
+	"super" : "StormGame",
+	"category" : "Storm-Examples-FallingBall",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "StormBallExample",
+	"type" : "normal"
+}
