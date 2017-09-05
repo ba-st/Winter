@@ -10,7 +10,7 @@ baseline: spec
 			package: 'Athens-Playground' .
 		spec
 				group: 'Deployment' with: #('Storm-Core' 'Storm-Chipmunk2D' 'Storm-Morphic');
-				group: 'Development' with: #('Deployment' 'Storm-Examples' 'Athens-Playground');
+				group: 'Development' with: #('Deployment' 'Storm-Examples' 'Storm-AthensPlayground');
 group: 'default' with: #('Deployment')
 		
 	]
