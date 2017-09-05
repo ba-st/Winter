@@ -7,7 +7,7 @@ baseline: spec
 			package: 'Storm-Chipmunk2D' with: [ spec requires: #('Storm-Core') ];
 			package: 'Storm-Morphic' with: [ spec requires: #('Storm-Chipmunk2D') ];
 			package: 'Storm-Examples' with: [ spec requires: #('Storm-Chipmunk2D') ];
-			package: 'Athens-Playground' .
+			package: 'Storm-AthensPlayground' .
 		spec
 				group: 'Deployment' with: #('Storm-Core' 'Storm-Chipmunk2D' 'Storm-Morphic');
 				group: 'Development' with: #('Deployment' 'Storm-Examples' 'Storm-AthensPlayground');
