@@ -1,3 +1,3 @@
 private
 primRotation
-	^ self ffiCall: #( cpVect cpBodyGetRotation ( self) )
+	^ self ffiCall: #( cpVect cpBodyGetRotation( self) )

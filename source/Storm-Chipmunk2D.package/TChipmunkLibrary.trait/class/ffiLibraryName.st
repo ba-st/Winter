@@ -1,3 +1,4 @@
 library path
 ffiLibraryName
+
 	^ ChipmunkLibrary

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "StormGame",
+	"category" : "Storm-Examples-PyramidStack",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PyramidStack",
+	"type" : "normal"
+}

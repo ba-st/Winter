@@ -1,6 +1,6 @@
 {
 	"instance" : {
-		"primGravity" : "Alvaro 8/28/2017 19:20",
+		"primGravity" : "Alvaro 9/10/2017 15:59",
 		"setDefaultCollisionBegin:preSolve:postSolve:separate:data:" : " 8/19/2017 12:13:10",
 		"addBody:" : "Alvaro 8/28/2017 19:16",
 		"primDamping:" : "Alvaro 8/28/2017 19:20",
@@ -13,7 +13,7 @@
 		"staticBody" : "Alvaro 8/24/2017 21:24",
 		"damping" : " 8/19/2017 12:13:10",
 		"removeCollisionHandlerBetween:and:" : " 8/19/2017 12:13:10",
-		"primGravity:" : "Alvaro 8/24/2017 21:00",
+		"primGravity:" : "Alvaro 9/10/2017 16:00",
 		"primNearestShapeFrom:maxDistance:layers:group:info:" : "Alvaro 8/28/2017 19:22",
 		"addShape:" : " 8/19/2017 12:13:10",
 		"nearestShapeFrom:maxDistance:" : " 8/19/2017 12:13:10",
