@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "Storm2DScene",
+	"category" : "Storm-Examples-PyramidStack",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PyramidStackScene",
+	"type" : "normal"
+}

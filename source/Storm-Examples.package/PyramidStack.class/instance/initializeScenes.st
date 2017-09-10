@@ -2,6 +2,7 @@ Accessing
 initializeScenes
 	self
 		addScene:
-			(Storm2DScene new
+			(PyramidStackScene  new
 				backgroundColor: Color black;
+				addComponents: self wallShapes;
 				yourself)
