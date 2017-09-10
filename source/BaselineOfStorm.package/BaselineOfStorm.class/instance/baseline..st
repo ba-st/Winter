@@ -11,6 +11,6 @@ baseline: spec
 		spec
 				group: 'Deployment' with: #('Storm-Core' 'Storm-Chipmunk2D' 'Storm-Morphic');
 				group: 'Development' with: #('Deployment' 'Storm-Examples' 'Storm-AthensPlayground');
-group: 'default' with: #('Deployment')
+group: 'default' with: #('Development')
 		
 	]
