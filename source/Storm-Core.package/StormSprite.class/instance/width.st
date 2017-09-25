@@ -1,0 +1,3 @@
+Accessing
+width
+	^spriteForm width
