@@ -11,7 +11,7 @@
 ```smalltalk
 Metacello new
   baseline: 'Storm';
-  repository: 'github://alvarop100/Storm2:master/source';
+  repository: 'github://apiorno/Storm2:master/source';
   load
 ```
 
