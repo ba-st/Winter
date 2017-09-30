@@ -1,10 +1,13 @@
 {
 	"instance" : {
-		"checkCollition" : "Alvaro 9/2/2017 10:38",
+		"checkCollition" : "Alvaro 9/28/2017 05:14",
 		"initialize" : "Alvaro 9/2/2017 10:24",
 		"offset" : "Alvaro 9/2/2017 10:24",
+		"collisionSound" : "Alvaro 9/28/2017 05:23",
 		"eventUpdated:" : "Alvaro 9/2/2017 10:25",
-		"drawOn:" : "Alvaro 9/2/2017 09:44"
+		"position:" : "Alvaro 9/27/2017 21:12",
+		"drawSpriteOrShapeOn:" : "Alvaro 9/27/2017 22:24",
+		"drawOn:" : "Alvaro 9/27/2017 22:04"
 	},
 	"class" : { }
 }

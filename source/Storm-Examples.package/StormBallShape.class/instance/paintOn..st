@@ -1,4 +1,6 @@
 drawing
 paintOn: aCanvas
-	^graphicsPaint ifNil: [ 
-		graphicsPaint := self color asAthensPaintOn: aCanvas ]
+	^ graphicsPaint
+		ifNil: [ graphicsPaint := sprite
+				ifNil: [ self color asAthensPaintOn: aCanvas ]
+				ifNotNil: [ sprite asAthensPaintOn: aCanvas ] ]

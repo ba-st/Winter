@@ -1,8 +1,14 @@
 {
 	"instance" : {
 		"dimensions" : "Alvaro 9/2/2017 09:08",
+		"stop" : "Alvaro 9/28/2017 05:21",
+		"initializeWalker" : "Alvaro 9/28/2017 05:16",
 		"title" : "Alvaro 9/2/2017 09:08",
-		"createBallShape" : "Alvaro 9/2/2017 09:43",
+		"collisionSound" : "Alvaro 9/28/2017 05:22",
+		"kirbySprite" : "Alvaro 9/28/2017 05:18",
+		"initializeResources" : "Alvaro 9/28/2017 05:19",
+		"backgroundSound" : "Alvaro 9/28/2017 05:16",
+		"createBallShape" : "Alvaro 9/28/2017 05:18",
 		"initializeScenes" : "Alvaro 9/2/2017 09:29"
 	},
 	"class" : { }

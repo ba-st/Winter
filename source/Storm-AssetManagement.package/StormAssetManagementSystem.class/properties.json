@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Storm-AssetManagement",
+	"classinstvars" : [
+		"uniqueInstance"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"sounds",
+		"sprites"
+	],
+	"name" : "StormAssetManagementSystem",
+	"type" : "normal"
+}

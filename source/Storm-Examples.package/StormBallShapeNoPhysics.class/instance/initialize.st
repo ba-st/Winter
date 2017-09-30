@@ -1,4 +1,4 @@
-initialization
+Initialization
 initialize
 	super initialize.
 	xOffset := 3.0.

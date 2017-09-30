@@ -1,0 +1,3 @@
+Testing
+isAIFF
+	^type = #aiff

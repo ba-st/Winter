@@ -1,0 +1,3 @@
+Testing
+isStereo
+	^sound isStereo 

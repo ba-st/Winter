@@ -9,7 +9,8 @@
 		"color",
 		"radius",
 		"graphicsPath",
-		"graphicsPaint"
+		"graphicsPaint",
+		"sprite"
 	],
 	"name" : "StormBallShape",
 	"type" : "normal"

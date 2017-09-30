@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "StormBallShape",
-	"category" : "Storm-Examples-FallingBall",
+	"category" : "Storm-Examples",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

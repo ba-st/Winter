@@ -1,4 +1,4 @@
-accessing
+Initialization
 initializeScenes
 	self
 		addScene:

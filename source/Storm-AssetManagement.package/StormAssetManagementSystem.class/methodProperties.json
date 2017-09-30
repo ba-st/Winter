@@ -1,0 +1,17 @@
+{
+	"instance" : {
+		"addSound:named:" : "Alvaro 9/28/2017 01:52",
+		"removeSpriteNamed:" : "Alvaro 9/28/2017 01:56",
+		"initialize" : "Alvaro 9/28/2017 01:51",
+		"sounds" : "Alvaro 9/27/2017 23:10",
+		"spriteNamed:" : "Alvaro 9/28/2017 01:56",
+		"soundNamed:" : "Alvaro 9/28/2017 01:54",
+		"addSprite:named:" : "Alvaro 9/28/2017 01:56",
+		"removeSoundNamed:" : "Alvaro 9/28/2017 01:56",
+		"sprites" : "Alvaro 9/27/2017 23:11"
+	},
+	"class" : {
+		"current" : "Alvaro 9/27/2017 23:09",
+		"restart" : "Alvaro 9/28/2017 01:52"
+	}
+}

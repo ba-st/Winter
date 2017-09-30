@@ -1,0 +1,9 @@
+{
+	"instance" : {
+		"testAccessing" : "Alvaro 9/25/2017 23:10",
+		"testInstanceCreationFailedBecauseFileNotFound" : "Alvaro 9/25/2017 23:12",
+		"testConverting" : "Alvaro 9/25/2017 23:11",
+		"imageDirectory" : "Alvaro 9/25/2017 23:09"
+	},
+	"class" : { }
+}

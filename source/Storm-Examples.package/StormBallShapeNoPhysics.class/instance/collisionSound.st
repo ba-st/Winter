@@ -1,0 +1,3 @@
+Accessing
+collisionSound
+	^ game collisionSound

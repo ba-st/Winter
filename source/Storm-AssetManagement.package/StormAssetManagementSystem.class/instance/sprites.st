@@ -1,0 +1,3 @@
+Accessing
+sprites
+	^ sprites copy

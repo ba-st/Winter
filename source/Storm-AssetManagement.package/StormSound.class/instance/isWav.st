@@ -1,0 +1,3 @@
+Testing
+isWav
+	^type =#wav

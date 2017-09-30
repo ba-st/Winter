@@ -1,0 +1,19 @@
+{
+	"instance" : {
+		"pause" : "Alvaro 9/27/2017 20:54",
+		"play" : "Alvaro 9/27/2017 20:54",
+		"isAIFF" : "Alvaro 9/25/2017 21:33",
+		"adjustVolumeTo:overMSecs:" : "Alvaro 9/27/2017 21:48",
+		"initializeSound:type:filePath:" : "Alvaro 9/25/2017 21:25",
+		"filePath" : "Alvaro 9/25/2017 21:15",
+		"convertToString:" : "Alvaro 9/25/2017 21:21",
+		"fileName" : "Alvaro 9/25/2017 21:29",
+		"loudness:" : "Alvaro 9/27/2017 21:44",
+		"isStereo" : "Alvaro 9/25/2017 21:32",
+		"isWav" : "Alvaro 9/25/2017 21:32",
+		"type" : "Alvaro 9/25/2017 21:14"
+	},
+	"class" : {
+		"fromRelativePath:" : "Alvaro 9/25/2017 22:38"
+	}
+}
