@@ -1,13 +1,15 @@
 {
 	"instance" : {
-		"checkCollition" : "Alvaro 9/28/2017 05:14",
-		"initialize" : "Alvaro 9/2/2017 10:24",
-		"offset" : "Alvaro 9/2/2017 10:24",
-		"collisionSound" : "Alvaro 9/28/2017 05:23",
-		"eventUpdated:" : "Alvaro 9/2/2017 10:25",
+		"checkCollition" : "Alvaro 9/30/2017 15:38",
+		"negateY" : "Alvaro 9/30/2017 15:32",
 		"position:" : "Alvaro 9/27/2017 21:12",
+		"initialize" : "Alvaro 9/2/2017 10:24",
+		"drawOn:" : "Alvaro 9/27/2017 22:04",
+		"offset" : "Alvaro 9/2/2017 10:24",
+		"negateX" : "Alvaro 9/30/2017 15:31",
+		"eventUpdated:" : "Alvaro 9/2/2017 10:25",
 		"drawSpriteOrShapeOn:" : "Alvaro 9/27/2017 22:24",
-		"drawOn:" : "Alvaro 9/27/2017 22:04"
+		"playCollisionSound" : "Alvaro 9/30/2017 15:33"
 	},
 	"class" : { }
 }

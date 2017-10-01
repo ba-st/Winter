@@ -1,3 +1,0 @@
-Accessing
-collisionSound
-	^ game collisionSound

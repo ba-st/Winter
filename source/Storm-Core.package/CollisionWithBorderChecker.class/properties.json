@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Storm-Core-Collision",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"component",
+		"collisionAction"
+	],
+	"name" : "CollisionWithBorderChecker",
+	"type" : "normal"
+}
