@@ -10,7 +10,7 @@
 
 ```smalltalk
 Metacello new
-  baseline: 'Storm';
+  baseline: 'Winter';
   repository: 'github://apiorno/Winter:master/source';
   load
 ```
