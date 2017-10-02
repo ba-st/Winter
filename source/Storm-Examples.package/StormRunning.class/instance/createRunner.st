@@ -1,3 +1,0 @@
-initialization
-createRunner
-	^StormRunner new

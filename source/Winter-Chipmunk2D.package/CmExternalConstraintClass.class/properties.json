@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "CmExternalObject",
+	"category" : "Winter-Chipmunk2D-Chipmunk-ExpJoint",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CmExternalConstraintClass",
+	"type" : "normal"
+}

@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "WinterComponent",
+	"category" : "Winter-Examples-FallingBall",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"balls",
+		"ballsGenerated",
+		"stepCounter",
+		"ballsPerStep",
+		"startX"
+	],
+	"name" : "WinterBallGenerator",
+	"type" : "normal"
+}

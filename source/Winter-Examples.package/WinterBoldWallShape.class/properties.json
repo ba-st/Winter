@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "WinterWallShape",
+	"category" : "Winter-Examples-Resources",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"extent"
+	],
+	"name" : "WinterBoldWallShape",
+	"type" : "normal"
+}

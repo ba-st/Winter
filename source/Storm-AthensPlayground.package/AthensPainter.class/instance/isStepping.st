@@ -1,3 +1,0 @@
-stepping
-isStepping
-	^stepping

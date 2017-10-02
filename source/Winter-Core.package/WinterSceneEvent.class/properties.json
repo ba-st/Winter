@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "WinterEvent",
+	"category" : "Winter-Core-Events",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"scene"
+	],
+	"name" : "WinterSceneEvent",
+	"type" : "normal"
+}

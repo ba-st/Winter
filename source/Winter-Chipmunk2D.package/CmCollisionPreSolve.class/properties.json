@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "CmCollisionFunction",
+	"category" : "Winter-Chipmunk2D-Chipmunk-ExpCollision",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CmCollisionPreSolve",
+	"type" : "normal"
+}

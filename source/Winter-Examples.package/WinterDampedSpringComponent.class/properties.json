@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "WinterComponent",
+	"category" : "Winter-Examples-Joints",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"color",
+		"constraint"
+	],
+	"name" : "WinterDampedSpringComponent",
+	"type" : "normal"
+}

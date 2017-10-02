@@ -1,0 +1,12 @@
+{
+	"instance" : {
+		"testRemoveSoundFailsIfSoundDoesNotExist" : "Alvaro 10/2/2017 19:20",
+		"testRemoveSound" : "Alvaro 10/2/2017 19:20",
+		"testRemoveSpriteFailsIfSpriteDoesNotExist" : "Alvaro 10/2/2017 19:20",
+		"testRemoveSprite" : "Alvaro 10/2/2017 19:20",
+		"testAccessing" : "Alvaro 10/2/2017 19:20",
+		"testAddSound" : "Alvaro 10/2/2017 19:20",
+		"testAddSprite" : "Alvaro 10/2/2017 19:20"
+	},
+	"class" : { }
+}

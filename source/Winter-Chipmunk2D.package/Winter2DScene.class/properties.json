@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "WinterScene",
+	"category" : "Winter-Chipmunk2D-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"surface",
+		"backgroundColor",
+		"physicSpace",
+		"physicStepTime"
+	],
+	"name" : "Winter2DScene",
+	"type" : "normal"
+}

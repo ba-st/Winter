@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "WinterGame",
+	"category" : "Winter-Examples-Joints",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"morphPointers"
+	],
+	"name" : "WinterConstraintDemo",
+	"type" : "normal"
+}

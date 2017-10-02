@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "Alvaro 10/2/2017 19:28",
+	"super" : "WinterScene",
+	"category" : "Winter-CoreTests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"surface",
+		"backgroundColor"
+	],
+	"name" : "Winter2DSceneNoPhysics",
+	"type" : "normal"
+}

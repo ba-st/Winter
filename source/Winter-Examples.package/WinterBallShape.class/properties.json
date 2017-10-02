@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "Winter2DShape",
+	"category" : "Winter-Examples-FallingBall",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"color",
+		"radius",
+		"graphicsPath",
+		"graphicsPaint",
+		"sprite"
+	],
+	"name" : "WinterBallShape",
+	"type" : "normal"
+}

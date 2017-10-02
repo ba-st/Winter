@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "WinterShape",
+	"category" : "Winter-Chipmunk2D-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"position",
+		"physicBody",
+		"physicShape"
+	],
+	"name" : "Winter2DShape",
+	"type" : "normal"
+}

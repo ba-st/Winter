@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Winter-Core-Collision",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"component",
+		"collisionAction",
+		"gameWindow"
+	],
+	"name" : "CollisionWithBorderChecker",
+	"type" : "normal"
+}

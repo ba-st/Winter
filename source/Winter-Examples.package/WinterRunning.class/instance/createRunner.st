@@ -1,0 +1,3 @@
+initialization
+createRunner
+	^WinterRunner new

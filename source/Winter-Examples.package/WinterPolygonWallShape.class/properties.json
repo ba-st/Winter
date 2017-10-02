@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "WinterWallShape",
+	"category" : "Winter-Examples-Resources",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"vertices"
+	],
+	"name" : "WinterPolygonWallShape",
+	"type" : "normal"
+}

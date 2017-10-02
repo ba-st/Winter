@@ -1,0 +1,1 @@
+The scene of a game of a pyramid of boxes and a ball in the bottom

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "CollisionWithBorderChecker",
+	"category" : "Winter-Core-Collision",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CollisionWithXBorderChecker",
+	"type" : "normal"
+}

@@ -1,0 +1,1 @@
+Abstraction for game window

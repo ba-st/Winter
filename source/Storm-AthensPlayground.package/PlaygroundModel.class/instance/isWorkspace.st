@@ -1,3 +1,0 @@
-testing
-isWorkspace
-	^ workspace value

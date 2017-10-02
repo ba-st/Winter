@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "WinterReactive",
+	"category" : "Winter-Core-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"eventQueue",
+		"active",
+		"components"
+	],
+	"name" : "WinterScene",
+	"type" : "normal"
+}

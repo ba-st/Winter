@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "CmExternalStructure",
+	"category" : "Winter-Chipmunk2D-Chipmunk",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"OFFSET_B",
+		"OFFSET_L",
+		"OFFSET_R",
+		"OFFSET_T"
+	],
+	"instvars" : [ ],
+	"name" : "CmBoundingBox",
+	"type" : "normal"
+}

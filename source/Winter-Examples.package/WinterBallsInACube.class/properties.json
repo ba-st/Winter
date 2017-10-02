@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "WinterGame",
+	"category" : "Winter-Examples-FallingBall",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"generator"
+	],
+	"name" : "WinterBallsInACube",
+	"type" : "normal"
+}

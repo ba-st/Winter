@@ -1,3 +1,0 @@
-testing
-hasBindingThatBeginsWith: aString
-	^false

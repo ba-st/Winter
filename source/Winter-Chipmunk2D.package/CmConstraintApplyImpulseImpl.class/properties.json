@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "CmCallback",
+	"category" : "Winter-Chipmunk2D-Chipmunk-ExpJoint",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CmConstraintApplyImpulseImpl",
+	"type" : "normal"
+}

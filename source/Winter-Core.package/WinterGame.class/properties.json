@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "Object",
+	"category" : "Winter-Core-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"window",
+		"engine",
+		"players",
+		"scenes",
+		"currentScene",
+		"surfaceContainer",
+		"stepWalker"
+	],
+	"name" : "WinterGame",
+	"type" : "normal"
+}
