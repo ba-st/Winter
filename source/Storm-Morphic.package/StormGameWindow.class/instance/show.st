@@ -1,0 +1,3 @@
+Displaying
+show
+	window openAsIs

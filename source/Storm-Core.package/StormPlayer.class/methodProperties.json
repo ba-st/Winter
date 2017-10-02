@@ -1,6 +1,11 @@
 {
 	"instance" : {
-		"step" : " 8/19/2017 12:13:03"
+		"position" : "Alvaro 10/1/2017 16:25",
+		"addInteractionOf:doing:" : "Alvaro 10/1/2017 16:18",
+		"initialize" : "Alvaro 10/1/2017 16:22",
+		"initializeInteraction" : "Alvaro 10/1/2017 16:23",
+		"position:" : "Alvaro 10/1/2017 16:26",
+		"initializeResources" : "Alvaro 10/1/2017 16:23"
 	},
 	"class" : { }
 }

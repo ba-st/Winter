@@ -1,7 +1,5 @@
 evaluating
 value
-	| gameWindow |
-	gameWindow := component game window.
-	^ component position y > gameWindow extent y
-		| (component position y < gameWindow position y)
+
+	^ (component position y > gameWindow playableExtentY or: [ component position y < gameWindow positionY ])
 		ifTrue: collisionAction

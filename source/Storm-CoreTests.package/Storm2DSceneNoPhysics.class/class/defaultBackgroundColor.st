@@ -1,0 +1,3 @@
+Defaults
+defaultBackgroundColor 
+	^Color white

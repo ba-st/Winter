@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "StormShape",
+	"category" : "Storm-Chipmunk2D-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"position",
+		"sprite",
+		"color",
+		"radius",
+		"graphicsPath",
+		"graphicsPaint"
+	],
+	"name" : "Storm2DShapeNoPhysics",
+	"type" : "normal"
+}

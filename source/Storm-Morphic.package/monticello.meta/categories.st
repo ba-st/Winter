@@ -1,1 +1,1 @@
-SystemOrganization addCategory: 'Storm-Morphic'!
+SystemOrganization addCategory: #'Storm-Morphic'!

@@ -1,0 +1,16 @@
+{
+	"instance" : {
+		"createPaintOn:" : "Alvaro 10/1/2017 17:39",
+		"gravityCenter" : "Alvaro 10/1/2017 17:21",
+		"negateY" : "Alvaro 9/30/2017 15:32",
+		"initialize" : "Alvaro 9/2/2017 10:24",
+		"mass" : "Alvaro 10/1/2017 17:21",
+		"offset" : "Alvaro 9/2/2017 10:24",
+		"negateX" : "Alvaro 9/30/2017 15:31",
+		"checkCollision" : "Alvaro 10/1/2017 17:44",
+		"drawSpriteOrShapeOn:" : "Alvaro 9/27/2017 22:24",
+		"playCollisionSound" : "Alvaro 10/1/2017 15:12",
+		"createPathOn:" : "Alvaro 10/1/2017 17:38"
+	},
+	"class" : { }
+}

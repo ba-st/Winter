@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "StormScene",
+	"category" : "Storm-CoreTests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"surface",
+		"backgroundColor"
+	],
+	"name" : "Storm2DSceneNoPhysics",
+	"type" : "normal"
+}

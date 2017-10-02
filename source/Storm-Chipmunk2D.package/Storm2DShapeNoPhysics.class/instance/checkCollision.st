@@ -1,0 +1,3 @@
+Collision
+checkCollision
+	self subclassResponsibility

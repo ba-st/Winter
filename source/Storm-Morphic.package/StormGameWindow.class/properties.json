@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Storm-Morphic",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"game",
+		"window",
+		"surfaceContainer"
+	],
+	"name" : "StormGameWindow",
+	"type" : "normal"
+}

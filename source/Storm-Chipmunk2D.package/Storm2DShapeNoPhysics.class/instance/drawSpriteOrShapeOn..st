@@ -1,0 +1,3 @@
+private
+drawSpriteOrShapeOn: aCanvas
+	self subclassResponsibility

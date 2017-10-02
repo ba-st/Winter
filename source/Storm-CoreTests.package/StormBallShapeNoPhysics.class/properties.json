@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Storm2DShapeNoPhysics",
+	"category" : "Storm-CoreTests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"xOffset",
+		"yOffset"
+	],
+	"name" : "StormBallShapeNoPhysics",
+	"type" : "normal"
+}

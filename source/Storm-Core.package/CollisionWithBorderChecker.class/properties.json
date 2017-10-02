@@ -7,7 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"component",
-		"collisionAction"
+		"collisionAction",
+		"gameWindow"
 	],
 	"name" : "CollisionWithBorderChecker",
 	"type" : "normal"

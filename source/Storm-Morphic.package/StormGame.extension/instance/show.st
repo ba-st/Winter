@@ -1,4 +1,4 @@
 *Storm-Morphic
 show
-	window ifNil: [ window := self buildWindow ].
-	window openAsIs.
+	window ifNil: [ self buildWindow ].
+	window show.
