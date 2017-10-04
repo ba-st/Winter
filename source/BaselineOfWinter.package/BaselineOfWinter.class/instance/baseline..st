@@ -18,5 +18,5 @@ baseline: spec
 				group: 'Development'
 					with:
 					#('Winter-AssetManagement' 'Winter-AssetManagementTests' 'Winter-Core' 'Winter-CoreTests' 'Winter-Chipmunk2D' 'Winter-Chipmunk2DTests' 'Winter-Morphic');
-				group: 'Full' with: #('Development' 'Winter-Examples' 'Winter-AthensPlayground');
+				group: 'Full' with: #('Development' 'Winter-Examples');
 				group: 'default' with: #('Full') ]
