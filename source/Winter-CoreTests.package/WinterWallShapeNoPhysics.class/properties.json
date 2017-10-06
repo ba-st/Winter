@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "Alvaro 10/5/2017 22:15",
+	"super" : "Winter2DShapeNoPhysics",
+	"category" : "Winter-CoreTests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"extent"
+	],
+	"name" : "WinterWallShapeNoPhysics",
+	"type" : "normal"
+}

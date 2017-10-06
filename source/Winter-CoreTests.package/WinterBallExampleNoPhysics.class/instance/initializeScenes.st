@@ -7,4 +7,6 @@ initializeScenes
 				addComponent:
 					(self createBallShape
 						position: 0 @ 0;
-						yourself))
+						yourself);
+				addComponents: self createWallShapes;
+				yourself)
