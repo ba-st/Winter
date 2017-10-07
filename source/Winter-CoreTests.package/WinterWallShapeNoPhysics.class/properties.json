@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "Alvaro 10/5/2017 22:15",
 	"super" : "Winter2DShapeNoPhysics",
-	"category" : "Winter-CoreTests",
+	"category" : "Winter-CoreTests-Resources",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
