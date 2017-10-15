@@ -1,3 +1,3 @@
-accessing
+Managing
 addComponents: aCollection
 	aCollection do: [ :each | self addComponent: each ]

@@ -10,3 +10,4 @@ initialize
 	self initializeScenes.
 	
 	self currentScene: self scenes first.
+	self initializePlayers.

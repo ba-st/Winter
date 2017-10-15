@@ -1,3 +1,0 @@
-Accessing
-title
-	^'Pyramid Stack'

@@ -1,2 +1,3 @@
 Initialization
 initializeResources
+ self subclassResponsibility 

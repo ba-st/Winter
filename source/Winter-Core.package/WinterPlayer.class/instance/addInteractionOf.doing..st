@@ -1,5 +1,4 @@
 Interactions
-addInteractionOf: anInteractionEvent doing: anActionBlock
-	game window
-		on: anInteractionEvent
-		do: anActionBlock
+addInteractionOf: aKeyword doing: anActionBlock
+
+	self addInteraction: (WinterInteractionEvent of: aKeyword doing: anActionBlock )

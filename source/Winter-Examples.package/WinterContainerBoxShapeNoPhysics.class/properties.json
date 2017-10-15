@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "Alvaro 10/6/2017 19:26",
+	"super" : "Winter2DShapeNoPhysics",
+	"category" : "Winter-Examples-Resources",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"extent",
+		"walls"
+	],
+	"name" : "WinterContainerBoxShapeNoPhysics",
+	"type" : "normal"
+}

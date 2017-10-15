@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "Alvaro 10/8/2017 15:42",
+	"super" : "WinterEvent",
+	"category" : "Winter-Core-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"keyword",
+		"action"
+	],
+	"name" : "WinterInteractionEvent",
+	"type" : "normal"
+}

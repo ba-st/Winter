@@ -1,3 +1,4 @@
 *Winter-Morphic
 buildWindow
-	window := WinterGameWindow over: self
+	window := WinterGameWindow over: self.
+	self configureInteractionOn: window.

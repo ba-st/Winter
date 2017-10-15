@@ -1,3 +1,0 @@
-defaults
-defaultCollisionType
-	^ 1

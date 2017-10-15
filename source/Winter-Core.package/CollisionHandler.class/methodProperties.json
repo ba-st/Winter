@@ -1,0 +1,10 @@
+{
+	"instance" : {
+		"canHandle:" : "Alvaro 10/14/2017 10:57",
+		"initializeBetween:and:onCollisionDo:" : "Alvaro 10/14/2017 07:52",
+		"value:" : "Alvaro 10/14/2017 07:53"
+	},
+	"class" : {
+		"between:and:onCollisionDo:" : "Alvaro 10/14/2017 07:49"
+	}
+}

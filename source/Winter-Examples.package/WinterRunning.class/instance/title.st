@@ -1,3 +1,0 @@
-accessing
-title
-	^'Running example'

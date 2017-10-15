@@ -1,4 +1,4 @@
-accessing
+Managing
 addComponent: aComponent
 	aComponent scene: self.
 	components := components copyWith: aComponent.

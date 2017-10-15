@@ -4,4 +4,4 @@ initialize
 	sprites := Dictionary new.
 	SoundSystem soundEnabled: true.
 	SoundSystem initialize.
-	SoundPlayer initialize
+	SoundPlayer startUpWithSound:nil.

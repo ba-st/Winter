@@ -1,3 +1,0 @@
-private
-createPhysicBody
-	^self subclassResponsibility

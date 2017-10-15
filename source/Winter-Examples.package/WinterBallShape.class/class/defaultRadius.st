@@ -1,3 +1,0 @@
-defaults
-defaultRadius
-	^10

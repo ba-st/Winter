@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "<historical>",
 	"super" : "WinterComponent",
-	"category" : "Winter-Examples-FallingBall",
+	"category" : "Winter-Examples-Resources",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

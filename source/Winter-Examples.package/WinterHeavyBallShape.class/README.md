@@ -1,1 +1,0 @@
-I'm just a really heavy version of a StormBallShape.

@@ -1,0 +1,3 @@
+Interactions
+addInteraction: anInteractionEvent
+	interactionEvents add: anInteractionEvent

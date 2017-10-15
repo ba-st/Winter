@@ -1,3 +1,0 @@
-accessing
-mass
-	^ self primMass 

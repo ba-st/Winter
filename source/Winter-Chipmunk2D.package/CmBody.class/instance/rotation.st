@@ -1,3 +1,0 @@
-accessing
-rotation
-	^ self primRotation 

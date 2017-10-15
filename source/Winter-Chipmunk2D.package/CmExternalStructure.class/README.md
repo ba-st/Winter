@@ -1,1 +1,0 @@
-I am the base class for wrappers of simple Chipmunk data structures.

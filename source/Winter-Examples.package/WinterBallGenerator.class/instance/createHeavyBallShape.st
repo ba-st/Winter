@@ -1,5 +1,5 @@
 private
 createHeavyBallShape
-	^WinterHeavyBallShape new
+	^WinterHeavyBallShapeNoPhysics  new
 		color: Color gray;
 		yourself

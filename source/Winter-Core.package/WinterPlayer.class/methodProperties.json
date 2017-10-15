@@ -1,11 +1,14 @@
 {
 	"instance" : {
 		"position" : "Alvaro 10/1/2017 16:25",
-		"addInteractionOf:doing:" : "Alvaro 10/1/2017 16:18",
-		"initialize" : "Alvaro 10/1/2017 16:22",
-		"initializeInteraction" : "Alvaro 10/1/2017 16:23",
+		"addInteractionOf:doing:" : "Alvaro 10/8/2017 15:34",
+		"initialize" : "Alvaro 10/8/2017 15:34",
+		"becomePartOfScene:" : "Alvaro 10/8/2017 15:16",
+		"initializeInteraction" : "Alvaro 10/8/2017 15:16",
 		"position:" : "Alvaro 10/1/2017 16:26",
-		"initializeResources" : "Alvaro 10/1/2017 16:23"
+		"applyInteractionsOn:" : "Alvaro 10/8/2017 15:45",
+		"addInteraction:" : "Alvaro 10/8/2017 15:33",
+		"initializeResources" : "Alvaro 10/8/2017 15:16"
 	},
 	"class" : { }
 }

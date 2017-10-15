@@ -1,1 +1,0 @@
-A 2D Ball Shape not using chipmunk2D

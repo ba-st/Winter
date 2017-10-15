@@ -1,0 +1,3 @@
+Initialization
+createContainerOfBoundings: aRectangle
+	^ WinterContainerBoxShapeNoPhysics ofBounds: aRectangle

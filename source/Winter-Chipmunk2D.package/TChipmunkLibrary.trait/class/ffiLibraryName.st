@@ -1,4 +1,0 @@
-library path
-ffiLibraryName
-
-	^ ChipmunkLibrary

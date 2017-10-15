@@ -1,3 +1,0 @@
-private
-title
-	^'Falling Ball'

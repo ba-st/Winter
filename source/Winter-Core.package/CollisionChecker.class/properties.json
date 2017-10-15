@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "WinterObject",
+	"category" : "Winter-Core-Collision",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"firstComponent",
+		"secondComponent"
+	],
+	"name" : "CollisionChecker",
+	"type" : "normal"
+}

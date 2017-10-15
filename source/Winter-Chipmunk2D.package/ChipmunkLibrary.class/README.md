@@ -1,1 +1,0 @@
-I provide access to global utility functions from the Chipmunk library.

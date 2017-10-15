@@ -1,0 +1,18 @@
+{
+	"instance" : {
+		"createPaintOn:" : "Alvaro 10/6/2017 19:03",
+		"bounds:" : "Alvaro 10/6/2017 19:00",
+		"setSpecificPaintOn:" : "Alvaro 10/6/2017 19:25",
+		"initializaBounds:ofColor:" : "Alvaro 10/8/2017 14:55",
+		"extent" : "Alvaro 10/6/2017 19:01",
+		"bounds" : "Alvaro 10/6/2017 19:00",
+		"checkCollision" : "Alvaro 10/6/2017 19:51",
+		"extent:" : "Alvaro 10/6/2017 19:01",
+		"drawSpriteOrShapeOn:" : "Alvaro 10/6/2017 19:52",
+		"createPathOn:" : "Alvaro 10/6/2017 19:24"
+	},
+	"class" : {
+		"ofBounds:andColor:" : "Alvaro 10/8/2017 15:04",
+		"ofBounds:" : "Alvaro 10/8/2017 15:04"
+	}
+}

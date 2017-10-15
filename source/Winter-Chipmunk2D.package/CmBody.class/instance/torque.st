@@ -1,4 +1,0 @@
-accessing
-torque
-	^ self primTorque
-	

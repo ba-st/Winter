@@ -1,1 +1,0 @@
-I define the filename of the Chipmunk library once for all my users.

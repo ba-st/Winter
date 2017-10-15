@@ -1,4 +1,0 @@
-accessing
-moment
-	^ self primMoment 
-	
