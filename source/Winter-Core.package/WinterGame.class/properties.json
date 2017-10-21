@@ -12,7 +12,8 @@
 		"scenes",
 		"currentScene",
 		"surfaceContainer",
-		"stepWalker"
+		"stepWalker",
+		"collisionHandlers"
 	],
 	"name" : "WinterGame",
 	"type" : "normal"

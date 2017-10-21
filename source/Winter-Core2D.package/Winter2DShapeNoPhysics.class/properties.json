@@ -7,7 +7,6 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"position",
-		"sprite",
 		"color",
 		"radius",
 		"graphicsPath",

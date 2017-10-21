@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Winter-AssetManagement",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"properties",
+		"layers",
+		"tiles"
+	],
+	"name" : "WinterTiledMap",
+	"type" : "normal"
+}

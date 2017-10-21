@@ -1,5 +1,3 @@
 Drawing
 createPaintOn: aCanvas
-	^ graphicsPaint := sprite
-		ifNil: [ self color asAthensPaintOn: aCanvas ]
-		ifNotNil: [ sprite asAthensPaintOn: aCanvas ]
+	^ graphicsPaint := self color asAthensPaintOn: aCanvas

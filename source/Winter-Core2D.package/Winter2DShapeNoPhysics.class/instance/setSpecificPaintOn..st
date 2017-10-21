@@ -1,3 +1,0 @@
-private
-setSpecificPaintOn: aCanvas
-	self subclassResponsibility

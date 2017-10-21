@@ -1,8 +1,11 @@
 {
 	"instance" : {
+		"axisSymbol" : "Alvaro 10/16/2017 00:45",
+		"initializeOf:on:" : "Alvaro 10/16/2017 00:45",
 		"initializeOf:" : "Alvaro 10/14/2017 10:59"
 	},
 	"class" : {
-		"of:" : "Alvaro 10/14/2017 10:32"
+		"of:" : "Alvaro 10/14/2017 10:32",
+		"of:on:" : "Alvaro 10/16/2017 00:44"
 	}
 }

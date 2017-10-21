@@ -1,3 +1,3 @@
-event handling
+accessing
 eventQueue
 	^eventQueue

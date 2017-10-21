@@ -1,0 +1,12 @@
+{
+	"instance" : {
+		"negateX" : "Alvaro 10/16/2017 00:51",
+		"playCollisionSound" : "Alvaro 10/16/2017 00:51",
+		"negateY" : "Alvaro 10/16/2017 00:51",
+		"initializeResources" : "Alvaro 10/16/2017 00:57",
+		"initializeOn:" : "Alvaro 10/16/2017 00:57"
+	},
+	"class" : {
+		"on:" : "Alvaro 10/16/2017 00:03"
+	}
+}

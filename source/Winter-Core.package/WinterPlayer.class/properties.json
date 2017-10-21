@@ -1,13 +1,14 @@
 {
-	"commentStamp" : "<historical>",
-	"super" : "WinterObject",
+	"commentStamp" : "Alvaro 10/15/2017 07:23",
+	"super" : "WinterComponent",
 	"category" : "Winter-Core-Base",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"position",
-		"interactionEvents"
+		"interactionEvents",
+		"sprite",
+		"colliderShape"
 	],
 	"name" : "WinterPlayer",
 	"type" : "normal"

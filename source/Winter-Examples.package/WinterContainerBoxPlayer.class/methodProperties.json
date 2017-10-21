@@ -1,9 +1,8 @@
 {
 	"instance" : {
-		"becomePartOfScene:" : "Alvaro 10/8/2017 15:16",
-		"initializeResources" : "Alvaro 10/8/2017 16:00",
+		"initializeResources" : "Alvaro 10/16/2017 00:12",
 		"initializeOn:" : "Alvaro 10/8/2017 15:32",
-		"initializeInteraction" : "Alvaro 10/8/2017 15:59"
+		"initializeInteraction" : "Alvaro 10/16/2017 00:12"
 	},
 	"class" : {
 		"on:" : "Alvaro 10/8/2017 15:32"

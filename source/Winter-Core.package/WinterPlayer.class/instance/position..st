@@ -1,3 +1,3 @@
 Accessing
 position: aPosition
-	position := aPosition
+	colliderShape position: aPosition

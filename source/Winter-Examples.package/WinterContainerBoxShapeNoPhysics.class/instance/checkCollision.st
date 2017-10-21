@@ -1,4 +1,3 @@
 Collision
 checkCollision
-	walls do:[ :wall| wall checkCollision].
-	
+	walls do: [ :wall | wall checkCollision ]

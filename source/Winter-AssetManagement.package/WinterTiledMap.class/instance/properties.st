@@ -1,0 +1,3 @@
+Accessing
+properties
+	^ properties values 

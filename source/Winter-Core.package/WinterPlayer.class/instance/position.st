@@ -1,3 +1,3 @@
 Accessing
 position
-	^ position
+	^ colliderShape position

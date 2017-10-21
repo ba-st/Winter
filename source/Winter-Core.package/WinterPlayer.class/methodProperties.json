@@ -1,14 +1,17 @@
 {
 	"instance" : {
-		"position" : "Alvaro 10/1/2017 16:25",
+		"colliderShape" : "Alvaro 10/16/2017 01:20",
+		"initializeInteraction" : "Alvaro 10/15/2017 07:34",
+		"drawOn:" : "Alvaro 10/16/2017 00:11",
+		"initializeResources" : "Alvaro 10/15/2017 07:34",
+		"drawSpriteOn:" : "Alvaro 10/16/2017 00:17",
 		"addInteractionOf:doing:" : "Alvaro 10/8/2017 15:34",
-		"initialize" : "Alvaro 10/8/2017 15:34",
-		"becomePartOfScene:" : "Alvaro 10/8/2017 15:16",
-		"initializeInteraction" : "Alvaro 10/8/2017 15:16",
-		"position:" : "Alvaro 10/1/2017 16:26",
-		"applyInteractionsOn:" : "Alvaro 10/8/2017 15:45",
+		"initialize" : "Alvaro 10/16/2017 00:59",
+		"position:" : "Alvaro 10/16/2017 01:00",
+		"eventUpdated:" : "Alvaro 10/16/2017 00:27",
+		"position" : "Alvaro 10/16/2017 00:59",
 		"addInteraction:" : "Alvaro 10/8/2017 15:33",
-		"initializeResources" : "Alvaro 10/8/2017 15:16"
+		"applyInteractionsOn:" : "Alvaro 10/8/2017 15:45"
 	},
 	"class" : { }
 }

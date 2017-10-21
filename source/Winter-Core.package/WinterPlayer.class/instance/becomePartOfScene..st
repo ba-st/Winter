@@ -1,3 +1,0 @@
-Participations
-becomePartOfScene: aScene
- self subclassResponsibility 

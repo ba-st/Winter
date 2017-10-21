@@ -6,13 +6,14 @@
 		"stop" : "Alvaro 9/28/2017 05:21",
 		"title" : "Alvaro 9/2/2017 09:08",
 		"collisionSound" : "Alvaro 10/2/2017 19:20",
+		"initializeCollisionHandler" : "Alvaro 10/16/2017 02:07",
 		"createContainerOfBoundings:" : "Alvaro 10/8/2017 15:03",
 		"initializeResources" : "Alvaro 10/6/2017 19:56",
 		"kirbySprite" : "Alvaro 10/2/2017 19:20",
 		"backgroundSound" : "Alvaro 10/2/2017 19:20",
-		"createBallShape" : "Alvaro 10/8/2017 16:04",
-		"initializeScenes" : "Alvaro 10/8/2017 15:17",
-		"initializePlayers" : "Alvaro 10/8/2017 15:29"
+		"createBallShape" : "Alvaro 10/16/2017 00:00",
+		"initializeScenes" : "Alvaro 10/16/2017 00:18",
+		"initializePlayers" : "Alvaro 10/16/2017 00:19"
 	},
 	"class" : { }
 }

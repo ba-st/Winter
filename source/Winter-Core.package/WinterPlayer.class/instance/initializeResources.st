@@ -1,3 +1,3 @@
 Initialization
 initializeResources
- self subclassResponsibility 
+"Should be re implementd" 

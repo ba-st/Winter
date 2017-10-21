@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "Alvaro 10/15/2017 17:40",
+	"super" : "Object",
+	"category" : "Winter-AssetManagement",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"fileReference",
+		"xmlParsed"
+	],
+	"name" : "WinterTiledMapLoader",
+	"type" : "normal"
+}
