@@ -12,7 +12,7 @@ SmalltalkCISpec {
        #packages : ['Winter*'  ]
     },
     #include : {  
-       #packages : [ 'Winter*Tests' ]
+       #packages : [ 'Winter-*Tests' ]
     }
   }
 } 
