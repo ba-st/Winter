@@ -1,7 +1,7 @@
 SmalltalkCISpec {
   #loading : [
     SCIMetacelloLoadSpec {
-      #baseline : 'Storm',
+      #baseline : 'Winter',
       #directory : 'source',
       #load : [ 'Development' ],
       #platforms : [  #pharo ]
@@ -9,10 +9,10 @@ SmalltalkCISpec {
   ],
   #testing : {
     #coverage : {
-       #packages : [  ]
+       #packages : ['Winter*'  ]
     },
     #include : {  
-       #packages : [  ]
+       #packages : [ 'Winter*Tests' ]
     }
   }
 } 
