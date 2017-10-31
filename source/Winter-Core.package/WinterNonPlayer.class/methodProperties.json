@@ -1,0 +1,18 @@
+{
+	"instance" : {
+		"initializeSprite" : "Alvaro 10/26/2017 19:54",
+		"updateCollisionShapeUsing:" : "Alvaro 10/28/2017 15:02",
+		"collisionShape:" : "Alvaro 10/15/2017 07:32",
+		"drawOn:" : "Alvaro 10/26/2017 19:52",
+		"drawSpriteOn:" : "Alvaro 10/26/2017 19:52",
+		"initialize" : "Alvaro 10/26/2017 19:54",
+		"collisionShape" : "Alvaro 10/15/2017 07:24",
+		"initializeResources" : "Alvaro 10/26/2017 19:54",
+		"position:" : "Alvaro 10/15/2017 07:19",
+		"checkCollisions" : "Alvaro 10/27/2017 22:56",
+		"initializeCollisionShape" : "Alvaro 10/26/2017 19:54",
+		"eventUpdated:" : "Alvaro 10/28/2017 15:02",
+		"position" : "Alvaro 10/15/2017 07:15"
+	},
+	"class" : { }
+}

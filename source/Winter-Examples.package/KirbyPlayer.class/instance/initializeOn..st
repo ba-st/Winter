@@ -1,5 +1,5 @@
 Initialization
 initializeOn: aGame
 	game := aGame.
-	colliderShape game: game.
+	collisionShape game: game.
 	sprite := game kirbySprite.

@@ -1,5 +1,5 @@
 Drawing
 drawOn: aCanvas
 	sprite
-		ifNil: [  colliderShape drawOn: aCanvas ]
+		ifNil: [  collisionShape drawOn: aCanvas ]
 		ifNotNil: [ self drawSpriteOn: aCanvas ]

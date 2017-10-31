@@ -2,11 +2,13 @@
 	"instance" : {
 		"dimensions" : "Alvaro 10/1/2017 17:11",
 		"backgroundColor:" : "Alvaro 10/1/2017 17:11",
+		"initializeComponents" : "Alvaro 10/28/2017 13:43",
 		"backgroundColor" : "Alvaro 10/1/2017 18:33",
 		"surface" : "Alvaro 10/1/2017 18:23",
-		"step" : "Alvaro 10/16/2017 00:21",
+		"drawOn:" : "Alvaro 10/28/2017 17:10",
 		"players" : "Alvaro 10/16/2017 00:22",
-		"drawOn:" : "Alvaro 10/1/2017 17:12",
+		"initialize" : "Alvaro 10/28/2017 13:43",
+		"step" : "Alvaro 10/16/2017 00:21",
 		"game:" : "Alvaro 9/27/2017 21:27",
 		"addComponent:" : "Alvaro 10/1/2017 17:15",
 		"eventUpdated:" : "Alvaro 9/2/2017 09:21"

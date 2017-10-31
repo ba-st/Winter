@@ -1,5 +1,9 @@
 Initialization
 initialize
+
+	super initialize.
 	interactionEvents := OrderedCollection new.
-	self initializeResources.
-	self initializeInteraction
+	self
+		initializeResources;
+		initializeCollisionShape;
+		initializeInteractions

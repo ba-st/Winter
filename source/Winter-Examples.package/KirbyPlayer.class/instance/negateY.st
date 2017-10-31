@@ -1,3 +1,3 @@
 Actions
 negateY
-	colliderShape negateY
+	collisionShape negateY

@@ -1,4 +1,4 @@
 Initialization
 initializeResources
-	colliderShape := WinterContainerBoxShapeNoPhysics ofBounds: (200 @ 280 extent: 200 @ 0).
+	collisionShape := WinterContainerBoxShapeNoPhysics ofBounds: (200 @ 280 extent: 200 @ 0).
 

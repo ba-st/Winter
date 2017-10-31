@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "WinterNonPlayer",
+	"category" : "Winter-Examples-Arkanoid",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"colorState"
+	],
+	"name" : "ArkanoidBlock",
+	"type" : "normal"
+}

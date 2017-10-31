@@ -1,9 +1,8 @@
 {
 	"instance" : {
-		"extent" : "Alvaro 10/5/2017 22:09",
-		"bounds:" : "Alvaro 10/5/2017 22:08",
-		"checkCollision" : "Alvaro 10/16/2017 01:55",
 		"extent:" : "Alvaro 10/5/2017 22:09",
+		"bounds:" : "Alvaro 10/5/2017 22:08",
+		"extent" : "Alvaro 10/5/2017 22:09",
 		"createPathOn:" : "Alvaro 10/6/2017 18:07",
 		"bounds" : "Alvaro 10/5/2017 22:08",
 		"setSpecificPaint:on:" : "Alvaro 10/15/2017 08:03"

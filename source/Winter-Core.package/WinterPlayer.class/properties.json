@@ -8,7 +8,7 @@
 	"instvars" : [
 		"interactionEvents",
 		"sprite",
-		"colliderShape"
+		"collisionShape"
 	],
 	"name" : "WinterPlayer",
 	"type" : "normal"

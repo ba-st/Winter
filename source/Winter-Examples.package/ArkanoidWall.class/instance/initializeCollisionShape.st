@@ -1,0 +1,4 @@
+Initialization
+initializeCollisionShape
+
+	collisionShape := WinterBoldWallShapeNoPhysics new

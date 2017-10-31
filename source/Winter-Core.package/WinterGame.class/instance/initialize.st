@@ -5,7 +5,7 @@ initialize
 	players := Set new.
 	scenes := OrderedCollection new.
 	collisionHandlers := OrderedCollection new.
-	self initializeCollisionHandler.
+	self initializeCollisionHandlers.
 	self initializeWalker.
 	self initializeResources.
 	self initializeScenes.

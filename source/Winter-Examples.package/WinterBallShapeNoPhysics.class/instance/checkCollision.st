@@ -4,5 +4,5 @@ checkCollision
 		value: #x;
 		value: #y.
 	game currentScene players
-		do: [ :each | (CollisionChecker for: self and: each colliderShape) value ].
+		do: [ :each | (CollisionChecker for: self and: each collisionShape) value ].
 	game currentScene components do: [ :each | (CollisionChecker for: self and: each) value ]

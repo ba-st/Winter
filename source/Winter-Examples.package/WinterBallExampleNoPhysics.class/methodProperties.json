@@ -1,18 +1,15 @@
 {
 	"instance" : {
-		"createWallShapes" : "Alvaro 10/6/2017 18:55",
 		"dimensions" : "Alvaro 9/2/2017 09:08",
-		"initializeWalker" : "Alvaro 10/6/2017 19:56",
 		"stop" : "Alvaro 9/28/2017 05:21",
+		"initializeWalker" : "Alvaro 10/6/2017 19:56",
 		"title" : "Alvaro 9/2/2017 09:08",
 		"collisionSound" : "Alvaro 10/2/2017 19:20",
-		"initializeCollisionHandler" : "Alvaro 10/16/2017 02:07",
-		"createContainerOfBoundings:" : "Alvaro 10/8/2017 15:03",
-		"initializeResources" : "Alvaro 10/6/2017 19:56",
 		"kirbySprite" : "Alvaro 10/2/2017 19:20",
+		"initializeCollisionHandlers" : "Alvaro 10/23/2017 21:06",
+		"initializeResources" : "Alvaro 10/6/2017 19:56",
 		"backgroundSound" : "Alvaro 10/2/2017 19:20",
-		"createBallShape" : "Alvaro 10/16/2017 00:00",
-		"initializeScenes" : "Alvaro 10/16/2017 00:18",
+		"initializeScenes" : "Alvaro 10/26/2017 19:08",
 		"initializePlayers" : "Alvaro 10/16/2017 00:19"
 	},
 	"class" : { }

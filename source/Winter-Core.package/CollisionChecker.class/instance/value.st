@@ -1,5 +1,5 @@
 Evaluating
 value
-	self flag: 'Revisar'.
-	((firstComponent bounds intersect: secondComponent bounds) = (0 @ 0 extent: 0 @ 0)) not
+
+	(firstComponent collisionShape intersects: secondComponent collisionShape)
 		ifTrue: [ (Collision between: firstComponent and: secondComponent) applyOnGame ]
