@@ -14,5 +14,8 @@ SmalltalkCISpec {
     #include : {  
        #packages : [ 'Winter-*Tests' ]
     }
+     #exclude : {
+      #packages : [ 'Winter-AssetManagement*' ]
+}
   }
 } 
