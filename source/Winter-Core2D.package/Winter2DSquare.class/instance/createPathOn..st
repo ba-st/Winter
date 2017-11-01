@@ -1,4 +1,4 @@
 private
 createPathOn: aCanvas
 
-	graphicsPath := self bounds  
+	^graphicsPath := self bounds  

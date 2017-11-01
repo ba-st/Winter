@@ -1,0 +1,1 @@
+Class to check if theres is a collision between 2 components

@@ -2,4 +2,4 @@ Initialization
 initialize
 
 	super initialize.
-	deltaPoint := 5 @ 5
+	deltaPoint := 10 @ 10 negated  

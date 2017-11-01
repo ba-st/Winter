@@ -1,10 +1,14 @@
 {
 	"instance" : {
-		"initializeOn:ofExtent:inState:" : "Alvaro 10/31/2017 14:54",
-		"initializeCollisionShape" : "Alvaro 10/31/2017 14:32"
+		"collidedByBall" : "Alvaro 10/31/2017 22:03",
+		"initializeOn:ofExtent:inState:" : "Alvaro 11/1/2017 12:19",
+		"destroy" : "Alvaro 10/31/2017 23:28",
+		"changeColorStateTo:" : "Alvaro 10/31/2017 23:28"
 	},
 	"class" : {
+		"redOn:ofExtent:" : "Alvaro 10/31/2017 22:01",
 		"on:ofExtent:inState:" : "Alvaro 10/31/2017 14:52",
+		"yellowOn:ofExtent:" : "Alvaro 10/31/2017 22:01",
 		"greenOn:ofExtent:" : "Alvaro 10/31/2017 14:51"
 	}
 }

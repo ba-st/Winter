@@ -1,0 +1,1 @@
+A class to handle collitions with a behavior

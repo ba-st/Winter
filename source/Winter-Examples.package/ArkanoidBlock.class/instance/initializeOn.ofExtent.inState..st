@@ -1,5 +1,9 @@
 Initialization
 initializeOn: aPoint ofExtent: anotherPoint inState: aBlockState
 
-	collisionShape position: aPoint ; extent: anotherPoint; color: aBlockState color .
-	colorState := aBlockState 
+	collisionShape := Winter2DSquare
+		ofCenter: aPoint
+		extent: anotherPoint
+		color: aBlockState color
+		in: game.
+	colorState := aBlockState

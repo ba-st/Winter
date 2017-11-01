@@ -1,0 +1,4 @@
+Accessing
+color
+
+	^ Color red

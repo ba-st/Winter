@@ -1,4 +1,7 @@
 Movement
 moveRight
 
-	collisionShape updatePositionBy: (10 @ 0) 
+	| newX |
+	
+	newX := (self position + (10 @ 0)) x min: 626.
+	collisionShape position: newX @ self positionY

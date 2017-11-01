@@ -19,6 +19,15 @@ initializeCollisionHandlers
 						ifTrue: [ collision firstComponent negateY ]
 						ifFalse: [ collision firstComponent negateX ].
 					collision firstComponent playCollisionSound ]);
+		add:
+			(CollisionHandler
+				between: ArkanoidBall
+				and: ArkanoidBlock 
+				onCollisionDo: [ :collision | 
+					collision secondComponent collidedByBall .
+					collision firstComponent negateY.
+					collision firstComponent playCollisionSound ]);
+		
 		"add:
 			(CollisionHandler
 				between: ArkanoidBall

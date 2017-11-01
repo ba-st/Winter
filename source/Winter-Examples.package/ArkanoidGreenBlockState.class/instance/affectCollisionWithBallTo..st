@@ -1,0 +1,4 @@
+Collisions
+affectCollisionWithBallTo: anArkanoidBlock
+
+ anArkanoidBlock destroy.
