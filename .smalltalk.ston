@@ -9,13 +9,11 @@ SmalltalkCISpec {
   ],
   #testing : {
     #coverage : {
-       #categories : ['Winter*'  ]
+       #packages : ['Winter*'  ]
     },
     #include : {  
-       #categories : [ 'Winter-*Tests' ]
+       #packages : [ 'Winter-Core*Tests' ]
     }
-     #exclude : {
-      #categories : [ 'Winter-AssetManagement*' ]
-}
+    
   }
 } 
