@@ -5,9 +5,9 @@
  
  ## Problems
  
-  ### Chipmunk2D is temporaly disabled because of VM crashes problems on Linux and could not build properly on Windows. Physics temporaly simulated in Smalltalk.
+  #### Chipmunk2D is temporaly disabled because of VM crashes problems on Linux and could not build properly on Windows. Physics temporaly simulated in Smalltalk.
   
-  ### Sound does not work on pharo for linux distributions, framework works fine but you will not hear sounds on Linux.
+  #### Sound does not work on pharo for linux distributions, framework works fine but you will not hear sounds on Linux.
  
  ## Instructions
   
