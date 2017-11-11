@@ -6,4 +6,5 @@ initializeOn: aPoint ofExtent: anotherPoint inState: aBlockState
 		extent: anotherPoint
 		color: aBlockState color
 		in: game.
-	colorState := aBlockState
+	colorState := aBlockState.
+	sprite := colorState sprite.

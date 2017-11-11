@@ -1,9 +1,9 @@
 {
 	"instance" : {
 		"collidedByBall" : "Alvaro 10/31/2017 22:03",
-		"initializeOn:ofExtent:inState:" : "Alvaro 11/1/2017 12:19",
+		"initializeOn:ofExtent:inState:" : "Alvaro 11/9/2017 01:31",
 		"destroy" : "Alvaro 10/31/2017 23:28",
-		"changeColorStateTo:" : "Alvaro 10/31/2017 23:28"
+		"changeColorStateTo:" : "Alvaro 11/9/2017 01:39"
 	},
 	"class" : {
 		"redOn:ofExtent:" : "Alvaro 10/31/2017 22:01",
