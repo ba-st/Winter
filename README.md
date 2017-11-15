@@ -9,6 +9,12 @@
   
   #### Sound does not work on pharo for linux distributions, framework works fine but you will not hear sounds on Linux.
  
+ ## New Features
+ <img src="./images/features.png" >  
+ 
+ ## Network
+   #### After releasing Winter ( having main features done to make all kind of 2D game) i will work on Network API for LAN and Online Games.
+   
  ## Instructions
   
   - Open a Playground and evaluate:
