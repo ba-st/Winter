@@ -9,6 +9,12 @@
   
   #### Sound does not work on pharo for linux distributions, framework works fine but you will not hear sounds on Linux.
  
+ ## Supported Media Files
+    ### Sound 
+        At the moment .aiff and .wav sound extensions are supported
+    ### Images
+        .bmp , .gif, .jpeg and .png image extensions are supported.
+        
  ## New Features
  <img src="./images/features.png" >  
  
