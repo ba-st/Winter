@@ -1,10 +1,11 @@
-initialization
+Tests
 testAddSprite
-	| system sprite|
-	system := WinterAssetManagementSystem current .
-	sprite := WinterSprite fromRelativePath: 'kirby.png'.
-	system addSprite: sprite named:'kirby'.
+
+	| system sprite |
+	
+	system := WinterAssetManagementSystem current.
+	sprite := WinterSprite fromRelativePath: 'pharo.png'.
+	system addSprite: sprite named: 'pharo'.
 	self
 		deny: system sprites isEmpty;
-		assert: (system spriteNamed:'kirby') equals: sprite
-		
+		assert: (system spriteNamed: 'pharo') equals: sprite

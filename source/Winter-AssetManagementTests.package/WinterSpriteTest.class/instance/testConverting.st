@@ -1,4 +1,4 @@
-tests
+Tests
 testConverting
 	| sprite canvas paint |
 	sprite := WinterSprite fromRelativePath: 'pharo.png'.

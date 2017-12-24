@@ -8,8 +8,7 @@
 	"instvars" : [
 		"properties",
 		"layers",
-		"tiles",
-		"resources"
+		"tiles"
 	],
 	"name" : "WinterTiledMap",
 	"type" : "normal"

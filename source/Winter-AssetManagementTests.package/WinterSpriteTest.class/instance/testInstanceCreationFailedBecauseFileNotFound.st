@@ -1,4 +1,4 @@
-tests
+Tests
 testInstanceCreationFailedBecauseFileNotFound
 	self
 		should: [ WinterSprite fromRelativePath: 'pharo2.png' ]

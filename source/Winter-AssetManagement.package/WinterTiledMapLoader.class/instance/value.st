@@ -1,8 +1,9 @@
 Evaluating
 value
-
 	| textures map |
-	textures := self textureFiles collect: [ :textureFile | WinterTexture from: textureFile ].
+	textures := Dictionary new.
+	self textureFiles
+		do: [ :textureFile | textures at: textureFile path put: (WinterTexture from: textureFile) ].
 	map := self tiledMap.
-	map resources: textures.
+	map resources: textures values.
 	^ map

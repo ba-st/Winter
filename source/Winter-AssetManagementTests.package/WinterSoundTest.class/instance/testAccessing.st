@@ -1,8 +1,11 @@
 tests
 testAccessing
+
 	| sound |
-	sound := WinterSound fromRelativePath: 'bird.wav'.
+
+	sound := WinterSound from: SampledSound beepSound fileType: 'wav' filePath: 'beep.wav'.
+
 	self
 		assert: sound type equals: 'wav';
-		assert: sound filePath equals: 'bird.wav';
-		assert: sound fileName equals: 'bird'
+		assert: sound filePath equals: 'beep.wav';
+		assert: sound fileName equals: 'beep'

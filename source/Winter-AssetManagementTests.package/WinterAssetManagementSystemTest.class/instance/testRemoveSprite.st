@@ -1,9 +1,11 @@
-initialization
+Tests
 testRemoveSprite
+
 	| system sprite |
-	system := WinterAssetManagementSystem  current.
-	sprite := WinterSprite fromRelativePath: 'kirby.png'.
-	system addSprite: sprite named: 'kirby'.
+	
+	system := WinterAssetManagementSystem current.
+	sprite := WinterSprite fromRelativePath: 'pharo.png'.
+	system addSprite: sprite named: 'pharo'.
 	self deny: system sprites isEmpty.
-	system removeSpriteNamed: 'kirby'.
+	system removeSpriteNamed: 'pharo'.
 	self assert: system sprites isEmpty

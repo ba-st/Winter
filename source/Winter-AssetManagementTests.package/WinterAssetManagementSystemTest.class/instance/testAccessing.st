@@ -1,4 +1,4 @@
-initialization
+Tests
 testAccessing
 	| system |
 	system := WinterAssetManagementSystem current .

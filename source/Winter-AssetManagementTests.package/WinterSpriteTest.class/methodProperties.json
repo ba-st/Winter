@@ -1,9 +1,13 @@
 {
 	"instance" : {
-		"testAccessing" : "Alvaro 10/2/2017 19:20",
+		"pharoImageOnBase64" : "Alvaro 11/11/2017 00:09",
+		"imageDirectory" : "Alvaro 9/25/2017 23:09",
 		"testInstanceCreationFailedBecauseFileNotFound" : "Alvaro 10/2/2017 19:20",
-		"testConverting" : "Alvaro 10/2/2017 19:20",
-		"imageDirectory" : "Alvaro 9/25/2017 23:09"
+		"setUp" : "Alvaro 12/24/2017 20:41",
+		"tearDown" : "Alvaro 12/24/2017 20:41",
+		"createImage" : "Alvaro 11/11/2017 00:02",
+		"testAccessing" : "Alvaro 11/11/2017 00:10",
+		"testConverting" : "Alvaro 10/2/2017 19:20"
 	},
 	"class" : { }
 }

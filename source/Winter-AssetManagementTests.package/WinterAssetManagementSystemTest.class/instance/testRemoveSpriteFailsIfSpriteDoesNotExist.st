@@ -1,4 +1,4 @@
-initialization
+Tests
 testRemoveSpriteFailsIfSpriteDoesNotExist
 	| system  |
 	system := WinterAssetManagementSystem current.

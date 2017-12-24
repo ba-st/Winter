@@ -1,4 +1,4 @@
-initialization
+Tests
 testRemoveSoundFailsIfSoundDoesNotExist
 	| system  |
 	system := WinterAssetManagementSystem current.

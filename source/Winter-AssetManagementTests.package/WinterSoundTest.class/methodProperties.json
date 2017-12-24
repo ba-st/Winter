@@ -1,9 +1,10 @@
 {
 	"instance" : {
-		"testAccessing" : "Alvaro 10/2/2017 19:20",
 		"testInstanceCreationFailedBecauseFileNotFound" : "Alvaro 10/2/2017 19:20",
-		"testInstanceCreationFailedBecauseExtensionNotSupported" : "Alvaro 10/2/2017 19:20",
-		"testTesting" : "Alvaro 10/2/2017 19:20"
+		"setUp" : "Alvaro 12/24/2017 20:41",
+		"testTesting" : "Alvaro 12/24/2017 20:39",
+		"testAccessing" : "Alvaro 12/24/2017 20:38",
+		"testInstanceCreationFailedBecauseExtensionNotSupported" : "Alvaro 10/2/2017 19:20"
 	},
 	"class" : { }
 }

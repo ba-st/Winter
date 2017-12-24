@@ -4,4 +4,5 @@ stop
 		ifTrue: [ engine stopStepping ].
 	"Hack to allow me play with blocks and batchers"
 	(stepWalker respondsTo: #terminateProcess)
-		ifTrue: [ stepWalker terminateProcess ]
+		ifTrue: [ stepWalker terminateProcess ].
+		
