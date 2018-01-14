@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WinterNonPlayer",
+	"category" : "Winter-TestResources",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WinterTestNonPlayer",
+	"type" : "normal"
+}

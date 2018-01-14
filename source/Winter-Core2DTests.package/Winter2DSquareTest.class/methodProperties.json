@@ -1,0 +1,10 @@
+{
+	"instance" : {
+		"testIntersectsAnotherSquare" : "Alvaro 1/14/2018 17:23",
+		"testIntersectsACircle" : "Alvaro 1/14/2018 17:21",
+		"testDoNotIntersectsAnotherSquare" : "Alvaro 1/14/2018 17:23",
+		"testAccessing" : "Alvaro 1/11/2018 21:37",
+		"testDoNotIntersectsACircle" : "Alvaro 1/14/2018 17:19"
+	},
+	"class" : { }
+}
