@@ -1,3 +1,0 @@
-Accessing
-gravityCenter
-	^ self radius

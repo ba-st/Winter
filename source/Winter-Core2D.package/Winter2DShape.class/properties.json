@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "Alvaro 10/2/2017 19:23",
+	"super" : "WinterShape",
+	"category" : "Winter-Core2D-Base",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"position",
+		"color",
+		"graphicsPath",
+		"graphicsPaint"
+	],
+	"name" : "Winter2DShape",
+	"type" : "normal"
+}

@@ -1,3 +1,0 @@
-Actions
-negateX
-	collisionShape negateX

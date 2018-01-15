@@ -1,0 +1,1 @@
+Game resource for tests

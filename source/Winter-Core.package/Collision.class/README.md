@@ -1,0 +1,1 @@
+Simple class of collision

@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "Winter2DSceneNoPhysics",
+	"super" : "Winter2DScene",
 	"category" : "Winter-Examples-Arkanoid",
 	"classinstvars" : [ ],
 	"pools" : [ ],

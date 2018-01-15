@@ -1,4 +1,0 @@
-Accessing
-offset
-
-^(xOffset@yOffset)

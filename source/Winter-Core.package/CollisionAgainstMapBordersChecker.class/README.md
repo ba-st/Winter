@@ -1,0 +1,1 @@
+Collision checker for a component  and borders

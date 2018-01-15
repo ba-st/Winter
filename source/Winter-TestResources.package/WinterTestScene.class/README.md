@@ -1,0 +1,1 @@
+Scene resource for tests

@@ -1,6 +1,6 @@
 {
-	"commentStamp" : "",
-	"super" : "Winter2DSceneNoPhysics",
+	"commentStamp" : "Alvaro 1/15/2018 15:36",
+	"super" : "Winter2DScene",
 	"category" : "Winter-TestResources",
 	"classinstvars" : [ ],
 	"pools" : [ ],

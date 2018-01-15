@@ -1,4 +1,4 @@
 Initialization
 initializeCollisionShape
 
-	collisionShape := WinterBoldWallShapeNoPhysics new
+	collisionShape := WinterBoldWallShape new

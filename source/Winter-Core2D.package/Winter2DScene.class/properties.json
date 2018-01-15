@@ -1,13 +1,14 @@
 {
-	"commentStamp" : "Alvaro 10/25/2017 22:13",
-	"super" : "Winter2DShape",
+	"commentStamp" : "Alvaro 10/2/2017 19:28",
+	"super" : "WinterScene",
 	"category" : "Winter-Core2D-Base",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"extentPoint"
+		"surface",
+		"backgroundColor"
 	],
-	"name" : "Winter2DSquare",
+	"name" : "Winter2DScene",
 	"type" : "normal"
 }

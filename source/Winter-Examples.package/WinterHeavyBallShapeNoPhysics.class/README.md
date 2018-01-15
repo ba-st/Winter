@@ -1,1 +1,0 @@
-A 2D Heavy Ball Shape 
