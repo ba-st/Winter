@@ -9,10 +9,10 @@ SmalltalkCISpec {
   ],
   #testing : {
     #coverage : {
-       #packages : ['Winter-Core*'  ]
+       #packages : ['Winter-Core*' 'Winter-TestResources' 'Winter-Tiled' ]
     },
     #include : {  
-       #packages : [ 'Winter-Core*Tests' ]
+       #packages : [ 'Winter-Core*Tests' 'Winter-TiledTests' ]
     }
     
   }
