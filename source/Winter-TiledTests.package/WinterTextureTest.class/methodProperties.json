@@ -1,4 +1,10 @@
 {
-	"instance" : { },
+	"instance" : {
+		"pharoImageOnBase64" : "Alvaro 1/18/2018 19:26",
+		"tearDown" : "Alvaro 1/18/2018 19:38",
+		"createImage" : "Alvaro 1/18/2018 19:37",
+		"setUp" : "Alvaro 1/18/2018 19:38",
+		"testAccessing" : "Alvaro 1/18/2018 19:43"
+	},
 	"class" : { }
 }

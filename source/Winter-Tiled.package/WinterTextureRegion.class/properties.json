@@ -5,7 +5,17 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"texture",
+		"x",
+		"y",
+		"regionWidth",
+		"regionHeight",
+		"u",
+		"u2",
+		"v",
+		"v2"
+	],
 	"name" : "WinterTextureRegion",
 	"type" : "normal"
 }

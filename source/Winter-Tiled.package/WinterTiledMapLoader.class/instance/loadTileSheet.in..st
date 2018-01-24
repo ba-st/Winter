@@ -27,8 +27,8 @@ loadTileSheet: aTileSheetElement in: aMap
 			spacingY := Integer readFrom: (spacingParts at: 2).
 			image := self imageFrom: imageSource.
 			texture := WinterTexture from: image.
-			stopWidth := texture regionWidth - tileSizeX.
-			stopHeight := texture regionHeight - tileSizeY.
+			stopWidth := texture width abs - tileSizeX.
+			stopHeight := texture height abs - tileSizeY.
 			y := marginY.
 			x := marginX.
 			y <= stopHeight

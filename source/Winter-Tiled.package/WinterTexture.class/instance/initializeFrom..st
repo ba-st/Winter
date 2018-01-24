@@ -1,3 +1,5 @@
 Initialization
 initializeFrom: aFileReference
-	file := aFileReference
+
+	image := aFileReference 
+		binaryReadStreamDo: [ :stream | ImageReadWriter formFromStream: stream ]

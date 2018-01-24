@@ -1,4 +1,10 @@
 {
-	"instance" : { },
-	"class" : { }
+	"instance" : {
+		"setRegionUsingU:v:u2:v2:" : "Alvaro 1/21/2018 23:27",
+		"initializeOf:x:y:width:height:" : "Alvaro 1/21/2018 22:36"
+	},
+	"class" : {
+		"of:" : "Alvaro 1/21/2018 20:45",
+		"of:x:y:width:height:" : "Alvaro 1/18/2018 18:54"
+	}
 }

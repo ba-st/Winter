@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"file"
+		"image"
 	],
 	"name" : "WinterTexture",
 	"type" : "normal"

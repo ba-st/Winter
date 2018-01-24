@@ -1,0 +1,4 @@
+Accessing
+width
+
+	^ image width
