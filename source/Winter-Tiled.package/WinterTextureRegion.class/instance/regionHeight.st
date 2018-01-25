@@ -1,0 +1,4 @@
+Accessing
+regionHeight
+
+	^ regionHeight

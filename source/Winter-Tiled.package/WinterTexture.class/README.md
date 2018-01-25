@@ -1,0 +1,1 @@
+Class representing a teture of an image

@@ -1,0 +1,1 @@
+Class representing a region occuped by a texture

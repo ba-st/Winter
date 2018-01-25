@@ -1,7 +1,29 @@
 {
 	"instance" : {
+		"regionHeight:" : "Alvaro 1/23/2018 22:05",
 		"setRegionUsingU:v:u2:v2:" : "Alvaro 1/21/2018 23:27",
-		"initializeOf:x:y:width:height:" : "Alvaro 1/21/2018 22:36"
+		"isFlippedX" : "Alvaro 1/23/2018 22:06",
+		"flipX" : "Alvaro 1/23/2018 22:08",
+		"regionX:" : "Alvaro 1/23/2018 21:59",
+		"regionX" : "Alvaro 1/23/2018 21:57",
+		"v2:" : "Alvaro 1/23/2018 21:55",
+		"v:" : "Alvaro 1/23/2018 21:55",
+		"v" : "Alvaro 1/23/2018 21:52",
+		"isFlippedY" : "Alvaro 1/23/2018 22:06",
+		"flipY" : "Alvaro 1/23/2018 22:08",
+		"regionY" : "Alvaro 1/23/2018 21:57",
+		"regionWidth" : "Alvaro 1/23/2018 21:59",
+		"u2" : "Alvaro 1/23/2018 21:52",
+		"texture" : "Alvaro 1/23/2018 21:51",
+		"u2:" : "Alvaro 1/23/2018 21:56",
+		"initializeOf:x:y:width:height:" : "Alvaro 1/23/2018 22:18",
+		"regionHeight" : "Alvaro 1/23/2018 21:59",
+		"regionY:" : "Alvaro 1/23/2018 21:59",
+		"texture:" : "Alvaro 1/23/2018 21:51",
+		"regionWidth:" : "Alvaro 1/23/2018 22:04",
+		"u:" : "Alvaro 1/23/2018 21:54",
+		"u" : "Alvaro 1/23/2018 21:52",
+		"v2" : "Alvaro 1/23/2018 21:52"
 	},
 	"class" : {
 		"of:" : "Alvaro 1/21/2018 20:45",

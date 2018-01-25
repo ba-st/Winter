@@ -1,0 +1,1 @@
+Class representing a tile in a tiled map

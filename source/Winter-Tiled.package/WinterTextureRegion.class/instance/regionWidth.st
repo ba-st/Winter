@@ -1,0 +1,4 @@
+Accessing
+regionWidth
+
+	^ regionWidth 
