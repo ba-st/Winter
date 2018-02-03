@@ -8,4 +8,4 @@ testAccessing
 	self
 		assert: map layers isEmpty;
 		assert: map properties isEmpty;
-		assert: map tiles isEmpty
+		assert: map tileSets  isEmpty
