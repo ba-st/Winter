@@ -1,0 +1,4 @@
+initialization
+setUp
+
+	self createImage.

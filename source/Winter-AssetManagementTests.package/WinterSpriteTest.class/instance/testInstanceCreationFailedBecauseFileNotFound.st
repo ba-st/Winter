@@ -1,7 +1,7 @@
 Tests
 testInstanceCreationFailedBecauseFileNotFound
 	self
-		should: [ WinterSprite fromRelativePath: 'pharo2.png' ]
+		should: [ WinterSprite fromPath: 'pharo2.png' ]
 		raise: FileDoesNotExist
-		withExceptionDo: [ :ex | self assert: ex messageText equals: 'Sprite not found in RelativePath: pharo2.png' ].
+		withExceptionDo: [ :ex | self assert: ex messageText equals: 'Sprite not found in pharo2.png' ].
 	

@@ -1,11 +1,13 @@
 {
 	"instance" : {
-		"layers" : "Alvaro 10/15/2017 09:21",
-		"initialize" : "Alvaro 10/15/2017 09:20",
-		"tiles" : "Alvaro 10/15/2017 09:21",
-		"propertiesAt:put:" : "Alvaro 10/15/2017 17:37",
-		"addTile:" : "Alvaro 1/18/2018 19:08",
-		"properties" : "Alvaro 10/15/2017 09:21"
+		"resources:" : "Alvaro 1/30/2018 21:46",
+		"layers" : "Alvaro 1/31/2018 20:43",
+		"initialize" : "Alvaro 1/31/2018 20:39",
+		"addTileSet:" : "Alvaro 1/31/2018 20:39",
+		"layersAt:put:" : "Alvaro 1/31/2018 20:44",
+		"propertiesAt:put:" : "Alvaro 1/31/2018 20:39",
+		"tileSets" : "Alvaro 1/31/2018 20:42",
+		"properties" : "Alvaro 1/31/2018 20:43"
 	},
 	"class" : { }
 }

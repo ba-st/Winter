@@ -1,11 +1,15 @@
 {
-	"commentStamp" : "Alvaro 1/24/2018 23:29",
+	"commentStamp" : "",
 	"super" : "Object",
 	"category" : "Winter-Tiled",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "WinterTile",
+	"instvars" : [
+		"name",
+		"tiles",
+		"properties"
+	],
+	"name" : "WinterTiledMapTileSet",
 	"type" : "normal"
 }

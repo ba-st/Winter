@@ -1,17 +1,17 @@
 {
 	"instance" : {
+		"loadTileSet:in:" : "Alvaro 2/2/2018 23:46",
+		"createTilesFrom:startingId:imageWidth:imageHeight:tileHeight:tileWidth:offsetX:offsetY:spacing:margin:image:imageSource:andLoadIn:" : "Alvaro 2/2/2018 23:34",
 		"loadProperties:in:" : "Alvaro 10/15/2017 18:05",
-		"loadTileSheet:in:" : "Alvaro 1/18/2018 18:52",
+		"initializeFromPath:" : "Alvaro 1/31/2018 21:40",
+		"tiledMap" : "Alvaro 1/30/2018 23:08",
+		"textureFiles" : "Alvaro 10/15/2017 23:02",
+		"value" : "Alvaro 1/30/2018 20:54",
 		"imageFrom:" : "Alvaro 1/18/2018 19:36",
 		"loadLayer:in:" : "Alvaro 10/15/2017 23:55",
-		"textureFiles" : "Alvaro 10/15/2017 23:02",
-		"initializeFromPath:" : "Alvaro 10/15/2017 11:27",
-		"tiledMap" : "Alvaro 10/15/2017 23:30",
-		"value" : "Alvaro 10/15/2017 15:39"
+		"loadImageForTilesUsing:from:" : "Alvaro 2/2/2018 23:36"
 	},
 	"class" : {
-		"loadFromAbsolutePath:" : "Alvaro 10/15/2017 11:17",
-		"loadFromPath:" : "Alvaro 10/15/2017 11:22",
-		"loadFromRelativePath:" : "Alvaro 10/15/2017 22:56"
+		"loadFromPath:" : "Alvaro 1/30/2018 20:42"
 	}
 }

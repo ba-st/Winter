@@ -1,7 +1,7 @@
 Tests
 testConverting
 	| sprite canvas paint |
-	sprite := WinterSprite fromRelativePath: 'pharo.png'.
+	sprite := WinterSprite fromPath: 'pharo.png'.
 	canvas := (AthensCairoSurface extent: 100 @ 50) newCanvas.
 	paint := sprite asAthensPaintOn: canvas.
 	self

@@ -1,17 +1,17 @@
 Instance Creation
-fromRelativePath: aStringPath
+fromPath: aStringPath
 	| type substrings |
 	substrings := aStringPath substrings: '.'.
 	type := substrings last.
 	[ type = 'wav'
-		ifTrue: [ ^ self new
-				initializeSound: (SampledSound fromWaveFileNamed: aStringPath)
-				type: type
+		ifTrue: [ ^ self 
+				from: (SampledSound fromWaveFileNamed: aStringPath)
+				fileType: type
 				filePath: aStringPath ].
 	type = 'aiff'
-		ifTrue: [ ^ self new
-				initializeSound: (SampledSound fromAIFFfileNamed: aStringPath)
-				type: type
+		ifTrue: [ ^ self 
+				from: (SampledSound fromAIFFfileNamed: aStringPath)
+				fileType: type
 				filePath: aStringPath ] ]
 		on: FileDoesNotExistException
 		do: [ :ex | 

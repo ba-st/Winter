@@ -1,0 +1,4 @@
+Accessing
+offSetX
+	
+	^ offSetX

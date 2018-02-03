@@ -1,6 +1,7 @@
 Instance Creation
-fromPath: aPath
+fromPath: aStringPath
 
-	^ [ self new initializeFromAbsolutePath: aPath ]
+	^ [ self new initializeFromAbsolutePath: aStringPath asPath ]
 		on: FileDoesNotExist
-		do: [ :ex | (ex messageText: 'Sprite not found in ',aPath className, ': ' , aPath basename) signal ]
+		do:
+			[ :ex | (ex messageText: ('Sprite not found in <1s>' expandMacrosWith: aStringPath)) signal ]

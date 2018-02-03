@@ -1,6 +1,7 @@
 Instance Creation
-loadFromPath: aPath
-	^ [ self new initializeFromPath: aPath ]
+loadFromPath: aStringPath
+
+	^ [ self new initializeFromPath: aStringPath asPath ]
 		on: FileDoesNotExist
 		do:
-			[ :ex | (ex messageText: 'TiledMap not found in ' , aPath className , ': ' , aPath basename) signal ]
+			[ :ex | (ex messageText: ('TiledMap not found in <1s>' expandMacrosWith: aStringPath)) signal ]

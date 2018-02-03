@@ -1,7 +1,7 @@
 Tests
 testAccessing
 	| spriteOfRelativePath |
-	spriteOfRelativePath := WinterSprite fromRelativePath: 'pharo.png'.
+	spriteOfRelativePath := WinterSprite fromPath: 'pharo.png'.
 	self
 		assert: spriteOfRelativePath width equals: 512;
 		assert: spriteOfRelativePath height equals: 512;

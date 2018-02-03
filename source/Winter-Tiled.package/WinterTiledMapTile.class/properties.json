@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "Alvaro 1/24/2018 23:29",
+	"super" : "Object",
+	"category" : "Winter-Tiled",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"mapObjects",
+		"mapProperties",
+		"offSetX",
+		"offSetY",
+		"textureRegion"
+	],
+	"name" : "WinterTiledMapTile",
+	"type" : "normal"
+}

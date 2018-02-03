@@ -4,7 +4,7 @@ testRemoveSprite
 	| system sprite |
 	
 	system := WinterAssetManagementSystem current.
-	sprite := WinterSprite fromRelativePath: 'pharo.png'.
+	sprite := WinterSprite fromPath: 'pharo.png'.
 	system addSprite: sprite named: 'pharo'.
 	self deny: system sprites isEmpty.
 	system removeSpriteNamed: 'pharo'.

@@ -1,0 +1,4 @@
+accessing
+tilesCount
+
+	^tiles size

@@ -1,4 +1,5 @@
 Initialization
 initializeFromPath: aPath
-	fileReference := FileReference fileSystem: FileSystem disk path: aPath.
+
+	fileReference := aPath asFileReference .
 	xmlParsed := fileReference binaryReadStreamDo: [ :stream | stream parseXML ]
