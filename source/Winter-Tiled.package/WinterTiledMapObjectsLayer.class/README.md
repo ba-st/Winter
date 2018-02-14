@@ -1,0 +1,1 @@
+Class representing an objects layer in a Map

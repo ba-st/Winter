@@ -1,0 +1,1 @@
+Class representing a group Layer in a Map,containning more layers 

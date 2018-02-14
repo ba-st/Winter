@@ -1,0 +1,21 @@
+{
+	"commentStamp" : "",
+	"super" : "WinterMapObject",
+	"category" : "Winter-Tiled",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"tile",
+		"flipHorizontally",
+		"flipVertically",
+		"textureRegion",
+		"originX",
+		"originY",
+		"scaleX",
+		"scaleY",
+		"rotation"
+	],
+	"name" : "WinterTiledMapTileMapObject",
+	"type" : "normal"
+}

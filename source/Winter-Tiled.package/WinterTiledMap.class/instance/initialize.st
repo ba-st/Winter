@@ -1,6 +1,6 @@
 initialization
 initialize
 
-	layers := Dictionary new.
+	layers := OrderedCollection new.
 	properties := Dictionary new.
 	tileSets  := OrderedCollection new.

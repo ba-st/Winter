@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "Alvaro 2/13/2018 16:27",
+	"super" : "WinterTiledMapLayer",
+	"category" : "Winter-Tiled",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"objects"
+	],
+	"name" : "WinterTiledMapObjectsLayer",
+	"type" : "normal"
+}

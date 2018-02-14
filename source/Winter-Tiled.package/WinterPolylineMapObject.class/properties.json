@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "WinterMapObject",
+	"category" : "Winter-Tiled",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"polyline"
+	],
+	"name" : "WinterPolylineMapObject",
+	"type" : "normal"
+}

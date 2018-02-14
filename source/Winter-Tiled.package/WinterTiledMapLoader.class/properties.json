@@ -4,10 +4,20 @@
 	"category" : "Winter-Tiled",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
+	"classvars" : [
+		"FlagFlipDiagonally",
+		"FlagFlipHorizontally",
+		"FlagFlipVertically",
+		"MaskClear"
+	],
 	"instvars" : [
 		"fileReference",
-		"xmlParsed"
+		"xmlParsed",
+		"flipY",
+		"mapTileWidth",
+		"mapTileHeight",
+		"mapWidthInPixels",
+		"mapHeightInPixels"
 	],
 	"name" : "WinterTiledMapLoader",
 	"type" : "normal"

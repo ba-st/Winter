@@ -1,4 +1,4 @@
-private
+Parsing - Tilesets
 createTilesFrom: xmlElement startingId: firstgid imageWidth: imageWidth imageHeight: imageHeight tileHeight: tileHeight tileWidth: tileWidth offsetX: offsetX offsetY: offsetY spacing: spacing margin: margin image: image imageSource: imageSource andLoadIn: tileset
 	| x stopWidth id tileElements tileImageWidth tileRegion textureRegion tileImageHeight y tileImageSource tile stopHeight tileImage |
 	image

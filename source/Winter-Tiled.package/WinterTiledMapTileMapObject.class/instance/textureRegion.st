@@ -1,0 +1,4 @@
+Accessing
+textureRegion
+
+	^ textureRegion 

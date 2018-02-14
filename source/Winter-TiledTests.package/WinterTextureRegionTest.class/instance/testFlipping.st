@@ -17,8 +17,8 @@ testFlipping
 		assert: textureRegion v2 equals: 1.0.
 	
 	textureRegion
-		flipX;
-		flipY.
+		flipX: true;
+		flipY: true.
 	
 	self
 		assert: textureRegion isFlippedX;

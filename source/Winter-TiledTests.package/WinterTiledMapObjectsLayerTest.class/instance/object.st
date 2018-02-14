@@ -1,0 +1,4 @@
+Test SUpport
+object
+
+	^self

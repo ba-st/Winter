@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Winter-Tiled",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"x",
+		"y",
+		"name",
+		"opacity",
+		"visible",
+		"properties",
+		"color"
+	],
+	"name" : "WinterMapObject",
+	"type" : "normal"
+}

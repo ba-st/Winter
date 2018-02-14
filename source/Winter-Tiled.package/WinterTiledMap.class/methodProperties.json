@@ -1,10 +1,11 @@
 {
 	"instance" : {
 		"resources:" : "Alvaro 1/30/2018 21:46",
-		"layers" : "Alvaro 1/31/2018 20:43",
-		"initialize" : "Alvaro 1/31/2018 20:39",
+		"layers" : "Alvaro 2/13/2018 22:43",
+		"tileAt:" : "Alvaro 2/4/2018 20:52",
+		"initialize" : "Alvaro 2/4/2018 21:18",
+		"addLayer:" : "Alvaro 2/4/2018 21:17",
 		"addTileSet:" : "Alvaro 1/31/2018 20:39",
-		"layersAt:put:" : "Alvaro 1/31/2018 20:44",
 		"propertiesAt:put:" : "Alvaro 1/31/2018 20:39",
 		"tileSets" : "Alvaro 1/31/2018 20:42",
 		"properties" : "Alvaro 1/31/2018 20:43"

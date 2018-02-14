@@ -1,0 +1,4 @@
+Accessing
+width
+
+	^ width 

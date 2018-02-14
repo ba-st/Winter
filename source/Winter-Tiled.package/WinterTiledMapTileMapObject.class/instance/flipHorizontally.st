@@ -1,0 +1,4 @@
+Accessing
+flipHorizontally
+
+	^ flipHorizontally 

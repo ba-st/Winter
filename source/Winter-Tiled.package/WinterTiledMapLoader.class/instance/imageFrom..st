@@ -1,3 +1,3 @@
-Parsing
+private
 imageFrom: imagePathString
 	^ imagePathString asFileReference 

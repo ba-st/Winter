@@ -1,0 +1,1 @@
+Class representing an image layer in a Map

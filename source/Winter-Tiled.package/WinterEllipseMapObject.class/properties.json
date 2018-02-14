@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "WinterMapObject",
+	"category" : "Winter-Tiled",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"ellipse"
+	],
+	"name" : "WinterEllipseMapObject",
+	"type" : "normal"
+}

@@ -1,0 +1,1 @@
+Class representing a cell in a layer of a map

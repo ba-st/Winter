@@ -1,6 +1,6 @@
-Parsing
+Parsing - Tilesets
 loadTileSet: aTileSetElement in: aMap
-	aTileSetElement name = #tileset
+	(aTileSetElement attributeAt: #name) = #tileset
 		ifTrue:
 			[ | firstgid name tileHeight tileWidth source imageSource margin spacing image offsetY offsetX imageWidth imageHeight offsetElement imageElement tileset xmlElement |
 			xmlElement := aTileSetElement.

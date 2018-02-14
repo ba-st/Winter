@@ -1,4 +1,4 @@
-Parsing
+Parsing - Tilesets
 loadImageForTilesUsing: aTileSheetElement from: source
 	| offsetElement offsetX margin name tileHeight imageElement tileWidth spacing imageWidth xmlElement offsetY image imageHeight imageSource |
 	source
