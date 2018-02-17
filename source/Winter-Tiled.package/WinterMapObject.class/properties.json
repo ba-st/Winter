@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "Alvaro 2/16/2018 22:11",
 	"super" : "Object",
 	"category" : "Winter-Tiled",
 	"classinstvars" : [ ],
@@ -11,7 +11,6 @@
 		"name",
 		"opacity",
 		"visible",
-		"properties",
 		"color"
 	],
 	"name" : "WinterMapObject",

@@ -1,0 +1,1 @@
+Representation of an Ellipse Map Object

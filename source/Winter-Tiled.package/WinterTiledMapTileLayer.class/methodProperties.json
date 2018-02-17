@@ -1,13 +1,12 @@
 {
 	"instance" : {
-		"width" : "Alvaro 2/4/2018 15:41",
 		"initializeOfWidth:height:tileWidth:tileHeight:" : "Alvaro 2/4/2018 15:31",
 		"tileHeight" : "Alvaro 2/4/2018 15:41",
 		"tileWidth" : "Alvaro 2/4/2018 15:41",
 		"height" : "Alvaro 2/4/2018 15:41",
 		"cellsAtX:andY:" : "Alvaro 2/13/2018 22:22",
-		"cells" : "Alvaro 2/4/2018 15:42",
-		"cellsAtX:andY:put:" : "Alvaro 2/13/2018 22:25"
+		"cellsAtX:andY:put:" : "Alvaro 2/13/2018 22:25",
+		"width" : "Alvaro 2/4/2018 15:41"
 	},
 	"class" : {
 		"ofWidth:height:tileWidth:tileHeight:" : "Alvaro 2/4/2018 15:27"

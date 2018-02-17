@@ -1,4 +1,4 @@
 Instance Creation
 of: aPolyline atX: anX andY: anY
 
-	^ self initializeOf: aPolyline atX: anX andY: anY
+	^ self new initializeOf: aPolyline atX: anX andY: anY

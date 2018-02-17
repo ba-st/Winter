@@ -1,4 +1,4 @@
 Accessing
 color: aColor
 
-	color := color
+	color := aColor

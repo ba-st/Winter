@@ -1,0 +1,4 @@
+Test Support
+property
+
+	^self

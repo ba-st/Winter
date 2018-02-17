@@ -27,7 +27,7 @@ loadTileLayer: aLayerElement in: aMap
 							flipHorizontally := (id & FlagFlipHorizontally) ~= 0.
 							flipVertically := (id & FlagFlipVertically) ~= 0.
 							flipDiagonally := (id & FlagFlipDiagonally) ~= 0.
-							tile := aMap tileAt: id & MaskClear not.
+							tile := aMap tilesAt: id & MaskClear not.
 							tile
 								ifNil: [ "Do nothing" ]
 								ifNotNil: [ "WinterTiledMapTileLayerCell"

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Winter-TiledTests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"textureRegion"
+	],
+	"name" : "WinterTiledMapTileMapObjectTest",
+	"type" : "normal"
+}

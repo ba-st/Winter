@@ -3,7 +3,7 @@
 		"tiledMap" : "Alvaro 2/3/2018 18:27",
 		"propertyAccordingToName:value:andType:" : "Alvaro 2/5/2018 22:45",
 		"initialize" : "Alvaro 2/3/2018 18:26",
-		"initializeFromPath:" : "Alvaro 1/31/2018 21:40",
+		"initializeFromPath:" : "Alvaro 2/16/2018 23:00",
 		"createTileLayerCellOf:consideringFlagFlippingHorizontally:flagFlippingVertically:andFlagFlippingDiagonally:" : "Alvaro 2/4/2018 21:10",
 		"createTilesFrom:startingId:imageWidth:imageHeight:tileHeight:tileWidth:offsetX:offsetY:spacing:margin:image:imageSource:andLoadIn:" : "Alvaro 2/2/2018 23:34",
 		"tileIdsFrom:accordingToWidth:height:" : "Alvaro 2/4/2018 20:34",
@@ -19,7 +19,7 @@
 		"loadTileGroup:in:" : "Alvaro 2/12/2018 17:52",
 		"loadImageLayer:in:" : "Alvaro 2/12/2018 17:35",
 		"value" : "Alvaro 1/30/2018 20:54",
-		"loadTileLayer:in:" : "Alvaro 2/12/2018 14:05"
+		"loadTileLayer:in:" : "Alvaro 2/16/2018 21:26"
 	},
 	"class" : {
 		"initialize" : "Alvaro 2/7/2018 22:38",

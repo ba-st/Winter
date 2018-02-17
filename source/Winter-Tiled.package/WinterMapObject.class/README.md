@@ -1,0 +1,1 @@
+Abstract representation of a Map Object
