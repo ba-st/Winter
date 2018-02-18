@@ -1,0 +1,4 @@
+Test Support
+canvas
+ 
+	^self

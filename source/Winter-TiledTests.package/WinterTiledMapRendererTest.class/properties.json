@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "Winter-TiledTests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"map",
+		"receivedUpdateEvent",
+		"receivedActivateEvent"
+	],
+	"name" : "WinterTiledMapRendererTest",
+	"type" : "normal"
+}

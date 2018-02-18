@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"scene"
+		"scene",
+		"additionalInformation"
 	],
 	"name" : "WinterSceneEvent",
 	"type" : "normal"

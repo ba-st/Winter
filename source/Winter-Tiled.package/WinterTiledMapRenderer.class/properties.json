@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "WinterComponent",
+	"category" : "Winter-Tiled",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"map",
+		"unitScale"
+	],
+	"name" : "WinterTiledMapRenderer",
+	"type" : "normal"
+}

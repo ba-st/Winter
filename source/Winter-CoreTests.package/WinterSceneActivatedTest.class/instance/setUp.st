@@ -1,0 +1,4 @@
+initialization
+setUp
+
+	receivedEvent := false

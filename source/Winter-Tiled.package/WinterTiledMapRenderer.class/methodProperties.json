@@ -1,0 +1,14 @@
+{
+	"instance" : {
+		"map" : "Alvaro 2/18/2018 16:22",
+		"eventActivated:" : "Alvaro 2/18/2018 19:27",
+		"unitScale:" : "Alvaro 2/18/2018 16:22",
+		"initializeOf:usingAsUnitScale:" : "Alvaro 2/18/2018 16:22",
+		"eventUpdated:" : "Alvaro 2/18/2018 19:26",
+		"unitScale" : "Alvaro 2/18/2018 16:22"
+	},
+	"class" : {
+		"of:" : "Alvaro 2/18/2018 16:20",
+		"of:usingAsUnitScale:" : "Alvaro 2/18/2018 16:21"
+	}
+}
