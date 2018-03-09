@@ -11,7 +11,8 @@
 		"visible",
 		"offsetX",
 		"offsetY",
-		"parent"
+		"parent",
+		"unitScale"
 	],
 	"name" : "WinterTiledMapLayer",
 	"type" : "normal"
