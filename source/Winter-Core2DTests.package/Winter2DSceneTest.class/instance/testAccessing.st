@@ -3,8 +3,8 @@ testAccessing
 
 	| scene game |
 
-	game := WinterTestGame new.
-	scene := game currentScene.
+	game := self game.
+	scene := game scene.
 	
 	self assert: scene backgroundColor equals: Color white.
 	scene backgroundColor: Color orange.

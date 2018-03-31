@@ -3,8 +3,8 @@ testAddComponents
 	
 	| scene game component anotherComponent|
 	
-	game := WinterTestGame new.
-	scene := game currentScene.
+	game := self game.
+	scene := game scene.
 	component := self component.
 	anotherComponent := self component .
 	

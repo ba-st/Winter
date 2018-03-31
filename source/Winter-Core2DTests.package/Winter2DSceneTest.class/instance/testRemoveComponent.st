@@ -3,8 +3,8 @@ testRemoveComponent
 
 	| scene game component |
 
-	game := WinterTestGame new.
-	scene := game currentScene.
+	game := self game.
+	scene := game scene.
 	component := self component.
 
 	self assert: scene components isEmpty.

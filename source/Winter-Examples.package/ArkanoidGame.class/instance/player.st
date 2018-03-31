@@ -1,4 +1,4 @@
 Accessing
 player
 
-	^ players anyOne
+	^ scene players anyOne

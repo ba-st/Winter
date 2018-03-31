@@ -3,7 +3,7 @@ testDoNotIntersectsASquare
 
 	| game circle square |
 
-	game := WinterTestGame new.
+	game := self game.
 	circle := Winter2DCircle
 		ofCenter: 250 @ 530
 		radius: 15

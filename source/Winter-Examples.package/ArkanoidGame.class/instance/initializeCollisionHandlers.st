@@ -5,7 +5,7 @@ initializeCollisionHandlers
 		add:
 			(CollisionHandler
 				between: ArkanoidPlayer
-				and: WinterGameWindow
+				and: WinterWindow
 				onCollisionDo: [ :collision | 
 					collision firstComponent positionX = 10 negated
 						ifTrue: [ collision firstComponent moveRight ]

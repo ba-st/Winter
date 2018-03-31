@@ -1,14 +1,12 @@
 initialization
 initialize
+
 	super initialize.
-	engine := WinterEngine game: self.
-	players := Set new.
-	scenes := OrderedCollection new.
+	scheduler := WinterGameScheduller managing: self.
 	collisionHandlers := OrderedCollection new.
 	self initializeCollisionHandlers.
-	self initializeWalker.
 	self initializeResources.
 	self initializeScenes.
-	
-	self currentScene: self scenes first.
 	self initializePlayers.
+	
+	

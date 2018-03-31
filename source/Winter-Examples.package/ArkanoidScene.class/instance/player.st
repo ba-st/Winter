@@ -1,4 +1,4 @@
 Accessing
 player
 
-	^game players anyOne
+	^players anyOne

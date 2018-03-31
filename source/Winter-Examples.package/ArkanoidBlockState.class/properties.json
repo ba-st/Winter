@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "WinterObject",
+	"super" : "WinterReactiveObject",
 	"category" : "Winter-Examples-Arkanoid",
 	"classinstvars" : [ ],
 	"pools" : [ ],

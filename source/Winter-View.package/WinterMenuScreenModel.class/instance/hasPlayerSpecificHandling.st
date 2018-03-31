@@ -1,0 +1,4 @@
+testing
+hasPlayerSpecificHandling
+
+	^ false

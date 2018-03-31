@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Winter-View-View",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"model",
+		"window",
+		"surface",
+		"scheduler",
+		"title"
+	],
+	"name" : "WinterScreen",
+	"type" : "normal"
+}

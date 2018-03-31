@@ -1,5 +1,6 @@
 start/stop
 start
-	self show.	
-	engine startStepping.
+
+	self screen show.
+	scheduler startProcess.
 	

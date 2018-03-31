@@ -1,3 +1,4 @@
 events
 eventActivated: anEvent
-	self drawOn: anEvent canvas.
+
+	"self renderOn: anEvent canvas."

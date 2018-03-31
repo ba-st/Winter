@@ -5,10 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"map",
-		"unitScale"
-	],
+	"instvars" : [ ],
 	"name" : "WinterTiledMapRenderer",
 	"type" : "normal"
 }

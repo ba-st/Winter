@@ -1,5 +1,6 @@
 Testing
 canHandle: aCollission
+
 	| firstComponent secondComponent |
 	
 	firstComponent := aCollission firstComponent.

@@ -1,4 +1,4 @@
 initialization
 initializeScenes
 
-	self addScene: WinterTestScene new
+	self scene: WinterTestScene new

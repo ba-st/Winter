@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Winter-Core-Descriptors",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"Cache"
+	],
+	"instvars" : [
+		"fileName",
+		"position"
+	],
+	"name" : "WinterSpriteDescriptor",
+	"type" : "normal"
+}

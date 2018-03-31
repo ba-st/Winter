@@ -6,9 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"map",
-		"receivedUpdateEvent",
-		"receivedActivateEvent"
+		"map"
 	],
 	"name" : "WinterTiledMapRendererTest",
 	"type" : "normal"

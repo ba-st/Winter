@@ -1,4 +1,4 @@
 Initialization
 initializeScenes
 
-	self addScene: ArkanoidScene new
+	self scene: ArkanoidScene new

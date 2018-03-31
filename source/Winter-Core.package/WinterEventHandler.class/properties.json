@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "OSWindowEventVisitor",
+	"category" : "Winter-Core-Event-Handlers",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WinterEventHandler",
+	"type" : "normal"
+}

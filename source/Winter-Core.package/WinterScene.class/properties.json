@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "<historical>",
-	"super" : "WinterReactive",
+	"super" : "WinterReactiveObject",
 	"category" : "Winter-Core-Base",
 	"classinstvars" : [ ],
 	"pools" : [ ],

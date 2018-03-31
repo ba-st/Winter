@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "WinterWidget",
+	"category" : "Winter-View-ViewModel",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"widgets",
+		"space"
+	],
+	"name" : "WinterRowWidget",
+	"type" : "normal"
+}

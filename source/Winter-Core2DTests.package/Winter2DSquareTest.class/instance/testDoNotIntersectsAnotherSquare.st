@@ -3,7 +3,7 @@ testDoNotIntersectsAnotherSquare
 
 	| game  square anotherSquare|
 
-	game := WinterTestGame new.
+	game := self game.
 	square := Winter2DSquare
 		ofCenter: 200 @ 560
 		extent: 20 @ 5

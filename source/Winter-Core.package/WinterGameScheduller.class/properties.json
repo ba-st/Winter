@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "WinterAbstractScheduller",
+	"category" : "Winter-Core-Schedullers",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"gameStepActions",
+		"stepping",
+		"delayTime"
+	],
+	"name" : "WinterGameScheduller",
+	"type" : "normal"
+}

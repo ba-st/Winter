@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "WinterSingleSpriteWidget",
+	"category" : "Winter-View-ViewModel",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"sprites",
+		"currentSpriteIndex"
+	],
+	"name" : "WinterToggleSingleSpriteWidget",
+	"type" : "normal"
+}

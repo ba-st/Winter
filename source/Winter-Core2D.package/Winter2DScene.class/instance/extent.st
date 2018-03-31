@@ -1,0 +1,4 @@
+Accessing
+extent
+
+	^game dimensions 

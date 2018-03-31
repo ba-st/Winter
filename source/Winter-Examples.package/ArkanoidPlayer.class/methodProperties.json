@@ -9,8 +9,7 @@
 		"checkCollisions" : "Alvaro 10/26/2017 22:21",
 		"initializeCollisionShape" : "Alvaro 10/29/2017 22:50",
 		"initializeOn:" : "Alvaro 10/29/2017 22:50",
-		"arkanoidBarSprite" : "Alvaro 10/24/2017 22:50",
-		"initializeInteractions" : "Alvaro 11/1/2017 15:03"
+		"arkanoidBarSprite" : "Alvaro 10/24/2017 22:50"
 	},
 	"class" : {
 		"on:" : "Alvaro 10/24/2017 22:41"

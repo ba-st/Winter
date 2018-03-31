@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WinterAbstractScheduller",
+	"category" : "Winter-Core-Schedullers",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WinterRenderingScheduller",
+	"type" : "normal"
+}

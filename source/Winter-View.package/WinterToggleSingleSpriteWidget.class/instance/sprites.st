@@ -1,0 +1,4 @@
+Accessing
+sprites
+
+	^ sprites
