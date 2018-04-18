@@ -1,17 +1,14 @@
 {
 	"instance" : {
-		"removePlayer:" : "Alvaro 1/14/2018 17:07",
-		"removeComponent:" : "Alvaro 10/31/2017 23:30",
-		"step" : "Alvaro 10/2/2017 19:25",
-		"initialize" : "Alvaro 10/15/2017 07:39",
-		"pushEvent:" : " 8/19/2017 12:13:03",
-		"eventQueue" : " 8/19/2017 12:13:03",
-		"addComponent:" : " 8/19/2017 12:13:03",
-		"addComponents:" : " 8/19/2017 12:13:03",
 		"addPlayer:" : "Alvaro 10/15/2017 07:40",
+		"removeComponent:" : "Alvaro 10/31/2017 23:30",
 		"isActive" : " 8/19/2017 12:13:03",
+		"initialize" : "Alvaro 4/18/2018 19:04",
+		"removePlayer:" : "Alvaro 1/14/2018 17:07",
+		"addComponent:" : " 8/19/2017 12:13:03",
+		"activate" : "Alvaro 4/18/2018 18:22",
 		"components" : " 8/19/2017 12:13:03",
-		"eventActivated:" : " 8/19/2017 12:13:03"
+		"addComponents:" : " 8/19/2017 12:13:03"
 	},
 	"class" : { }
 }

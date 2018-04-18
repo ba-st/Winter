@@ -2,7 +2,7 @@ private
 componentCollideOnPositionOrExtentOfAxis: axisSymbol
 	^ (component position perform: axisSymbol asLowercase asSymbol)
 		>
-			(game window
+			(game screen
 				perform: (#extent , axisSymbol asUppercase) asSymbol)
 		or: [ (component position perform: axisSymbol asLowercase asSymbol)
-				< (game window perform: (#position , axisSymbol asUppercase) asSymbol) ]
+				< (game screen perform: (#position , axisSymbol asUppercase) asSymbol) ]

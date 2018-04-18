@@ -1,4 +1,4 @@
-Initialization
+initialization
 initializeResources
 
 	WinterAssetManagementSystem current

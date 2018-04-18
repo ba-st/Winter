@@ -1,3 +1,4 @@
-Initialization
+initialization
 initializeOn: aGame
+
 	game := aGame

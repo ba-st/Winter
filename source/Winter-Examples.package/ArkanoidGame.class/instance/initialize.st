@@ -1,4 +1,4 @@
-Initialization
+initialization
 initialize
 
 	super initialize.

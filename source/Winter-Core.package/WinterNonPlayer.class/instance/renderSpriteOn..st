@@ -1,4 +1,4 @@
-Drawing
+Rendering
 renderSpriteOn: aCanvas
 
 	aCanvas pathTransform

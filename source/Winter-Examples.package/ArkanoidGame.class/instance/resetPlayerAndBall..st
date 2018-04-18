@@ -1,5 +1,11 @@
 Reset
 resetPlayerAndBall: anArkanoidBall
+
+	| player |
+
+	player := self player.
 	playing := false.
-	self player resetPosition.
-	anArkanoidBall resetPosition
+	player resetPosition.
+	anArkanoidBall resetPosition.
+	scene initialize.
+	scene addPlayer: player

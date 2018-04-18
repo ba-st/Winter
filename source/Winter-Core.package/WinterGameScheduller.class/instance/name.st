@@ -1,4 +1,4 @@
 Accessing
 name
 
-	^ 'Game Scheduller Process'
+	^ 'Game Scheduler Process'

@@ -1,4 +1,4 @@
 Accessing
 name
 
-	^ 'Rendering Scheduller Process'
+	^ 'Rendering Scheduler Process'

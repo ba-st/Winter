@@ -1,0 +1,3 @@
+Accessing
+extent
+		^window extent

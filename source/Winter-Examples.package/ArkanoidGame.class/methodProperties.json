@@ -5,11 +5,11 @@
 		"player" : "Alvaro 3/12/2018 23:36",
 		"initializeResources" : "Alvaro 1/30/2018 20:47",
 		"initialize" : "Alvaro 10/28/2017 18:05",
-		"initializeCollisionHandlers" : "Alvaro 3/24/2018 17:47",
+		"initializeCollisionHandlers" : "Alvaro 3/31/2018 19:51",
 		"playing:" : "Alvaro 10/28/2017 18:05",
 		"initializeScenes" : "Alvaro 3/12/2018 23:29",
-		"resetPlayerAndBall:" : "Alvaro 10/28/2017 18:08",
-		"initializePlayers" : "Alvaro 3/27/2018 22:44",
+		"resetPlayerAndBall:" : "Alvaro 4/18/2018 16:21",
+		"initializePlayers" : "Alvaro 3/31/2018 19:52",
 		"playing" : "Alvaro 10/28/2017 18:05"
 	},
 	"class" : { }

@@ -1,11 +1,11 @@
-Initialization
+initialization
 initializeCollisionHandlers
 
 	collisionHandlers
 		add:
 			(CollisionHandler
 				between: ArkanoidPlayer
-				and: WinterWindow
+				and: WinterScreen 
 				onCollisionDo: [ :collision | 
 					collision firstComponent positionX = 10 negated
 						ifTrue: [ collision firstComponent moveRight ]

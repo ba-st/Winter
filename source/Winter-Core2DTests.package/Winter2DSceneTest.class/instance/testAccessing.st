@@ -19,5 +19,4 @@ testAccessing
 		assert: scene dimensions equals: game dimensions;
 		assert: scene surface notNil;
 		assert: scene surface extent equals: scene dimensions;
-		assert: scene players isEmpty;
-		assert: scene eventQueue  notNil
+		assert: scene players isEmpty

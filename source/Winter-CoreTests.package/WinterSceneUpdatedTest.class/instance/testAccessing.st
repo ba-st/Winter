@@ -3,7 +3,7 @@ testAccessing
 	
 	| event |
 	
-	event := WinterSceneUpdated  scene: self scene.
+	event := WinterSceneUpdatedEvent  scene: self scene.
 	
 	self
 		assert: event scene equals: self scene;

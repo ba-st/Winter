@@ -1,14 +1,16 @@
-Initialization
+initialization
 initializePlayers
 
 	| player |
 
 	player := ArkanoidPlayer on: self.
-	"player
-		addInteractionOf: Character arrowLeft asShortcut
+
+	player
+		addInteractionOnKeyDownOf: Character arrowLeft
 			doing: [ player moveLeft.
 			playing := true ];
-		addInteractionOf: Character arrowRight asShortcut
+		addInteractionOnKeyDownOf: Character arrowRight
 			doing: [ player moveRight.
-			playing := true ]."
+			playing := true ].
+	
 	self addPlayer: player

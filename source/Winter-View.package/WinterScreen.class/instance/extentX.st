@@ -1,3 +1,3 @@
 Accessing
 extentX
-	self shouldBeImplemented.
+		^self extent x

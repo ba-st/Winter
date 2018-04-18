@@ -9,6 +9,6 @@
 		"scene",
 		"additionalInformation"
 	],
-	"name" : "WinterSceneEvent",
+	"name" : "WinterSceneUpdatedEvent",
 	"type" : "normal"
 }

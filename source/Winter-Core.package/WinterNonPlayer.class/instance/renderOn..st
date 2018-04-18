@@ -1,4 +1,4 @@
-Drawing
+Rendering
 renderOn: aCanvas
 
 	sprite

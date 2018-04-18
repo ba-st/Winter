@@ -3,7 +3,7 @@ testExecuting
 	
 	| event |
 	
-	event := WinterSceneUpdated scene: self scene.
+	event := WinterSceneUpdatedEvent scene: self scene.
 	
 	self
 		deny: receivedEvent.

@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "Winter-Core-Schedullers",
+	"category" : "Winter-Core-Schedulers",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

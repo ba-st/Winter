@@ -1,20 +1,20 @@
 {
 	"instance" : {
 		"renderOn:" : "Alvaro 3/27/2018 22:29",
+		"addInteractionOnKeyUpOf:doing:" : "Alvaro 3/31/2018 19:55",
 		"collisionShape:" : "Alvaro 10/29/2017 22:51",
-		"handleKeyDown:" : "Alvaro 3/30/2018 01:04",
-		"initializeResources" : "Alvaro 10/26/2017 19:55",
-		"initialize" : "Alvaro 3/30/2018 16:37",
-		"addInteractionOf:doing:" : "Alvaro 3/14/2018 21:45",
+		"handleKeyDown:" : "Alvaro 4/1/2018 17:39",
+		"addInteractionOnKeyDownOf:doing:" : "Alvaro 3/31/2018 19:54",
+		"initialize" : "Alvaro 4/18/2018 19:18",
 		"collisionShape" : "Alvaro 10/29/2017 22:51",
+		"initializeResources" : "Alvaro 10/26/2017 19:55",
 		"position:" : "Alvaro 10/29/2017 22:50",
 		"renderSpriteOn:" : "Alvaro 3/30/2018 01:48",
-		"checkCollisions" : "Alvaro 10/26/2017 20:13",
-		"eventUpdated:" : "Alvaro 3/27/2018 22:41",
-		"handleKeyUp:" : "Alvaro 3/30/2018 01:03",
 		"initializeCollisionShape" : "Alvaro 10/26/2017 19:56",
-		"position" : "Alvaro 10/29/2017 22:50",
-		"initializeInteractions" : "Alvaro 10/26/2017 19:55"
+		"checkCollisions" : "Alvaro 10/26/2017 20:13",
+		"handleKeyUp:" : "Alvaro 3/30/2018 01:03",
+		"eventUpdated:" : "Alvaro 4/18/2018 19:18",
+		"position" : "Alvaro 10/29/2017 22:50"
 	},
 	"class" : { }
 }
