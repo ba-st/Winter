@@ -1,0 +1,12 @@
+{
+	"instance" : {
+		"spiderEnter:" : "Alvaro 4/21/2018 18:29",
+		"action" : "Alvaro 4/29/2018 20:31",
+		"initializeSprite" : "Alvaro 4/28/2018 19:31",
+		"initializeAtPosition:of:tick:" : "Alvaro 4/29/2018 20:50",
+		"missileEnter:" : "Alvaro 4/21/2018 18:29"
+	},
+	"class" : {
+		"atPosition:of:tick:" : "Alvaro 4/28/2018 23:57"
+	}
+}

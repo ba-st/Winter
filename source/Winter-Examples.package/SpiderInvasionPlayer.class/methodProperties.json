@@ -1,0 +1,17 @@
+{
+	"instance" : {
+		"positionX" : "Alvaro 4/21/2018 12:08",
+		"moveRight" : "Alvaro 4/29/2018 20:13",
+		"moveLeft" : "Alvaro 4/29/2018 20:09",
+		"fire" : "Alvaro 4/29/2018 20:26",
+		"positionY" : "Alvaro 4/21/2018 12:08",
+		"reload" : "Alvaro 4/21/2018 12:11",
+		"checkCollisions" : "Alvaro 4/20/2018 20:30",
+		"initializeCollisionShape" : "Alvaro 4/29/2018 20:03",
+		"spaceShipSprite" : "Alvaro 4/20/2018 20:29",
+		"initializeOn:" : "Alvaro 4/21/2018 12:11"
+	},
+	"class" : {
+		"on:" : "Alvaro 4/21/2018 12:00"
+	}
+}

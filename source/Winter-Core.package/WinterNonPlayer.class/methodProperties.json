@@ -8,11 +8,12 @@
 		"initialize" : "Alvaro 10/26/2017 19:54",
 		"collisionShape" : "Alvaro 10/15/2017 07:24",
 		"position:" : "Alvaro 10/15/2017 07:19",
-		"renderSpriteOn:" : "Alvaro 3/30/2018 01:49",
+		"renderSpriteOn:" : "Alvaro 4/21/2018 17:37",
 		"checkCollisions" : "Alvaro 10/27/2017 22:56",
 		"position" : "Alvaro 10/15/2017 07:15",
 		"initializeCollisionShape" : "Alvaro 10/26/2017 19:54",
-		"eventUpdated:" : "Alvaro 4/18/2018 19:19"
+		"eventUpdated:" : "Alvaro 4/18/2018 19:19",
+		"translation" : "Alvaro 4/21/2018 17:38"
 	},
 	"class" : { }
 }
