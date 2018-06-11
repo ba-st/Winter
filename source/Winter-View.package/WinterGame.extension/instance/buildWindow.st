@@ -1,4 +1,4 @@
 *Winter-View
 buildWindow
 
-	screen := WinterScreen  onModel: scene .
+	screen := WinterScreen  onModel: self .

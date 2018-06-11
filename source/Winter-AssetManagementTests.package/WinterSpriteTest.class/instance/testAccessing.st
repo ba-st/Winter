@@ -1,10 +1,10 @@
 Tests
 testAccessing
-	| spriteOfRelativePath |
-	spriteOfRelativePath := WinterSprite fromPath: 'pharo.png'.
+
+	| sprite |
+	sprite := WinterSprite fromPath: 'pharo.png' named: 'pharo'.
 	self
-		assert: spriteOfRelativePath width equals: 512;
-		assert: spriteOfRelativePath height equals: 512;
-		assert: spriteOfRelativePath depth equals: 32;
-		assert: spriteOfRelativePath path
-			equals: self imageDirectory,'/pharo.png'
+		assert: sprite name equals: 'pharo';
+		assert: sprite width equals: 512;
+		assert: sprite height equals: 512;
+		assert: sprite path equals: 'pharo.png'

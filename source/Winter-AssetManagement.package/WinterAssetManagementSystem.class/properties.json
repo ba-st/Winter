@@ -8,8 +8,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"sounds",
-		"sprites"
+		"assets"
 	],
 	"name" : "WinterAssetManagementSystem",
 	"type" : "normal"

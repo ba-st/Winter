@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "WBAArenaComponent",
+	"category" : "Winter-Examples-WizardBattle",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"ground",
+		"element",
+		"spells",
+		"neighbours"
+	],
+	"name" : "WBACell",
+	"type" : "normal"
+}

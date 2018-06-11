@@ -1,0 +1,4 @@
+accessing
+initializeResources
+
+	WBATextDescriptor new loadAllText

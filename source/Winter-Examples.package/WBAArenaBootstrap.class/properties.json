@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Winter-Examples-WizardBattle",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"grounds",
+		"walls",
+		"characters",
+		"spells",
+		"arena",
+		"startGame"
+	],
+	"name" : "WBAArenaBootstrap",
+	"type" : "normal"
+}

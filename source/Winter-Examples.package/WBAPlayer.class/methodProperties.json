@@ -1,0 +1,22 @@
+{
+	"instance" : {
+		"maybeMove:" : "apiorno 6/10/2018 21:32",
+		"moveDown" : "apiorno 6/10/2018 21:28",
+		"handleKeyUpIndex:" : "apiorno 6/10/2018 21:41",
+		"moveUp" : "apiorno 6/10/2018 21:29",
+		"movementKeyDown" : "apiorno 6/10/2018 21:26",
+		"moveRight" : "apiorno 6/10/2018 21:29",
+		"handleKeyDown:" : "apiorno 6/10/2018 17:33",
+		"moveLeft" : "apiorno 6/10/2018 21:28",
+		"move:" : "apiorno 6/10/2018 21:30",
+		"castSpell" : "apiorno 6/10/2018 18:09",
+		"keyboardCodes" : "apiorno 5/26/2018 22:12",
+		"handleKeyUp:" : "apiorno 6/10/2018 17:33",
+		"keyboards:" : "apiorno 6/10/2018 21:41",
+		"character:" : "apiorno 6/10/2018 17:24",
+		"character" : "apiorno 6/10/2018 17:24"
+	},
+	"class" : {
+		"defaultKeyboardCodes" : "apiorno 5/27/2018 16:16"
+	}
+}

@@ -1,3 +1,6 @@
 Accessing
 extent
-	^self width @ self height 
+
+	"Width and Height delegated to native asset"
+
+	^ self width @ self height

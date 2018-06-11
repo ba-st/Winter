@@ -1,12 +1,9 @@
 initialization
 initialize
-
 	super initialize.
-	scheduler := WinterGameScheduller managing: self.
+	self initializeSchedulers.
 	collisionHandlers := OrderedCollection new.
 	self initializeCollisionHandlers.
 	self initializeResources.
 	self initializeScenes.
-	self initializePlayers.
-	
-	
+	self initializePlayers

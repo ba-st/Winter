@@ -1,0 +1,19 @@
+{
+	"instance" : {
+		"spellDescriptors" : "apiorno 5/25/2018 22:08",
+		"backgroundDescriptor:" : "apiorno 5/25/2018 22:10",
+		"backgroundDescriptor" : "apiorno 5/25/2018 22:09",
+		"characterDescriptors" : "apiorno 5/25/2018 22:08",
+		"characterDescriptors:" : "apiorno 5/25/2018 22:10",
+		"arenaDescriptor:" : "apiorno 5/25/2018 22:10",
+		"arenaDescriptor" : "apiorno 5/25/2018 22:08",
+		"ensureCorrectness" : "apiorno 5/25/2018 22:09",
+		"spellDescriptors:" : "apiorno 5/25/2018 22:11"
+	},
+	"class" : {
+		"demo4" : "apiorno 5/25/2018 22:11",
+		"demo:" : "apiorno 5/25/2018 22:12",
+		"demo2" : "apiorno 5/25/2018 22:11",
+		"demo3" : "apiorno 5/25/2018 22:11"
+	}
+}

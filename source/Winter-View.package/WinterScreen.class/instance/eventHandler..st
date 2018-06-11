@@ -1,4 +1,4 @@
 Accessing
 eventHandler: anEventHandler
 
-	window eventHandler: anEventHandler
+	self window eventHandler: anEventHandler

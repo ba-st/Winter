@@ -1,3 +1,3 @@
 Accessing
 sounds
-	^sounds copy
+	^self assets

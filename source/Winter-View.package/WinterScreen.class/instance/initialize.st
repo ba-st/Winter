@@ -3,4 +3,4 @@ initialize
 
 	super initialize.
 	title := ''.
-	scheduler := WinterRenderingScheduller managing:  self
+	scheduler := SteppingScheduller managing:  self

@@ -1,0 +1,3 @@
+accessing
+currentSprite
+	^ currentSprite

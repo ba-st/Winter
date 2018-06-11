@@ -1,3 +1,0 @@
-canvas
-canvas
-	^usingCanvas

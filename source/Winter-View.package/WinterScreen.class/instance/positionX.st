@@ -1,4 +1,4 @@
 Accessing
 positionX
 
-	^ window handle position x
+	^ self window handle position x

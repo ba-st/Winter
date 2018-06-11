@@ -2,10 +2,12 @@
 	"instance" : {
 		"renderOn:" : "Alvaro 3/27/2018 22:29",
 		"addInteractionOnKeyUpOf:doing:" : "Alvaro 3/31/2018 19:55",
+		"initializeSprite" : "apiorno 6/10/2018 15:38",
+		"updateUsing:" : "apiorno 6/10/2018 18:50",
 		"collisionShape:" : "Alvaro 10/29/2017 22:51",
 		"handleKeyDown:" : "Alvaro 4/29/2018 20:20",
 		"addInteractionOnKeyDownOf:doing:" : "Alvaro 3/31/2018 19:54",
-		"initialize" : "Alvaro 4/18/2018 19:18",
+		"initialize" : "apiorno 6/10/2018 15:38",
 		"collisionShape" : "Alvaro 10/29/2017 22:51",
 		"initializeResources" : "Alvaro 10/26/2017 19:55",
 		"position:" : "Alvaro 10/29/2017 22:50",

@@ -1,3 +1,0 @@
-Accessing
-height
-	^ spriteForm height

@@ -1,0 +1,3 @@
+Accessing
+numberOfAnimationFrame
+	^ 16

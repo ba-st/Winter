@@ -1,4 +1,4 @@
-accessing
+Accessing
 scene: aScene
 
 	scene := aScene.

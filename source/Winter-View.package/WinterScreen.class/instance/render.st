@@ -3,4 +3,4 @@ render
 
 	surface drawDuring: [ :canvas |
 		model renderOn: canvas ].
-	window handle handle updateWindowSurface
+	self window handle handle updateWindowSurface

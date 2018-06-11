@@ -1,3 +1,3 @@
 Executing
 pause
-	sound pause
+	nativeAsset  pause

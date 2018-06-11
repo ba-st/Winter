@@ -3,7 +3,7 @@ testAccessing
 
 	| sound |
 
-	sound := WinterSound from: SampledSound beepSound fileType: 'wav' filePath: 'beep.wav'.
+	sound := WinterSound fromPath: 'beep.wav' named: 'beep'.
 
 	self
 		assert: sound type equals: 'wav';

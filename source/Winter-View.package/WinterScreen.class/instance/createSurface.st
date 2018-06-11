@@ -1,4 +1,4 @@
 private
 createSurface
 
-	surface := AthensCairoSDLSurface fromSDLSurface: window handle handle getWindowSurface
+	surface := AthensCairoSDLSurface fromSDLSurface: self window handle handle getWindowSurface

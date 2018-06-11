@@ -2,4 +2,4 @@ initialization
 initializeComponents
 
 	self initializeWalls.
-	"self initializeSpiders."
+	self initializeSpiders.

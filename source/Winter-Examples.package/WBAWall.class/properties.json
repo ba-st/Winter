@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "WBAElement",
+	"category" : "Winter-Examples-WizardBattle",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"sprite"
+	],
+	"name" : "WBAWall",
+	"type" : "normal"
+}

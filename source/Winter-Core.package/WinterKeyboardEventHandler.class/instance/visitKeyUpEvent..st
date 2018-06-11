@@ -1,4 +1,4 @@
 Accessing
 visitKeyUpEvent: anEvent
 
-	screenModel handleKeyStroke: anEvent scanCode
+	screenModel handleKeyStroke: anEvent scanCode  

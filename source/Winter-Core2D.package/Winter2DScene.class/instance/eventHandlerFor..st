@@ -4,6 +4,6 @@ eventHandlerFor: aScreen
 	^ WinterSceneEventHandler new
 		players: players;
 		schedulers:
-			{game scheduler.
+			{"game scheduler."
 			aScreen scheduler};
 		yourself

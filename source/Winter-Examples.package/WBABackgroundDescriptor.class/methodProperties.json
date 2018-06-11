@@ -1,0 +1,13 @@
+{
+	"instance" : {
+		"classFolder" : "apiorno 5/25/2018 21:53",
+		"loadWallSpritesWith:" : "apiorno 5/25/2018 21:57",
+		"wallSpriteSize" : "apiorno 5/25/2018 21:53",
+		"loadGroundSpritesWith:" : "apiorno 5/26/2018 19:20"
+	},
+	"class" : {
+		"randomBackground" : "apiorno 5/26/2018 21:59",
+		"autumn" : "apiorno 5/26/2018 21:59",
+		"backgroundAt:" : "apiorno 5/25/2018 21:52"
+	}
+}

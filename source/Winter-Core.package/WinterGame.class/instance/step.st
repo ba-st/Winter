@@ -1,3 +1,0 @@
-stepping
-step
-	scene step

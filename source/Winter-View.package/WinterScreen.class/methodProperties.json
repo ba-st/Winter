@@ -1,24 +1,25 @@
 {
 	"instance" : {
-		"show" : "Alvaro 4/18/2018 20:04",
-		"window" : "Alvaro 3/9/2018 22:24",
-		"extent" : "Alvaro 3/31/2018 23:00",
+		"show" : "apiorno 6/10/2018 20:15",
+		"window" : "apiorno 5/25/2018 12:04",
+		"extent" : "apiorno 5/25/2018 12:05",
+		"createWindow" : "apiorno 5/25/2018 12:04",
+		"initialize" : "apiorno 6/10/2018 21:46",
 		"renderBackground:color:" : "Alvaro 3/9/2018 22:30",
-		"initialize" : "Alvaro 4/18/2018 19:58",
 		"title:" : "Alvaro 3/9/2018 22:29",
 		"initializeOnModel:" : "Alvaro 4/18/2018 20:03",
 		"extentX" : "Alvaro 3/31/2018 23:00",
 		"scheduler" : "Alvaro 3/9/2018 22:24",
-		"eventHandler:" : "Alvaro 3/9/2018 22:23",
-		"positionX" : "Alvaro 3/30/2018 01:56",
-		"openWindow" : "Alvaro 4/18/2018 19:32",
-		"extent:" : "Alvaro 3/9/2018 22:23",
+		"eventHandler:" : "apiorno 5/25/2018 12:05",
+		"positionX" : "apiorno 5/25/2018 12:06",
+		"extent:" : "apiorno 5/25/2018 12:06",
 		"model:" : "Alvaro 3/9/2018 22:24",
+		"updateAndRender" : "apiorno 6/10/2018 18:47",
 		"terminateRendering" : "Alvaro 3/9/2018 22:30",
 		"extentY" : "Alvaro 3/31/2018 23:00",
 		"surface" : "Alvaro 3/9/2018 22:24",
-		"createSurface" : "Alvaro 3/9/2018 22:22",
-		"render" : "Alvaro 3/9/2018 22:30"
+		"createSurface" : "apiorno 5/25/2018 12:05",
+		"render" : "apiorno 5/25/2018 12:05"
 	},
 	"class" : {
 		"onModel:" : "Alvaro 3/27/2018 19:58"

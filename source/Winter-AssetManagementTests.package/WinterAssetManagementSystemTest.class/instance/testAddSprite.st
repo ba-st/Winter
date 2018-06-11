@@ -1,11 +1,11 @@
 Tests
 testAddSprite
 
-	| system sprite |
+	| system  |
 	
 	system := WinterAssetManagementSystem current.
-	sprite := WinterSprite fromPath: 'pharo.png'.
-	system addSprite: sprite named: 'pharo'.
+
+	system addSprite: 'pharo.png' named: 'pharo'.
 	self
-		deny: system sprites isEmpty;
-		assert: (system spriteNamed: 'pharo') equals: sprite
+		deny: system assets isEmpty;
+		assert: (system assetNamed:  'pharo') notNil

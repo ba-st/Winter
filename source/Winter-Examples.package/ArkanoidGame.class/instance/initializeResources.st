@@ -1,32 +1,13 @@
 initialization
 initializeResources
-
-	WinterAssetManagementSystem current
-		addSprite:
-			((WinterSprite fromPath: 'background.png')
-				scaledToSize: self dimensions;
-				yourself)
-			named: #background;
-		addSprite:
-			((WinterSprite fromPath: 'yellow.png')
-				scaledToSize: 38 @ 38;
-				yourself)
-			named: #yellow;
-		addSprite:
-			((WinterSprite fromPath: 'green.png')
-				scaledToSize: 38 @ 38;
-				yourself)
-			named: #green;
-		addSprite:
-			((WinterSprite fromPath: 'red.png')
-				scaledToSize: 38 @ 38;
-				yourself)
-			named: #red;
-		addSprite: (WinterSprite fromPath: 'arkanoid_bar.png') named: #arkanoidBar;
-		addSound: (WinterSound fromPath: 'arkanoid_ball_collision.wav')
-			named: #ballCollision;
-		addSprite:
-			((WinterSprite fromPath: 'ball.png')
-				scaledToSize: 38 @ 38;
-				yourself)
-			named: #ball
+	| assetsSystem |
+	assetsSystem := WinterAssetManagementSystem current.
+	(assetsSystem addSprite: 'background.png' named: #background)
+		scaledToSize: self dimensions.
+	(assetsSystem addSprite: 'yellow.png' named: #yellow) scaledToSize: 38 @ 38.
+	(assetsSystem addSprite: 'green.png' named: #green) scaledToSize: 38 @ 38.
+	(assetsSystem addSprite: 'red.png' named: #red) scaledToSize: 38 @ 38.
+	(assetsSystem
+		addSprite: 'arkanoid_bar.png' named: #arkanoidBar;
+		addSound: 'arkanoid_ball_collision.wav' named: #ballCollision;
+		addSprite: 'ball.png' named: #ball) scaledToSize: 38 @ 38

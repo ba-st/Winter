@@ -1,2 +1,0 @@
-*Winter-View
-startAnimation

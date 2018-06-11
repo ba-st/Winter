@@ -1,0 +1,4 @@
+accessing
+castSpell
+	character castSpell
+	

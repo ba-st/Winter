@@ -2,8 +2,8 @@ initialization
 initializeResources
 
 	WinterAssetManagementSystem current
-		addSprite: (WinterSprite fromPath: 'spider.png') named: #spider;
-		addSprite: (WinterSprite fromPath: 'wall.png') named: #wall;
-		addSprite: (WinterSprite fromPath: 'missile.png') named: #missile;
-		addSprite: (WinterSprite fromPath: 'explode.png') named: #explode;
-		addSprite: (WinterSprite fromPath: 'spaceShip.png') named: #spaceShip
+		addSprite: 'spider.png' named: #spider;
+		addSprite: 'wall.png' named: #wall;
+		addSprite:  'missile.png' named: #missile;
+		addSprite:  'explode.png' named: #explode;
+		addSprite:  'spaceShip.png' named: #spaceShip

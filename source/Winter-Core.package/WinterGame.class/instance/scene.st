@@ -1,3 +1,3 @@
-accessing
+Accessing
 scene
 	^scene

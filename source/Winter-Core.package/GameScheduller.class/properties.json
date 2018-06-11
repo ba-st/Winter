@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Winter-Core-Schedulers",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"process",
+		"managedObject"
+	],
+	"name" : "GameScheduller",
+	"type" : "normal"
+}

@@ -1,11 +1,11 @@
 Tests
 testAddSound
 
-	| system sound |
+	| system  |
 
 	system := WinterAssetManagementSystem current.
-	sound := WinterSound from: SampledSound beepSound fileType: 'wav' filePath: 'beep.wav'.
-	system addSound: sound named: 'beep'.
+
+	system addSound: 'beep.wav' named: 'beep'.
 	self
-		deny: system sounds isEmpty;
-		assert: (system soundNamed: 'beep') equals: sound
+		deny: system assets isEmpty;
+		assert: (system assetNamed:  'beep') notNil

@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Winter-Examples-WizardBattle",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"arenaDescriptor",
+		"characterDescriptors",
+		"spellDescriptors",
+		"backgroundDescriptor"
+	],
+	"name" : "WBAGameDescriptor",
+	"type" : "normal"
+}

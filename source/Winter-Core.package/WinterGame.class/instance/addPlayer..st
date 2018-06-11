@@ -1,4 +1,4 @@
-accessing
+Accessing
 addPlayer: aPlayer
 
 	aPlayer game: self.

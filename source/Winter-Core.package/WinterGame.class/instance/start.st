@@ -2,5 +2,5 @@ start/stop
 start
 
 	self screen show.
-	scheduler startProcess.
+	scheduler  startProcess
 	

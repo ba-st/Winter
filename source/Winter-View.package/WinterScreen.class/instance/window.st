@@ -1,4 +1,4 @@
 Accessing
 window
 
-	^ window
+	^ window ifNil: [ self createWindow  ] ifNotNil: [window] 

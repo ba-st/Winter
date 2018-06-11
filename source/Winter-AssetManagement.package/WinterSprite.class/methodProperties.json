@@ -1,16 +1,12 @@
 {
 	"instance" : {
-		"extent" : "Alvaro 9/18/2017 22:52",
-		"depth" : "Alvaro 9/18/2017 22:28",
-		"initializeFromAbsolutePath:" : "Alvaro 9/19/2017 18:04",
-		"width" : "Alvaro 9/18/2017 22:27",
-		"height" : "Alvaro 9/18/2017 22:28",
-		"drawOnAthensCanvas:" : "Alvaro 9/27/2017 22:25",
-		"path" : "Alvaro 9/18/2017 22:29",
-		"scaledToSize:" : "Alvaro 10/23/2017 22:54",
-		"asAthensPaintOn:" : "Alvaro 9/18/2017 22:42"
+		"extent" : "apiorno 5/25/2018 15:39",
+		"initializeFromAbsolutePath:named:" : "apiorno 5/25/2018 15:38",
+		"drawOnAthensCanvas:" : "apiorno 5/25/2018 15:36",
+		"path" : "apiorno 5/25/2018 15:16",
+		"scaledToSize:" : "apiorno 5/25/2018 15:35"
 	},
 	"class" : {
-		"fromPath:" : "Alvaro 1/30/2018 20:49"
+		"fromPath:named:" : "apiorno 5/25/2018 15:37"
 	}
 }

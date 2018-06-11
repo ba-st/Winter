@@ -1,3 +1,4 @@
 Asset Managing
-addSound: aSound named: aName
-	sounds at: aName put: aSound
+addSound: aSoundPath named: aName
+
+	^self addAsset: (WinterSound fromPath: aSoundPath named: aName)

@@ -1,3 +1,4 @@
 Accessing
 extent
-		^window extent
+
+		^self window extent

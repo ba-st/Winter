@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "WinterWidget",
+	"category" : "Winter-Examples-WizardBattle",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"shift",
+		"negatedShift"
+	],
+	"name" : "WBAArenaComponent",
+	"type" : "normal"
+}

@@ -1,0 +1,18 @@
+{
+	"instance" : {
+		"leftSelection" : "apiorno 5/13/2018 12:18",
+		"seasonSubWidgets:" : "apiorno 5/13/2018 12:20",
+		"switchToNextScreen" : "apiorno 5/13/2018 12:18",
+		"newSeasonSubWidget:" : "apiorno 5/13/2018 12:20",
+		"newSeasonWidget:" : "apiorno 5/26/2018 18:59",
+		"endScreenComputation" : "apiorno 5/13/2018 12:18",
+		"newSmallArrowSelectWidget:" : "apiorno 5/13/2018 12:20",
+		"newLeftArrowColumSelectWidget" : "apiorno 5/13/2018 12:19",
+		"initialize" : "apiorno 5/13/2018 12:19",
+		"rightSelection" : "apiorno 5/13/2018 12:18",
+		"loadWidgets" : "apiorno 5/13/2018 12:19",
+		"newRightArrowColumSelectWidget" : "apiorno 5/13/2018 12:19",
+		"renderWidgetsOn:" : "apiorno 5/13/2018 12:19"
+	},
+	"class" : { }
+}

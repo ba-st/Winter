@@ -1,0 +1,21 @@
+Defaults
+availableText
+	^ #( 
+	1
+	2
+	3
+	4
+	arena
+	arrowLeft0
+	arrowLeft1
+	arrowRight0
+	arrowRight1
+	character
+	player
+	players
+	season
+	select
+	spell
+	title
+	winner
+	)

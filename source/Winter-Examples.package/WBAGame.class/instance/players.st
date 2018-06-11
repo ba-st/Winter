@@ -1,0 +1,3 @@
+Accessing
+players
+	^scene players

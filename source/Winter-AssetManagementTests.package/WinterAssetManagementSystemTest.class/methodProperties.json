@@ -1,17 +1,18 @@
 {
 	"instance" : {
+		"setUp" : "apiorno 6/10/2018 22:05",
 		"createImage" : "Alvaro 12/24/2017 20:10",
-		"tearDown" : "Alvaro 12/24/2017 20:40",
-		"testRemoveSpriteFailsIfSpriteDoesNotExist" : "Alvaro 10/2/2017 19:20",
-		"testAddSprite" : "Alvaro 1/30/2018 20:49",
-		"testRemoveSoundFailsIfSoundDoesNotExist" : "Alvaro 10/2/2017 19:20",
+		"tearDown" : "apiorno 6/10/2018 22:05",
+		"testRemoveAsset" : "apiorno 5/26/2018 22:24",
+		"testAddSprite" : "apiorno 5/26/2018 22:19",
+		"testRemoveAssetFailsIfAssetDoesNotExist" : "apiorno 5/26/2018 22:24",
 		"pharoImageOnBase64" : "Alvaro 12/24/2017 20:11",
+		"createSound" : "apiorno 6/10/2018 22:04",
+		"beep" : "apiorno 6/10/2018 21:59",
 		"imageDirectory" : "Alvaro 12/24/2017 20:11",
 		"testAccessing" : "Alvaro 10/2/2017 19:20",
-		"testAddSound" : "Alvaro 12/24/2017 20:37",
-		"testRemoveSprite" : "Alvaro 1/30/2018 20:49",
-		"testRemoveSound" : "Alvaro 12/24/2017 20:37",
-		"setUp" : "Alvaro 12/24/2017 20:40"
+		"testAddSound" : "apiorno 5/26/2018 22:17",
+		"expectedFailures" : "apiorno 6/10/2018 22:50"
 	},
 	"class" : { }
 }

@@ -1,14 +1,12 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "WinterAsset",
 	"category" : "Winter-AssetManagement",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"sound",
-		"type",
-		"filePath"
+		"type"
 	],
 	"name" : "WinterSound",
 	"type" : "normal"

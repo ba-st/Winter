@@ -6,5 +6,6 @@ initialize
 	keyUpInteractions := Dictionary new.
 	self
 		initializeResources;
+		initializeSprite;
 		initializeCollisionShape
 		
