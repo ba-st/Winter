@@ -1,15 +1,6 @@
-Initialization
+initialization
 initializeCollisionHandlers
-
 	collisionHandlers
-		add:
-			(CollisionHandler
-				between: ArkanoidPlayer
-				and: WinterGameWindow
-				onCollisionDo: [ :collision | 
-					collision firstComponent positionX = 10 negated
-						ifTrue: [ collision firstComponent moveRight ]
-						ifFalse: [ collision firstComponent moveLeft ] ]);
 		add:
 			(CollisionHandler
 				between: ArkanoidBall
@@ -22,23 +13,20 @@ initializeCollisionHandlers
 		add:
 			(CollisionHandler
 				between: ArkanoidBall
-				and: ArkanoidBlock 
+				and: ArkanoidBlock
 				onCollisionDo: [ :collision | 
-					collision secondComponent collidedByBall .
+					collision secondComponent collidedByBall.
 					collision firstComponent negateY.
 					collision firstComponent playCollisionSound ]);
-		
-		"add:
+		add:
 			(CollisionHandler
-				between: ArkanoidBall
-				and: WinterGameWindow
+				between: ArkanoidPlayer
+				and: WinterScreen
 				onCollisionDo: [ :collision | 
-					collision firstComponent position y > window playableExtentY
-						ifTrue: [ self resetPlayerAndBall: collision firstComponent ]
-						ifFalse: [ collision firstComponent
-								perform: (#negate , collision axisSymbol asUppercase) asSymbol;
-								playCollisionSound ] ]);"
-			add:
+					collision firstComponent positionX = 10 negated
+						ifTrue: [ collision firstComponent moveRight ]
+						ifFalse: [ collision firstComponent moveLeft ] ]);
+		add:
 			(CollisionHandler
 				between: ArkanoidBall
 				and: ArkanoidPlayer

@@ -1,0 +1,24 @@
+{
+	"instance" : {
+		"expectedNumberOfPlayers" : "apiorno 5/26/2018 19:35",
+		"windowExtent:" : "apiorno 5/26/2018 19:36",
+		"cellDescriptors" : "apiorno 5/26/2018 19:35",
+		"cellDescriptors:" : "apiorno 5/26/2018 19:35",
+		"windowExtent" : "apiorno 5/26/2018 19:36",
+		"dispatchIndex:on:with:" : "apiorno 5/26/2018 19:36"
+	},
+	"class" : {
+		"default3PlayersArena" : "apiorno 5/26/2018 19:31",
+		"alternative3PlayersArena" : "apiorno 5/26/2018 19:31",
+		"default4PlayersArena" : "apiorno 5/26/2018 19:32",
+		"maze4PlayersArena" : "apiorno 5/26/2018 19:33",
+		"default2PlayersArena" : "apiorno 5/26/2018 19:31",
+		"chaotic4PlayersArena" : "apiorno 5/26/2018 19:32",
+		"alternative2PlayersArena" : "apiorno 5/26/2018 19:31",
+		"large4PlayersArena" : "apiorno 5/26/2018 19:32",
+		"available3Players" : "apiorno 5/26/2018 19:31",
+		"available4Players" : "apiorno 5/26/2018 19:32",
+		"available2Players" : "apiorno 5/26/2018 19:31",
+		"center4PlayersArena" : "apiorno 5/26/2018 19:32"
+	}
+}

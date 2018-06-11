@@ -1,3 +1,0 @@
-Testing
-isStereo
-	^sound isStereo 

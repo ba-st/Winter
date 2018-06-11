@@ -1,0 +1,4 @@
+accessing
+numberOfAnimationFrame
+
+	^ 10

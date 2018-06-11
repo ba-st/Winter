@@ -1,14 +1,19 @@
 {
 	"instance" : {
-		"addSound:named:" : "Alvaro 9/28/2017 01:52",
-		"removeSpriteNamed:" : "Alvaro 9/28/2017 01:56",
-		"initialize" : "Alvaro 10/6/2017 17:27",
-		"sounds" : "Alvaro 9/27/2017 23:10",
-		"spriteNamed:" : "Alvaro 9/28/2017 01:56",
-		"soundNamed:" : "Alvaro 9/28/2017 01:54",
-		"addSprite:named:" : "Alvaro 9/28/2017 01:56",
-		"removeSoundNamed:" : "Alvaro 9/28/2017 01:56",
-		"sprites" : "Alvaro 9/27/2017 23:11"
+		"assets" : "apiorno 5/25/2018 12:41",
+		"soundNamed:" : "apiorno 5/25/2018 12:41",
+		"sounds" : "apiorno 5/25/2018 12:41",
+		"removeSpriteNamed:" : "apiorno 5/25/2018 12:40",
+		"removeAssetNamed:" : "apiorno 5/25/2018 12:39",
+		"assetNamed:ifAbsent:" : "apiorno 5/25/2018 15:43",
+		"addAsset:" : "apiorno 5/25/2018 22:14",
+		"sprites" : "apiorno 5/25/2018 12:41",
+		"initialize" : "apiorno 5/25/2018 12:35",
+		"assetNamed:" : "apiorno 5/25/2018 15:44",
+		"addSound:named:" : "apiorno 5/25/2018 22:14",
+		"addSprite:named:" : "apiorno 5/25/2018 22:14",
+		"removeSoundNamed:" : "apiorno 5/25/2018 12:40",
+		"spriteNamed:" : "apiorno 5/25/2018 12:41"
 	},
 	"class" : {
 		"current" : "Alvaro 9/27/2017 23:09",

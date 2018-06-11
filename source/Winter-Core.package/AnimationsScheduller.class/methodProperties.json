@@ -1,0 +1,11 @@
+{
+	"instance" : {
+		"animationStepTime" : "apiorno 5/22/2018 21:46",
+		"executeAnimations" : "apiorno 5/22/2018 21:47",
+		"initialize" : "apiorno 6/10/2018 20:36",
+		"newGameTickAction:for:" : "apiorno 5/22/2018 21:49",
+		"stopGameTickActionFor:" : "apiorno 5/23/2018 21:52",
+		"name" : "apiorno 5/22/2018 21:46"
+	},
+	"class" : { }
+}

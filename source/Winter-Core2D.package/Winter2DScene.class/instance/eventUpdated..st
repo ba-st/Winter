@@ -1,5 +1,5 @@
 Events
 eventUpdated: anEvent
 
-	self drawOn: anEvent canvas.
-	self displayScene: self surface.
+	"self renderOn: anEvent canvas."
+	

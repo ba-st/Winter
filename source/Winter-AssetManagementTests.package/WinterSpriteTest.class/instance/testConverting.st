@@ -1,10 +1,12 @@
 Tests
 testConverting
-	| sprite canvas paint |
-	sprite := WinterSprite fromPath: 'pharo.png'.
-	canvas := (AthensCairoSurface extent: 100 @ 50) newCanvas.
-	paint := sprite asAthensPaintOn: canvas.
+	| sprite  |
+	sprite := WinterSprite fromPath: 'pharo.png' named: 'pharo'.
+
 	self
-		assert: (paint isKindOf: AthensCairoPatternPaint);
-		assert: paint isSuccess;
-		assert: paint extent equals: sprite extent
+		assert: sprite extent equals: (512@512).
+		
+	sprite scaledToSize: 40@40.
+	
+self
+		assert: sprite extent equals: (40@40).

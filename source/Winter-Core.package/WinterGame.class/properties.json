@@ -6,14 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"window",
-		"engine",
-		"players",
-		"scenes",
-		"currentScene",
-		"surfaceContainer",
-		"stepWalker",
-		"collisionHandlers"
+		"scheduler",
+		"collisionHandlers",
+		"screen",
+		"scene"
 	],
 	"name" : "WinterGame",
 	"type" : "normal"

@@ -1,3 +1,6 @@
 events
 pushEvent: anEvent
-	self currentScene pushEvent: anEvent.
+
+	anEvent isGameEvent
+		ifTrue: [ anEvent execute: self screen  ]
+		

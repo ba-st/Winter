@@ -1,3 +1,0 @@
-Accessing
-depth
-	^spriteForm depth

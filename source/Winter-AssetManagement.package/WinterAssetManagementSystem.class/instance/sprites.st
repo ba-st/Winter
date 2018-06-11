@@ -1,3 +1,3 @@
 Accessing
 sprites
-	^ sprites copy
+	^ self assets

@@ -1,22 +1,23 @@
 {
 	"instance" : {
 		"pathOn:" : "Alvaro 10/28/2017 15:12",
-		"createPaintOn:" : "Alvaro 10/1/2017 17:41",
-		"setSpecificPaint:on:" : "Alvaro 10/15/2017 07:50",
+		"createPaintOn:" : "Alvaro 3/27/2018 22:32",
+		"renderOn:" : "Alvaro 3/27/2018 22:32",
+		"setSpecificPaint:on:" : "Alvaro 3/27/2018 22:33",
 		"color" : "Alvaro 10/1/2017 17:32",
 		"paintOn:" : "Alvaro 10/1/2017 17:40",
 		"updatePositionBy:" : "Alvaro 10/26/2017 19:32",
-		"drawOn:" : "Alvaro 10/15/2017 07:53",
+		"updateUsing:" : "apiorno 6/10/2018 18:49",
 		"bounds" : "Alvaro 10/28/2017 13:25",
 		"initialize" : "Alvaro 10/28/2017 13:20",
 		"position:" : "Alvaro 10/1/2017 17:30",
 		"updatePosition" : "Alvaro 10/25/2017 22:46",
 		"eventUpdated:" : "Alvaro 10/27/2017 22:48",
 		"color:" : "Alvaro 10/1/2017 17:33",
-		"drawShape:on:" : "Alvaro 10/15/2017 07:53",
 		"position" : "Alvaro 10/1/2017 17:30",
+		"renderShape:on:" : "Alvaro 3/27/2018 22:33",
 		"intersects:" : "Alvaro 10/29/2017 22:39",
-		"createPathOn:" : "Alvaro 10/1/2017 17:42"
+		"createPathOn:" : "Alvaro 3/27/2018 22:32"
 	},
 	"class" : {
 		"defaultColor" : "Alvaro 10/1/2017 18:22",

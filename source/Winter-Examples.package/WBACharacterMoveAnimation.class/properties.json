@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "WBAMoveAnimation",
+	"category" : "Winter-Examples-WizardBattle",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"character"
+	],
+	"name" : "WBACharacterMoveAnimation",
+	"type" : "normal"
+}

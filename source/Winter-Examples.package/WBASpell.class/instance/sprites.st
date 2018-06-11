@@ -1,0 +1,3 @@
+initialization
+sprites
+	^ sprites

@@ -1,0 +1,3 @@
+Accessing
+initialShift
+	self subclassResponsibility

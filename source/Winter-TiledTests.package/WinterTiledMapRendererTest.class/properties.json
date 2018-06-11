@@ -7,8 +7,7 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"map",
-		"receivedUpdateEvent",
-		"receivedActivateEvent"
+		"receivedUpdateEvent"
 	],
 	"name" : "WinterTiledMapRendererTest",
 	"type" : "normal"

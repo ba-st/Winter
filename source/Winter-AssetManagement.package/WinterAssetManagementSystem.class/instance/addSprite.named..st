@@ -1,3 +1,3 @@
 Asset Managing
-addSprite: aSprite named: aName
-	sprites at: aName put: aSprite
+addSprite: aSpritePath named: aName
+	^self addAsset:  (WinterSprite fromPath: aSpritePath named: aName)

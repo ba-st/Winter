@@ -1,6 +1,8 @@
 {
 	"instance" : {
-		"asCmBoundingBox" : " 8/19/2017 12:13:10"
+		"setOrigin:corner:" : "Alvaro 3/30/2018 16:16"
 	},
-	"class" : { }
+	"class" : {
+		"fastOrigin:corner:" : "Alvaro 3/30/2018 16:16"
+	}
 }

@@ -1,3 +1,0 @@
-Accessing
-width
-	^spriteForm width

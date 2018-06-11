@@ -1,0 +1,4 @@
+Accessing
+translation
+
+	^ self position

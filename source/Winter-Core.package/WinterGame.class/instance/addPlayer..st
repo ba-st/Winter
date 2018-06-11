@@ -1,5 +1,5 @@
-accessing
+Accessing
 addPlayer: aPlayer
+
 	aPlayer game: self.
-	players add: aPlayer.
-	currentScene addPlayer: aPlayer.
+	scene addPlayer: aPlayer.

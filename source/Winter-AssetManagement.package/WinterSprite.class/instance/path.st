@@ -1,3 +1,3 @@
 Accessing
 path
-	^fileReference pathString 
+	^path

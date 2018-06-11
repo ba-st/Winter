@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "WinterMenuScreenModel",
+	"category" : "Winter-Examples-WizardBattle",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"currentChoices",
+		"titleWidget",
+		"arrowWidgets",
+		"spellWidgets"
+	],
+	"name" : "WBASpellSelectScreenModel",
+	"type" : "normal"
+}

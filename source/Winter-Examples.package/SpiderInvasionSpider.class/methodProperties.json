@@ -1,0 +1,11 @@
+{
+	"instance" : {
+		"checkCollisions" : "Alvaro 4/28/2018 23:54",
+		"action" : "Alvaro 4/28/2018 19:23",
+		"initializeAtPosition:of:tick:" : "Alvaro 4/28/2018 19:18",
+		"initializeSprite" : "Alvaro 4/28/2018 19:31"
+	},
+	"class" : {
+		"atPosition:of:tick:" : "Alvaro 4/28/2018 18:44"
+	}
+}

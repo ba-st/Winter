@@ -1,0 +1,3 @@
+Testing
+allowMovement
+	^ true

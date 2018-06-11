@@ -1,0 +1,4 @@
+Accessing
+game
+
+	^game

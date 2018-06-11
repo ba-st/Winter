@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "GameScheduller",
+	"category" : "Winter-Core-Schedulers",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"gameStepActions"
+	],
+	"name" : "AnimationsScheduller",
+	"type" : "normal"
+}

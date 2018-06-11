@@ -1,3 +1,3 @@
 Drawing
 drawOnAthensCanvas: aCanvas
-	spriteForm asMorph drawOnAthensCanvas: aCanvas
+	nativeAsset  asMorph drawOnAthensCanvas: aCanvas

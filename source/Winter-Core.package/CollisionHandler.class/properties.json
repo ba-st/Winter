@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "Alvaro 11/1/2017 17:15",
-	"super" : "WinterObject",
+	"super" : "WinterReactiveObject",
 	"category" : "Winter-Core-Collision",
 	"classinstvars" : [ ],
 	"pools" : [ ],

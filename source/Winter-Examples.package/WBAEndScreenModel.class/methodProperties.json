@@ -1,0 +1,13 @@
+{
+	"instance" : {
+		"upSelection" : "apiorno 5/13/2018 12:11",
+		"downSelection" : "apiorno 5/13/2018 12:11",
+		"initialize" : "apiorno 5/13/2018 12:12",
+		"renderWidgetsOn:" : "apiorno 5/13/2018 12:12",
+		"winner:" : "apiorno 5/13/2018 12:12",
+		"loadWidgets" : "apiorno 5/13/2018 12:12",
+		"switchToNextScreen" : "apiorno 5/13/2018 12:11",
+		"startAnimation" : "apiorno 5/13/2018 12:12"
+	},
+	"class" : { }
+}

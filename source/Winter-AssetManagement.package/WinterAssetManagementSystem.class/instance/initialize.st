@@ -1,7 +1,6 @@
 Initialization
 initialize
-	sounds := Dictionary new.
-	sprites := Dictionary new.
+	assets := Dictionary new.
 	SoundSystem soundEnabled: true.
 	SoundSystem initialize.
 	SoundPlayer startUpWithSound:nil.

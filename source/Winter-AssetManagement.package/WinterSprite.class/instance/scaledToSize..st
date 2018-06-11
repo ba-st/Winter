@@ -1,4 +1,4 @@
 Converting
 scaledToSize: anExtent
 
-	spriteForm := spriteForm scaledToSize: anExtent
+	nativeAsset := nativeAsset  scaledToSize: anExtent

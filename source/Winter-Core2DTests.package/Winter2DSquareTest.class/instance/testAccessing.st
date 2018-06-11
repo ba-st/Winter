@@ -3,7 +3,7 @@ testAccessing
 
 	| game circle |
 
-	game := WinterTestGame new.
+	game := self game.
 	circle := Winter2DSquare
 		ofCenter: 200 @ 560
 		extent: 200 @ 0

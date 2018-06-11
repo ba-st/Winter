@@ -3,8 +3,8 @@ testRemovePlayer
 	
 	| scene game player |
 	
-	game := WinterTestGame new.
-	scene := game currentScene.
+	game := self game.
+	scene := game scene.
 	player := self player.
 	
 	self assert: scene players isEmpty.

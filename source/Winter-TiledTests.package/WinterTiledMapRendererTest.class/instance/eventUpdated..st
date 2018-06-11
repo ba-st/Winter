@@ -1,4 +1,4 @@
-Mock Support
+Test SUpport
 eventUpdated: aWinterSceneUpdated 
 	
 	receivedUpdateEvent := true.

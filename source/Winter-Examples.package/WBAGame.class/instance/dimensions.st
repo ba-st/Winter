@@ -1,0 +1,3 @@
+accessing
+dimensions
+	^ descriptor windowExtent

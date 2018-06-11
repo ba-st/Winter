@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Winter-Examples-WizardBattle",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"cellDescriptors",
+		"windowExtent"
+	],
+	"name" : "WBAArenaDescriptor",
+	"type" : "normal"
+}

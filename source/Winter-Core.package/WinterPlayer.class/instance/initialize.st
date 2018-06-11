@@ -1,9 +1,11 @@
-Initialization
+initialization
 initialize
 
 	super initialize.
-	interactionEvents := OrderedCollection new.
+	keyDownInteractions := Dictionary new.
+	keyUpInteractions := Dictionary new.
 	self
 		initializeResources;
-		initializeCollisionShape;
-		initializeInteractions
+		initializeSprite;
+		initializeCollisionShape
+		

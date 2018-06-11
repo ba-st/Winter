@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SpiderInvasionItem",
+	"category" : "Winter-Examples-SpiderInvasion",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SpiderInvasionWall",
+	"type" : "normal"
+}

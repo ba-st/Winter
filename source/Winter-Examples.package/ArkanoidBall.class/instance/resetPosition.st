@@ -1,6 +1,5 @@
 Reset
 resetPosition
 
-	collisionShape  position: 200 @ 300
-
-	
+	self initialize.
+	collisionShape position: 250 @ 530

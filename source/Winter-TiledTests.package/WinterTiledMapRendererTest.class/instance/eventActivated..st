@@ -1,4 +1,4 @@
-Mock Support
+Test SUpport
 eventActivated: aWinterSceneActivated 
 
 	receivedActivateEvent := true

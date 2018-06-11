@@ -1,4 +1,4 @@
-as yet unclassified
+Managing
 removePlayer: aPlayer 
 
 	aPlayer scene: nil.

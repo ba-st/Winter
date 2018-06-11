@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "GameScheduller",
+	"category" : "Winter-Core-Schedulers",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SteppingScheduller",
+	"type" : "normal"
+}

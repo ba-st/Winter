@@ -1,0 +1,4 @@
+Testing
+isEmpty
+
+	^ true

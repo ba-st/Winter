@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "WBASpriteDescriptor",
+	"category" : "Winter-Examples-WizardBattle",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "WBASpellDescriptor",
+	"type" : "normal"
+}

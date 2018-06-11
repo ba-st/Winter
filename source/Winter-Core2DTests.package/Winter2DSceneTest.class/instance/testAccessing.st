@@ -3,8 +3,8 @@ testAccessing
 
 	| scene game |
 
-	game := WinterTestGame new.
-	scene := game currentScene.
+	game := self game.
+	scene := game scene.
 	
 	self assert: scene backgroundColor equals: Color white.
 	scene backgroundColor: Color orange.
@@ -19,5 +19,4 @@ testAccessing
 		assert: scene dimensions equals: game dimensions;
 		assert: scene surface notNil;
 		assert: scene surface extent equals: scene dimensions;
-		assert: scene players isEmpty;
-		assert: scene eventQueue  notNil
+		assert: scene players isEmpty

@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "WinterMenuScreenModel",
+	"category" : "Winter-Examples-WizardBattle",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"currentChoice",
+		"titleWidget",
+		"arrowWidget",
+		"arenaWidget",
+		"arenas"
+	],
+	"name" : "WBAArenaSelectScreenModel",
+	"type" : "normal"
+}

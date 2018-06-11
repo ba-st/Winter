@@ -1,4 +1,5 @@
 Executing
 play
-	sound isPlaying
-		ifFalse: [ sound play ]
+	nativeAsset  isPlaying
+		ifTrue: [ "Playing" ]
+		ifFalse: [ nativeAsset play ]

@@ -1,0 +1,15 @@
+{
+	"instance" : {
+		"upSelection" : "apiorno 5/13/2018 12:02",
+		"switchToNextScreen" : "apiorno 5/13/2018 12:01",
+		"newSubArenaWidget:" : "apiorno 5/13/2018 12:04",
+		"endScreenComputation" : "apiorno 5/13/2018 11:59",
+		"newArenaWidget:" : "apiorno 5/13/2018 12:03",
+		"initialize" : "apiorno 5/13/2018 12:02",
+		"downSelection" : "apiorno 5/13/2018 11:58",
+		"loadWidgets" : "apiorno 5/13/2018 12:03",
+		"renderWidgetsOn:" : "apiorno 5/13/2018 12:03",
+		"numArenas" : "apiorno 5/13/2018 11:58"
+	},
+	"class" : { }
+}

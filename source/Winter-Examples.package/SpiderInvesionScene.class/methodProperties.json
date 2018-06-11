@@ -1,0 +1,19 @@
+{
+	"instance" : {
+		"initializeComponents" : "apiorno 5/22/2018 21:00",
+		"isOccupiedAt:" : "Alvaro 4/28/2018 19:09",
+		"backgroundColor" : "Alvaro 4/28/2018 17:58",
+		"randomX" : "Alvaro 4/28/2018 19:02",
+		"minX" : "Alvaro 4/28/2018 18:15",
+		"maxY" : "Alvaro 4/28/2018 19:12",
+		"initializeWalls" : "Alvaro 4/28/2018 18:13",
+		"lostGame" : "Alvaro 4/28/2018 19:28",
+		"initializeSpiders" : "Alvaro 4/28/2018 19:02",
+		"maxX" : "Alvaro 4/28/2018 19:13",
+		"newRandomSpiderTicked:" : "Alvaro 4/28/2018 19:10",
+		"withIndexItemsDo:" : "Alvaro 4/28/2018 18:14",
+		"isValidPosition:" : "Alvaro 4/28/2018 23:41",
+		"minY" : "Alvaro 4/28/2018 18:15"
+	},
+	"class" : { }
+}
