@@ -29,7 +29,7 @@
 
 - Network API (LAN & Online)
 
-- Partciles Effect
+- Particles Effect
    
 ## Instructions
   
