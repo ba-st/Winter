@@ -16,20 +16,20 @@
 ### Images
       .bmp , .gif, .jpeg and .png image extensions are supported.
         
-## New Features
+## Features
  <img src="./images/features.png" >  
  
 ## Future Work
 
-### Tiled Maps
+- Tiled Maps
 
-### Camera
+- Camera
 
-### Physics with native library
+- Physics with native library
 
-### Network API (LAN & Online)
+- Network API (LAN & Online)
 
-### Partciles Effect
+- Partciles Effect
    
 ## Instructions
   
