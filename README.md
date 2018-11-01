@@ -2,13 +2,7 @@
 <img src="./logo/winter.png" height="48" width="48" >   
 
  Winter is the new and updated version of [Storm][] from [Esteban][] . It is a framework to develop games in 2D using Smalltalk.
- 
-## Problems
- 
-#### Chipmunk2D is temporarily disabled because of VM crashes problems on Linux and could not build properly on Windows. Physics temporarily simulated in Smalltalk.
   
-#### Sound does not work on pharo for linux distributions, framework works fine but you will not hear sounds on Linux.
- 
 ## Supported Media Files
  
 ### Sound 
@@ -30,6 +24,10 @@
 - Network API (LAN & Online)
 
 - Particles Effect
+
+## Unresolved issues
+   
+#### Sound does not work on pharo for linux distributions, framework works fine but you will not hear sounds on Linux.
    
 ## Instructions
   
