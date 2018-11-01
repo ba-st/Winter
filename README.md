@@ -1,7 +1,7 @@
 # Winter [![Build Status](https://travis-ci.org/apiorno/Winter.svg?branch=master)](https://travis-ci.org/apiorno/Winter) [![Coverage Status](https://coveralls.io/repos/github/apiorno/Winter/badge.svg)](https://coveralls.io/github/apiorno/Winter)
 <img src="./logo/winter.png" height="48" width="48" >   
 
- Winter is the new and updated version of [Storm][] from [Esteban][] . It is a  2D Game Framework Development using FFI with [Chipmunk2D Physics Engine][].
+ Winter is the new and updated version of [Storm][] from [Esteban][] . It is a framework to develop games in 2D using Smalltalk.
  
 ## Problems
  
