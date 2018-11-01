@@ -3,26 +3,35 @@
 
  Winter is the new and updated version of [Storm][] from [Esteban][] . It is a  2D Game Framework Development using FFI with [Chipmunk2D Physics Engine][].
  
- ## Problems
+## Problems
  
-  #### Chipmunk2D is temporarily disabled because of VM crashes problems on Linux and could not build properly on Windows. Physics temporarily simulated in Smalltalk.
+#### Chipmunk2D is temporarily disabled because of VM crashes problems on Linux and could not build properly on Windows. Physics temporarily simulated in Smalltalk.
   
-  #### Sound does not work on pharo for linux distributions, framework works fine but you will not hear sounds on Linux.
+#### Sound does not work on pharo for linux distributions, framework works fine but you will not hear sounds on Linux.
  
- ## Supported Media Files
+## Supported Media Files
  
-   ### Sound 
+### Sound 
       At the moment .aiff and .wav sound extensions are supported
-   ### Images
+### Images
       .bmp , .gif, .jpeg and .png image extensions are supported.
         
- ## New Features
+## New Features
  <img src="./images/features.png" >  
  
- ## Network
-   #### After releasing Winter ( having main features done to make all kind of 2D game) i will work on Network API for LAN and Online Games.
+## Future Work
+
+### Tiled Maps
+
+### Camera
+
+### Physics with native library
+
+### Network API (LAN & Online)
+
+### Partciles Effect
    
- ## Instructions
+## Instructions
   
   - Open a Playground and evaluate:
 
@@ -32,14 +41,21 @@ Metacello new
   repository: 'github://apiorno/Winter:master/source';
   load
 ```
- ## Run Arkanoid example
+## Run Arkanoid example
   Copy files on "Game Examples files" to the image directory
   And then run this on playground:
   
-  ```smalltalk
+```smalltalk
 ArkanoidGame new start
 ```
+## Run Wizar Battle Arena
+	Orginally developed by [clement bera] []
 
+```smalltalk
+WBAGame start
+```	
+
+[clement bera]: https://github.com/clementbera/
 [esteban]: https://github.com/estebanlm
 [storm]: https://github.com/cdlm/pharo-storm
 [chipmunk2d physics engine]:https://chipmunk-physics.net/
