@@ -49,7 +49,7 @@ Metacello new
 ArkanoidGame new start
 ```
 ## Run Wizar Battle Arena
-	Orginally developed by [clement bera] []
+	Orginally developed by [Clement Bera][]
 
 ```smalltalk
 WBAGame start
