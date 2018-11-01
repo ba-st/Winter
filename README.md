@@ -48,14 +48,15 @@ Metacello new
 ```smalltalk
 ArkanoidGame new start
 ```
+
 ## Run Wizar Battle Arena
-	Orginally developed by [Clement][]
+  Orginally developed by [Clement Bera][]
 
 ```smalltalk
 WBAGame start
 ```	
 
-[clement]: https://github.com/clementbera/
+[clement bera]: https://github.com/clementbera
 [esteban]: https://github.com/estebanlm
 [storm]: https://github.com/cdlm/pharo-storm
 [chipmunk2d physics engine]:https://chipmunk-physics.net/
