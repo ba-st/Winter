@@ -1,4 +1,0 @@
-accessing
-backgroundDescriptor: aBackgroundDescriptor
-
-	backgroundDescriptor := aBackgroundDescriptor

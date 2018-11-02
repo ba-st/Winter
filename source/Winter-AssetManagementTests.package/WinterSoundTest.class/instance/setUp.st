@@ -1,4 +1,0 @@
-initialization
-setUp
-
-	WinterAssetManagementSystem restart

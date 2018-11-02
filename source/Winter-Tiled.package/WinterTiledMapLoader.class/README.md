@@ -1,1 +1,0 @@
-A Loader for TileMaps from Tmx files

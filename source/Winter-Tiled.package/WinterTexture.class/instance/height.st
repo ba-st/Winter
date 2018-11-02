@@ -1,4 +1,0 @@
-Accessing
-height
-
-	^ image height

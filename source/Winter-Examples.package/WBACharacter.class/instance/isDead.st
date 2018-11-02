@@ -1,3 +1,0 @@
-testing
-isDead
-	^ cell isNil

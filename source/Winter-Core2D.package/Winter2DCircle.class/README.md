@@ -1,1 +1,0 @@
-Circle abstraction as a WInter Component

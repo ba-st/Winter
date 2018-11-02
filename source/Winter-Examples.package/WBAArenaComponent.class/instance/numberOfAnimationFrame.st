@@ -1,3 +1,0 @@
-Accessing
-numberOfAnimationFrame
-	^ 16

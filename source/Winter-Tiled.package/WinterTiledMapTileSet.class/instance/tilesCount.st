@@ -1,4 +1,0 @@
-accessing
-tilesCount
-
-	^tiles size

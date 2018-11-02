@@ -1,1 +1,0 @@
-Non player resource for tests

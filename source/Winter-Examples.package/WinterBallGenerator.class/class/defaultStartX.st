@@ -1,3 +1,0 @@
-defaults
-defaultStartX
-	^350

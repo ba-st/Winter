@@ -1,4 +1,0 @@
-Accessing
-ellipse
-
-	^ ellipse

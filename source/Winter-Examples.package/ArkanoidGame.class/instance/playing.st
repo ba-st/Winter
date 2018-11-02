@@ -1,4 +1,0 @@
-Accessing
-playing
-
-	^ playing

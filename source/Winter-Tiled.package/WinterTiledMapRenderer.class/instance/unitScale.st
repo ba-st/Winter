@@ -1,4 +1,0 @@
-Accessing
-unitScale
-
-	^ unitScale

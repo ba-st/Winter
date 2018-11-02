@@ -1,3 +1,0 @@
-Accessing
-bounds
-	self subclassResponsibility 

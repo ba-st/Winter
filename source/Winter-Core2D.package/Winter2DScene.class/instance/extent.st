@@ -1,4 +1,0 @@
-Accessing
-extent
-
-	^game dimensions 

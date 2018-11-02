@@ -1,3 +1,0 @@
-Accessing
-position
-	^ collisionShape position

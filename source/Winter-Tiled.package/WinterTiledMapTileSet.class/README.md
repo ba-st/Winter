@@ -1,1 +1,0 @@
-Class representing a tileSet in a tiled map

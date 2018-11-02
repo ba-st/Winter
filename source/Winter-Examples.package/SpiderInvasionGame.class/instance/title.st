@@ -1,4 +1,0 @@
-Accessing
-title
-
-	^'Spider Invasion'

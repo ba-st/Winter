@@ -1,4 +1,0 @@
-Accessing
-width
-
-	^ image width

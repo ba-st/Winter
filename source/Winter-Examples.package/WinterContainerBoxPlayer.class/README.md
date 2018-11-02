@@ -1,1 +1,0 @@
-A container box being the main player of a game

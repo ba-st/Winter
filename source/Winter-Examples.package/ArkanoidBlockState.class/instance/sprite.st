@@ -1,4 +1,0 @@
-Accessing
-sprite
-
-	self subclassResponsibility

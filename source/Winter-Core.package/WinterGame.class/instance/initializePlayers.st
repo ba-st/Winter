@@ -1,3 +1,0 @@
-initialization
-initializePlayers
-	"Load players"

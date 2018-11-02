@@ -1,4 +1,0 @@
-Accessing
-color
-
-	^ color

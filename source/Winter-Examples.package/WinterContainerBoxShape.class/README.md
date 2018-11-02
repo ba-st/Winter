@@ -1,1 +1,0 @@
-A 2D container box made of 3 walls

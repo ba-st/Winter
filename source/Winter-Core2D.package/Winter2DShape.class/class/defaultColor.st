@@ -1,3 +1,0 @@
-Defaults
-defaultColor
-	^Color white

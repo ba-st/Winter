@@ -1,4 +1,0 @@
-Accessing
-fileName
-
-	^ fileName

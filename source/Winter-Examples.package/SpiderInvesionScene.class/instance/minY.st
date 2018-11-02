@@ -1,4 +1,0 @@
-accessing
-minY
-
-	^ 1

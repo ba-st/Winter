@@ -1,4 +1,0 @@
-Bootstrap
-resourceFolder
-
-	^ 'resources/'

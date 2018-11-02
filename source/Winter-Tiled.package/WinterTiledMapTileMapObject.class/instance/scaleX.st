@@ -1,4 +1,0 @@
-Accessing
-scaleX
-
-	^ scaleX

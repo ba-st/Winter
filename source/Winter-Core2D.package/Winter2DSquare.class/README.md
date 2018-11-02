@@ -1,1 +1,0 @@
-Square abstraction as a WInter Component
