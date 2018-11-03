@@ -1,3 +1,0 @@
-animations
-finishMoveAnimation
-	self nextAnimation

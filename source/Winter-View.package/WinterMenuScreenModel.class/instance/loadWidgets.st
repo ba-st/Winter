@@ -1,4 +1,0 @@
-private
-loadWidgets
-
-	self subclassResponsibility

@@ -1,4 +1,0 @@
-rendering
-terminateRendering
-
-	scheduler terminateProcess

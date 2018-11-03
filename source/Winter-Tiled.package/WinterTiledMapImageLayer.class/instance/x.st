@@ -1,4 +1,0 @@
-Accessing
-x
-
-	^ x

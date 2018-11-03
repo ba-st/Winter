@@ -1,3 +1,0 @@
-initialization
-initializeScenes
-	"Load scenes"

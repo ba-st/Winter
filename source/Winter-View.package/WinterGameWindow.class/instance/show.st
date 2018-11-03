@@ -1,3 +1,0 @@
-Displaying
-show
-	window openAsIs

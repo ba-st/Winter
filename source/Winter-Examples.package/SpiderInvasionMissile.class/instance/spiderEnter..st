@@ -1,2 +1,0 @@
-Collision
-spiderEnter: spider

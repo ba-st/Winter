@@ -1,4 +1,0 @@
-Accessing
-mapObjects
-	
-	^ mapObjects

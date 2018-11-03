@@ -1,1 +1,0 @@
-An abstract 2D wall shape

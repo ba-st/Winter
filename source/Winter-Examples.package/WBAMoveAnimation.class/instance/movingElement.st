@@ -1,3 +1,0 @@
-Accessing
-movingElement
-	self subclassResponsibility 

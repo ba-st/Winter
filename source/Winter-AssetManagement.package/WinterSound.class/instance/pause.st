@@ -1,3 +1,0 @@
-Executing
-pause
-	nativeAsset  pause

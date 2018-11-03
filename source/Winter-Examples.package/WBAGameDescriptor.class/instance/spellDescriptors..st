@@ -1,4 +1,0 @@
-accessing
-spellDescriptors: aSpellDescriptorsCollection
-
-	spellDescriptors := aSpellDescriptorsCollection

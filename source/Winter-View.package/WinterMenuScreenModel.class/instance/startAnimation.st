@@ -1,2 +1,0 @@
-animations
-startAnimation

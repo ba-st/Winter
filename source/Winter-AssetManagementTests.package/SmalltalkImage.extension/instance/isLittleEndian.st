@@ -1,3 +1,0 @@
-*Winter-AssetManagementTests
-isLittleEndian
-	^EndianDetector isLittleEndian

@@ -1,1 +1,0 @@
-Active element in a game, controlled by the user

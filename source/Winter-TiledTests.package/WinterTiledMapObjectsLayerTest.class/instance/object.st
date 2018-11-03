@@ -1,4 +1,0 @@
-Test SUpport
-object
-
-	^self

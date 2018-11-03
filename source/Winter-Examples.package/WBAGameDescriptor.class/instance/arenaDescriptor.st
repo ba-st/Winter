@@ -1,4 +1,0 @@
-accessing
-arenaDescriptor
-
-	^ arenaDescriptor

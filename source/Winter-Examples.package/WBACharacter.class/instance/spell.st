@@ -1,3 +1,0 @@
-accessing
-spell
-	^ spell

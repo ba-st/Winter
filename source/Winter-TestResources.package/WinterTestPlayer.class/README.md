@@ -1,1 +1,0 @@
-Player resource for tests

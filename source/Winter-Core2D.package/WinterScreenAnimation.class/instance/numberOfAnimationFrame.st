@@ -1,4 +1,0 @@
-accessing
-numberOfAnimationFrame
-
-	^ 10

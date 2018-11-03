@@ -1,4 +1,0 @@
-Accessing
-resources
-
-	^resources

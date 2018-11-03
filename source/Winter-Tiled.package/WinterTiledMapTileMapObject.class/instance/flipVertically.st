@@ -1,4 +1,0 @@
-Accessing
-flipVertically
-
-	^ flipVertically

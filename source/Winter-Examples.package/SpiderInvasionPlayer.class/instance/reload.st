@@ -1,4 +1,0 @@
-actions
-reload
-
-	loaded := true.

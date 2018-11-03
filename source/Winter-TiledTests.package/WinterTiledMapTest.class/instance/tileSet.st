@@ -1,3 +1,0 @@
-Test Support
-tileSet
-	^tileSet

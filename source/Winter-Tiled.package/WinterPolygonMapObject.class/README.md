@@ -1,1 +1,0 @@
-Representation of a Polygon Map Object

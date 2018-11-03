@@ -1,4 +1,0 @@
-accessing
-characterDescriptors: aCharacterDescriptorsCollection
-
-	characterDescriptors := aCharacterDescriptorsCollection 

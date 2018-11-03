@@ -1,4 +1,0 @@
-Accessing
-regionWidth
-
-	^ regionWidth 

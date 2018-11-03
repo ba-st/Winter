@@ -1,1 +1,0 @@
-Representation of a Tile Map Object

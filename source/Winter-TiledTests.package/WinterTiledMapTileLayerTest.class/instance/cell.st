@@ -1,4 +1,0 @@
-Test Support
-cell
-
-	^ self

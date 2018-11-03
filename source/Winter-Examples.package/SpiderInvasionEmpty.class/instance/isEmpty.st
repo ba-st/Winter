@@ -1,4 +1,0 @@
-Testing
-isEmpty
-
-	^ true

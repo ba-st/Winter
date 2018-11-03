@@ -1,3 +1,0 @@
-accessing
-dimensions
-	^ descriptor windowExtent

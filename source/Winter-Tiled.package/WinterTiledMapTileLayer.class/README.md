@@ -1,1 +1,0 @@
-Class representing a tile layer in a map

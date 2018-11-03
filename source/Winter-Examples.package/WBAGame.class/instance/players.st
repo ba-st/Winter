@@ -1,3 +1,0 @@
-Accessing
-players
-	^scene players

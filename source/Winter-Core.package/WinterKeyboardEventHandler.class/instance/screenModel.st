@@ -1,4 +1,0 @@
-Accessing
-screenModel
-
-	^ screenModel

@@ -1,4 +1,0 @@
-Collisions
-affectCollisionWithBallTo: anArkanoidBlock
-
-	anArkanoidBlock changeColorStateTo: ArkanoidGreenBlockState new

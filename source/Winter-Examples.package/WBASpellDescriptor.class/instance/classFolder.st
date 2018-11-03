@@ -1,3 +1,0 @@
-Bootstrap
-classFolder
-	^ 'spell/'

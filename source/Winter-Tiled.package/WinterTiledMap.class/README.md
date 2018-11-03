@@ -1,1 +1,0 @@
-Class representing a tiled map

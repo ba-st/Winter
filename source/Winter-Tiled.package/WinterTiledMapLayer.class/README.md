@@ -1,1 +1,0 @@
-Class representing an abstract layer in a map

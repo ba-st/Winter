@@ -1,1 +1,0 @@
-I am a game element with a visual representation.
