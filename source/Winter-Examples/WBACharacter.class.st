@@ -12,7 +12,7 @@ Class {
 		'currentFoot',
 		'game'
 	],
-	#category : 'Winter-Examples-WizardBattle'
+	#category : #'Winter-Examples-WizardBattle'
 }
 
 { #category : #animations }

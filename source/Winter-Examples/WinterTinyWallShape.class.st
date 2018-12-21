@@ -7,7 +7,7 @@ Class {
 	#instVars : [
 		'extent'
 	],
-	#category : 'Winter-Examples-Resources'
+	#category : #'Winter-Examples-Resources'
 }
 
 { #category : #Defaults }

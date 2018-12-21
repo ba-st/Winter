@@ -11,7 +11,7 @@ Class {
 		'graphicsPath',
 		'graphicsPaint'
 	],
-	#category : 'Winter-Core2D-Base'
+	#category : #'Winter-Core2D-Base'
 }
 
 { #category : #Defaults }

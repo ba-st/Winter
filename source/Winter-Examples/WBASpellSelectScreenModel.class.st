@@ -7,7 +7,7 @@ Class {
 		'arrowWidgets',
 		'spellWidgets'
 	],
-	#category : 'Winter-Examples-WizardBattle'
+	#category : #'Winter-Examples-WizardBattle'
 }
 
 { #category : #actions }
@@ -35,9 +35,9 @@ WBASpellSelectScreenModel >> hasPlayerSpecificHandling [
 { #category : #'Screen Building' }
 WBASpellSelectScreenModel >> loadSpellSprites [
 	^ (1 to: 6) collect: [ :i |
-		WBASpellDescriptor new
+		WBASpellExplodeDescriptor new
 			fileName: 'spell' , i printString;
-			loadExplodeSpritesWith: screen surface ]
+			loadSpritesWith: screen surface ]
 ]
 
 { #category : #initialization }

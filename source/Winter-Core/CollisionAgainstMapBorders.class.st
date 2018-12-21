@@ -7,7 +7,7 @@ Class {
 	#instVars : [
 		'axisSymbol'
 	],
-	#category : 'Winter-Core-Collision'
+	#category : #'Winter-Core-Collision'
 }
 
 { #category : #'Instance Creation' }

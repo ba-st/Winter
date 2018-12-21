@@ -1,7 +1,10 @@
+"
+Abstract class for event handler
+"
 Class {
 	#name : #WinterEventHandler,
 	#superclass : #OSWindowEventVisitor,
-	#category : 'Winter-Core-Event-Handlers'
+	#category : #'Winter-Core-Event-Handlers'
 }
 
 { #category : #'as yet unclassified' }

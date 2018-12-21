@@ -1,3 +1,6 @@
+"
+Abstract class for Screen view models
+"
 Class {
 	#name : #WinterMenuScreenModel,
 	#superclass : #WinterWidget,
@@ -5,7 +8,7 @@ Class {
 		'screen',
 		'startingGame'
 	],
-	#category : 'Winter-View-ViewModel'
+	#category : #'Winter-View-ViewModel'
 }
 
 { #category : #'as yet unclassified' }
@@ -131,7 +134,7 @@ WinterMenuScreenModel >> leftSelection [
 { #category : #initialization }
 WinterMenuScreenModel >> loadCadreSprites: numPlayers [
 
-	^ WBACadreDescriptor new loadSpritesWith: screen surface numSprites: numPlayers
+	^ (WBACadreDescriptor for: numPlayers) loadSpritesWith: screen surface
 ]
 
 { #category : #private }

@@ -7,7 +7,7 @@ Class {
 	#instVars : [
 		'game'
 	],
-	#category : 'Winter-Core-Base'
+	#category : #'Winter-Core-Base'
 }
 
 { #category : #events }

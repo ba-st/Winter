@@ -1,10 +1,13 @@
+"
+Represents a general animation
+"
 Class {
 	#name : #WinterAnimation,
 	#superclass : #Object,
 	#instVars : [
 		'actualStep'
 	],
-	#category : 'Winter-Core2D'
+	#category : #'Winter-Core2D'
 }
 
 { #category : #'as yet unclassified' }

@@ -4,7 +4,7 @@ Class {
 	#instVars : [
 		'shiftIncr'
 	],
-	#category : 'Winter-Examples-WizardBattle'
+	#category : #'Winter-Examples-WizardBattle'
 }
 
 { #category : #Accessing }

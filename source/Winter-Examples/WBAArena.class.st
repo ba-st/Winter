@@ -6,7 +6,7 @@ Class {
 		'screen',
 		'groundPaint'
 	],
-	#category : 'Winter-Examples-WizardBattle'
+	#category : #'Winter-Examples-WizardBattle'
 }
 
 { #category : #accessing }

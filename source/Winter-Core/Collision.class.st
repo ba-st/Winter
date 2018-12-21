@@ -4,7 +4,7 @@ Simple class of collision
 Class {
 	#name : #Collision,
 	#superclass : #CollisionBehavior,
-	#category : 'Winter-Core-Collision'
+	#category : #'Winter-Core-Collision'
 }
 
 { #category : #'Instance Creation' }

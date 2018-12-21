@@ -10,7 +10,7 @@ Class {
 		'tileSets',
 		'resources'
 	],
-	#category : 'Winter-Tiled'
+	#category : #'Winter-Tiled'
 }
 
 { #category : #Managing }

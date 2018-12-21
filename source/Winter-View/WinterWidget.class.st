@@ -1,7 +1,10 @@
+"
+Abstract class to represent any widget
+"
 Class {
 	#name : #WinterWidget,
 	#superclass : #Object,
-	#category : 'Winter-View-ViewModel'
+	#category : #'Winter-View-ViewModel'
 }
 
 { #category : #rendering }

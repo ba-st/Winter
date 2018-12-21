@@ -8,7 +8,7 @@ Class {
 		'component',
 		'gameWindow'
 	],
-	#category : 'Winter-Core-Collision'
+	#category : #'Winter-Core-Collision'
 }
 
 { #category : #'Instance Creation' }

@@ -7,7 +7,7 @@ Class {
 		'spells',
 		'neighbours'
 	],
-	#category : 'Winter-Examples-WizardBattle'
+	#category : #'Winter-Examples-WizardBattle'
 }
 
 { #category : #accessing }

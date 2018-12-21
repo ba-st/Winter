@@ -1,10 +1,13 @@
+"
+Represents a widget decorator for a single sprite
+"
 Class {
 	#name : #WinterSingleSpriteWidget,
 	#superclass : #WinterWidget,
 	#instVars : [
 		'sprite'
 	],
-	#category : 'Winter-View-ViewModel'
+	#category : #'Winter-View-ViewModel'
 }
 
 { #category : #rendering }

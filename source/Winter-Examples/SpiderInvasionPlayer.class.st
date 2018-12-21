@@ -4,7 +4,7 @@ Class {
 	#instVars : [
 		'loaded'
 	],
-	#category : 'Winter-Examples-SpiderInvasion'
+	#category : #'Winter-Examples-SpiderInvasion'
 }
 
 { #category : #'Instance Creation' }
@@ -23,12 +23,12 @@ SpiderInvasionPlayer >> checkCollisions [
 { #category : #actions }
 SpiderInvasionPlayer >> fire [
 
-	| missilePos |
-
 	loaded
-		ifTrue: [ loaded := false.
-			missilePos := self position - (0 @ 24).
-			scene addComponent: (SpiderInvasionMissile atPosition: missilePos of: scene tick: 5) ]
+		ifTrue: [ | missilePos |
+			loaded := false.
+			missilePos := self position - (0 @ 1).
+			scene
+				addComponent: (SpiderInvasionMissile atPosition: missilePos of: scene tick: 5) ]
 ]
 
 { #category : #initialization }

@@ -8,7 +8,7 @@ Class {
 		'arenaWidget',
 		'arenas'
 	],
-	#category : 'Winter-Examples-WizardBattle'
+	#category : #'Winter-Examples-WizardBattle'
 }
 
 { #category : #actions }

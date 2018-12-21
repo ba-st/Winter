@@ -4,7 +4,7 @@ A container box being the main player of a game
 Class {
 	#name : #WinterContainerBoxPlayer,
 	#superclass : #WinterPlayer,
-	#category : 'Winter-Examples-Resources'
+	#category : #'Winter-Examples-Resources'
 }
 
 { #category : #'Instance Creation' }

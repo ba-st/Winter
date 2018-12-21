@@ -4,7 +4,7 @@ Class {
 	#instVars : [
 		'playing'
 	],
-	#category : 'Winter-Examples-Arkanoid'
+	#category : #'Winter-Examples-Arkanoid'
 }
 
 { #category : #Accessing }

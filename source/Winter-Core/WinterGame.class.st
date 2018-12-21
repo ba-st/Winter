@@ -41,7 +41,7 @@ Class {
 		'screen',
 		'scene'
 	],
-	#category : 'Winter-Core-Base'
+	#category : #'Winter-Core-Base'
 }
 
 { #category : #Accessing }
@@ -108,7 +108,7 @@ WinterGame >> initializeScenes [
 
 { #category : #initialization }
 WinterGame >> initializeSchedulers [
-	scheduler := AnimationsScheduller new
+	scheduler := AnimationsScheduler new
 ]
 
 { #category : #Rendering }
@@ -124,7 +124,7 @@ WinterGame >> pushEvent: anEvent [
 		
 ]
 
-{ #category : #Rendering }
+{ #category : #'as yet unclassified' }
 WinterGame >> renderOn: aCanvas [ 
 	scene renderOn: aCanvas 
 ]
@@ -191,7 +191,7 @@ WinterGame >> title [
 	self subclassResponsibility
 ]
 
-{ #category : #Rendering }
+{ #category : #'as yet unclassified' }
 WinterGame >> updateUsing: aCanvas [ 
 	
 	scene updateUsing: aCanvas 

@@ -1,10 +1,13 @@
+"
+Represents an animation on the screen
+"
 Class {
 	#name : #WinterScreenAnimation,
 	#superclass : #WinterAnimation,
 	#instVars : [
 		'block'
 	],
-	#category : 'Winter-Core2D-Base'
+	#category : #'Winter-Core2D-Base'
 }
 
 { #category : #'as yet unclassified' }

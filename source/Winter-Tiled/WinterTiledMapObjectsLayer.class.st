@@ -7,7 +7,7 @@ Class {
 	#instVars : [
 		'objects'
 	],
-	#category : 'Winter-Tiled'
+	#category : #'Winter-Tiled'
 }
 
 { #category : #Managing }

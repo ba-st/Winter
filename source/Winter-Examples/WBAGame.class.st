@@ -5,7 +5,7 @@ Class {
 		'descriptor',
 		'gameDescriptor'
 	],
-	#category : 'Winter-Examples-WizardBattle'
+	#category : #'Winter-Examples-WizardBattle'
 }
 
 { #category : #accessing }
@@ -53,7 +53,7 @@ WBAGame >> gameDescriptor: anObject [
 { #category : #accessing }
 WBAGame >> initializeResources [
 
-	WBATextDescriptor new loadAllText
+	WBATextDescriptor new loadSpritesWith: nil
 ]
 
 { #category : #accessing }
@@ -66,7 +66,7 @@ WBAGame >> initializeScenes [
 WBAGame >> initializeSchedulers [
 
 	super initializeSchedulers .
-	scheduler  := AnimationsScheduller new.
+	scheduler  := AnimationsScheduler new.
 ]
 
 { #category : #Accessing }

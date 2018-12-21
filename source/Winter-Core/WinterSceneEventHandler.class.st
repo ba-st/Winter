@@ -1,3 +1,6 @@
+"
+Event handler for user inputs during the scene game
+"
 Class {
 	#name : #WinterSceneEventHandler,
 	#superclass : #WinterEventHandler,
@@ -5,7 +8,7 @@ Class {
 		'players',
 		'schedulers'
 	],
-	#category : 'Winter-Core-Event-Handlers'
+	#category : #'Winter-Core-Event-Handlers'
 }
 
 { #category : #'as yet unclassified' }

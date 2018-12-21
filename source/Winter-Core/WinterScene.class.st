@@ -10,7 +10,7 @@ Class {
 		'components',
 		'players'
 	],
-	#category : 'Winter-Core-Base'
+	#category : #'Winter-Core-Base'
 }
 
 { #category : #accessing }
@@ -56,8 +56,9 @@ WinterScene >> isActive [
 { #category : #Managing }
 WinterScene >> removeComponent: aComponent [
 
-	aComponent scene: nil.
+	
 	components := components copyWithout:  aComponent.
+	aComponent scene: nil.
 	
 
 ]

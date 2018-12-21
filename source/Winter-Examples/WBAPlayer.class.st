@@ -8,7 +8,7 @@ Class {
 		'keyboardCodes',
 		'movementKeyDown'
 	],
-	#category : 'Winter-Examples-WizardBattle'
+	#category : #'Winter-Examples-WizardBattle'
 }
 
 { #category : #'as yet unclassified' }

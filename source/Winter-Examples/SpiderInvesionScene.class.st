@@ -1,7 +1,7 @@
 Class {
 	#name : #SpiderInvesionScene,
 	#superclass : #Winter2DScene,
-	#category : 'Winter-Examples-SpiderInvasion'
+	#category : #'Winter-Examples-SpiderInvasion'
 }
 
 { #category : #accessing }

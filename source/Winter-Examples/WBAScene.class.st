@@ -1,5 +1,5 @@
 Class {
 	#name : #WBAScene,
 	#superclass : #Winter2DScene,
-	#category : 'Winter-Examples-WizardBattle'
+	#category : #'Winter-Examples-WizardBattle'
 }

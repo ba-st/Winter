@@ -1,12 +1,14 @@
+"
+Exception for asset not found
+"
 Class {
 	#name : #AssetNotFound,
 	#superclass : #Error,
-	#category : 'Winter-AssetManagement'
+	#category : #'Winter-AssetManagement'
 }
 
 { #category : #Signaling }
 AssetNotFound class >> signalNamed: aName [
-
 	self
 		signal:
 			'Asset named ' , aName

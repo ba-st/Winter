@@ -1,7 +1,7 @@
 Class {
 	#name : #SpiderInvasionEmpty,
 	#superclass : #SpiderInvasionItem,
-	#category : 'Winter-Examples-SpiderInvasion'
+	#category : #'Winter-Examples-SpiderInvasion'
 }
 
 { #category : #Testing }

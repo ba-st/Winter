@@ -1,3 +1,6 @@
+"
+System to manage assets in the game
+"
 Class {
 	#name : #WinterAssetManagementSystem,
 	#superclass : #Object,
@@ -7,7 +10,7 @@ Class {
 	#classInstVars : [
 		'uniqueInstance'
 	],
-	#category : 'Winter-AssetManagement'
+	#category : #'Winter-AssetManagement'
 }
 
 { #category : #Singleton }

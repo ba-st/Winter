@@ -5,9 +5,10 @@ Class {
 		'arenaDescriptor',
 		'characterDescriptors',
 		'spellDescriptors',
-		'backgroundDescriptor'
+		'groundDescriptor',
+		'wallDescriptor'
 	],
-	#category : 'Winter-Examples-WizardBattle'
+	#category : #'Winter-Examples-WizardBattle'
 }
 
 { #category : #'as yet unclassified' }
@@ -34,7 +35,8 @@ WBAGameDescriptor class >> demo: selector [
 		arenaDescriptor: arenaDescr;
 		characterDescriptors: ((1 to: numPlayers) collect: [ :i | WBACharacterDescriptor randomCharacter]);
 		spellDescriptors: ((1 to: numPlayers) collect: [ :i | WBASpellDescriptor randomSpell]);
-		backgroundDescriptor: WBABackgroundDescriptor randomBackground;
+		groundDescriptor: WBAGroundDescriptor randomBackground;
+		wallDescriptor: WBAWallDescriptor randomBackground ;
 		yourself
 ]
 
@@ -48,18 +50,6 @@ WBAGameDescriptor >> arenaDescriptor [
 WBAGameDescriptor >> arenaDescriptor: anArenaDescriptor [
 
 	arenaDescriptor := anArenaDescriptor 
-]
-
-{ #category : #accessing }
-WBAGameDescriptor >> backgroundDescriptor [
-
-	^ backgroundDescriptor
-]
-
-{ #category : #accessing }
-WBAGameDescriptor >> backgroundDescriptor: aBackgroundDescriptor [
-
-	backgroundDescriptor := aBackgroundDescriptor
 ]
 
 { #category : #accessing }
@@ -83,6 +73,18 @@ WBAGameDescriptor >> ensureCorrectness [
 ]
 
 { #category : #accessing }
+WBAGameDescriptor >> groundDescriptor [
+
+	^ groundDescriptor
+]
+
+{ #category : #accessing }
+WBAGameDescriptor >> groundDescriptor: aGroundDescriptor [
+
+	groundDescriptor := aGroundDescriptor
+]
+
+{ #category : #accessing }
 WBAGameDescriptor >> spellDescriptors [
 
 	^ spellDescriptors
@@ -92,4 +94,16 @@ WBAGameDescriptor >> spellDescriptors [
 WBAGameDescriptor >> spellDescriptors: aSpellDescriptorsCollection [
 
 	spellDescriptors := aSpellDescriptorsCollection
+]
+
+{ #category : #accessing }
+WBAGameDescriptor >> wallDescriptor [
+
+	^ wallDescriptor
+]
+
+{ #category : #accessing }
+WBAGameDescriptor >> wallDescriptor: aWallDescriptor [
+
+	wallDescriptor := aWallDescriptor
 ]

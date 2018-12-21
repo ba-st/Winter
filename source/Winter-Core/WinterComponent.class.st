@@ -14,7 +14,7 @@ Class {
 	#instVars : [
 		'scene'
 	],
-	#category : 'Winter-Core-Base'
+	#category : #'Winter-Core-Base'
 }
 
 { #category : #accessing }

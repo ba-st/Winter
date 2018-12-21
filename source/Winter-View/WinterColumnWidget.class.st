@@ -1,3 +1,6 @@
+"
+Represents a widget of column
+"
 Class {
 	#name : #WinterColumnWidget,
 	#superclass : #WinterWidget,
@@ -5,7 +8,7 @@ Class {
 		'widgets',
 		'space'
 	],
-	#category : 'Winter-View-ViewModel'
+	#category : #'Winter-View-ViewModel'
 }
 
 { #category : #'as yet unclassified' }

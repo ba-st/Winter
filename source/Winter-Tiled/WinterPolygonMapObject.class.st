@@ -7,7 +7,7 @@ Class {
 	#instVars : [
 		'polygon'
 	],
-	#category : 'Winter-Tiled'
+	#category : #'Winter-Tiled'
 }
 
 { #category : #'Instance Creation' }

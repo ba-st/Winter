@@ -1,7 +1,7 @@
 Class {
 	#name : #WBATextDescriptor,
-	#superclass : #WBASpriteDescriptor,
-	#category : 'Winter-Examples-WizardBattle'
+	#superclass : #WinterSpriteDescriptor,
+	#category : #'Winter-Examples-WizardBattle'
 }
 
 { #category : #Defaults }
@@ -33,10 +33,16 @@ WBATextDescriptor >> classFolder [
 ]
 
 { #category : #Bootstrap }
-WBATextDescriptor >> loadAllText [
+WBATextDescriptor >> loadSpritesWith: aSurface [
 
-	self class availableText do: [ :key |
-		fileName := key asString.
-		self loadImageFile ].
+	self class availableText
+		do: [ :key | 
+			fileName := key asString.
+			self loadImageFile ]
+]
 
+{ #category : #Bootstrap }
+WBATextDescriptor >> spriteSize [
+
+	^ 32 @ 48
 ]

@@ -8,7 +8,7 @@ Class {
 		'sprite',
 		'collisionShape'
 	],
-	#category : 'Winter-Core-Base'
+	#category : #'Winter-Core-Base'
 }
 
 { #category : #Collisions }

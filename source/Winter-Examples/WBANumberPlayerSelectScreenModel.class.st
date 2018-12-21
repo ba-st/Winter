@@ -7,7 +7,7 @@ Class {
 		'titleWidget',
 		'playersWidget'
 	],
-	#category : 'Winter-Examples-WizardBattle'
+	#category : #'Winter-Examples-WizardBattle'
 }
 
 { #category : #actions }

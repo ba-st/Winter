@@ -12,7 +12,7 @@ Class {
 		'visible',
 		'color'
 	],
-	#category : 'Winter-Tiled'
+	#category : #'Winter-Tiled'
 }
 
 { #category : #Accessing }

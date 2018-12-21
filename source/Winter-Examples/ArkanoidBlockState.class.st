@@ -1,7 +1,7 @@
 Class {
 	#name : #ArkanoidBlockState,
 	#superclass : #WinterReactiveObject,
-	#category : 'Winter-Examples-Arkanoid'
+	#category : #'Winter-Examples-Arkanoid'
 }
 
 { #category : #Collisions }

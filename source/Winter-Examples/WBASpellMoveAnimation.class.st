@@ -4,7 +4,7 @@ Class {
 	#instVars : [
 		'spell'
 	],
-	#category : 'Winter-Examples-WizardBattle'
+	#category : #'Winter-Examples-WizardBattle'
 }
 
 { #category : #private }

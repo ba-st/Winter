@@ -8,7 +8,7 @@ Class {
 		'extent',
 		'walls'
 	],
-	#category : 'Winter-Examples-Resources'
+	#category : #'Winter-Examples-Resources'
 }
 
 { #category : #'Instance Creation' }

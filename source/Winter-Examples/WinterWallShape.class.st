@@ -4,7 +4,7 @@ An abstract 2D wall shape
 Class {
 	#name : #WinterWallShape,
 	#superclass : #Winter2DShape,
-	#category : 'Winter-Examples-Resources'
+	#category : #'Winter-Examples-Resources'
 }
 
 { #category : #Drawing }

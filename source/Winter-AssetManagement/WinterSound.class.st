@@ -1,10 +1,13 @@
+"
+Represets a sound of extension aiff or wav
+"
 Class {
 	#name : #WinterSound,
 	#superclass : #WinterAsset,
 	#instVars : [
 		'type'
 	],
-	#category : 'Winter-AssetManagement'
+	#category : #'Winter-AssetManagement'
 }
 
 { #category : #'Instance Creation' }

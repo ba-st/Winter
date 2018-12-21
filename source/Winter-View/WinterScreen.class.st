@@ -1,3 +1,6 @@
+"
+Represents the screen
+"
 Class {
 	#name : #WinterScreen,
 	#superclass : #Object,
@@ -8,7 +11,7 @@ Class {
 		'scheduler',
 		'title'
 	],
-	#category : 'Winter-View-View'
+	#category : #'Winter-View-View'
 }
 
 { #category : #'Instance Creation' }
@@ -65,7 +68,7 @@ WinterScreen >> initialize [
 
 	super initialize.
 	title := ''.
-	scheduler := SteppingScheduller managing:  self
+	scheduler := SteppingScheduler managing:  self
 ]
 
 { #category : #initialization }

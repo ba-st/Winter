@@ -1,7 +1,7 @@
 Class {
 	#name : #SpiderInvasionWall,
 	#superclass : #SpiderInvasionItem,
-	#category : 'Winter-Examples-SpiderInvasion'
+	#category : #'Winter-Examples-SpiderInvasion'
 }
 
 { #category : #'as yet unclassified' }

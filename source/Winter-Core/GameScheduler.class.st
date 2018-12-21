@@ -1,39 +1,42 @@
+"
+Abstract class for game schedulers
+"
 Class {
-	#name : #GameScheduller,
+	#name : #GameScheduler,
 	#superclass : #Object,
 	#instVars : [
 		'process',
 		'managedObject'
 	],
-	#category : 'Winter-Core-Schedulers'
+	#category : #'Winter-Core-Schedulers'
 }
 
 { #category : #'Instance Creation' }
-GameScheduller class >> managing: anObject [
+GameScheduler class >> managing: anObject [
 
 	^ self new initializeManaging: anObject
 ]
 
 { #category : #initialization }
-GameScheduller >> initializeManaging: anObject [
+GameScheduler >> initializeManaging: anObject [
 
 	managedObject := anObject
 ]
 
 { #category : #accessing }
-GameScheduller >> managedObject [
+GameScheduler >> managedObject [
 
 	^ managedObject
 ]
 
 { #category : #accessing }
-GameScheduller >> name [
+GameScheduler >> name [
 
 	^ ''
 ]
 
 { #category : #private }
-GameScheduller >> newProcessAt: priority do: aBlock every: duration [
+GameScheduler >> newProcessAt: priority do: aBlock every: duration [
 	^ [ 
 		[ | time delay |
 		time := DateAndTime now.
@@ -46,19 +49,19 @@ GameScheduller >> newProcessAt: priority do: aBlock every: duration [
 ]
 
 { #category : #accessing }
-GameScheduller >> process [
+GameScheduler >> process [
 
 	^ process
 ]
 
 { #category : #'Managing-Processes' }
-GameScheduller >> startProcess [
+GameScheduler >> startProcess [
 
 	process resume
 ]
 
 { #category : #'Managing-Processes' }
-GameScheduller >> terminateProcess [
+GameScheduler >> terminateProcess [
 
 	[ process terminate ] on: Error do: [ ].
 ]

@@ -4,7 +4,7 @@ Class {
 	#instVars : [
 		'deltaPoint'
 	],
-	#category : 'Winter-Examples-Arkanoid'
+	#category : #'Winter-Examples-Arkanoid'
 }
 
 { #category : #'Instance Creation' }
@@ -21,11 +21,11 @@ ArkanoidBall >> checkCollisions [
 		do: [ :component | 
 			component = self
 				ifFalse: [ (CollisionChecker for: self and: component) value ] ].
-	self checkEnfGame
+	self checkEndGame
 ]
 
 { #category : #Collisions }
-ArkanoidBall >> checkEnfGame [
+ArkanoidBall >> checkEndGame [
 	self position y > game screen extentY
 		ifTrue: [ game resetPlayerAndBall: self ]
 ]
@@ -80,9 +80,11 @@ ArkanoidBall >> resetPosition [
 	collisionShape position: 250 @ 530
 ]
 
-{ #category : #Events }
-ArkanoidBall >> updateCollisionShapeUsing: anEvent [
+{ #category : #Updating }
+ArkanoidBall >> updateUsing: aCanvas [ 
 
 	game playing
-		ifTrue: [ collisionShape updatePositionBy: deltaPoint ]
+		ifTrue: [ 
+			super updateUsing: aCanvas .
+			collisionShape updatePositionBy: deltaPoint ]
 ]

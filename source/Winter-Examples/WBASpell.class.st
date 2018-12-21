@@ -7,7 +7,7 @@ Class {
 		'spellCD',
 		'cooldown'
 	],
-	#category : 'Winter-Examples-WizardBattle'
+	#category : #'Winter-Examples-WizardBattle'
 }
 
 { #category : #'as yet unclassified' }

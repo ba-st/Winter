@@ -7,7 +7,7 @@ Class {
 	#instVars : [
 		'extentPoint'
 	],
-	#category : 'Winter-Core2D-Base'
+	#category : #'Winter-Core2D-Base'
 }
 
 { #category : #'Instance Creation' }

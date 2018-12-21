@@ -8,7 +8,7 @@ Class {
 		'firstComponent',
 		'secondComponent'
 	],
-	#category : 'Winter-Core-Collision'
+	#category : #'Winter-Core-Collision'
 }
 
 { #category : #Evaluating }

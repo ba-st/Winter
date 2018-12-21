@@ -9,7 +9,7 @@ Class {
 		'arena',
 		'startGame'
 	],
-	#category : 'Winter-Examples-WizardBattle'
+	#category : #'Winter-Examples-WizardBattle'
 }
 
 { #category : #accessing }
@@ -107,8 +107,8 @@ WBAArenaBootstrap >> loadDescriptor: descr surface: surface into: class [
 
 { #category : #'as yet unclassified' }
 WBAArenaBootstrap >> loadSprites: gameDescr surface: surface [
-	grounds := gameDescr backgroundDescriptor loadGroundSpritesWith: surface.
-	walls := (gameDescr backgroundDescriptor loadWallSpritesWith: surface) collect: [ :each |
+	grounds := gameDescr groundDescriptor loadSpritesWith: surface.
+	walls := (gameDescr wallDescriptor loadSpritesWith: surface) collect: [ :each |
 		WBAWall new
 			sprite: each;
 			yourself ].

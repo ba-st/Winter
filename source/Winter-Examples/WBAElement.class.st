@@ -1,7 +1,7 @@
 Class {
 	#name : #WBAElement,
 	#superclass : #WBAArenaComponent,
-	#category : 'Winter-Examples-WizardBattle'
+	#category : #'Winter-Examples-WizardBattle'
 }
 
 { #category : #Testing }

@@ -1,7 +1,7 @@
 Class {
 	#name : #SpiderInvasionExplode,
 	#superclass : #SpiderInvasionAnimatedItem,
-	#category : 'Winter-Examples-SpiderInvasion'
+	#category : #'Winter-Examples-SpiderInvasion'
 }
 
 { #category : #accessing }

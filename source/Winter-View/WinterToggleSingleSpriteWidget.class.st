@@ -1,3 +1,6 @@
+"
+Represents a widget decorator for some sprites that will toggle
+"
 Class {
 	#name : #WinterToggleSingleSpriteWidget,
 	#superclass : #WinterSingleSpriteWidget,
@@ -5,7 +8,7 @@ Class {
 		'sprites',
 		'currentSpriteIndex'
 	],
-	#category : 'Winter-View-ViewModel'
+	#category : #'Winter-View-ViewModel'
 }
 
 { #category : #initialization }

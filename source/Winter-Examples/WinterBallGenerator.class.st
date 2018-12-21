@@ -28,7 +28,7 @@ Class {
 		'ballsPerStep',
 		'startX'
 	],
-	#category : 'Winter-Examples-Resources'
+	#category : #'Winter-Examples-Resources'
 }
 
 { #category : #defaults }

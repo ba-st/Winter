@@ -1,7 +1,7 @@
 Class {
 	#name : #ArkanoidScene,
 	#superclass : #Winter2DScene,
-	#category : 'Winter-Examples-Arkanoid'
+	#category : #'Winter-Examples-Arkanoid'
 }
 
 { #category : #Accessing }

@@ -5,7 +5,7 @@ Class {
 		'tick',
 		'currentTick'
 	],
-	#category : 'Winter-Examples-SpiderInvasion'
+	#category : #'Winter-Examples-SpiderInvasion'
 }
 
 { #category : #Actions }
@@ -19,13 +19,6 @@ SpiderInvasionAnimatedItem >> doTick [
 	currentTick = 0 ifTrue: [ self action. currentTick := tick ].
 ]
 
-{ #category : #Events }
-SpiderInvasionAnimatedItem >> eventUpdated: anEvent [
-
-	self doTick.
-	super eventUpdated: anEvent
-]
-
 { #category : #Accessing }
 SpiderInvasionAnimatedItem >> tick [
 	^ tick
@@ -35,4 +28,11 @@ SpiderInvasionAnimatedItem >> tick [
 SpiderInvasionAnimatedItem >> tick: anObject [
 	currentTick := tick := anObject.
 	
+]
+
+{ #category : #Events }
+SpiderInvasionAnimatedItem >> updateUsing: aCanvas [
+
+	self doTick.
+	super updateUsing: aCanvas
 ]

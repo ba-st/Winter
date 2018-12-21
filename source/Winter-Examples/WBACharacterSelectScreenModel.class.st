@@ -7,7 +7,7 @@ Class {
 		'arrowWidgets',
 		'characterWidget'
 	],
-	#category : 'Winter-Examples-WizardBattle'
+	#category : #'Winter-Examples-WizardBattle'
 }
 
 { #category : #'Screen Building' }

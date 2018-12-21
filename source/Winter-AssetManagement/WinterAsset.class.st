@@ -1,3 +1,6 @@
+"
+Abstract class for assets
+"
 Class {
 	#name : #WinterAsset,
 	#superclass : #Object,
@@ -6,7 +9,7 @@ Class {
 		'nativeAsset',
 		'name'
 	],
-	#category : 'Winter-AssetManagement'
+	#category : #'Winter-AssetManagement'
 }
 
 { #category : #'Instance Creation' }

@@ -1,7 +1,7 @@
 Class {
 	#name : #SpiderInvasionSpider,
 	#superclass : #SpiderInvasionAnimatedItem,
-	#category : 'Winter-Examples-SpiderInvasion'
+	#category : #'Winter-Examples-SpiderInvasion'
 }
 
 { #category : #accessing }
@@ -27,6 +27,12 @@ SpiderInvasionSpider >> checkCollisions [
 			component = self
 				ifFalse: [ component position = self position
 						ifTrue: [ (Collision between: self and: component) applyOnGame ] ] ]
+]
+
+{ #category : #Actions }
+SpiderInvasionSpider >> die [
+	scene newRandomSpiderTicked: (tick - 1 max: 8).
+	super die
 ]
 
 { #category : #initialization }

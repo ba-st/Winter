@@ -1,3 +1,6 @@
+"
+Represents a widget of row
+"
 Class {
 	#name : #WinterRowWidget,
 	#superclass : #WinterWidget,
@@ -5,7 +8,7 @@ Class {
 		'widgets',
 		'space'
 	],
-	#category : 'Winter-View-ViewModel'
+	#category : #'Winter-View-ViewModel'
 }
 
 { #category : #rendering }

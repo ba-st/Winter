@@ -5,7 +5,7 @@ Class {
 		'cellDescriptors',
 		'windowExtent'
 	],
-	#category : 'Winter-Examples-WizardBattle'
+	#category : #'Winter-Examples-WizardBattle'
 }
 
 { #category : #'2 players' }
@@ -258,7 +258,6 @@ WBAArenaDescriptor >> dispatchIndex: index on: bootstraper with: cell [
 
 { #category : #accessing }
 WBAArenaDescriptor >> expectedNumberOfPlayers [
-	"See class comment"
 	| max |
 	max := 0.
 	cellDescriptors do: [ :column |

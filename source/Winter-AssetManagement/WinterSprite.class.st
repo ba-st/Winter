@@ -1,7 +1,10 @@
+"
+Represents a sprite handling and image of any etension
+"
 Class {
 	#name : #WinterSprite,
 	#superclass : #WinterAsset,
-	#category : 'Winter-AssetManagement'
+	#category : #'Winter-AssetManagement'
 }
 
 { #category : #'Instance Creation' }

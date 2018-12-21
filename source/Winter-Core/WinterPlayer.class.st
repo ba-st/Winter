@@ -11,7 +11,7 @@ Class {
 		'keyDownInteractions',
 		'keyUpInteractions'
 	],
-	#category : 'Winter-Core-Base'
+	#category : #'Winter-Core-Base'
 }
 
 { #category : #Interactions }

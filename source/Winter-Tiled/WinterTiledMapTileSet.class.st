@@ -9,7 +9,7 @@ Class {
 		'tiles',
 		'properties'
 	],
-	#category : 'Winter-Tiled'
+	#category : #'Winter-Tiled'
 }
 
 { #category : #'instance creation' }

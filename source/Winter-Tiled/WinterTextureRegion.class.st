@@ -13,7 +13,7 @@ Class {
 		'v',
 		'v2'
 	],
-	#category : 'Winter-Tiled'
+	#category : #'Winter-Tiled'
 }
 
 { #category : #'Instance Creation' }

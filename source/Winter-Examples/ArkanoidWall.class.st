@@ -1,7 +1,7 @@
 Class {
 	#name : #ArkanoidWall,
 	#superclass : #WinterNonPlayer,
-	#category : 'Winter-Examples-Arkanoid'
+	#category : #'Winter-Examples-Arkanoid'
 }
 
 { #category : #'Instance Creation' }

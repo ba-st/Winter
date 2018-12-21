@@ -4,7 +4,7 @@ I am a game element with a visual representation.
 Class {
 	#name : #WinterShape,
 	#superclass : #WinterComponent,
-	#category : 'Winter-Core-Base'
+	#category : #'Winter-Core-Base'
 }
 
 { #category : #Rendering }

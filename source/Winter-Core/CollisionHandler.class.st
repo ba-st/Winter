@@ -9,7 +9,7 @@ Class {
 		'secondType',
 		'action'
 	],
-	#category : 'Winter-Core-Collision'
+	#category : #'Winter-Core-Collision'
 }
 
 { #category : #'Instance Creation' }

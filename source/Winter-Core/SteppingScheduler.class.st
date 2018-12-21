@@ -1,30 +1,33 @@
+"
+Scheduler to manage update and render of the game
+"
 Class {
-	#name : #SteppingScheduller,
-	#superclass : #GameScheduller,
-	#category : 'Winter-Core-Schedulers'
+	#name : #SteppingScheduler,
+	#superclass : #GameScheduler,
+	#category : #'Winter-Core-Schedulers'
 }
 
 { #category : #initialization }
-SteppingScheduller >> initialize [
+SteppingScheduler >> initialize [
 
 	super initialize.
 	process := self newProcessAt: 30 do: [ managedObject  updateAndRender ] every: self minTimeBetweenRendering.
 ]
 
 { #category : #initialization }
-SteppingScheduller >> maxFrameRate [ 
+SteppingScheduler >> maxFrameRate [ 
 
 	^ 50 "fps"
 ]
 
 { #category : #initialization }
-SteppingScheduller >> minTimeBetweenRendering [
+SteppingScheduler >> minTimeBetweenRendering [
 	
 	^ (1000 "ms" / self maxFrameRate) milliSeconds 
 ]
 
 { #category : #Accessing }
-SteppingScheduller >> name [
+SteppingScheduler >> name [
 
 	^ 'Upating and Rendering Scheduler Process'
 ]

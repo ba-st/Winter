@@ -1,15 +1,18 @@
+"
+Abstract class for sprite descriptors
+"
 Class {
-	#name : #WBASpriteDescriptor,
+	#name : #WinterSpriteDescriptor,
 	#superclass : #Object,
 	#instVars : [
 		'fileName',
 		'position'
 	],
-	#category : 'Winter-Examples-WizardBattle'
+	#category : #'Winter-Core-Desriptors'
 }
 
 { #category : #Bootstrap }
-WBASpriteDescriptor >> basicLoadImageFile [
+WinterSpriteDescriptor >> basicLoadImageFile [
 
 	^ WinterAssetManagementSystem current
 		addSprite:
@@ -21,27 +24,27 @@ WBASpriteDescriptor >> basicLoadImageFile [
 ]
 
 { #category : #Bootstrap }
-WBASpriteDescriptor >> classFolder [
+WinterSpriteDescriptor >> classFolder [
 
 	"Empty by defult, should reimplement"
 
 	^ ''
 ]
 
-{ #category : #Accessing }
-WBASpriteDescriptor >> fileName [
+{ #category : #Bootstrap }
+WinterSpriteDescriptor >> fileName [
 
 	^ fileName
 ]
 
-{ #category : #Accessing }
-WBASpriteDescriptor >> fileName: anObject [
+{ #category : #Bootstrap }
+WinterSpriteDescriptor >> fileName: anObject [
 
 	fileName := anObject
 ]
 
 { #category : #Bootstrap }
-WBASpriteDescriptor >> loadImageFile [
+WinterSpriteDescriptor >> loadImageFile [
 
 	^ WinterAssetManagementSystem current
 		assetNamed: fileName
@@ -49,33 +52,33 @@ WBASpriteDescriptor >> loadImageFile [
 ]
 
 { #category : #Bootstrap }
-WBASpriteDescriptor >> loadSpritesWith: surface [
+WinterSpriteDescriptor >> loadSpritesWith: aSurface [
 
 	"Answers the sprites corresponding to the descriptor"
 	self subclassResponsibility.
 ]
 
-{ #category : #Accessing }
-WBASpriteDescriptor >> position [
+{ #category : #Bootstrap }
+WinterSpriteDescriptor >> position [
 
 	^ position
 ]
 
-{ #category : #Accessing }
-WBASpriteDescriptor >> position: anObject [
+{ #category : #Bootstrap }
+WinterSpriteDescriptor >> position: anObject [
 
 	position := anObject
 ]
 
 { #category : #Bootstrap }
-WBASpriteDescriptor >> resourceFolder [
-
+WinterSpriteDescriptor >> resourceFolder [
+	"By default is resources but can be re implemented to change this"
 	^ 'resources/'
 ]
 
 { #category : #Bootstrap }
-WBASpriteDescriptor >> spriteSize [
+WinterSpriteDescriptor >> spriteSize [
 
 	"Answers a point of the size of the sprite"
-	^ 32 @ 48
+	self subclassResponsibility 
 ]

@@ -4,7 +4,7 @@ Class {
 	#instVars : [
 		'sprite'
 	],
-	#category : 'Winter-Examples-WizardBattle'
+	#category : #'Winter-Examples-WizardBattle'
 }
 
 { #category : #accessing }

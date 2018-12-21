@@ -1,24 +1,8 @@
 Class {
 	#name : #WBACharacterDescriptor,
-	#superclass : #WBASpriteDescriptor,
-	#category : 'Winter-Examples-WizardBattle'
+	#superclass : #WinterSpriteDescriptor,
+	#category : #'Winter-Examples-WizardBattle'
 }
-
-{ #category : #accessing }
-WBACharacterDescriptor class >> bestCharacterAt: i [
-	"Set of good looking wizard style characters"
-	| indexes |
-	indexes := #(
-	#(1 288 0)
-	#(5 0 0)
-	#(9 0 192)
-	#(9 288 0)
-	) at: i.
-	^ self new
-		fileName: 'perso' , indexes first printString;
-		position: indexes second @ indexes third;
-		yourself
-]
 
 { #category : #accessing }
 WBACharacterDescriptor class >> randomCharacter [
@@ -58,4 +42,10 @@ WBACharacterDescriptor >> loadSpritesWith: surface [
 				at: j * 3 + i + 1 
 				put: (surface createFormPaint: (genForm copy: (topLeftCorner corner: self spriteSize + topLeftCorner))) ] ].
 	^ sprites
+]
+
+{ #category : #Bootstrap }
+WBACharacterDescriptor >> spriteSize [
+
+	^ 32 @ 48
 ]

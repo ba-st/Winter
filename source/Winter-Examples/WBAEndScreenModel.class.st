@@ -10,7 +10,7 @@ Class {
 		'arrowWidget',
 		'spellWidget'
 	],
-	#category : 'Winter-Examples-WizardBattle'
+	#category : #'Winter-Examples-WizardBattle'
 }
 
 { #category : #actions }

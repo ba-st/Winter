@@ -1,10 +1,13 @@
+"
+Handler used to handler keyword events on screens
+"
 Class {
 	#name : #WinterKeyboardEventHandler,
 	#superclass : #WinterEventHandler,
 	#instVars : [
 		'screenModel'
 	],
-	#category : 'Winter-Core-Event-Handlers'
+	#category : #'Winter-Core-Event-Handlers'
 }
 
 { #category : #Accessing }

@@ -1,16 +1,13 @@
 Class {
 	#name : #SpiderInvasionItem,
 	#superclass : #WinterNonPlayer,
-	#category : 'Winter-Examples-SpiderInvasion'
+	#category : #'Winter-Examples-SpiderInvasion'
 }
 
 { #category : #Actions }
 SpiderInvasionItem >> die [
 
-	self flag: 'cambiar esto'
-	"arena 
-		setSpritePosition: (SpiderExplode arena: arena pos: pos tick: 6)
-		to: pos"
+	game removeComponent: self
 ]
 
 { #category : #Testing }
