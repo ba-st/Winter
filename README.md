@@ -36,7 +36,7 @@
 ```smalltalk
 Metacello new
   baseline: 'Winter';
-  repository: 'github://apiorno/Winter:master/source';
+  repository: 'github://ba-st/Winter:master/source';
   load
 ```
 ## Run Arkanoid example
