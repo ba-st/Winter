@@ -1,4 +1,4 @@
-# Winter [![Build Status](https://travis-ci.org/apiorno/Winter.svg?branch=master)](https://travis-ci.org/apiorno/Winter) [![Coverage Status](https://coveralls.io/repos/github/apiorno/Winter/badge.svg)](https://coveralls.io/github/apiorno/Winter)
+# Winter [![Build Status](https://travis-ci.org/ba-st/Winter.svg?branch=master)](https://travis-ci.org/ba-st/Winter) [![Coverage Status](https://coveralls.io/repos/github/ba-st/Winter/badge.svg)](https://coveralls.io/github/ba-st/Winter)
 <img src="./logo/winter.png" height="48" width="48" >   
 
  Winter is the new and updated version of [Storm][] from [Esteban][] . It is a framework to develop games in 2D using Smalltalk.
