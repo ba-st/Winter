@@ -52,7 +52,7 @@ ArkanoidBall >> initializeOn: aGame [
 { #category : #Initialization }
 ArkanoidBall >> initializeSprite [
 
-	sprite := WinterAssetManagementSystem current spriteNamed: #ball
+	sprite := game assetsManagementSystem assetNamed: #ball
 ]
 
 { #category : #Updating }
@@ -70,7 +70,7 @@ ArkanoidBall >> negateY [
 { #category : #Collisions }
 ArkanoidBall >> playCollisionSound [
 
-	(WinterAssetManagementSystem current soundNamed: #ballCollision) play
+	(game assetsManagementSystem  assetNamed: #ballCollision) play
 ]
 
 { #category : #Reset }

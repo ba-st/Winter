@@ -134,7 +134,9 @@ WinterMenuScreenModel >> leftSelection [
 { #category : #initialization }
 WinterMenuScreenModel >> loadCadreSprites: numPlayers [
 
-	^ (WBACadreDescriptor for: numPlayers) loadSpritesWith: screen surface
+	^ (WBACadreDescriptor for: numPlayers)
+		loadSpritesWith: screen surface
+		using: startingGame  assetsManagementSystem
 ]
 
 { #category : #private }

@@ -33,12 +33,12 @@ WBATextDescriptor >> classFolder [
 ]
 
 { #category : #Bootstrap }
-WBATextDescriptor >> loadSpritesWith: aSurface [
+WBATextDescriptor >> loadSpritesWith: aSurface using: anAssetsManagementSystem [
 
 	self class availableText
 		do: [ :key | 
 			fileName := key asString.
-			self loadImageFile ]
+			self loadImageFileUsing: anAssetsManagementSystem ]
 ]
 
 { #category : #Bootstrap }

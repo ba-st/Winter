@@ -7,7 +7,7 @@ Class {
 { #category : #Accessing }
 ArkanoidScene >> backgroundColor [
 
-	^ (WinterAssetManagementSystem current spriteNamed: 'background') 
+	^ game assetsManagementSystem assetNamed: 'background'
 ]
 
 { #category : #initialization }

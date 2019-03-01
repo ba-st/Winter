@@ -32,5 +32,5 @@ SpiderInvasionExplode >> initializeAtPosition: aPosition of: aScene tick: number
 { #category : #initialization }
 SpiderInvasionExplode >> initializeSprite [
 
-	sprite := WinterAssetManagementSystem current spriteNamed: #explode
+	sprite := game assetsManagementSystem  assetNamed: #explode
 ]

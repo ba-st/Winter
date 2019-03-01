@@ -53,7 +53,7 @@ WBAGame >> gameDescriptor: anObject [
 { #category : #accessing }
 WBAGame >> initializeResources [
 
-	WBATextDescriptor new loadSpritesWith: nil
+	WBATextDescriptor new loadSpritesWith: nil using: self assetsManagementSystem
 ]
 
 { #category : #accessing }
@@ -83,7 +83,7 @@ aPlayersCollection do: [ :each | self addPlayer: each ].
 { #category : #Accessing }
 WBAGame >> textSpritesAt: aName [ 
 
-	^WinterAssetManagementSystem current assetNamed: aName
+	^self assetsManagementSystem  assetNamed: aName
 ]
 
 { #category : #accessing }

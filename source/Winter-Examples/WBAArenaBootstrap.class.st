@@ -100,15 +100,17 @@ WBAArenaBootstrap >> eventHandler: screen [
 { #category : #'as yet unclassified' }
 WBAArenaBootstrap >> loadDescriptor: descr surface: surface into: class [
 	^ class new 
-		sprites: (descr loadSpritesWith: surface);
+		sprites: (descr loadSpritesWith: surface using: startGame assetsManagementSystem );
 		scheduler: startGame scheduler;
 		yourself 
 ]
 
 { #category : #'as yet unclassified' }
 WBAArenaBootstrap >> loadSprites: gameDescr surface: surface [
-	grounds := gameDescr groundDescriptor loadSpritesWith: surface.
-	walls := (gameDescr wallDescriptor loadSpritesWith: surface) collect: [ :each |
+|assetsManagementSystem|
+assetsManagementSystem := startGame assetsManagementSystem .
+	grounds := gameDescr groundDescriptor loadSpritesWith: surface using: assetsManagementSystem.
+	walls := (gameDescr wallDescriptor loadSpritesWith: surface using: assetsManagementSystem) collect: [ :each |
 		WBAWall new
 			sprite: each;
 			yourself ].

@@ -11,7 +11,7 @@ Class {
 WinterSprite class >> fromPath: aStringPath named: aName [
 
 	^ [ self new initializeFromAbsolutePath: aStringPath  named: aName ]
-		on: FileDoesNotExist
+		on: FileDoesNotExistException
 		do:
 			[ :ex | (ex messageText: ('Sprite not found in <1s>' expandMacrosWith: aStringPath)) signal ]
 ]
@@ -35,6 +35,11 @@ WinterSprite >> initializeFromAbsolutePath: aPath named: aName [
 	name := aName.
 	nativeAsset  := path asFileReference 
 		binaryReadStreamDo: [ :stream | ImageReadWriter formFromStream: stream ]
+]
+
+{ #category : #Accessing }
+WinterSprite >> isSprite [
+	^ true
 ]
 
 { #category : #Accessing }

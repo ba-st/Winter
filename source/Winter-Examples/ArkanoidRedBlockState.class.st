@@ -19,5 +19,5 @@ ArkanoidRedBlockState >> color [
 { #category : #Accessing }
 ArkanoidRedBlockState >> sprite [
 
-	^ WinterAssetManagementSystem current spriteNamed: #red
+	^ game assetsManagementSystem  assetNamed: #red
 ]

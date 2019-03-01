@@ -45,22 +45,23 @@ WinterAssetManagementSystemTest >> pharoImageOnBase64 [
 WinterAssetManagementSystemTest >> setUp [
 
 	self createImage.
-	self createSound .
-	WinterAssetManagementSystem restart
+	"self createSound."
 ]
 
 { #category : #finalization }
 WinterAssetManagementSystemTest >> tearDown [
 
 	'pharo.png' asFileReference delete.
-	'beep.wav' asFileReference delete.
+	"'beep.wav' asFileReference delete."
 	
 ]
 
 { #category : #Tests }
 WinterAssetManagementSystemTest >> testAccessing [
+
 	| system |
-	system := WinterAssetManagementSystem current .
+
+	system := WinterAssetManagementSystem new.
 	self
 		assert: system sounds isEmpty;
 		assert: system sprites isEmpty
@@ -71,7 +72,7 @@ WinterAssetManagementSystemTest >> testAddSound [
 
 	| system  |
 
-	system := WinterAssetManagementSystem current.
+	system := WinterAssetManagementSystem new.
 
 	system addSound: 'beep.wav' named: 'beep'.
 	self
@@ -84,7 +85,7 @@ WinterAssetManagementSystemTest >> testAddSprite [
 
 	| system  |
 	
-	system := WinterAssetManagementSystem current.
+	system := WinterAssetManagementSystem new.
 
 	system addSprite: 'pharo.png' named: 'pharo'.
 	self
@@ -97,7 +98,7 @@ WinterAssetManagementSystemTest >> testRemoveAsset [
 
 	| system  |
 	
-	system := WinterAssetManagementSystem current.
+	system := WinterAssetManagementSystem new.
 
 	system addSprite: 'pharo.png' named: 'pharo'.
 	self deny: system assets isEmpty.
@@ -107,8 +108,10 @@ WinterAssetManagementSystemTest >> testRemoveAsset [
 
 { #category : #Tests }
 WinterAssetManagementSystemTest >> testRemoveAssetFailsIfAssetDoesNotExist [
+
 	| system  |
-	system := WinterAssetManagementSystem current.
+
+	system := WinterAssetManagementSystem new.
 	self assert: system assets isEmpty.
 	self should: [ system removeAssetNamed: 'bird' ] raise: AssetNotFound withExceptionDo: [:ex | self assert: ex messageText equals: 'Asset named bird does not exist in Asset System'].
 	

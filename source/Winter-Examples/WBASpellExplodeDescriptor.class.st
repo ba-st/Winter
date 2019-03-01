@@ -10,9 +10,9 @@ WBASpellExplodeDescriptor >> classFolder [
 ]
 
 { #category : #Bootstrap }
-WBASpellExplodeDescriptor >> loadSpritesWith: surface [
+WBASpellExplodeDescriptor >> loadSpritesWith: surface using: anAssetsManagementSystem [
 	| sprites genForm |
-	genForm := self loadImageFile.
+	genForm := self loadImageFileUsing: anAssetsManagementSystem.
 	sprites := Array new: 3.
 	4 to: 6 do: [ :i | | point |
 		point := i - 1 @ 0 * self spriteSize.

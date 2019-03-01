@@ -3,7 +3,7 @@ System to manage assets in the game
 "
 Class {
 	#name : #WinterAssetManagementSystem,
-	#superclass : #Object,
+	#superclass : #SubsystemImplementation,
 	#instVars : [
 		'assets'
 	],
@@ -38,6 +38,7 @@ WinterAssetManagementSystem >> addSound: aSoundPath named: aName [
 
 { #category : #'Asset Managing' }
 WinterAssetManagementSystem >> addSprite: aSpritePath named: aName [
+
 	^self addAsset:  (WinterSprite fromPath: aSpritePath named: aName)
 ]
 
@@ -58,12 +59,31 @@ WinterAssetManagementSystem >> assets [
 	^assets copy
 ]
 
+{ #category : #'meta-data' }
+WinterAssetManagementSystem >> dependencies [
+
+	^ #()
+]
+
+{ #category : #'meta-data' }
+WinterAssetManagementSystem >> implementedInterfaces [
+
+	^ #(#AssetsManagementSystemInterface)
+]
+
 { #category : #Initialization }
 WinterAssetManagementSystem >> initialize [
+	super initialize.
 	assets := Dictionary new.
 	SoundSystem soundEnabled: true.
 	SoundSystem initialize.
-	SoundPlayer startUpWithSound:nil.
+	SoundPlayer startUpWithSound: nil
+]
+
+{ #category : #'meta-data' }
+WinterAssetManagementSystem >> name [
+
+	^ 'Assets Management System'
 ]
 
 { #category : #'Asset Managing' }
@@ -71,34 +91,12 @@ WinterAssetManagementSystem >> removeAssetNamed: aName [
 	^assets  removeKey: aName ifAbsent: [ AssetNotFound signalNamed: aName ]
 ]
 
-{ #category : #'Asset Managing' }
-WinterAssetManagementSystem >> removeSoundNamed: aName [
-	^self removeAssetNamed: aName
-]
-
-{ #category : #'Asset Managing' }
-WinterAssetManagementSystem >> removeSpriteNamed: aName [
-	^self removeAssetNamed: aName
-]
-
-{ #category : #'Asset Managing' }
-WinterAssetManagementSystem >> soundNamed: aName [
-
-	^ self assetNamed: aName
-]
-
 { #category : #Accessing }
 WinterAssetManagementSystem >> sounds [
-	^self assets
-]
-
-{ #category : #'Asset Managing' }
-WinterAssetManagementSystem >> spriteNamed: aName [
-
-	^ self assetNamed: aName
+	^self assets select: [ :each | each isSound  ]
 ]
 
 { #category : #Accessing }
 WinterAssetManagementSystem >> sprites [
-	^ self assets
+	^ self assets select: [ :each | each isSprite  ]
 ]

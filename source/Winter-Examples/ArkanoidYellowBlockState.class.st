@@ -19,5 +19,5 @@ ArkanoidYellowBlockState >> color [
 { #category : #Accessing }
 ArkanoidYellowBlockState >> sprite [
 
-	^ WinterAssetManagementSystem current spriteNamed: #yellow
+	^game assetsManagementSystem  assetNamed: #yellow
 ]

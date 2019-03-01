@@ -27,7 +27,6 @@ WinterSpriteTest >> setUp [
 
 	self createImage.
 	
-	WinterAssetManagementSystem restart
 ]
 
 { #category : #finalization }
@@ -66,7 +65,7 @@ self
 WinterSpriteTest >> testInstanceCreationFailedBecauseFileNotFound [
 	self
 		should: [ WinterSprite fromPath: 'pharo2.png' named: 'pharo 2']
-		raise: FileDoesNotExist
+		raise: FileDoesNotExistException 
 		withExceptionDo: [ :ex | self assert: ex messageText equals: 'Sprite not found in pharo2.png' ].
 	
 ]

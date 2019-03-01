@@ -35,5 +35,5 @@ SpiderInvasionMissile >> initializeAtPosition: aPosition of: aScene tick: number
 { #category : #initialization }
 SpiderInvasionMissile >> initializeSprite [
 
-	sprite := WinterAssetManagementSystem current spriteNamed: #missile
+	sprite := game assetsManagementSystem  assetNamed: #missile
 ]

@@ -65,7 +65,7 @@ SpiderInvasionGame >> initializePlayers [
 { #category : #initialization }
 SpiderInvasionGame >> initializeResources [
 
-	WinterAssetManagementSystem current
+	self assetsManagementSystem 
 		addSprite: 'spider.png' named: #spider;
 		addSprite: 'wall.png' named: #wall;
 		addSprite:  'missile.png' named: #missile;

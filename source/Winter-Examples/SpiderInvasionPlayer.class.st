@@ -89,5 +89,5 @@ SpiderInvasionPlayer >> reload [
 { #category : #Accessing }
 SpiderInvasionPlayer >> spaceShipSprite [
 
-	^ WinterAssetManagementSystem current spriteNamed: #spaceShip
+	^game assetsManagementSystem  assetNamed: #spaceShip
 ]

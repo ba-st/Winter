@@ -9,12 +9,6 @@ WinterSoundTest >> expectedFailures [
 	^ #(testAccessing testTesting)
 ]
 
-{ #category : #initialization }
-WinterSoundTest >> setUp [
-
-	WinterAssetManagementSystem restart
-]
-
 { #category : #tests }
 WinterSoundTest >> testAccessing [
 

@@ -59,6 +59,11 @@ WinterSound >> isAIFF [
 ]
 
 { #category : #Testing }
+WinterSound >> isSound [
+	^ true
+]
+
+{ #category : #Testing }
 WinterSound >> isWav [
 	^type =#wav
 ]

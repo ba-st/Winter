@@ -37,7 +37,7 @@ WBASpellSelectScreenModel >> loadSpellSprites [
 	^ (1 to: 6) collect: [ :i |
 		WBASpellExplodeDescriptor new
 			fileName: 'spell' , i printString;
-			loadSpritesWith: screen surface ]
+			loadSpritesWith: screen surface using: startingGame  assetsManagementSystem ]
 ]
 
 { #category : #initialization }

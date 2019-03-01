@@ -25,5 +25,5 @@ SpiderInvasionWall >> initializeInPosition: aPosition of: aSene [
 { #category : #initialization }
 SpiderInvasionWall >> initializeSprite [
 
-	sprite := WinterAssetManagementSystem current spriteNamed: #wall
+	sprite := game assetsManagementSystem  assetNamed: #wall
 ]

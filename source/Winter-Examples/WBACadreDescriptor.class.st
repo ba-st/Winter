@@ -25,12 +25,12 @@ WBACadreDescriptor >> initializeFor: aNumberOfPlayers [
 ]
 
 { #category : #Bootstrap }
-WBACadreDescriptor >> loadSpritesWith: surface [ 
+WBACadreDescriptor >> loadSpritesWith: surface using: anAssetsManagementSystem [
 	| sprites |
 	sprites := Array new: numberOfPlayers .
 	1 to: numberOfPlayers do: [ :i |
 		fileName := 'cadre' , i printString.
-		sprites at: i put: self loadImageFile ].
+		sprites at: i put: (self loadImageFileUsing: anAssetsManagementSystem)  ].
 	^ sprites
 ]
 

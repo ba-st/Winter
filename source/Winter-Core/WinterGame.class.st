@@ -39,7 +39,8 @@ Class {
 		'scheduler',
 		'collisionHandlers',
 		'screen',
-		'scene'
+		'scene',
+		'rootSystem'
 	],
 	#category : #'Winter-Core-Base'
 }
@@ -49,6 +50,12 @@ WinterGame >> addPlayer: aPlayer [
 
 	aPlayer game: self.
 	scene addPlayer: aPlayer.
+]
+
+{ #category : #Accessing }
+WinterGame >> assetsManagementSystem [
+
+	^rootSystem systemImplementing: #AssetsManagementSystemInterface
 ]
 
 { #category : #Accessing }
@@ -79,6 +86,7 @@ WinterGame >> handleCollision: aCollision [
 { #category : #initialization }
 WinterGame >> initialize [
 	super initialize.
+	self initializeSystems.
 	self initializeSchedulers.
 	collisionHandlers := OrderedCollection new.
 	self initializeCollisionHandlers.
@@ -111,6 +119,15 @@ WinterGame >> initializeSchedulers [
 	scheduler := AnimationsScheduler new
 ]
 
+{ #category : #initialization }
+WinterGame >> initializeSystems [
+
+	rootSystem := CompositeSystem new.
+	rootSystem
+		register: WinterAssetManagementSystem new;
+		startUp
+]
+
 { #category : #Rendering }
 WinterGame >> loadWidgets [
 	
@@ -127,6 +144,12 @@ WinterGame >> pushEvent: anEvent [
 { #category : #'as yet unclassified' }
 WinterGame >> renderOn: aCanvas [ 
 	scene renderOn: aCanvas 
+]
+
+{ #category : #Accessing }
+WinterGame >> rootSystem [
+
+	^ rootSystem
 ]
 
 { #category : #Accessing }
@@ -159,7 +182,8 @@ WinterGame >> screen [
 
 { #category : #Accessing }
 WinterGame >> screen: aScreen [ 
-	screen := aScreen
+
+	screen := aScreen.
 ]
 
 { #category : #'start/stop' }

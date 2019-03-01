@@ -77,12 +77,16 @@ ArkanoidGame >> initializePlayers [
 
 { #category : #initialization }
 ArkanoidGame >> initializeResources [
+
 	| assetsSystem |
-	assetsSystem := WinterAssetManagementSystem current.
+
+	assetsSystem := self assetsManagementSystem.
 	(assetsSystem addSprite: 'background.png' named: #background)
 		scaledToSize: self dimensions.
-	(assetsSystem addSprite: 'yellow.png' named: #yellow) scaledToSize: 38 @ 38.
-	(assetsSystem addSprite: 'green.png' named: #green) scaledToSize: 38 @ 38.
+	(assetsSystem addSprite: 'yellow.png' named: #yellow)
+		scaledToSize: 38 @ 38.
+	(assetsSystem addSprite: 'green.png' named: #green)
+		scaledToSize: 38 @ 38.
 	(assetsSystem addSprite: 'red.png' named: #red) scaledToSize: 38 @ 38.
 	(assetsSystem
 		addSprite: 'arkanoid_bar.png' named: #arkanoidBar;

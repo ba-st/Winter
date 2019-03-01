@@ -63,7 +63,9 @@ WBANumberPlayerSelectScreenModel >> screen: sc [
 
 { #category : #accessing }
 WBANumberPlayerSelectScreenModel >> setUpGame [
-	startingGame screen: screen
+
+	startingGame screen: screen.
+	screen rootSystem: startingGame rootSystem.
 ]
 
 { #category : #actions }

@@ -27,6 +27,16 @@ WinterAsset >> doesNotUnderstand: aMessage [
 		ifFalse: [ super doesNotUnderstand: aMessage ]
 ]
 
+{ #category : #'reflective operations' }
+WinterAsset >> isSound [
+	^ false
+]
+
+{ #category : #'reflective operations' }
+WinterAsset >> isSprite [
+	^ false
+]
+
 { #category : #accessing }
 WinterAsset >> name [
 

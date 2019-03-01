@@ -27,10 +27,12 @@ WBAWallDescriptor >> classFolder [
 ]
 
 { #category : #Bootstrap }
-WBAWallDescriptor >> loadSpritesWith: surface [
+WBAWallDescriptor >> loadSpritesWith: surface using: anAssetsManagementSystem [
+
 	| genForm walls |
+
 	walls := Array new: 3.
-	genForm := self loadImageFile.
+	genForm := self loadImageFileUsing: anAssetsManagementSystem.
 	
 	0 to: 2 do: [ :i | | topLeftCorner subRect |
 		topLeftCorner := 0 @ i * self spriteSize + position.

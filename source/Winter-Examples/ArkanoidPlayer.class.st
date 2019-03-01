@@ -11,7 +11,8 @@ ArkanoidPlayer class >> on: aGame [
 
 { #category : #Accessing }
 ArkanoidPlayer >> arkanoidBarSprite [
-	^ WinterAssetManagementSystem current spriteNamed: #arkanoidBar
+
+	^ game assetsManagementSystem  assetNamed: #arkanoidBar
 ]
 
 { #category : #Collisions }
@@ -38,7 +39,7 @@ ArkanoidPlayer >> initializeOn: aGame [
 { #category : #Initialization }
 ArkanoidPlayer >> initializeSprite [
 
-	sprite := WinterAssetManagementSystem current spriteNamed: #arkanoidBar
+	sprite := game assetsManagementSystem  assetNamed: #arkanoidBar
 	
 ]
 

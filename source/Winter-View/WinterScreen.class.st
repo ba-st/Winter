@@ -9,7 +9,8 @@ Class {
 		'window',
 		'surface',
 		'scheduler',
-		'title'
+		'title',
+		'rootSystem'
 	],
 	#category : #'Winter-View-View'
 }
@@ -68,7 +69,8 @@ WinterScreen >> initialize [
 
 	super initialize.
 	title := ''.
-	scheduler := SteppingScheduler managing:  self
+	scheduler := SteppingScheduler managing:  self.
+	rootSystem := Binding undefinedExplainedBy: 'The composite system was not installed' raising: SystemControlError
 ]
 
 { #category : #initialization }
@@ -105,6 +107,18 @@ WinterScreen >> renderBackground: canvas color: color [
 	canvas setShape: (0@0 corner: window extent).
 	canvas setPaint: color.
 	canvas draw
+]
+
+{ #category : #Accessing }
+WinterScreen >> rootSystem [
+
+	^ rootSystem content
+]
+
+{ #category : #Accessing }
+WinterScreen >> rootSystem: aRootSystem [
+
+	^ rootSystem := Binding to: aRootSystem
 ]
 
 { #category : #Accessing }

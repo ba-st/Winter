@@ -18,9 +18,9 @@ WBACharacterDescriptor >> classFolder [
 ]
 
 { #category : #Bootstrap }
-WBACharacterDescriptor >> loadShortSpritesWith: surface [
+WBACharacterDescriptor >> loadShortSpritesWith: surface using: anAssetsManagementSystem [
 	| genForm sprites |
-	genForm := self loadImageFile.
+	genForm := self loadImageFileUsing: anAssetsManagementSystem .
 	sprites := Array new: 2.
 	0 to: 1 do: [ :i | | topLeftCorner |
 		topLeftCorner := i @ 0 * (self spriteSize * 2) + position.
@@ -31,9 +31,9 @@ WBACharacterDescriptor >> loadShortSpritesWith: surface [
 ]
 
 { #category : #Bootstrap }
-WBACharacterDescriptor >> loadSpritesWith: surface [
+WBACharacterDescriptor >> loadSpritesWith: surface using: anAssetsManagementSystem [
 	| genForm sprites |
-	genForm := self loadImageFile.
+	genForm := self loadImageFileUsing: anAssetsManagementSystem.
 	sprites := Array new: 12.
 	0 to: 3 do: [ :j | 
 		0 to: 2 do: [ :i | | topLeftCorner |

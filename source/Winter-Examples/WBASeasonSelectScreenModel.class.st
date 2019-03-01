@@ -101,8 +101,8 @@ WBASeasonSelectScreenModel >> seasonSubWidgets: aNumber [
 	
 	groundDescriptor := WBAGroundDescriptor backgroundAt: aNumber .
 	wallDescriptor := WBAWallDescriptor  backgroundAt: aNumber .
-	grounds := groundDescriptor loadSpritesWith: screen surface.
-	walls := wallDescriptor loadSpritesWith: screen surface.
+	grounds := groundDescriptor loadSpritesWith: screen surface using: startingGame  assetsManagementSystem.
+	walls := wallDescriptor loadSpritesWith: screen surface using: startingGame assetsManagementSystem.
 	basicGroundWidget := self newSeasonSubWidget: { grounds first }.
 	^ { 
 		self newSeasonSubWidget: { grounds first . walls first } .

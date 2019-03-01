@@ -3,7 +3,7 @@ Abstract class for sprite descriptors
 "
 Class {
 	#name : #WinterSpriteDescriptor,
-	#superclass : #Object,
+	#superclass : #WinterReactiveObject,
 	#instVars : [
 		'fileName',
 		'position'
@@ -14,7 +14,19 @@ Class {
 { #category : #Bootstrap }
 WinterSpriteDescriptor >> basicLoadImageFile [
 
-	^ WinterAssetManagementSystem current
+	^ game assetsManagementSystem 
+		addSprite:
+			('<1s>/<2s>/<3s>.png'
+				expandMacrosWith: self resourceFolder
+				with: self classFolder
+				with: fileName)
+		named: fileName
+]
+
+{ #category : #Bootstrap }
+WinterSpriteDescriptor >> basicLoadImageFileUsing: anAssetManagementSystem [
+
+	^ anAssetManagementSystem 
 		addSprite:
 			('<1s>/<2s>/<3s>.png'
 				expandMacrosWith: self resourceFolder
@@ -44,15 +56,15 @@ WinterSpriteDescriptor >> fileName: anObject [
 ]
 
 { #category : #Bootstrap }
-WinterSpriteDescriptor >> loadImageFile [
+WinterSpriteDescriptor >> loadImageFileUsing: anAssetManagementSystem [
 
-	^ WinterAssetManagementSystem current
+	^ anAssetManagementSystem 
 		assetNamed: fileName
-		ifAbsent: [ self basicLoadImageFile ]
+		ifAbsent: [ self basicLoadImageFileUsing: anAssetManagementSystem ]
 ]
 
 { #category : #Bootstrap }
-WinterSpriteDescriptor >> loadSpritesWith: aSurface [
+WinterSpriteDescriptor >> loadSpritesWith: aSurface using: anAssetsManagementSystem [
 
 	"Answers the sprites corresponding to the descriptor"
 	self subclassResponsibility.
