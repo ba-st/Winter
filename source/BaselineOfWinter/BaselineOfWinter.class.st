@@ -24,11 +24,12 @@ BaselineOfWinter >> baseline: spec [
 				package: 'Winter-TiledTests' with: [ spec requires: #('Winter-Tiled') ].
 			
 			spec
-				group: 'Development'
-					with:
-					#('Winter-AssetManagement' 'Winter-AssetManagementTests' 'Winter-Core' 'Winter-CoreTests' 'Winter-Core2D' 'Winter-Core2DTests' 'Winter-View' 'Winter-Tiled' 'Winter-TiledTests' 'Winter-TestResources');
-				group: 'Full' with: #('Development' 'Winter-Examples');
-				group: 'default' with: #('Full') ]
+				
+				group: 'Tests' with: #('Winter-AssetManagementTests'  'Winter-CoreTests'  'Winter-Core2DTests'  'Winter-TiledTests' 'Winter-TestResources');
+				group: 'Deployment' #('Winter-AssetManagement' 'Winter-Core' 'Winter-Core2D' 'Winter-View' 'Winter-Tiled' 'Winter-Examples');
+				group: 'Development' with: #( 'Deployment' 'Tests');
+				group: 'CI' with:'Tests';
+				group: 'default' with: #('Development') ]
 
 ]
 
