@@ -26,7 +26,7 @@ BaselineOfWinter >> baseline: spec [
 			spec
 				
 				group: 'Tests' with: #('Winter-AssetManagementTests'  'Winter-CoreTests'  'Winter-Core2DTests'  'Winter-TiledTests' 'Winter-TestResources');
-				group: 'Deployment' #('Winter-AssetManagement' 'Winter-Core' 'Winter-Core2D' 'Winter-View' 'Winter-Tiled' 'Winter-Examples');
+				group: 'Deployment' with: #('Winter-AssetManagement' 'Winter-Core' 'Winter-Core2D' 'Winter-View' 'Winter-Tiled' 'Winter-Examples');
 				group: 'Development' with: #( 'Deployment' 'Tests');
 				group: 'CI' with:'Tests';
 				group: 'default' with: #('Development') ]
