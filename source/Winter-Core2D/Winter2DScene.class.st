@@ -1,5 +1,20 @@
 "
-A 2D Scene not using chipmunk2D
+I am a specialized type of scene for 2D.
+Chipmunk2D (Native library) [ Disconnected ]
+
+Instance Variables
+- surface 
+- backgroundColor
+
+
+Public API and Key Messages:
+
+- addComponent: 
+- game:
+- players
+- renderOn:
+- updateUsing:
+
 "
 Class {
 	#name : #Winter2DScene,
@@ -46,13 +61,6 @@ Winter2DScene >> eventHandlerFor: aScreen [
 			{"game scheduler."
 			aScreen scheduler};
 		yourself
-]
-
-{ #category : #Events }
-Winter2DScene >> eventUpdated: anEvent [
-
-	"self renderOn: anEvent canvas."
-	
 ]
 
 { #category : #Accessing }

@@ -1,5 +1,14 @@
 "
-Collision checker for a component  and borders
+I am a Collision checker for a component  against borders.
+
+
+Instance Variables
+- component 
+- gameWindow
+
+Public API and Key Messages:
+
+- value:
 "
 Class {
 	#name : #CollisionAgainstMapBordersChecker,

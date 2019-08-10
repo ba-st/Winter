@@ -1,5 +1,24 @@
 "
-Represents a sprite handling and image of any etension
+I represent a sprite handling and image of any etension
+
+Collaborators: 
+
+- name
+- nativeAsset
+- path
+
+Public API and Key Messages
+
+- isSprite  
+- extent
+- drawOnAthensCanvas:
+- path
+- scaledToSize:
+- type.
+
+Instance creation: 
+
+WinterSprite fromPath: aStringPath named: aName
 "
 Class {
 	#name : #WinterSprite,

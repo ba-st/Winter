@@ -1,35 +1,32 @@
 "
-I am a base class for simple Storm-based applications running in a Morphic window. I handle the basic animation and physics simulation loop, and provide hooks for my subclasses to define application-specific behavior.
+I am a base class for a game. I handle the basic animation and physics simulation loop, and provide hooks for my subclasses to define application-specific behavior.
 
 Instance Variables
-	currentScene:		<Object>
-	engine:		<Object>
-	players:		<Object>
-	scenes:		<Object>
-	stepWalker:		<Object>
-	surfaceContainer:		<Object>
-	window:		<Object>
+- scheduler
+- collisionHandlers
+- screen
+- scene
+- rootSystem
 
-currentScene
-	- xxxxx
+Public API and Key Messages:
 
-engine
-	- xxxxx
+- addPlayer:
+- assetsManagementSystem
+- eventHandlerFor:
+- extent
+- handleCollision:
+- renderOn:
+- scene
+- scene:
+- scheduler
+- screen
+- screen:
+- start
+- updateUsing:
 
-players
-	- xxxxx
 
-scenes
-	- xxxxx
 
-stepWalker
-	- xxxxx
 
-surfaceContainer
-	- xxxxx
-
-window
-	- xxxxx
 
 "
 Class {
@@ -131,14 +128,6 @@ WinterGame >> initializeSystems [
 { #category : #Rendering }
 WinterGame >> loadWidgets [
 	
-]
-
-{ #category : #events }
-WinterGame >> pushEvent: anEvent [
-
-	anEvent isGameEvent
-		ifTrue: [ anEvent execute: self screen  ]
-		
 ]
 
 { #category : #'as yet unclassified' }

@@ -1,5 +1,17 @@
 "
-A class to handle collitions with a behavior
+I am a class to handle collissions with a given behavior
+
+
+Instance Variables
+- firstType 
+- secondType 
+- action
+
+
+Public API and Key Messages:
+
+- canHandle:
+- value:
 "
 Class {
 	#name : #CollisionHandler,

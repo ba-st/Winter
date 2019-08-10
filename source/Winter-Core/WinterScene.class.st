@@ -1,11 +1,28 @@
 "
-I am the game environment where elements interact.
+I am a class to represent the game environment where elements interact.
+
+Instance Variables
+- active 
+- components 
+- players
+
+
+Public API and Key Messages:
+
+- activate
+- addComponent:
+- addComponents:
+- addPlayer:
+- components
+- isActive
+- removeComponent:
+- removePlayer:
+
 "
 Class {
 	#name : #WinterScene,
 	#superclass : #WinterReactiveObject,
 	#instVars : [
-		'eventQueue',
 		'active',
 		'components',
 		'players'

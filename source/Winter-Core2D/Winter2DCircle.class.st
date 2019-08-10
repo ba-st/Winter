@@ -1,5 +1,16 @@
 "
-Circle abstraction as a WInter Component
+I am a Circle shape appearing in a 2D scene, with both a visual representation and a physical simulation..
+Chipmunk2D (Native library) [ Disconnected ]
+
+Instance Variables
+- radius
+
+
+Public API and Key Messages:
+
+- bounds
+- radius 
+- radius:
 "
 Class {
 	#name : #Winter2DCircle,

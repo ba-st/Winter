@@ -1,5 +1,16 @@
 "
-Handler used to handler keyword events on screens
+I represent a handler used to handle keyword events on screens
+
+Collaborators: 
+
+- screenModel
+
+Public API and Key Messages:
+
+- screenModel
+- screenModel:
+- terminateProcesses
+- visitKeyUpEvent:
 "
 Class {
 	#name : #WinterKeyboardEventHandler,
@@ -22,13 +33,13 @@ WinterKeyboardEventHandler >> screenModel: anObject [
 	screenModel := anObject
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #processing }
 WinterKeyboardEventHandler >> terminateProcesses [
 
 	screenModel terminateProcesses
 ]
 
-{ #category : #Accessing }
+{ #category : #visiting }
 WinterKeyboardEventHandler >> visitKeyUpEvent: anEvent [
 
 	screenModel handleKeyStroke: anEvent scanCode  

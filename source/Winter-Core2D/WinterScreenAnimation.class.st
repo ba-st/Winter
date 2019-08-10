@@ -1,5 +1,15 @@
 "
-Represents an animation on the screen
+I represent an animation on the screen
+
+Instance Variables
+- block
+
+
+Public API and Key Messages:
+
+- block
+- block: 
+- step
 "
 Class {
 	#name : #WinterScreenAnimation,

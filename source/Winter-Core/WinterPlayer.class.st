@@ -1,5 +1,25 @@
 "
-Active element in a game, controlled by the user
+I am a class to represent active elements in a game,can be controlled by the user
+
+Instance Variables
+- interactionEvents 
+- sprite 
+- collisionShape 
+- keyDownInteractions 
+- keyUpInteractions 
+
+
+Public API and Key Messages:
+
+- collisionShape
+- collisionShape:
+- position
+- position:
+- handleKeyDown:
+- handleKeyUp:
+- renderOn:
+- updateUsing:
+
 "
 Class {
 	#name : #WinterPlayer,
@@ -41,14 +61,6 @@ WinterPlayer >> collisionShape [
 WinterPlayer >> collisionShape: aCollisionShape [
 
 	collisionShape := aCollisionShape 
-]
-
-{ #category : #Events }
-WinterPlayer >> eventUpdated: anEvent [
-
-	collisionShape eventUpdated: anEvent .
-	self checkCollisions.
-
 ]
 
 { #category : #Events }

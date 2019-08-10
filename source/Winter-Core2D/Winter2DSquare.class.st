@@ -1,5 +1,16 @@
 "
-Square abstraction as a WInter Component
+I am a Square shape appearing in a 2D scene, with both a visual representation and a physical simulation..
+Chipmunk2D (Native library) [ Disconnected ]
+
+Instance Variables
+- extentPoint
+
+
+Public API and Key Messages:
+
+- bounds
+- extent 
+- extent:
 "
 Class {
 	#name : #Winter2DSquare,

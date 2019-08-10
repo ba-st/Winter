@@ -1,5 +1,18 @@
 "
-Represents a general animation
+I represent an abstract class for Animations in the game
+
+Instance Variables
+- actualStep
+
+
+Public API and Key Messages:
+
+- animate
+- initialStep: 
+- isAnimationSplit:
+- isEndAnimation
+- isMidAnimation
+- step
 "
 Class {
 	#name : #WinterAnimation,
@@ -10,14 +23,14 @@ Class {
 	#category : #'Winter-Core2D'
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : #evaluating }
 WinterAnimation >> animate [
 
 	actualStep := actualStep + 1.
 	self step
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 WinterAnimation >> initialStep: aValue [
 
 	actualStep  := aValue
@@ -25,39 +38,39 @@ WinterAnimation >> initialStep: aValue [
 	
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #initialization }
 WinterAnimation >> initialize [
 
 	super initialize.
 	actualStep := 0
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #testing }
 WinterAnimation >> isAnimationSplit: x [ 
 
 	"if x is 8, answers true every 8th of operation"
 	^ actualStep  \\ (self numberOfAnimationFrame // x) = 0
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #testing }
 WinterAnimation >> isEndAnimation [
 
 	^ actualStep  = self numberOfAnimationFrame
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #testing }
 WinterAnimation >> isMidAnimation [
 
 	^ actualStep  = (self numberOfAnimationFrame // 2)
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 WinterAnimation >> numberOfAnimationFrame [
 
 	^ 16
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #evaluating }
 WinterAnimation >> step [
 
 	"Should reImplement"

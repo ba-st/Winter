@@ -1,5 +1,6 @@
 "
-Simple class of collision
+I am a basic class for Collision between 2 components.
+
 "
 Class {
 	#name : #Collision,

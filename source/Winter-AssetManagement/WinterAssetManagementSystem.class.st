@@ -1,5 +1,23 @@
 "
-System to manage assets in the game
+I represent a system to manage assets in the game.
+
+Collaborators: 
+
+- assets
+
+Public API and Key Messages
+
+- addSound:named:   
+- addSprite:named:
+- assetNamed:
+- assets
+- removeAssetNamed:
+- sounds
+- sprites.
+
+Instance creation: 
+
+WinterSound fromPath: aStringPath named: aName
 "
 Class {
 	#name : #WinterAssetManagementSystem,

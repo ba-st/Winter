@@ -1,5 +1,16 @@
 "
-Abstract class for collisions
+I am an Abstract class for collisions.
+
+
+Instance Variables
+- firstComponent
+- secondComponent
+
+Public API and Key Messages:
+
+- applyOnGame
+- firstComponent 
+- secondComponent 
 "
 Class {
 	#name : #CollisionBehavior,

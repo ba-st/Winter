@@ -1,5 +1,19 @@
 "
-Abstract class for sprite descriptors
+I am an abstract class for sprite descriptors
+
+Instance Variables
+- fileName 
+- position
+
+
+Public API and Key Messages:
+
+- loadSpritesWith:using: 
+- position
+- position:
+- fileName
+- fileName:
+
 "
 Class {
 	#name : #WinterSpriteDescriptor,

@@ -1,5 +1,7 @@
 "
-Exception for sound extension not supported
+I represent a Signal of a sound extension not supported.
+
+I am fired when a Sound with unknown extension is tried to be created.
 "
 Class {
 	#name : #SoundExtensionNotSupported,

@@ -1,5 +1,17 @@
 "
-Scheduler to manage animations in the game
+I represent a scheduler to manage animations in the game
+
+Collaborators: 
+
+- gameStepActions
+
+Public API and Key Messages
+   
+- name
+- newGameTickAction:for: 
+- stopGameTickAction:for:.
+
+
 "
 Class {
 	#name : #AnimationsScheduler,
@@ -30,8 +42,7 @@ AnimationsScheduler >> initialize [
 	gameStepActions := Dictionary new.
 	process := self 
 		newProcessAt: 35 
-		do: [ gameStepActions keysAndValuesDo: [ :element :animation |
-			animation animate ] ]
+		do: [ self executeAnimations ]
 		every: self animationStepTime.
 ]
 

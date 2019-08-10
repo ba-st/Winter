@@ -1,5 +1,20 @@
 "
-Active element in a game, not controlled by the user
+I am a class to represent active elements in a game, not controlled by the user
+
+Instance Variables
+- sprite
+- collisionShape 
+
+
+Public API and Key Messages:
+
+- collisionShape
+- collisionShape:
+- position
+- position:
+- renderOn:
+- updateUsing:
+
 "
 Class {
 	#name : #WinterNonPlayer,
@@ -27,13 +42,6 @@ WinterNonPlayer >> collisionShape [
 { #category : #Accessing }
 WinterNonPlayer >> collisionShape: aCollisionshape [
 	collisionShape := aCollisionshape 
-]
-
-{ #category : #Events }
-WinterNonPlayer >> eventUpdated: anEvent [
-
-	self updateCollisionShapeUsing: anEvent  .
-	self checkCollisions.
 ]
 
 { #category : #initialization }
@@ -101,12 +109,6 @@ WinterNonPlayer >> renderSpriteOn: aCanvas [
 WinterNonPlayer >> translation [
 
 	^ self position
-]
-
-{ #category : #Events }
-WinterNonPlayer >> updateCollisionShapeUsing: anEvent [
-
-	collisionShape eventUpdated: anEvent
 ]
 
 { #category : #Events }

@@ -23,7 +23,7 @@ BaselineOfWinter >> setUpDependenciesFor: spec [
 				repository: 'http://smalltalkhub.com/mc/PharoExtras/Sound/main' ];
 		baseline: 'Kepler'
 			with: [ spec
-				repository: 'github://ba-st/Kepler:master/source';
+				repository: 'github://ba-st/Kepler:v4.1.0/source';
 				loads: #('Deployment') ];
 		configuration: 'XMLParser'
 			with: [ spec

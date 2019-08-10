@@ -1,5 +1,12 @@
 "
-Scheduler to manage update and render of the game
+I represent a scheduler to manage update and render of the game
+
+Collaborators: 
+
+
+Public API and Key Messages:
+   
+
 "
 Class {
 	#name : #SteppingScheduler,

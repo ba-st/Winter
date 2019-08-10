@@ -1,5 +1,14 @@
 "
-Class for collison with borders
+I am a class of Collision between a component and borders.
+
+
+Instance Variables
+- axisSymbol 
+
+
+Public API and Key Messages:
+
+- axisSymbol
 "
 Class {
 	#name : #CollisionAgainstMapBorders,

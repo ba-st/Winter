@@ -1,5 +1,20 @@
 "
-Abstract class for assets
+I represent an abstract class for assets
+
+Collaborators: 
+
+- name
+- nativeAsset
+- path
+
+Public API and Key Messages
+
+- isSound   
+- isSprite
+- name
+- path.
+
+
 "
 Class {
 	#name : #WinterAsset,

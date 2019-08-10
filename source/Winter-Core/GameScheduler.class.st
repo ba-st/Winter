@@ -1,5 +1,20 @@
 "
-Abstract class for game schedulers
+I represent an abstract class for game schedulers
+
+Collaborators: 
+
+- process
+- managedObject 
+
+Public API and Key Messages
+
+- process   
+- name
+- managedObject 
+- startProcess
+- terminateProcess.
+
+
 "
 Class {
 	#name : #GameScheduler,

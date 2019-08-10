@@ -1,5 +1,24 @@
 "
-Represets a sound of extension aiff or wav
+I represent a sound of extension aiff or wav
+
+Collaborators: 
+
+- name
+- nativeAsset
+- path
+
+Public API and Key Messages
+
+- isSound   
+- isWav
+- isAIFF
+- pause
+- play
+- type.
+
+Instance creation: 
+
+WinterSound fromPath: aStringPath named: aName
 "
 Class {
 	#name : #WinterSound,

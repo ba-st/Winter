@@ -1,5 +1,13 @@
 "
-Abstract class for event handler
+I represent an Abstract class for os event handler
+
+Collaborators: 
+
+
+Public API and Key Messages:
+
+- terminateProcesses
+- visitWindowCloseEvent:
 "
 Class {
 	#name : #WinterEventHandler,
@@ -7,13 +15,13 @@ Class {
 	#category : #'Winter-Core-Event-Handlers'
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : #processing }
 WinterEventHandler >> terminateProcesses [
 
 	self subclassResponsibility
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #visiting }
 WinterEventHandler >> visitWindowCloseEvent: anEvent [
 	self terminateProcesses.
 	"Smalltalk snapshot: false andQuit: true"

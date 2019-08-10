@@ -1,5 +1,15 @@
 "
-Class to check if theres is a collision between 2 components
+I am a class to check if theres is a collision between 2 components.
+
+
+Instance Variables
+- firstComponent 
+- secondComponent  
+
+
+Public API and Key Messages:
+
+- value
 "
 Class {
 	#name : #CollisionChecker,

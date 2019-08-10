@@ -2,10 +2,13 @@
 I am the base class for game element that take part in a scene.
 
 Instance Variables
-	scene:		<Object>
+- scene
 
-scene
-	- xxxxx
+
+Public API and Key Messages:
+
+- scene
+- scene:
 
 "
 Class {
