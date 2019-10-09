@@ -32,6 +32,15 @@ CollisionChecker >> initializeFor: aComponent and: anotherComponent [
 	secondComponent := anotherComponent
 ]
 
+{ #category : #printing }
+CollisionChecker >> printOn: aStream [
+
+	aStream
+		nextPutAll:
+			('Collission checker for <1s> against <2>'
+				expandMacrosWith: firstComponent  printString with: secondComponent printString)
+]
+
 { #category : #Evaluating }
 CollisionChecker >> value [
 

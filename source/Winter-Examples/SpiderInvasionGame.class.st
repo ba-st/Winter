@@ -1,3 +1,15 @@
+"
+I represent the SPider invasion game itself
+
+
+Public API and Key Messages:
+
+- dimensions
+- gameSize
+- player
+- spriteSize
+
+"
 Class {
 	#name : #SpiderInvasionGame,
 	#superclass : #WinterGame,

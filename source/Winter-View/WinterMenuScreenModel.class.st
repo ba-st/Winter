@@ -12,7 +12,7 @@ Class {
 }
 
 { #category : #'as yet unclassified' }
-WinterMenuScreenModel >> backgroundColor [
+WinterMenuScreenModel >> background [
 
 	^ Color black
 ]
@@ -221,10 +221,20 @@ WinterMenuScreenModel >> nextScreen: screenClass [
 		display
 ]
 
+{ #category : #'screen building' }
+WinterMenuScreenModel >> printOn: aStream [
+
+	aStream
+		nextPutAll:
+			('<1s> - game: <2s>'
+				expandMacrosWith: self class name
+				with: startingGame printString)
+]
+
 { #category : #rendering }
 WinterMenuScreenModel >> renderOn: aCanvas [
 
-	screen renderBackground: aCanvas color: self backgroundColor.
+	screen renderBackground: aCanvas color: self background.
 	self renderWidgetsOn: aCanvas
 ]
 

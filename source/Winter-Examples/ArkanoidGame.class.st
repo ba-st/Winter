@@ -1,3 +1,17 @@
+"
+I represent the arkanoid game itself
+
+Instance variables: 
+
+- playing
+
+Public API and Key Messages:
+
+- player
+- playing
+- playing:
+- resetPlayerAndBall:
+"
 Class {
 	#name : #ArkanoidGame,
 	#superclass : #WinterGame,
@@ -34,7 +48,7 @@ ArkanoidGame >> initializeCollisionHandlers [
 		add:
 			(CollisionHandler
 				between: ArkanoidBall
-				and: ArkanoidBlock
+				and: ArkanoidBrick
 				onCollisionDo: [ :collision | 
 					collision secondComponent collidedByBall.
 					collision firstComponent negateY.
@@ -133,5 +147,6 @@ ArkanoidGame >> resetPlayerAndBall: anArkanoidBall [
 
 { #category : #Accessing }
 ArkanoidGame >> title [
+
 	^'Arkanoid'
 ]

@@ -109,6 +109,13 @@ Winter2DShape >> position: aPosition [
 	position := aPosition 
 ]
 
+{ #category : #printing }
+Winter2DShape >> printOn: aStream [
+
+	aStream
+		nextPutAll: ('2D Shape - position [<1s>]' expandMacrosWith: self position)
+]
+
 { #category : #Drawing }
 Winter2DShape >> renderOn: aCanvas [
 	aCanvas pathTransform

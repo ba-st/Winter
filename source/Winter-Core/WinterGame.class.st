@@ -61,7 +61,7 @@ WinterGame >> dimensions [
 	^self subclassResponsibility 
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #events }
 WinterGame >> eventHandlerFor: aScreen [ 
 	^scene eventHandlerFor: aScreen
 ]
@@ -130,7 +130,13 @@ WinterGame >> loadWidgets [
 	
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #printing }
+WinterGame >> printOn: aStream [
+
+	aStream nextPutAll: self title
+]
+
+{ #category : #Rendering }
 WinterGame >> renderOn: aCanvas [ 
 	scene renderOn: aCanvas 
 ]
@@ -183,7 +189,7 @@ WinterGame >> start [
 	
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #events }
 WinterGame >> startAnimation [
 	
 ]
@@ -204,7 +210,7 @@ WinterGame >> title [
 	self subclassResponsibility
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #Updating }
 WinterGame >> updateUsing: aCanvas [ 
 	
 	scene updateUsing: aCanvas 

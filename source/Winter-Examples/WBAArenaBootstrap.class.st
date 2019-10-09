@@ -1,3 +1,19 @@
+"
+I am the boostraper of the WBA game
+
+Instance variables: 
+
+- grounds 
+- walls 
+- characters 
+- spells 
+- arena 
+- startGame
+
+Public API and Key Messages:
+
+- bootstrapGame:on:
+"
 Class {
 	#name : #WBAArenaBootstrap,
 	#superclass : #Object,
@@ -12,7 +28,7 @@ Class {
 	#category : #'Winter-Examples-WizardBattle'
 }
 
-{ #category : #accessing }
+{ #category : #Bootstraping }
 WBAArenaBootstrap >> bootstrapArena: arenaDescriptor [
 	arena cells: (Array new: arenaDescriptor cellDescriptors size).
 	arenaDescriptor cellDescriptors withIndexDo: [ :column :colIndex | 
@@ -27,7 +43,7 @@ WBAArenaBootstrap >> bootstrapArena: arenaDescriptor [
 	self bootstrapCellNeighbours.
 ]
 
-{ #category : #accessing }
+{ #category : #Bootstraping }
 WBAArenaBootstrap >> bootstrapCellNeighbours [
 	| fakeCell |
 	"down left right up"
@@ -51,7 +67,7 @@ WBAArenaBootstrap >> bootstrapCellNeighbours [
 	] ]
 ]
 
-{ #category : #accessing }
+{ #category : #Bootstraping }
 WBAArenaBootstrap >> bootstrapCharacterCell: cell playerIndex: index [
 	| character |
 	character := characters at: index.
@@ -64,7 +80,7 @@ WBAArenaBootstrap >> bootstrapCharacterCell: cell playerIndex: index [
 	character game: startGame
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #Bootstraping }
 WBAArenaBootstrap >> bootstrapGame: startingGame on: screen [
 	arena := WBAArena new.
 	startGame := startingGame.
@@ -76,20 +92,20 @@ WBAArenaBootstrap >> bootstrapGame: startingGame on: screen [
 	arena screen: screen.
 ]
 
-{ #category : #accessing }
+{ #category : #Bootstraping }
 WBAArenaBootstrap >> bootstrapGroundOnlyCell: cell [
 	cell element: WBAEmpty empty.
 	cell ground: grounds atRandom
 	
 ]
 
-{ #category : #accessing }
+{ #category : #Bootstraping }
 WBAArenaBootstrap >> bootstrapWallCell: cell [
 	cell element: walls atRandom.
 	cell ground: grounds first
 ]
 
-{ #category : #accessing }
+{ #category : #Loading }
 WBAArenaBootstrap >> eventHandler: screen [
 	^ WinterSceneEventHandler  new
 		players: startGame players;
@@ -97,7 +113,7 @@ WBAArenaBootstrap >> eventHandler: screen [
 		yourself
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #Loading }
 WBAArenaBootstrap >> loadDescriptor: descr surface: surface into: class [
 	^ class new 
 		sprites: (descr loadSpritesWith: surface using: startGame assetsManagementSystem );
@@ -105,7 +121,7 @@ WBAArenaBootstrap >> loadDescriptor: descr surface: surface into: class [
 		yourself 
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #Loading }
 WBAArenaBootstrap >> loadSprites: gameDescr surface: surface [
 |assetsManagementSystem|
 assetsManagementSystem := startGame assetsManagementSystem .

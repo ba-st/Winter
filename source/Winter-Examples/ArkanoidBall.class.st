@@ -1,3 +1,19 @@
+"
+I represent the ball of the Arkanoid game.
+
+Instance variables: 
+
+- deltaPoint
+
+Public API and Key Messages:
+
+- checkCollisions
+- checkEndGame
+- negateX
+- negateY
+- playCollisionSound
+
+"
 Class {
 	#name : #ArkanoidBall,
 	#superclass : #WinterNonPlayer,

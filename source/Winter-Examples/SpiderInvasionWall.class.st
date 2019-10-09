@@ -1,3 +1,7 @@
+"
+I represent a wall as an obstacle in the spider invasion scene
+
+"
 Class {
 	#name : #SpiderInvasionWall,
 	#superclass : #SpiderInvasionItem,

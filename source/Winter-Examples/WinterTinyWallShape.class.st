@@ -16,26 +16,6 @@ WinterTinyWallShape class >> defaultExtent [
 ]
 
 { #category : #Accessing }
-WinterTinyWallShape >> bounds [
-	^self position extent: self  extent.
-]
-
-{ #category : #Accessing }
-WinterTinyWallShape >> bounds: aRectangle [
-	self position: aRectangle origin.
-	self extent: aRectangle extent.
-]
-
-{ #category : #Drawing }
-WinterTinyWallShape >> createPathOn: aCanvas [
-	^graphicsPath  := aCanvas createPath: [ :builder |
-			builder 
-				relative;
-				moveTo: self position;
-				lineTo: self extent ]
-]
-
-{ #category : #Accessing }
 WinterTinyWallShape >> extent [
 	^extent ifNil: [ extent := self class defaultExtent ]
 ]

@@ -21,6 +21,12 @@ Class {
 	#category : #'Winter-Core-Event-Handlers'
 }
 
+{ #category : #processing }
+WinterKeyboardEventHandler >> printOn: aStream [
+
+	aStream nextPutAll: 'Screen keywords events handler'
+]
+
 { #category : #Accessing }
 WinterKeyboardEventHandler >> screenModel [
 

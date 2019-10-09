@@ -1,3 +1,15 @@
+"
+I am an abstract class for all non player components in the spider invasion scene
+
+Public API and Key Messages:
+
+- die
+- isEmpty
+- spriteSize
+- translation
+- x
+- y
+"
 Class {
 	#name : #SpiderInvasionItem,
 	#superclass : #WinterNonPlayer,

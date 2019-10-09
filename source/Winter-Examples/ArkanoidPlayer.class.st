@@ -1,3 +1,17 @@
+"
+I represent the arkanoid player or bar
+
+Public API and Key Messages:
+
+- arkanoidBarSprite
+- checkCollisions
+- moveLeft
+- moveRight
+- positionX
+- positionY
+- resetPosition
+- startGame
+"
 Class {
 	#name : #ArkanoidPlayer,
 	#superclass : #WinterPlayer,

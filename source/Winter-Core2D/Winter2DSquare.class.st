@@ -67,6 +67,17 @@ Winter2DSquare >> initializeOfCenter: aPoint extent: anotherPoint color: aColor 
 	game := aGame 
 ]
 
+{ #category : #printing }
+Winter2DSquare >> printOn: aStream [
+
+	aStream
+		nextPutAll:
+			('Square - position [<1s>] - extent: <2s> - color: <3s> '
+				expandMacrosWith: self position
+				with: self extent
+				with: self color asString)
+]
+
 { #category : #private }
 Winter2DSquare >> renderShape: aShape on: aCanvas [
 

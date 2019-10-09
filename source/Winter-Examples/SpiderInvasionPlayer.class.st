@@ -1,3 +1,21 @@
+"
+I represent the space ship player in the spider invasion scene
+
+Instance variables: 
+
+- loaded
+
+Public API and Key Messages:
+
+- checkCollisions
+- fire
+- moveLeft
+- moveRight
+- positionX
+- positionY
+- reload
+- spaceShipSprite
+"
 Class {
 	#name : #SpiderInvasionPlayer,
 	#superclass : #WinterPlayer,

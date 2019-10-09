@@ -1,3 +1,11 @@
+"
+I represent a missile fired from the spaceShipe
+
+
+Public API and Key Messages:
+
+- action
+"
 Class {
 	#name : #SpiderInvasionMissile,
 	#superclass : #SpiderInvasionAnimatedItem,

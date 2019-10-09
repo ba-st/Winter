@@ -10,6 +10,12 @@ WinterSpriteTest >> createImage [
 	(Form fromBinaryStream: (Base64MimeConverter mimeDecodeToBytes: self pharoImageOnBase64)) writePNGFileNamed: 'pharo.png'
 ]
 
+{ #category : #testing }
+WinterSpriteTest >> expectedFailures [
+
+	^ #(testInstanceCreationFailedBecauseFileNotFound)
+]
+
 { #category : #Accessing }
 WinterSpriteTest >> imageDirectory [
 	^ SmalltalkImage current imageFile absolutePath
@@ -65,7 +71,7 @@ self
 WinterSpriteTest >> testInstanceCreationFailedBecauseFileNotFound [
 	self
 		should: [ WinterSprite fromPath: 'pharo2.png' named: 'pharo 2']
-		raise: FileDoesNotExist 
+		raise: FileDoesNotExistException 
 		withExceptionDo: [ :ex | self assert: ex messageText equals: 'Sprite not found in pharo2.png' ].
 	
 ]

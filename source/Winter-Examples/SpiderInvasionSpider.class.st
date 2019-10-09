@@ -1,3 +1,12 @@
+"
+I represent an enemy spider in the spider invasion scene
+
+Public API and Key Messages:
+
+- action
+- checkCollisions
+- die
+"
 Class {
 	#name : #SpiderInvasionSpider,
 	#superclass : #SpiderInvasionAnimatedItem,

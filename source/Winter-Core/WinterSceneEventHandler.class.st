@@ -37,6 +37,12 @@ WinterSceneEventHandler >> players: aPlayersCollection [
 	players := aPlayersCollection 
 ]
 
+{ #category : #printing }
+WinterSceneEventHandler >> printOn: aStream [
+
+	aStream nextPutAll: 'Scene keywords events handler'
+]
+
 { #category : #accessing }
 WinterSceneEventHandler >> schedulers: aSchedulersCollection [
 

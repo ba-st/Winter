@@ -49,6 +49,15 @@ CollisionAgainstMapBordersChecker >> initializeFor: aComponent [
 	game := component game
 ]
 
+{ #category : #printing }
+CollisionAgainstMapBordersChecker >> printOn: aStream [
+
+	aStream
+		nextPutAll:
+			('Collission checker for <1s> against axises'
+				expandMacrosWith: component printString)
+]
+
 { #category : #Evaluating }
 CollisionAgainstMapBordersChecker >> value: axisSymbol [
 	"Axis symbol should be #x , #X , #y or #Y"

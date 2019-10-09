@@ -20,7 +20,7 @@ Class {
 	#instVars : [
 		'actualStep'
 	],
-	#category : #'Winter-Core2D'
+	#category : #'Winter-Core2D-Base'
 }
 
 { #category : #evaluating }

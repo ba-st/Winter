@@ -21,7 +21,7 @@ Class {
 	#superclass : #WinterScene,
 	#instVars : [
 		'surface',
-		'backgroundColor'
+		'background'
 	],
 	#category : #'Winter-Core2D-Base'
 }
@@ -38,13 +38,14 @@ Winter2DScene >> addComponent: aComponent [
 ]
 
 { #category : #Accessing }
-Winter2DScene >> backgroundColor [
-	^ backgroundColor ifNil: [ backgroundColor:= self class defaultBackgroundColor ]
+Winter2DScene >> background [
+	^ background ifNil: [ background:= self class defaultBackgroundColor ]
 ]
 
 { #category : #Accessing }
-Winter2DScene >> backgroundColor: aColor [
-	backgroundColor := aColor.
+Winter2DScene >> background: aColorOrImage [
+
+	background := aColorOrImage
 ]
 
 { #category : #Accessing }
@@ -58,7 +59,7 @@ Winter2DScene >> eventHandlerFor: aScreen [
 	^ WinterSceneEventHandler new
 		players: players;
 		schedulers:
-			{"game scheduler."
+			{
 			aScreen scheduler};
 		yourself
 ]
@@ -94,9 +95,15 @@ Winter2DScene >> players [
 ]
 
 { #category : #Rendering }
+Winter2DScene >> printOn: aStream [
+
+	aStream nextPutAll: self class name
+]
+
+{ #category : #Rendering }
 Winter2DScene >> renderBackgroundOn: aCanvas [
 
-	aCanvas setPaint: self backgroundColor.
+	aCanvas setPaint: self background.
 	aCanvas drawShape: (0@0 fastCorner: game screen window extent)
 ]
 

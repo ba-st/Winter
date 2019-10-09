@@ -66,6 +66,13 @@ WinterSprite >> path [
 	^path
 ]
 
+{ #category : #Accessing }
+WinterSprite >> printOn: aStream [
+
+	aStream
+		nextPutAll: ('Sprite: <1s> - <2s>' expandMacrosWith: name with: path)
+]
+
 { #category : #Converting }
 WinterSprite >> scaledToSize: anExtent [
 

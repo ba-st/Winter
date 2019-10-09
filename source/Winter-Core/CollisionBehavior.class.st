@@ -32,6 +32,15 @@ CollisionBehavior >> firstComponent [
 	^ firstComponent
 ]
 
+{ #category : #printing }
+CollisionBehavior >> printOn: aStream [
+
+	aStream
+		nextPutAll:
+			('Collission between <1s> and <2>'
+				expandMacrosWith: firstComponent  printString with: secondComponent printString)
+]
+
 { #category : #Accessing }
 CollisionBehavior >> secondComponent [
 	^ secondComponent

@@ -48,6 +48,15 @@ CollisionHandler >> initializeBetween: aType and: anotherType onCollisionDo: anA
 	action := anAction 
 ]
 
+{ #category : #printing }
+CollisionHandler >> printOn: aStream [
+
+	aStream
+		nextPutAll:
+			('Collission handler for type of: <1s> and type of: <2>'
+				expandMacrosWith: firstType   printString with: secondType  printString)
+]
+
 { #category : #Evaluating }
 CollisionHandler >> value: aCollision [
 	"Se asume por ahora que son bloques de un colaborador"

@@ -18,28 +18,6 @@ WinterBoldWallShape class >> from: positionPoint to: endPoint [
 ]
 
 { #category : #Accessing }
-WinterBoldWallShape >> bounds [
-
-	^self position extent: self  extent.
-]
-
-{ #category : #Accessing }
-WinterBoldWallShape >> bounds: aRectangle [
-
-	self position: aRectangle origin.
-	self extent: aRectangle extent.
-]
-
-{ #category : #Drawing }
-WinterBoldWallShape >> createPathOn: aCanvas [
-	^graphicsPath  := aCanvas createPath: [ :builder |
-			builder 
-				relative;
-				moveTo: self position;
-				lineTo: self extent ]
-]
-
-{ #category : #Accessing }
 WinterBoldWallShape >> extent [
 	^extent ifNil: [ extent := self class defaultExtent ]
 ]
@@ -57,5 +35,6 @@ WinterBoldWallShape >> position: positionPoint endPoint: endPoint [
 
 { #category : #Drawing }
 WinterBoldWallShape >> setSpecificPaint: aPaint on: aCanvas [
+
 	(aCanvas setStrokePaint: aPaint) width: 5
 ]

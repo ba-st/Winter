@@ -1,3 +1,18 @@
+"
+I am an abstract class for animated non player components in the spider invasion scene.
+
+Instance variables: 
+
+- tick
+- currentTick
+
+Public API and Key Messages:
+
+- action
+- doTick
+- tick
+- tick:
+"
 Class {
 	#name : #SpiderInvasionAnimatedItem,
 	#superclass : #SpiderInvasionItem,

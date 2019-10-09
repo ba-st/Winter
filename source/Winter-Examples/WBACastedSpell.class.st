@@ -102,6 +102,12 @@ WBACastedSpell >> move: startStep [
 		for: self 
 ]
 
+{ #category : #initialization }
+WBACastedSpell >> movingShift [
+
+	^ shift - self initialShift
+]
+
 { #category : #animations }
 WBACastedSpell >> nextAnimation [
 	scheduler stopGameTickActionFor: self.

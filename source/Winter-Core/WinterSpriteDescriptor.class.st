@@ -96,6 +96,18 @@ WinterSpriteDescriptor >> position: anObject [
 	position := anObject
 ]
 
+{ #category : #printing }
+WinterSpriteDescriptor >> printOn: aStream [
+
+	aStream
+		nextPutAll:
+			('Sprite descriptor [<1s>]- <2s>/<3s>/<4s>.png'
+				expandMacrosWith: self position
+				with: self resourceFolder
+				with: self classFolder
+				with: fileName)
+]
+
 { #category : #Bootstrap }
 WinterSpriteDescriptor >> resourceFolder [
 	"By default is resources but can be re implemented to change this"

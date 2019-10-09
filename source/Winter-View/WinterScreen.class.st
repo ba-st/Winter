@@ -93,6 +93,17 @@ WinterScreen >> positionX [
 	^ self window handle position x
 ]
 
+{ #category : #initialization }
+WinterScreen >> printOn: aStream [
+
+	aStream
+		nextPutAll:
+			('<1s> - title: <2s> - model: <3s>'
+				expandMacrosWith: self class name
+				with: title
+				with: model printString)
+]
+
 { #category : #rendering }
 WinterScreen >> render [
 

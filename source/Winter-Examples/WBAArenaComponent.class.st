@@ -1,3 +1,21 @@
+"
+I am an abstract class for components in the arena
+
+Instance variables: 
+
+- shift 
+- negatedShift
+
+Public API and Key Messages:
+
+- cellSize
+- initialShift
+- movingShift
+- shift
+- shift:
+- shiftBy:
+
+"
 Class {
 	#name : #WBAArenaComponent,
 	#superclass : #WinterWidget,
@@ -11,11 +29,6 @@ Class {
 { #category : #Accessing }
 WBAArenaComponent >> cellSize [
 	^ 48@32
-]
-
-{ #category : #Accessing }
-WBAArenaComponent >> initialShift [
-	self subclassResponsibility
 ]
 
 { #category : #Accessing }

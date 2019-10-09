@@ -43,15 +43,15 @@ Winter2DSceneTest >> testAccessing [
 	game := self game.
 	scene := game scene.
 	
-	self assert: scene backgroundColor equals: Color white.
-	scene backgroundColor: Color orange.
+	self assert: scene background equals: Color white.
+	scene background: Color orange.
 	
 	scene game: nil.
 	self assert: scene game isNil.
 	scene game: game.
 	
 	self
-		assert: scene backgroundColor equals: Color orange;
+		assert: scene background equals: Color orange;
 		assert: scene game equals: game;
 		assert: scene dimensions equals: game dimensions;
 		assert: scene surface notNil;

@@ -3,8 +3,7 @@ I represent an abstract class for game schedulers
 
 Collaborators: 
 
-- process
-- managedObject 
+- process 
 
 Public API and Key Messages
 
@@ -20,29 +19,10 @@ Class {
 	#name : #GameScheduler,
 	#superclass : #Object,
 	#instVars : [
-		'process',
-		'managedObject'
+		'process'
 	],
 	#category : #'Winter-Core-Schedulers'
 }
-
-{ #category : #'Instance Creation' }
-GameScheduler class >> managing: anObject [
-
-	^ self new initializeManaging: anObject
-]
-
-{ #category : #initialization }
-GameScheduler >> initializeManaging: anObject [
-
-	managedObject := anObject
-]
-
-{ #category : #accessing }
-GameScheduler >> managedObject [
-
-	^ managedObject
-]
 
 { #category : #accessing }
 GameScheduler >> name [
@@ -61,6 +41,12 @@ GameScheduler >> newProcessAt: priority do: aBlock every: duration [
 			ifFalse: [ delay wait ]
 			ifTrue: [ "slowing process" ]
 		 ] repeat ] forkAt: priority
+]
+
+{ #category : #printing }
+GameScheduler >> printOn: aStream [
+
+aStream nextPutAll: self name
 ]
 
 { #category : #accessing }

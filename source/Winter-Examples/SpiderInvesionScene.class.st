@@ -1,3 +1,18 @@
+"
+I represent the spider invasion scene. I contain all the components of the game.
+
+Public API and Key Messages:
+
+- background
+- isOccupiedAt:
+- isValidPosition:
+- lostGame
+- maxX
+- maxY
+- minX
+- minY
+- newRandomSpiderTicked:
+"
 Class {
 	#name : #SpiderInvesionScene,
 	#superclass : #Winter2DScene,
@@ -5,7 +20,7 @@ Class {
 }
 
 { #category : #accessing }
-SpiderInvesionScene >> backgroundColor [
+SpiderInvesionScene >> background [
 
 	^ Color black
 ]
@@ -45,7 +60,7 @@ SpiderInvesionScene >> isValidPosition: aPosition [
 	^ self minX @ self minY <= aPosition and: [ aPosition <= (self maxX @ self maxY)  ]
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #Processing }
 SpiderInvesionScene >> lostGame [
 	components := OrderedCollection new.
 	self

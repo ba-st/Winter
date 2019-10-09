@@ -88,6 +88,13 @@ WinterNonPlayer >> position: aPosition [
 	collisionShape position: aPosition
 ]
 
+{ #category : #printing }
+WinterNonPlayer >> printOn: aStream [
+
+	aStream
+		nextPutAll: ('<1s> - position [<2s>]' expandMacrosWith: self class name with: self position)
+]
+
 { #category : #Rendering }
 WinterNonPlayer >> renderOn: aCanvas [
 

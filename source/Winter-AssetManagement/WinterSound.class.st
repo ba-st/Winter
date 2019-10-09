@@ -99,6 +99,20 @@ WinterSound >> play [
 		ifFalse: [ nativeAsset play ]
 ]
 
+{ #category : #Executing }
+WinterSound >> printOn: aStream [
+
+	aStream
+		nextPutAll:
+			('Sound: <1s> - <2s> - [ <3s> ] '
+				expandMacrosWith: name
+				with: path
+				with:
+					(nativeAsset isPlaying
+						ifTrue: [ 'Playing' ]
+						ifFalse: [ 'Not playing' ]))
+]
+
 { #category : #Accessing }
 WinterSound >> type [
 	^ type

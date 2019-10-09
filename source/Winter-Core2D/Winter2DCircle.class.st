@@ -71,6 +71,17 @@ Winter2DCircle >> initializeOfCenter: aPoint radius: aFloat color: aColor in: aG
 		
 ]
 
+{ #category : #printing }
+Winter2DCircle >> printOn: aStream [
+
+	aStream
+		nextPutAll:
+			('Circle - position [<1s>] - radius: <2s> - color: <3s> '
+				expandMacrosWith: self position
+				with: self radius
+				with: self color asString)
+]
+
 { #category : #Accessing }
 Winter2DCircle >> radius [
 

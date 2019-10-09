@@ -1,3 +1,11 @@
+"
+I represent an explosion to cover scene when game is over
+
+
+Public API and Key Messages:
+
+- action
+"
 Class {
 	#name : #SpiderInvasionExplode,
 	#superclass : #SpiderInvasionAnimatedItem,

@@ -11,7 +11,7 @@ Class {
 	#category : #'Winter-View-ViewModel'
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : #Rendering }
 WinterColumnWidget >> renderOn: aCanvas [
 
 	widgets do: [ :widget | 

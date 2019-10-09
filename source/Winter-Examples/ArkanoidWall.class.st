@@ -1,3 +1,11 @@
+"
+I represent a wall used as borders of the scene. I can be at horizonal or vertical position. 
+
+
+Public API and Key Messages:
+
+- isHorizontal
+"
 Class {
 	#name : #ArkanoidWall,
 	#superclass : #WinterNonPlayer,
@@ -25,4 +33,17 @@ ArkanoidWall >> initializeOfCenter: aPoint extent: anotherPoint andColor: aColor
 { #category : #Testing }
 ArkanoidWall >> isHorizontal [
 	^ collisionShape position y = collisionShape extent y
+]
+
+{ #category : #Testing }
+ArkanoidWall >> printOn: aStream [
+
+	super printOn: aStream.
+	aStream
+		nextPutAll:
+			(' - <1s>'
+				expandMacrosWith:
+					(self isHorizontal
+						ifTrue: [ 'Horizontal' ]
+						ifFalse: [ 'Vertical' ]))
 ]
