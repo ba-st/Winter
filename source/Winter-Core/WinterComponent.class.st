@@ -22,10 +22,12 @@ Class {
 
 { #category : #accessing }
 WinterComponent >> scene [
+
 	^ scene
 ]
 
 { #category : #accessing }
 WinterComponent >> scene: anObject [
+
 	scene := anObject
 ]

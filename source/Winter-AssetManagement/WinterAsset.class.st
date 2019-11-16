@@ -30,25 +30,42 @@ Class {
 { #category : #'Instance Creation' }
 WinterAsset class >> fromPath: aStringPath named: aName [
 
-	self subclassResponsibility
+	^ self fromPath: aStringPath named: aName using: FileSystem disk
+]
+
+{ #category : #'Instance Creation' }
+WinterAsset class >> fromPath: aStringPath named: aName using: aFileSystem [
+
+	^ self subclassResponsibility 
 ]
 
 { #category : #'reflective operations' }
 WinterAsset >> doesNotUnderstand: aMessage [
+
 	"delegate all not implemented methods to the native asset"
 
-	^ (nativeAsset  respondsTo: aMessage selector)
+	^ ( nativeAsset respondsTo: aMessage selector )
 		ifTrue: [ nativeAsset perform: aMessage selector withEnoughArguments: aMessage arguments ]
 		ifFalse: [ super doesNotUnderstand: aMessage ]
 ]
 
+{ #category : #Initialization }
+WinterAsset >> initializeNativeAsset: aNativeAsset filePath: aFilePath named: aName [
+
+	nativeAsset := aNativeAsset.
+	path := aFilePath.
+	name := aName
+]
+
 { #category : #'reflective operations' }
 WinterAsset >> isSound [
+
 	^ false
 ]
 
 { #category : #'reflective operations' }
 WinterAsset >> isSprite [
+
 	^ false
 ]
 

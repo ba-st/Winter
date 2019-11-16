@@ -7,11 +7,11 @@ Class {
 { #category : #'Test Support' }
 WinterNonPlayerComponentTest >> collisionShapeOn: aGame [
 
-	^Winter2DCircle
+	^ Winter2DCircle
 		ofCenter: 250 @ 530
 		radius: 15
 		color: Color red
-		in: aGame.
+		in: aGame
 ]
 
 { #category : #'Test Support' }
@@ -35,7 +35,7 @@ WinterNonPlayerComponentTest >> scene [
 { #category : #Tests }
 WinterNonPlayerComponentTest >> testAccessing [
 
-	| component game scene collisionShape position|
+	| component game scene collisionShape position |
 
 	component := WinterTestNonPlayer new.
 	game := self game.

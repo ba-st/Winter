@@ -32,16 +32,21 @@ ArkanoidBall class >> on: aGame [
 { #category : #Collisions }
 ArkanoidBall >> checkCollisions [
 
-	(CollisionChecker for: self and: scene player) value.
+	| checker |
+
+	checker := CollisionChecker new.
+	checker checkFor: self and: scene player.
 	scene components
 		do: [ :component | 
 			component = self
-				ifFalse: [ (CollisionChecker for: self and: component) value ] ].
+				ifFalse: [ checker checkFor: self and: component ]
+			].
 	self checkEndGame
 ]
 
 { #category : #Collisions }
 ArkanoidBall >> checkEndGame [
+
 	self position y > game screen extentY
 		ifTrue: [ game resetPlayerAndBall: self ]
 ]
@@ -50,13 +55,17 @@ ArkanoidBall >> checkEndGame [
 ArkanoidBall >> initialize [
 
 	super initialize.
-	deltaPoint := 10 @ 10 negated  
+	deltaPoint := 10 @ 10 negated
 ]
 
 { #category : #Initialization }
 ArkanoidBall >> initializeCollisionShape [
 
-	collisionShape := Winter2DCircle ofCenter: 250 @ 530 radius: 15 color: Color red in: game 
+	collisionShape := Winter2DCircle
+		ofCenter: 250 @ 530
+		radius: 15
+		color: Color red
+		in: game
 ]
 
 { #category : #Initialization }

@@ -1,3 +1,25 @@
+"
+Class representenging the character selection view model
+
+Public API and Key Messages
+
+- downSelection
+- upSelection
+- endScreenComputation
+- loadWidgets
+- switchToNextScreen
+- renderWidgetsOn:
+- screen:
+ 
+Internal Representation and Key Implementation Points.
+
+    Instance Variables
+		currentChoice 
+		arrowWidget 
+		titleWidget 
+		playersWidget
+	
+"
 Class {
 	#name : #WBANumberPlayerSelectScreenModel,
 	#superclass : #WinterMenuScreenModel,

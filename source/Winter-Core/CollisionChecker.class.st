@@ -21,29 +21,15 @@ Class {
 	#category : #'Winter-Core-Collision'
 }
 
-{ #category : #'Instance Creation' }
-CollisionChecker class >> for: aComponent and: anotherComponent [
-	^ self new initializeFor: aComponent and: anotherComponent
-]
+{ #category : #Evaluating }
+CollisionChecker >> checkFor: aComponent and: anotherComponent [
 
-{ #category : #Initialization }
-CollisionChecker >> initializeFor: aComponent and: anotherComponent [
-	firstComponent := aComponent.
-	secondComponent := anotherComponent
+	( aComponent collisionShape intersects: anotherComponent collisionShape )
+		ifTrue: [ ( Collision between: aComponent and: anotherComponent ) applyOnGame ]
 ]
 
 { #category : #printing }
 CollisionChecker >> printOn: aStream [
 
-	aStream
-		nextPutAll:
-			('Collission checker for <1s> against <2>'
-				expandMacrosWith: firstComponent  printString with: secondComponent printString)
-]
-
-{ #category : #Evaluating }
-CollisionChecker >> value [
-
-	(firstComponent collisionShape intersects: secondComponent collisionShape)
-		ifTrue: [ (Collision between: firstComponent and: secondComponent) applyOnGame ]
+	aStream nextPutAll: 'Collission checker'
 ]

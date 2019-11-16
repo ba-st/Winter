@@ -32,10 +32,11 @@ ArkanoidWall >> initializeOfCenter: aPoint extent: anotherPoint andColor: aColor
 
 { #category : #Testing }
 ArkanoidWall >> isHorizontal [
+
 	^ collisionShape position y = collisionShape extent y
 ]
 
-{ #category : #Testing }
+{ #category : #Printing }
 ArkanoidWall >> printOn: aStream [
 
 	super printOn: aStream.

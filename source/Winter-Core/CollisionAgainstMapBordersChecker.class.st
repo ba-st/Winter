@@ -22,29 +22,33 @@ Class {
 
 { #category : #'Instance Creation' }
 CollisionAgainstMapBordersChecker class >> for: aComponent [
+
 	^ self new initializeFor: aComponent
 ]
 
 { #category : #Validating }
 CollisionAgainstMapBordersChecker >> assertIsAnAxisSymbol: aSymbol [
+
 	| symbol |
+
 	symbol := aSymbol asLowercase.
-	(#(#x #y) includes: symbol)
+	( #(#x #y) includes: symbol )
 		ifFalse: [ Error signal: 'Symbol passed to border checker should be x, X, y or Y' ]
 ]
 
 { #category : #private }
 CollisionAgainstMapBordersChecker >> componentCollideOnPositionOrExtentOfAxis: axisSymbol [
-	^ (component position perform: axisSymbol asLowercase asSymbol)
-		>
-			(game screen
-				perform: (#extent , axisSymbol asUppercase) asSymbol)
-		or: [ (component position perform: axisSymbol asLowercase asSymbol)
-				< (game screen perform: (#position , axisSymbol asUppercase) asSymbol) ]
+
+	^ ( component position perform: axisSymbol asLowercase asSymbol )
+		> ( game screen perform: ( #extent , axisSymbol asUppercase ) asSymbol )
+		or: [ ( component position perform: axisSymbol asLowercase asSymbol )
+				< ( game screen perform: ( #position , axisSymbol asUppercase ) asSymbol )
+			]
 ]
 
 { #category : #Initialization }
 CollisionAgainstMapBordersChecker >> initializeFor: aComponent [
+
 	component := aComponent.
 	game := component game
 ]
@@ -53,17 +57,15 @@ CollisionAgainstMapBordersChecker >> initializeFor: aComponent [
 CollisionAgainstMapBordersChecker >> printOn: aStream [
 
 	aStream
-		nextPutAll:
-			('Collission checker for <1s> against axises'
-				expandMacrosWith: component printString)
+		nextPutAll: ( 'Collission checker for <1s> against axises' expandMacrosWith: component printString )
 ]
 
 { #category : #Evaluating }
 CollisionAgainstMapBordersChecker >> value: axisSymbol [
+
 	"Axis symbol should be #x , #X , #y or #Y"
 
 	self assertIsAnAxisSymbol: axisSymbol.
-	(self componentCollideOnPositionOrExtentOfAxis: axisSymbol)
-		ifTrue: [ (CollisionAgainstMapBorders of: component on: axisSymbol)
-				applyOnGame ]
+	( self componentCollideOnPositionOrExtentOfAxis: axisSymbol )
+		ifTrue: [ ( CollisionAgainstMapBorders of: component on: axisSymbol ) applyOnGame ]
 ]

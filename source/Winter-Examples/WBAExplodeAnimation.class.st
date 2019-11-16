@@ -1,3 +1,18 @@
+"
+I represent the exploding animation of a spell
+
+Instance Variables
+- spell
+
+
+Public API and Key Messages:
+
+- spell
+- spell: 
+- step
+- numberOfAnimationFrame
+
+"
 Class {
 	#name : #WBAExplodeAnimation,
 	#superclass : #WinterAnimation,

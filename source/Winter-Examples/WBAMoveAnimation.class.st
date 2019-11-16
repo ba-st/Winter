@@ -1,3 +1,19 @@
+"
+I represent an abstract moving animation
+
+Instance Variables
+- shiftIncr
+
+
+Public API and Key Messages:
+
+- cellSize
+- direction: 
+- movingElement
+- step
+- shiftIncrForDirection:
+
+"
 Class {
 	#name : #WBAMoveAnimation,
 	#superclass : #WinterAnimation,

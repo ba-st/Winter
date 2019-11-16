@@ -48,24 +48,26 @@ WinterPlayer >> addInteractionOnKeyUpOf: aKeywordCharacter doing: anActionBlock 
 
 { #category : #Collisions }
 WinterPlayer >> checkCollisions [
-"should be re implemented"
 
+	"re implement if you want to do something"
+
+	
 ]
 
 { #category : #Accessing }
 WinterPlayer >> collisionShape [
+
 	^ collisionShape
 ]
 
 { #category : #Accessing }
 WinterPlayer >> collisionShape: aCollisionShape [
 
-	collisionShape := aCollisionShape 
+	collisionShape := aCollisionShape
 ]
 
 { #category : #Events }
 WinterPlayer >> handleKeyDown: anEvent [
-
 
 	keyDownInteractions
 		at: anEvent character
@@ -92,13 +94,12 @@ WinterPlayer >> initialize [
 		initializeResources;
 		initializeSprite;
 		initializeCollisionShape
-		
 ]
 
 { #category : #initialization }
 WinterPlayer >> initializeCollisionShape [
 
-	"Should be re implementd"
+	"re implement if you want to do something"
 
 	
 ]
@@ -106,7 +107,7 @@ WinterPlayer >> initializeCollisionShape [
 { #category : #initialization }
 WinterPlayer >> initializeResources [
 
-	"Should be re implementd"
+	"re implement if you want to do something"
 
 	
 ]
@@ -114,18 +115,20 @@ WinterPlayer >> initializeResources [
 { #category : #initialization }
 WinterPlayer >> initializeSprite [
 
-	"Should be re implementd"
+	"re implement if you want to do something"
 
 	
 ]
 
 { #category : #Accessing }
 WinterPlayer >> position [
+
 	^ collisionShape position
 ]
 
 { #category : #Accessing }
 WinterPlayer >> position: aPosition [
+
 	collisionShape position: aPosition
 ]
 
@@ -133,15 +136,13 @@ WinterPlayer >> position: aPosition [
 WinterPlayer >> printOn: aStream [
 
 	aStream
-		nextPutAll: ('<1s> - position [<2s>]' expandMacrosWith: self class name with: self position)
+		nextPutAll: ( '<1s> - position [<2s>]' expandMacrosWith: self class name with: self position )
 ]
 
 { #category : #Rendering }
 WinterPlayer >> renderOn: aCanvas [
 
-	sprite
-		ifNil: [  collisionShape renderOn: aCanvas ]
-		ifNotNil: [ self renderSpriteOn: aCanvas ]
+	sprite ifNil: [ collisionShape renderOn: aCanvas ] ifNotNil: [ self renderSpriteOn: aCanvas ]
 ]
 
 { #category : #Rendering }
@@ -149,14 +150,14 @@ WinterPlayer >> renderSpriteOn: aCanvas [
 
 	aCanvas pathTransform
 		restoreAfter: [ aCanvas pathTransform translateBy: self position.
-			aCanvas setPaint: (sprite asAthensPaintOn: aCanvas).
-			sprite drawOnAthensCanvas: aCanvas ]
+			aCanvas setPaint: ( sprite asAthensPaintOn: aCanvas ).
+			sprite drawOnAthensCanvas: aCanvas
+			]
 ]
 
 { #category : #Events }
 WinterPlayer >> updateUsing: aCanvas [
 
-	collisionShape updateUsing: aCanvas .
-	self checkCollisions.
-
+	collisionShape updateUsing: aCanvas.
+	self checkCollisions
 ]

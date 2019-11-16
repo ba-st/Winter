@@ -10,6 +10,7 @@ Class {
 
 { #category : #'Instance Creation' }
 Collision class >> between: aComponent and: anotherComponent [
+
 	^ self new initializeBetween: aComponent and: anotherComponent
 ]
 

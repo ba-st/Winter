@@ -1,3 +1,18 @@
+"
+I represent a moving animation of a character
+
+Instance Variables
+- character
+
+
+Public API and Key Messages:
+
+- character
+- character: 
+- movingElement
+- midAnimation
+
+"
 Class {
 	#name : #WBACharacterMoveAnimation,
 	#superclass : #WBAMoveAnimation,

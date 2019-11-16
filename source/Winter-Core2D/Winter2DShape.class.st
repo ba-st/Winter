@@ -38,12 +38,14 @@ Class {
 
 { #category : #Defaults }
 Winter2DShape class >> defaultColor [
-	^Color white
+
+	^ Color white
 ]
 
 { #category : #Defaults }
 Winter2DShape class >> defaultRadius [
-	^10
+
+	^ 10
 ]
 
 { #category : #Accessing }
@@ -151,5 +153,5 @@ Winter2DShape >> updatePositionBy: aPoint [
 { #category : #Events }
 Winter2DShape >> updateUsing: aCanvas [
 
-	self updatePosition.
+	self updatePosition
 ]

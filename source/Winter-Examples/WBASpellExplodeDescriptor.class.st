@@ -1,3 +1,15 @@
+"
+I represent a descriptor of how the spell explode will be like
+
+
+Public API and Key Messages:
+
+- classFolder
+- loadSpriteWith:using:
+- spriteSize
+
+
+"
 Class {
 	#name : #WBASpellExplodeDescriptor,
 	#superclass : #WinterSpriteDescriptor,

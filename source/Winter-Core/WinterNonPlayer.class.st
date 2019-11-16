@@ -36,12 +36,14 @@ WinterNonPlayer >> checkCollisions [
 
 { #category : #Accessing }
 WinterNonPlayer >> collisionShape [
-	^ collisionShape 
+
+	^ collisionShape
 ]
 
 { #category : #Accessing }
 WinterNonPlayer >> collisionShape: aCollisionshape [
-	collisionShape := aCollisionshape 
+
+	collisionShape := aCollisionshape
 ]
 
 { #category : #initialization }
@@ -80,11 +82,13 @@ WinterNonPlayer >> initializeSprite [
 
 { #category : #Accessing }
 WinterNonPlayer >> position [
+
 	^ collisionShape position
 ]
 
 { #category : #Accessing }
 WinterNonPlayer >> position: aPosition [
+
 	collisionShape position: aPosition
 ]
 

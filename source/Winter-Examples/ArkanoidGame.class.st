@@ -23,6 +23,7 @@ Class {
 
 { #category : #Accessing }
 ArkanoidGame >> dimensions [
+
 	^ 650 @ 700
 ]
 
@@ -35,40 +36,45 @@ ArkanoidGame >> initialize [
 
 { #category : #initialization }
 ArkanoidGame >> initializeCollisionHandlers [
+
 	collisionHandlers
 		add:
-			(CollisionHandler
+			( CollisionHandler
 				between: ArkanoidBall
 				and: ArkanoidWall
 				onCollisionDo: [ :collision | 
 					collision secondComponent isHorizontal
 						ifTrue: [ collision firstComponent negateY ]
 						ifFalse: [ collision firstComponent negateX ].
-					collision firstComponent playCollisionSound ]);
+					collision firstComponent playCollisionSound
+					] );
 		add:
-			(CollisionHandler
+			( CollisionHandler
 				between: ArkanoidBall
 				and: ArkanoidBrick
 				onCollisionDo: [ :collision | 
 					collision secondComponent collidedByBall.
 					collision firstComponent negateY.
-					collision firstComponent playCollisionSound ]);
+					collision firstComponent playCollisionSound
+					] );
 		add:
-			(CollisionHandler
+			( CollisionHandler
 				between: ArkanoidPlayer
 				and: WinterScreen
 				onCollisionDo: [ :collision | 
 					collision firstComponent positionX = 10 negated
 						ifTrue: [ collision firstComponent moveRight ]
-						ifFalse: [ collision firstComponent moveLeft ] ]);
+						ifFalse: [ collision firstComponent moveLeft ]
+					] );
 		add:
-			(CollisionHandler
+			( CollisionHandler
 				between: ArkanoidBall
 				and: ArkanoidPlayer
 				onCollisionDo: [ :collision | 
 					collision firstComponent
 						negateY;
-						playCollisionSound ])
+						playCollisionSound
+					] )
 ]
 
 { #category : #initialization }
@@ -81,11 +87,13 @@ ArkanoidGame >> initializePlayers [
 	player
 		addInteractionOnKeyDownOf: Character arrowLeft
 			doing: [ player moveLeft.
-			playing := true ];
+			playing := true
+			];
 		addInteractionOnKeyDownOf: Character arrowRight
 			doing: [ player moveRight.
-			playing := true ].
-	
+			playing := true
+			].
+
 	self addPlayer: player
 ]
 
@@ -95,17 +103,14 @@ ArkanoidGame >> initializeResources [
 	| assetsSystem |
 
 	assetsSystem := self assetsManagementSystem.
-	(assetsSystem addSprite: 'background.png' named: #background)
-		scaledToSize: self dimensions.
-	(assetsSystem addSprite: 'yellow.png' named: #yellow)
-		scaledToSize: 38 @ 38.
-	(assetsSystem addSprite: 'green.png' named: #green)
-		scaledToSize: 38 @ 38.
-	(assetsSystem addSprite: 'red.png' named: #red) scaledToSize: 38 @ 38.
-	(assetsSystem
+	( assetsSystem addSprite: 'background.png' named: #background ) scaledToSize: self dimensions.
+	( assetsSystem addSprite: 'yellow.png' named: #yellow ) scaledToSize: 38 @ 38.
+	( assetsSystem addSprite: 'green.png' named: #green ) scaledToSize: 38 @ 38.
+	( assetsSystem addSprite: 'red.png' named: #red ) scaledToSize: 38 @ 38.
+	( assetsSystem
 		addSprite: 'arkanoid_bar.png' named: #arkanoidBar;
 		addSound: 'arkanoid_ball_collision.wav' named: #ballCollision;
-		addSprite: 'ball.png' named: #ball) scaledToSize: 38 @ 38
+		addSprite: 'ball.png' named: #ball ) scaledToSize: 38 @ 38
 ]
 
 { #category : #initialization }

@@ -24,11 +24,13 @@ Class {
 
 { #category : #Evaluating }
 CollisionBehavior >> applyOnGame [
+
 	game handleCollision: self
 ]
 
 { #category : #Accessing }
 CollisionBehavior >> firstComponent [
+
 	^ firstComponent
 ]
 
@@ -36,9 +38,7 @@ CollisionBehavior >> firstComponent [
 CollisionBehavior >> printOn: aStream [
 
 	aStream
-		nextPutAll:
-			('Collission between <1s> and <2>'
-				expandMacrosWith: firstComponent  printString with: secondComponent printString)
+		nextPutAll: ( 'Collission between <1p> and <2p>' expandMacrosWith: firstComponent with: secondComponent )
 ]
 
 { #category : #Accessing }

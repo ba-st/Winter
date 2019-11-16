@@ -1,3 +1,12 @@
+"
+I represent an empty element in a cell
+
+
+Public API and Key Messages:
+
+- allowMovement
+
+"
 Class {
 	#name : #WBAEmpty,
 	#superclass : #WBAElement,

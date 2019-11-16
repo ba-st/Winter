@@ -1,3 +1,13 @@
+"
+I represent an abstract cell element
+
+
+Public API and Key Messages:
+
+- allowMovement
+- die
+- renderOn:
+"
 Class {
 	#name : #WBAElement,
 	#superclass : #WBAArenaComponent,

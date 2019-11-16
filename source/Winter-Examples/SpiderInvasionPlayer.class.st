@@ -34,8 +34,7 @@ SpiderInvasionPlayer class >> on: aGame [
 { #category : #Collisions }
 SpiderInvasionPlayer >> checkCollisions [
 
-	(CollisionAgainstMapBordersChecker for: self)
-		value: #x
+	( CollisionAgainstMapBordersChecker for: self ) value: #x
 ]
 
 { #category : #actions }
@@ -43,10 +42,11 @@ SpiderInvasionPlayer >> fire [
 
 	loaded
 		ifTrue: [ | missilePos |
+
 			loaded := false.
-			missilePos := self position - (0 @ 1).
-			scene
-				addComponent: (SpiderInvasionMissile atPosition: missilePos of: scene tick: 5) ]
+			missilePos := self position - ( 0 @ 1 ).
+			scene addComponent: ( SpiderInvasionMissile atPosition: missilePos of: scene tick: 5 )
+			]
 ]
 
 { #category : #initialization }

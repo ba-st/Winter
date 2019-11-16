@@ -20,7 +20,7 @@ Class {
 	#category : #'Winter-Core2D-Base'
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 WinterScreenAnimation >> block [
 
 	^ block
@@ -38,8 +38,9 @@ WinterScreenAnimation >> numberOfAnimationFrame [
 	^ 10
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #evaluating }
 WinterScreenAnimation >> step [
 
-	actualStep  \\ 10 = 0 ifTrue: [ block value ]
+	actualStep \\ 10 = 0
+		ifTrue: [ block value ]
 ]

@@ -1,5 +1,18 @@
 "
-Represents a widget decorator for a single sprite
+Class representenging a widget decorator for a single sprite
+
+Public API and Key Messages
+
+- renderOn:  
+- sprite
+- sprite:
+
+ 
+Internal Representation and Key Implementation Points.
+
+    Instance Variables
+		sprite
+	
 "
 Class {
 	#name : #WinterSingleSpriteWidget,

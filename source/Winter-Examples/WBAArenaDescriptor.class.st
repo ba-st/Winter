@@ -1,3 +1,15 @@
+"
+I represent a descriptor of how the arena will be like
+
+
+Public API and Key Messages:
+
+- cellDescriptors
+- cellDescriptors:
+- dispatchIndex:on:with:
+- windowExtent 
+- windowExtent: 
+"
 Class {
 	#name : #WBAArenaDescriptor,
 	#superclass : #Object,

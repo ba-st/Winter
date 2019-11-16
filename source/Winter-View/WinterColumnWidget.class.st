@@ -1,5 +1,20 @@
 "
-Represents a widget of column
+Class representenging a column of widgets
+
+Public API and Key Messages
+
+- renderOn:  
+- space
+- space:
+- widgets
+- widgets:
+ 
+Internal Representation and Key Implementation Points.
+
+    Instance Variables
+		widgets 
+		space
+	
 "
 Class {
 	#name : #WinterColumnWidget,

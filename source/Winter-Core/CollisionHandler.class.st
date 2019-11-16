@@ -26,6 +26,7 @@ Class {
 
 { #category : #'Instance Creation' }
 CollisionHandler class >> between: aType and: anotherType onCollisionDo: anAction [
+
 	^ self new initializeBetween: aType and: anotherType onCollisionDo: anAction
 ]
 
@@ -59,7 +60,6 @@ CollisionHandler >> printOn: aStream [
 
 { #category : #Evaluating }
 CollisionHandler >> value: aCollision [
-	"Se asume por ahora que son bloques de un colaborador"
 
-	^ action value: aCollision
+	^ action cull: aCollision
 ]

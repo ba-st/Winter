@@ -7,8 +7,8 @@ Rectangle class >> fastOrigin: o corner: c [
 ]
 
 { #category : #'*Winter-Core2D' }
-Rectangle >> setOrigin: o corner: c [
+Rectangle >> setOrigin: anOriginPoint corner: aCornerPoint [
 
-	origin := o.
-	corner := c.
+	origin := anOriginPoint.
+	corner := aCornerPoint
 ]

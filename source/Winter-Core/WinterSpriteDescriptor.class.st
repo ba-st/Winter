@@ -28,24 +28,18 @@ Class {
 { #category : #Bootstrap }
 WinterSpriteDescriptor >> basicLoadImageFile [
 
-	^ game assetsManagementSystem 
+	^ game assetsManagementSystem
 		addSprite:
-			('<1s>/<2s>/<3s>.png'
-				expandMacrosWith: self resourceFolder
-				with: self classFolder
-				with: fileName)
+			( '<1s>/<2s>/<3s>.png' expandMacrosWith: self resourceFolder with: self classFolder with: fileName )
 		named: fileName
 ]
 
 { #category : #Bootstrap }
 WinterSpriteDescriptor >> basicLoadImageFileUsing: anAssetManagementSystem [
 
-	^ anAssetManagementSystem 
+	^ anAssetManagementSystem
 		addSprite:
-			('<1s>/<2s>/<3s>.png'
-				expandMacrosWith: self resourceFolder
-				with: self classFolder
-				with: fileName)
+			( '<1s>/<2s>/<3s>.png' expandMacrosWith: self resourceFolder with: self classFolder with: fileName )
 		named: fileName
 ]
 
@@ -101,16 +95,18 @@ WinterSpriteDescriptor >> printOn: aStream [
 
 	aStream
 		nextPutAll:
-			('Sprite descriptor [<1s>]- <2s>/<3s>/<4s>.png'
+			( 'Sprite descriptor [<1s>]- <2s>/<3s>/<4s>.png'
 				expandMacrosWith: self position
 				with: self resourceFolder
 				with: self classFolder
-				with: fileName)
+				with: fileName )
 ]
 
 { #category : #Bootstrap }
 WinterSpriteDescriptor >> resourceFolder [
+
 	"By default is resources but can be re implemented to change this"
+
 	^ 'resources/'
 ]
 
@@ -118,5 +114,6 @@ WinterSpriteDescriptor >> resourceFolder [
 WinterSpriteDescriptor >> spriteSize [
 
 	"Answers a point of the size of the sprite"
-	self subclassResponsibility 
+
+	self subclassResponsibility
 ]

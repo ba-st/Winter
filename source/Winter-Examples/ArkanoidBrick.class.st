@@ -58,7 +58,7 @@ ArkanoidBrick >> changeColorStateTo: anArkanoidColorState [
 { #category : #Collisions }
 ArkanoidBrick >> collidedByBall [
 
- colorState affectCollisionWithBallTo: self.
+	colorState affectCollisionWithBallTo: self
 ]
 
 { #category : #Updating }
@@ -76,12 +76,12 @@ ArkanoidBrick >> initializeOn: aPoint ofExtent: anotherPoint inState: aBlockStat
 		color: aBlockState color
 		in: game.
 	colorState := aBlockState.
-	sprite := colorState sprite.
+	sprite := colorState sprite
 ]
 
-{ #category : #Updating }
+{ #category : #Printing }
 ArkanoidBrick >> printOn: aStream [
 
-	super printOn:aStream.
-	aStream nextPutAll: (' - [<1s>]' expandMacrosWith: colorState color printString). 
+	super printOn: aStream.
+	aStream nextPutAll: ( ' - [<1p>]' expandMacrosWith: colorState color )
 ]

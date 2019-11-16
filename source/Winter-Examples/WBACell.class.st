@@ -1,3 +1,15 @@
+"
+I represent a container cell in the scene
+
+
+Public API and Key Messages:
+
+- element:
+- ground:
+- neightbours:
+- spells:
+
+"
 Class {
 	#name : #WBACell,
 	#superclass : #WBAArenaComponent,

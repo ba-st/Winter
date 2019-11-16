@@ -21,11 +21,10 @@ SpiderInvasionSpider class >> atPosition: aPosition of: aScene tick: numberOfTic
 
 { #category : #Actions }
 SpiderInvasionSpider >> action [
-	self y = scene   maxY
+
+	self y = scene maxY
 		ifTrue: [ scene lostGame ]
-		ifFalse: [ self position:self position + (0@1)]
-	
-	
+		ifFalse: [ self position: self position + ( 0 @ 1 ) ]
 ]
 
 { #category : #Collisions }
@@ -35,12 +34,15 @@ SpiderInvasionSpider >> checkCollisions [
 		do: [ :component | 
 			component = self
 				ifFalse: [ component position = self position
-						ifTrue: [ (Collision between: self and: component) applyOnGame ] ] ]
+						ifTrue: [ ( Collision between: self and: component ) applyOnGame ]
+					]
+			]
 ]
 
 { #category : #Actions }
 SpiderInvasionSpider >> die [
-	scene newRandomSpiderTicked: (tick - 1 max: 8).
+
+	scene newRandomSpiderTicked: ( tick - 1 max: 8 ).
 	super die
 ]
 
@@ -51,7 +53,7 @@ SpiderInvasionSpider >> initializeAtPosition: aPosition of: aScene tick: numberO
 	game := scene game.
 	collisionShape := Winter2DSquare
 		ofCenter: aPosition
-		extent: self  spriteSize
+		extent: self spriteSize
 		color: Color black
 		in: self game.
 	self tick: numberOfTicks

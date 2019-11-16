@@ -1,3 +1,16 @@
+"
+I represent a descriptor of how the character will be like
+
+
+Public API and Key Messages:
+
+- classFolder
+- loadSpritesWith:using:
+- spriteSize
+
+
+	
+"
 Class {
 	#name : #WBACharacterDescriptor,
 	#superclass : #WinterSpriteDescriptor,

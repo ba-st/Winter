@@ -20,23 +20,23 @@ Winter2DCircleTest >> scene [
 Winter2DCircleTest >> testAccessing [
 
 	| game circle |
-	
+
 	game := self game.
 	circle := Winter2DCircle
 		ofCenter: 250 @ 530
 		radius: 15
 		color: Color red
 		in: game.
-		
-	circle scene: game scene .		
-	
+
+	circle scene: game scene.
+
 	self
-		assert: circle bounds equals: (250 @ 530 extent: 15 @ 15);
+		assert: circle bounds equals: ( 250 @ 530 extent: 15 @ 15 );
 		assert: circle radius equals: 15;
 		assert: circle position equals: 250 @ 530;
 		assert: circle color equals: Color red;
 		assert: circle game equals: game;
-		assert: circle scene equals: game scene 
+		assert: circle scene equals: game scene
 ]
 
 { #category : #Tests }
@@ -55,8 +55,8 @@ Winter2DCircleTest >> testDoNotIntersectsASquare [
 		extent: 20 @ 5
 		color: Color red
 		in: game.
-		
-	self deny: (circle intersects: square)
+
+	self deny: ( circle intersects: square )
 ]
 
 { #category : #Tests }
@@ -75,8 +75,8 @@ Winter2DCircleTest >> testDoNotIntersectsAnotherCircle [
 		radius: 15
 		color: Color red
 		in: game.
-		
-	self deny: (circle intersects: anotherCircle)
+
+	self deny: ( circle intersects: anotherCircle )
 ]
 
 { #category : #Tests }
@@ -95,8 +95,8 @@ Winter2DCircleTest >> testIntersectsASquare [
 		extent: 200 @ 50
 		color: Color red
 		in: game.
-		
-	self assert: (circle intersects: square)
+
+	self assert: ( circle intersects: square )
 ]
 
 { #category : #Tests }
@@ -115,6 +115,6 @@ Winter2DCircleTest >> testIntersectsAnotherCircle [
 		radius: 15
 		color: Color red
 		in: game.
-		
-	self assert: (circle intersects: anotherCircle)
+
+	self assert: ( circle intersects: anotherCircle )
 ]

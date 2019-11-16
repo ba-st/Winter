@@ -1,3 +1,13 @@
+"
+I represent the arena renderable model
+
+
+Public API and Key Messages:
+
+- cells:
+- screen:
+- renderOn:
+"
 Class {
 	#name : #WBAArena,
 	#superclass : #WBAArenaComponent,

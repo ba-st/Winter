@@ -1,3 +1,26 @@
+"
+Class representenging the season selection view model
+
+Public API and Key Messages
+
+
+- leftSelection
+- rightSelection
+- endScreenComputation
+- loadWidgets
+- renderWidgetsOn:
+- switchToNextScreen
+- renderWidgetsOn:
+ 
+Internal Representation and Key Implementation Points.
+
+    Instance Variables
+		currentChoice 
+		titleWidget 
+		seasonWidgets 
+		arrowWidget
+	
+"
 Class {
 	#name : #WBASeasonSelectScreenModel,
 	#superclass : #WinterMenuScreenModel,

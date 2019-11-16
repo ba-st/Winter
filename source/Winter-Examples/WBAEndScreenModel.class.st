@@ -1,3 +1,27 @@
+"
+Class representenging the end of game view model
+
+Public API and Key Messages
+
+- upSelection
+- downSelection
+- loadWidgets
+- winner:
+- switchToNextScreen
+- renderWidgetsOn:
+ 
+Internal Representation and Key Implementation Points.
+
+    Instance Variables
+		currentChoice 
+		winner 
+		characterWidget 
+		titleWidget 
+		choiceWidgets 
+		arrowWidget 
+		spellWidget
+	
+"
 Class {
 	#name : #WBAEndScreenModel,
 	#superclass : #WinterMenuScreenModel,

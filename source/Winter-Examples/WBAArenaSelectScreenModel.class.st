@@ -1,3 +1,24 @@
+"
+Class representenging the arena selection view model
+
+Public API and Key Messages
+
+- downSelection  
+- upSelection
+- endScreenComputation
+- switchToNextScreen
+- renderWidgetsOn:
+ 
+Internal Representation and Key Implementation Points.
+
+    Instance Variables
+		currentChoice 
+		titleWidget 
+		arrowWidget 
+		arenaWidget 
+		arenas
+	
+"
 Class {
 	#name : #WBAArenaSelectScreenModel,
 	#superclass : #WinterMenuScreenModel,
@@ -19,6 +40,11 @@ WBAArenaSelectScreenModel >> downSelection [
 { #category : #actions }
 WBAArenaSelectScreenModel >> endScreenComputation [
 	startingGame gameDescriptor arenaDescriptor: (WBAArenaDescriptor perform: (arenas at: currentChoice)).
+]
+
+{ #category : #'event handling' }
+WBAArenaSelectScreenModel >> handleKeyStrokeFor: playerIndex key: index [ 
+
 ]
 
 { #category : #initialization }

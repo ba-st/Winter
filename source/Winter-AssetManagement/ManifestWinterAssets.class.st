@@ -14,5 +14,6 @@ ManifestWinterAssets class >> initialize [
 	Kepler
 		registerInterfaceAt: #AssetsManagementSystemInterface
 		named: 'Assets Management System Interface'
-		declaring: #(#assets #sounds #sprites #addAsset: #addSound:named: #addSprite:named: #assetNamed: #removeAssetNamed:)
+		declaring:
+			#(#assets #sounds #sprites #addAsset: #addSound:named: #addSprite:named: #assetNamed: #removeAssetNamed:)
 ]

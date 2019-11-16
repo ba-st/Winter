@@ -8,7 +8,7 @@ Class {
 	#category : #'Winter-Examples-SpiderInvasion'
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : #'Instance Creation' }
 SpiderInvasionWall class >> inPosition: aPosition of: aSene [
 
 	^ self new initializeInPosition: aPosition of: aSene
@@ -17,11 +17,11 @@ SpiderInvasionWall class >> inPosition: aPosition of: aSene [
 { #category : #initialization }
 SpiderInvasionWall >> initializeInPosition: aPosition of: aSene [
 
-	 scene := aSene.
+	scene := aSene.
 	game := scene game.
 	collisionShape := Winter2DSquare
 		ofCenter: aPosition
-		extent: self spriteSize 
+		extent: self spriteSize
 		color: Color black
 		in: self game
 ]

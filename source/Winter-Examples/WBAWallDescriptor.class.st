@@ -1,3 +1,15 @@
+"
+I represent a descriptor of how the wall will be like
+
+
+Public API and Key Messages:
+
+- classFolder
+- loadSpriteWith:using:
+- spriteSize
+
+
+"
 Class {
 	#name : #WBAWallDescriptor,
 	#superclass : #WinterSpriteDescriptor,

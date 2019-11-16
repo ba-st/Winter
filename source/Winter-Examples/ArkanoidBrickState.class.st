@@ -29,10 +29,7 @@ ArkanoidBrickState >> color [
 { #category : #Accessing }
 ArkanoidBrickState >> printOn: aStream [
 
-	aStream
-		nextPutAll:
-			('ArkanoidBrickState - [<1s>]'
-				expandMacrosWith: self color printString)
+	aStream nextPutAll: ( 'ArkanoidBrickState - [<1p>]' expandMacrosWith: self color )
 ]
 
 { #category : #Accessing }

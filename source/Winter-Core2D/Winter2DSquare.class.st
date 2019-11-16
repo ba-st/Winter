@@ -72,10 +72,10 @@ Winter2DSquare >> printOn: aStream [
 
 	aStream
 		nextPutAll:
-			('Square - position [<1s>] - extent: <2s> - color: <3s> '
+			( 'Square - position [<1s>] - extent: <2s> - color: <3p> '
 				expandMacrosWith: self position
 				with: self extent
-				with: self color asString)
+				with: self color )
 ]
 
 { #category : #private }

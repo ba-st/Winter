@@ -73,7 +73,5 @@ WinterAnimation >> numberOfAnimationFrame [
 { #category : #evaluating }
 WinterAnimation >> step [
 
-	"Should reImplement"
-
-	
+	self subclassResponsibility
 ]

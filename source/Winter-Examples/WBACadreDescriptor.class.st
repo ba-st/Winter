@@ -1,3 +1,19 @@
+"
+I represent a descriptor of how the cadre will be like
+
+
+Public API and Key Messages:
+
+- classFolder
+- loadSpritesWith:using:
+- spriteSize
+
+Internal Representation and Key Implementation Points.
+
+    Instance Variables
+		numberOfPlayers: <Number>
+	
+"
 Class {
 	#name : #WBACadreDescriptor,
 	#superclass : #WinterSpriteDescriptor,

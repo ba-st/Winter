@@ -23,8 +23,9 @@ SpiderInvasionMissile >> action [
 
 	self y = scene minY
 		ifTrue: [ scene player reload.
-			scene removeComponent: self ]
-		ifFalse: [ self position: self position - (0 @ 1) ]
+			scene removeComponent: self
+			]
+		ifFalse: [ self position: self position - ( 0 @ 1 ) ]
 ]
 
 { #category : #initialization }
@@ -32,9 +33,9 @@ SpiderInvasionMissile >> initializeAtPosition: aPosition of: aScene tick: number
 
 	scene := aScene.
 	game := scene game.
-	collisionShape := Winter2DCircle 
+	collisionShape := Winter2DCircle
 		ofCenter: aPosition
-		radius: self  spriteSize x
+		radius: self spriteSize x
 		color: Color white
 		in: self game.
 	self tick: numberOfTicks
@@ -43,5 +44,5 @@ SpiderInvasionMissile >> initializeAtPosition: aPosition of: aScene tick: number
 { #category : #initialization }
 SpiderInvasionMissile >> initializeSprite [
 
-	sprite := game assetsManagementSystem  assetNamed: #missile
+	sprite := game assetsManagementSystem assetNamed: #missile
 ]

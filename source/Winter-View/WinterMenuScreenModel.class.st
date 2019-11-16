@@ -1,5 +1,38 @@
 "
 Abstract class for Screen view models
+
+Public API and Key Messages
+
+- background  
+- downSelection
+- endAnimation
+- endScreenComputation
+- eventHandler
+- eventHandlerFor:
+- every10GameTickDo:
+- extent
+- handleKeyStroke:
+- handlePlayerKeyStroke:
+- leftSelection
+- loadWidgets
+- nextScreen
+- nextScreen:
+- renderOn:
+- rightSelection
+- screen
+- screen:
+- startAnimation
+- switchToNextScreen
+- terminateProcesses
+- upSelection
+- updateUsing:
+ 
+Internal Representation and Key Implementation Points.
+
+    Instance Variables
+		screen 
+		startingGame
+	
 "
 Class {
 	#name : #WinterMenuScreenModel,
@@ -11,13 +44,13 @@ Class {
 	#category : #'Winter-View-ViewModel'
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : #Accessing }
 WinterMenuScreenModel >> background [
 
 	^ Color black
 ]
 
-{ #category : #accessing }
+{ #category : #Accessing }
 WinterMenuScreenModel >> dimensions [
 
 	^ 760 @ 480
@@ -81,7 +114,7 @@ WinterMenuScreenModel >> every10GameTickDo: aBlock [
 		for: self
 ]
 
-{ #category : #accessing }
+{ #category : #Accessing }
 WinterMenuScreenModel >> extent [
 
 	^ 760 @ 480
@@ -109,7 +142,7 @@ WinterMenuScreenModel >> handleKeyStroke: code [
 WinterMenuScreenModel >> handleKeyStrokeFor: playerIndex key: index [ 
 
 	"overide if you use player specific shortcuts"
-	self subclassResponsibility 
+
 ]
 
 { #category : #'event handling' }
@@ -248,13 +281,13 @@ WinterMenuScreenModel >> renderWidgetsOn: aCanvas [
 WinterMenuScreenModel >> rightSelection [
 ]
 
-{ #category : #accessing }
+{ #category : #Accessing }
 WinterMenuScreenModel >> screen [
 
 	^ screen 
 ]
 
-{ #category : #accessing }
+{ #category : #Accessing }
 WinterMenuScreenModel >> screen: anObject [
 
 	screen := anObject 
@@ -264,13 +297,13 @@ WinterMenuScreenModel >> screen: anObject [
 WinterMenuScreenModel >> startAnimation [
 ]
 
-{ #category : #accessing }
+{ #category : #Accessing }
 WinterMenuScreenModel >> startingGame [
 
 	^ startingGame
 ]
 
-{ #category : #accessing }
+{ #category : #Accessing }
 WinterMenuScreenModel >> startingGame: anObject [
 
 	startingGame := anObject
@@ -305,6 +338,6 @@ WinterMenuScreenModel >> textWidgetAt: name [
 WinterMenuScreenModel >> upSelection [
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #Updating }
 WinterMenuScreenModel >> updateUsing: anAthensCairoCanvas [
 ]

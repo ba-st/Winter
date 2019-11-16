@@ -31,7 +31,7 @@ SpiderInvasionExplode >> initializeAtPosition: aPosition of: aScene tick: number
 	game := scene game.
 	collisionShape := Winter2DSquare
 		ofCenter: aPosition
-		extent: self  spriteSize
+		extent: self spriteSize
 		color: Color black
 		in: self game.
 	self tick: numberOfTicks
@@ -40,5 +40,5 @@ SpiderInvasionExplode >> initializeAtPosition: aPosition of: aScene tick: number
 { #category : #initialization }
 SpiderInvasionExplode >> initializeSprite [
 
-	sprite := game assetsManagementSystem  assetNamed: #explode
+	sprite := game assetsManagementSystem assetNamed: #explode
 ]

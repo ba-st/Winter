@@ -1,3 +1,14 @@
+"
+I represent a descriptor of how the ground will be like
+
+
+Public API and Key Messages:
+
+- classFolder
+- loadSpritesWith:using:
+- spriteSize
+
+"
 Class {
 	#name : #WBAGroundDescriptor,
 	#superclass : #WinterSpriteDescriptor,

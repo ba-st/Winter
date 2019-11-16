@@ -1,3 +1,27 @@
+"
+Class representenging the spell selection view model
+
+Public API and Key Messages
+
+
+- hasPlayerSpecificHnalding
+- handleKeyStrokeFor:key:
+- endScreenComputation
+- loadWidgets
+- renderWidgetsOn:
+- startAnimation
+- switchToNextScreen
+- renderWidgetsOn:
+ 
+Internal Representation and Key Implementation Points.
+
+    Instance Variables
+		currentChoices 
+		titleWidget 
+		arrowWidgets 
+		spellWidgets
+	
+"
 Class {
 	#name : #WBASpellSelectScreenModel,
 	#superclass : #WinterMenuScreenModel,

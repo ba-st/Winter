@@ -1,3 +1,22 @@
+"
+I represent a character in a cell 
+
+
+Public API and Key Messages:
+
+- bury
+- castSpell
+- cell 
+- cell:
+- currentFoot 
+- currentFoot:
+- die
+- direction:
+- isDead
+- isMoving
+- move:
+- renderOn:
+"
 Class {
 	#name : #WBACharacter,
 	#superclass : #WBAElement,

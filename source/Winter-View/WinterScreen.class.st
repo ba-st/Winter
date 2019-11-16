@@ -1,5 +1,34 @@
 "
-Represents the screen
+Class representenging the screen for the visualization of the game
+
+Public API and Key Messages
+
+- createSurface  
+- createWindow
+- eventHandler:
+- extentX
+- extentY
+- model:
+- positionX
+- render
+- rootSystem
+- scheduler
+- show
+- terminateRendering
+- updateAndRender
+- window
+
+ 
+Internal Representation and Key Implementation Points.
+
+    Instance Variables
+		model 
+		window 
+		surface 
+		scheduler 
+		title 
+		rootSystem
+	
 "
 Class {
 	#name : #WinterScreen,

@@ -1,3 +1,23 @@
+"
+I am the base class for WBA game
+
+Instance Variables
+- scheduler
+- collisionHandlers
+- screen
+- scene
+- rootSystem
+
+Public API and Key Messages:
+
+- descriptor 
+- gameDescriptor
+
+
+
+
+
+"
 Class {
 	#name : #WBAGame,
 	#superclass : #WinterGame,
@@ -16,7 +36,7 @@ WBAGame class >> start [
 		display
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #Validating }
 WBAGame >> checkEndGame [
 
 	| alivePlayers |
@@ -26,13 +46,14 @@ WBAGame >> checkEndGame [
 		ifTrue: [ self endScreen: alivePlayers first ]
 ]
 
-{ #category : #accessing }
+{ #category : #Accessing }
 WBAGame >> dimensions [
 	^ descriptor windowExtent
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #Computing }
 WBAGame >> endScreen: winner [
+
 	WBAEndScreenModel new
 		screen: screen;
 		startingGame: self;
@@ -50,19 +71,19 @@ WBAGame >> gameDescriptor: anObject [
 	gameDescriptor := anObject
 ]
 
-{ #category : #accessing }
+{ #category : #initialization }
 WBAGame >> initializeResources [
 
 	WBATextDescriptor new loadSpritesWith: nil using: self assetsManagementSystem
 ]
 
-{ #category : #accessing }
+{ #category : #initialization }
 WBAGame >> initializeScenes [
 
-	self scene: WBAScene new
+	self scene: Winter2DScene new
 ]
 
-{ #category : #accessing }
+{ #category : #initialization }
 WBAGame >> initializeSchedulers [
 
 	super initializeSchedulers .
@@ -86,7 +107,7 @@ WBAGame >> textSpritesAt: aName [
 	^self assetsManagementSystem  assetNamed: aName
 ]
 
-{ #category : #accessing }
+{ #category : #Accessing }
 WBAGame >> title [
 
 	^'Wizard Battle Arena'

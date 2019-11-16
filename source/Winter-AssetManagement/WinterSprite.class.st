@@ -27,17 +27,23 @@ Class {
 }
 
 { #category : #'Instance Creation' }
-WinterSprite class >> fromPath: aStringPath named: aName [
+WinterSprite class >> fromPath: aStringPath named: aName using: aFileSystem [
 
-	^ [ self new initializeFromAbsolutePath: aStringPath  named: aName ]
+	^ [ | nativeImage |
+
+	nativeImage := ( aFileSystem referenceTo: aStringPath )
+		binaryReadStreamDo: [ :stream | ImageReadWriter formFromStream: stream ].
+	self new initializeNativeAsset: nativeImage filePath: aStringPath named: aName
+	]
 		on: FileDoesNotExistException
 		do:
-			[ :ex | (ex messageText: ('Sprite not found in <1s>' expandMacrosWith: aStringPath)) signal ]
+			[ :ex | ( ex messageText: ( 'Sprite not found in <1s>' expandMacrosWith: aStringPath ) ) signal ]
 ]
 
 { #category : #Drawing }
 WinterSprite >> drawOnAthensCanvas: aCanvas [
-	nativeAsset  asMorph drawOnAthensCanvas: aCanvas
+
+	nativeAsset asMorph drawOnAthensCanvas: aCanvas
 ]
 
 { #category : #Accessing }
@@ -48,25 +54,13 @@ WinterSprite >> extent [
 	^ self width @ self height
 ]
 
-{ #category : #Initialization }
-WinterSprite >> initializeFromAbsolutePath: aPath named: aName [
-	path := aPath .
-	name := aName.
-	nativeAsset  := path asFileReference 
-		binaryReadStreamDo: [ :stream | ImageReadWriter formFromStream: stream ]
-]
-
-{ #category : #Accessing }
+{ #category : #Testing }
 WinterSprite >> isSprite [
+
 	^ true
 ]
 
-{ #category : #Accessing }
-WinterSprite >> path [
-	^path
-]
-
-{ #category : #Accessing }
+{ #category : #Printing }
 WinterSprite >> printOn: aStream [
 
 	aStream

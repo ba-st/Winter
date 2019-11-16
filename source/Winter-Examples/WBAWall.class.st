@@ -1,3 +1,12 @@
+"
+I represent a wall in a cell
+
+
+Public API and Key Messages:
+
+- renderOn:
+- sprite:
+"
 Class {
 	#name : #WBAWall,
 	#superclass : #WBAElement,

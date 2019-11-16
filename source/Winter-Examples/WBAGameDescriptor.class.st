@@ -1,3 +1,30 @@
+"
+I represent a descriptor of how the game will be like
+
+
+Public API and Key Messages:
+
+- arenaDescriptor
+- arenaDescriptor:
+- characterDescriptors
+- characterDescriptors:
+- groundDescriptors
+- groundDescriptors:
+- spellDescriptors
+- spellDescriptors:
+- wallDescriptors
+- wallDescriptors:
+
+Internal Representation and Key Implementation Points.
+
+    Instance Variables
+		arenaDescriptor
+		characterDescriptors
+		spellDescriptors
+		groundDescriptor 
+		wallDescriptor
+	
+"
 Class {
 	#name : #WBAGameDescriptor,
 	#superclass : #Object,
