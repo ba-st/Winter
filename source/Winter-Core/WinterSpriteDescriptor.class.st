@@ -26,15 +26,6 @@ Class {
 }
 
 { #category : #Bootstrap }
-WinterSpriteDescriptor >> basicLoadImageFile [
-
-	^ game assetsManagementSystem
-		addSprite:
-			( '<1s>/<2s>/<3s>.png' expandMacrosWith: self resourceFolder with: self classFolder with: fileName )
-		named: fileName
-]
-
-{ #category : #Bootstrap }
 WinterSpriteDescriptor >> basicLoadImageFileUsing: anAssetManagementSystem [
 
 	^ anAssetManagementSystem

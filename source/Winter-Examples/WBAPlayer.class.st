@@ -27,7 +27,7 @@ Public API and Key Messages:
 "
 Class {
 	#name : #WBAPlayer,
-	#superclass : #WinterPlayer,
+	#superclass : #WinterInteractiveMovableComponent,
 	#instVars : [
 		'character',
 		'isMoving',

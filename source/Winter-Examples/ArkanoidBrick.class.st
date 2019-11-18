@@ -16,7 +16,7 @@ Public API and Key Messages:
 "
 Class {
 	#name : #ArkanoidBrick,
-	#superclass : #WinterNonPlayer,
+	#superclass : #WinterMovableComponent,
 	#instVars : [
 		'colorState'
 	],

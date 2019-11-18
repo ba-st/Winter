@@ -48,8 +48,7 @@ BaselineOfWinter >> setUpGroupsFor: spec [
 
 	^ spec
 		group: 'Tests'
-			with:
-			#('Winter-AssetManagementTests' 'Winter-CoreTests' 'Winter-Core2DTests' 'Winter-TiledTests' 'Winter-TestResources');
+			with: #('Winter-AssetManagementTests' 'Winter-CoreTests' 'Winter-Core2DTests' 'Winter-TiledTests');
 		group: 'Deployment'
 			with:
 			#('Winter-AssetManagement' 'Winter-Core' 'Winter-Core2D' 'Winter-View' 'Winter-Tiled' 'Winter-Examples');
@@ -66,9 +65,8 @@ BaselineOfWinter >> setUpPackagesFor: spec [
 		package: 'Winter-AssetManagementTests' with: [ spec requires: #('Winter-AssetManagement') ];
 		package: 'Winter-Core' with: [ spec requires: #('Winter-AssetManagement') ];
 		package: 'Winter-Core2D' with: [ spec requires: #('Winter-Core') ];
-		package: 'Winter-TestResources' with: [ spec requires: #('Winter-Core2D') ];
-		package: 'Winter-Core2DTests' with: [ spec requires: #('Winter-TestResources') ];
-		package: 'Winter-CoreTests' with: [ spec requires: #('Winter-TestResources') ];
+		package: 'Winter-Core2DTests';
+		package: 'Winter-CoreTests';
 		package: 'Winter-View' with: [ spec requires: #('Winter-Core2D') ];
 		package: 'Winter-Examples' with: [ spec requires: #('Winter-Core2D') ];
 		package: 'Winter-Tiled' with: [ spec requires: #('XMLParser') ];

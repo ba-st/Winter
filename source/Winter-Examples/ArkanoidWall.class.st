@@ -8,7 +8,7 @@ Public API and Key Messages:
 "
 Class {
 	#name : #ArkanoidWall,
-	#superclass : #WinterNonPlayer,
+	#superclass : #WinterMovableComponent,
 	#category : #'Winter-Examples-Arkanoid'
 }
 

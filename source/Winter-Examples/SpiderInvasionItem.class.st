@@ -12,7 +12,7 @@ Public API and Key Messages:
 "
 Class {
 	#name : #SpiderInvasionItem,
-	#superclass : #WinterNonPlayer,
+	#superclass : #WinterMovableComponent,
 	#category : #'Winter-Examples-SpiderInvasion'
 }
 

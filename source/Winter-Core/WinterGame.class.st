@@ -37,7 +37,9 @@ Class {
 		'collisionHandlers',
 		'screen',
 		'scene',
-		'rootSystem'
+		'rootSystem',
+		'dimensions',
+		'title'
 	],
 	#category : #'Winter-Core-Base'
 }
@@ -57,8 +59,14 @@ WinterGame >> assetsManagementSystem [
 
 { #category : #Accessing }
 WinterGame >> dimensions [
-	"A point representing the size of the board."
-	^self subclassResponsibility 
+
+	^ 650 @ 700
+]
+
+{ #category : #Accessing }
+WinterGame >> dimensions: aPoint [
+
+	dimensions := aPoint
 ]
 
 { #category : #events }
@@ -208,7 +216,13 @@ WinterGame >> stop [
 { #category : #Accessing }
 WinterGame >> title [
 
-	self subclassResponsibility
+	^ title
+]
+
+{ #category : #Accessing }
+WinterGame >> title: aString [
+
+	title := aString
 ]
 
 { #category : #Updating }

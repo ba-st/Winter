@@ -7,7 +7,7 @@ Class {
 { #category : #'Test Support' }
 Winter2DSceneTest >> component [
 
-	^ WinterTestNonPlayer new
+	^ WinterMovableComponent new
 ]
 
 { #category : #'Test Support' }
@@ -25,13 +25,13 @@ Winter2DSceneTest >> game [
 { #category : #'Test Support' }
 Winter2DSceneTest >> player [
 
-	^ WinterTestPlayer new
+	^ WinterInteractiveMovableComponent new
 ]
 
 { #category : #'Test Support' }
 Winter2DSceneTest >> scene [
 
-	^ WinterTestScene new
+	^ Winter2DScene new
 		game: self;
 		yourself
 ]

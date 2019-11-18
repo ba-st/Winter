@@ -20,12 +20,18 @@ WinterGameTest >> tearDown [
 { #category : #tests }
 WinterGameTest >> testAccessing [
 
-	game := WinterTestGame new.
+	| scene |
+
+	scene := Winter2DScene new.
+	game := WinterGame new.
+	game
+		scene: scene;
+		dimensions: 650 @ 700;
+		title: 'Test'.
 
 
 	self
-		assert: ( game scene isA: WinterTestScene );
+		assert: game scene equals: scene;
 		assert: game dimensions equals: 650 @ 700;
-		assert: game stepTime equals: 30;
 		assert: game title equals: 'Test'
 ]

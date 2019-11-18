@@ -37,7 +37,7 @@ WinterNonPlayerComponentTest >> testAccessing [
 
 	| component game scene collisionShape position |
 
-	component := WinterTestNonPlayer new.
+	component := WinterMovableComponent new.
 	game := self game.
 	scene := self scene.
 	collisionShape := self collisionShapeOn: game.

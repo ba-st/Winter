@@ -14,7 +14,7 @@ Public API and Key Messages:
 "
 Class {
 	#name : #ArkanoidPlayer,
-	#superclass : #WinterPlayer,
+	#superclass : #WinterInteractiveMovableComponent,
 	#category : #'Winter-Examples-Arkanoid'
 }
 
@@ -33,7 +33,7 @@ ArkanoidPlayer >> arkanoidBarSprite [
 { #category : #Collisions }
 ArkanoidPlayer >> checkCollisions [
 
-	( CollisionAgainstMapBordersChecker for: self ) value: #x
+	CollisionAgainstMapBordersChecker new checkFor: self onAxis: #x
 ]
 
 { #category : #Initialization }

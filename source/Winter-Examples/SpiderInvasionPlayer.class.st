@@ -18,7 +18,7 @@ Public API and Key Messages:
 "
 Class {
 	#name : #SpiderInvasionPlayer,
-	#superclass : #WinterPlayer,
+	#superclass : #WinterInteractiveMovableComponent,
 	#instVars : [
 		'loaded'
 	],
@@ -34,7 +34,7 @@ SpiderInvasionPlayer class >> on: aGame [
 { #category : #Collisions }
 SpiderInvasionPlayer >> checkCollisions [
 
-	( CollisionAgainstMapBordersChecker for: self ) value: #x
+	CollisionAgainstMapBordersChecker new checkFor: self onAxis: #x
 ]
 
 { #category : #actions }

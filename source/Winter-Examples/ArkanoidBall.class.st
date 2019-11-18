@@ -16,7 +16,7 @@ Public API and Key Messages:
 "
 Class {
 	#name : #ArkanoidBall,
-	#superclass : #WinterNonPlayer,
+	#superclass : #WinterMovableComponent,
 	#instVars : [
 		'deltaPoint'
 	],

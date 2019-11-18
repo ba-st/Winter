@@ -86,6 +86,12 @@ Winter2DScene >> initializeComponents [
 ]
 
 { #category : #Accessing }
+Winter2DScene >> player [
+
+	^self players first
+]
+
+{ #category : #Accessing }
 Winter2DScene >> players [
 
 	^ players
