@@ -58,15 +58,6 @@ Winter2DScene >> dimensions [
 ]
 
 { #category : #Accessing }
-Winter2DScene >> eventHandlerFor: aScreen [
-
-	^ WinterSceneEventHandler new
-		players: players;
-		schedulers: {aScreen scheduler};
-		yourself
-]
-
-{ #category : #Accessing }
 Winter2DScene >> extent [
 
 	^ game dimensions

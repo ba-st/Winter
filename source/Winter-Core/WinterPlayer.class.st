@@ -23,11 +23,9 @@ Public API and Key Messages:
 "
 Class {
 	#name : #WinterPlayer,
-	#superclass : #WinterComponent,
+	#superclass : #WinterAliveComponentXXX,
 	#instVars : [
 		'interactionEvents',
-		'sprite',
-		'collisionShape',
 		'keyDownInteractions',
 		'keyUpInteractions'
 	],
@@ -54,18 +52,6 @@ WinterPlayer >> checkCollisions [
 	
 ]
 
-{ #category : #Accessing }
-WinterPlayer >> collisionShape [
-
-	^ collisionShape
-]
-
-{ #category : #Accessing }
-WinterPlayer >> collisionShape: aCollisionShape [
-
-	collisionShape := aCollisionShape
-]
-
 { #category : #Events }
 WinterPlayer >> handleKeyDown: anEvent [
 
@@ -90,10 +76,7 @@ WinterPlayer >> initialize [
 	super initialize.
 	keyDownInteractions := Dictionary new.
 	keyUpInteractions := Dictionary new.
-	self
-		initializeResources;
-		initializeSprite;
-		initializeCollisionShape
+
 ]
 
 { #category : #initialization }
@@ -120,44 +103,9 @@ WinterPlayer >> initializeSprite [
 	
 ]
 
-{ #category : #Accessing }
-WinterPlayer >> position [
-
-	^ collisionShape position
-]
-
-{ #category : #Accessing }
-WinterPlayer >> position: aPosition [
-
-	collisionShape position: aPosition
-]
-
 { #category : #printing }
 WinterPlayer >> printOn: aStream [
 
 	aStream
 		nextPutAll: ( '<1s> - position [<2s>]' expandMacrosWith: self class name with: self position )
-]
-
-{ #category : #Rendering }
-WinterPlayer >> renderOn: aCanvas [
-
-	sprite ifNil: [ collisionShape renderOn: aCanvas ] ifNotNil: [ self renderSpriteOn: aCanvas ]
-]
-
-{ #category : #Rendering }
-WinterPlayer >> renderSpriteOn: aCanvas [
-
-	aCanvas pathTransform
-		restoreAfter: [ aCanvas pathTransform translateBy: self position.
-			aCanvas setPaint: ( sprite asAthensPaintOn: aCanvas ).
-			sprite drawOnAthensCanvas: aCanvas
-			]
-]
-
-{ #category : #Events }
-WinterPlayer >> updateUsing: aCanvas [
-
-	collisionShape updateUsing: aCanvas.
-	self checkCollisions
 ]

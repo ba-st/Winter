@@ -17,12 +17,6 @@ WinterSpriteTest >> createImage [
 			]
 ]
 
-{ #category : #testing }
-WinterSpriteTest >> expectedFailures [
-
-	^ #(testInstanceCreationFailedBecauseFileNotFound)
-]
-
 { #category : #Accessing }
 WinterSpriteTest >> pharoImageOnBase64 [
 

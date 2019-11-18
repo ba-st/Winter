@@ -62,8 +62,12 @@ WinterGame >> dimensions [
 ]
 
 { #category : #events }
-WinterGame >> eventHandlerFor: aScreen [ 
-	^scene eventHandlerFor: aScreen
+WinterGame >> eventHandlerFor: aScreen [
+
+	^ WinterSceneEventHandler new
+		players: scene players;
+		schedulers: {aScreen scheduler};
+		yourself
 ]
 
 { #category : #Accessing }
@@ -113,6 +117,7 @@ WinterGame >> initializeScenes [
 
 { #category : #initialization }
 WinterGame >> initializeSchedulers [
+
 	scheduler := AnimationsScheduler new
 ]
 
@@ -125,7 +130,7 @@ WinterGame >> initializeSystems [
 		startUp
 ]
 
-{ #category : #Rendering }
+{ #category : #'Screen Model Compatibility' }
 WinterGame >> loadWidgets [
 	
 ]
@@ -189,24 +194,20 @@ WinterGame >> start [
 	
 ]
 
-{ #category : #events }
+{ #category : #'Screen Model Compatibility' }
 WinterGame >> startAnimation [
 	
 ]
 
-{ #category : #Accessing }
-WinterGame >> stepTime [
-	"Frames per second"
-	^30
-]
-
 { #category : #'start/stop' }
 WinterGame >> stop [
+
 	scheduler terminateProcess
 ]
 
 { #category : #Accessing }
 WinterGame >> title [
+
 	self subclassResponsibility
 ]
 
