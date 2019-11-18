@@ -1,35 +1,32 @@
 "
-I am a base class for simple Storm-based applications running in a Morphic window. I handle the basic animation and physics simulation loop, and provide hooks for my subclasses to define application-specific behavior.
+I am a base class for a game. I handle the basic animation and physics simulation loop, and provide hooks for my subclasses to define application-specific behavior.
 
 Instance Variables
-	currentScene:		<Object>
-	engine:		<Object>
-	players:		<Object>
-	scenes:		<Object>
-	stepWalker:		<Object>
-	surfaceContainer:		<Object>
-	window:		<Object>
+- scheduler
+- collisionHandlers
+- screen
+- scene
+- rootSystem
 
-currentScene
-	- xxxxx
+Public API and Key Messages:
 
-engine
-	- xxxxx
+- addPlayer:
+- assetsManagementSystem
+- eventHandlerFor:
+- extent
+- handleCollision:
+- renderOn:
+- scene
+- scene:
+- scheduler
+- screen
+- screen:
+- start
+- updateUsing:
 
-players
-	- xxxxx
 
-scenes
-	- xxxxx
 
-stepWalker
-	- xxxxx
 
-surfaceContainer
-	- xxxxx
-
-window
-	- xxxxx
 
 "
 Class {
@@ -39,9 +36,12 @@ Class {
 		'scheduler',
 		'collisionHandlers',
 		'screen',
-		'scene'
+		'scene',
+		'rootSystem',
+		'dimensions',
+		'title'
 	],
-	#category : 'Winter-Core-Base'
+	#category : #'Winter-Core-Base'
 }
 
 { #category : #Accessing }
@@ -52,14 +52,30 @@ WinterGame >> addPlayer: aPlayer [
 ]
 
 { #category : #Accessing }
-WinterGame >> dimensions [
-	"A point representing the size of the board."
-	^self subclassResponsibility 
+WinterGame >> assetsManagementSystem [
+
+	^rootSystem systemImplementing: #AssetsManagementSystemInterface
 ]
 
-{ #category : #'as yet unclassified' }
-WinterGame >> eventHandlerFor: aScreen [ 
-	^scene eventHandlerFor: aScreen
+{ #category : #Accessing }
+WinterGame >> dimensions [
+
+	^ 650 @ 700
+]
+
+{ #category : #Accessing }
+WinterGame >> dimensions: aPoint [
+
+	dimensions := aPoint
+]
+
+{ #category : #events }
+WinterGame >> eventHandlerFor: aScreen [
+
+	^ WinterSceneEventHandler new
+		players: scene players;
+		schedulers: {aScreen scheduler};
+		yourself
 ]
 
 { #category : #Accessing }
@@ -79,6 +95,7 @@ WinterGame >> handleCollision: aCollision [
 { #category : #initialization }
 WinterGame >> initialize [
 	super initialize.
+	self initializeSystems.
 	self initializeSchedulers.
 	collisionHandlers := OrderedCollection new.
 	self initializeCollisionHandlers.
@@ -108,25 +125,39 @@ WinterGame >> initializeScenes [
 
 { #category : #initialization }
 WinterGame >> initializeSchedulers [
-	scheduler := AnimationsScheduller new
+
+	scheduler := AnimationsScheduler new
 ]
 
-{ #category : #Rendering }
+{ #category : #initialization }
+WinterGame >> initializeSystems [
+
+	rootSystem := CompositeSystem new.
+	rootSystem
+		register: WinterAssetManagementSystem new;
+		startUp
+]
+
+{ #category : #'Screen Model Compatibility' }
 WinterGame >> loadWidgets [
 	
 ]
 
-{ #category : #events }
-WinterGame >> pushEvent: anEvent [
+{ #category : #printing }
+WinterGame >> printOn: aStream [
 
-	anEvent isGameEvent
-		ifTrue: [ anEvent execute: self screen  ]
-		
+	aStream nextPutAll: self title
 ]
 
 { #category : #Rendering }
 WinterGame >> renderOn: aCanvas [ 
 	scene renderOn: aCanvas 
+]
+
+{ #category : #Accessing }
+WinterGame >> rootSystem [
+
+	^ rootSystem
 ]
 
 { #category : #Accessing }
@@ -159,7 +190,8 @@ WinterGame >> screen [
 
 { #category : #Accessing }
 WinterGame >> screen: aScreen [ 
-	screen := aScreen
+
+	screen := aScreen.
 ]
 
 { #category : #'start/stop' }
@@ -170,28 +202,30 @@ WinterGame >> start [
 	
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #'Screen Model Compatibility' }
 WinterGame >> startAnimation [
 	
 ]
 
-{ #category : #Accessing }
-WinterGame >> stepTime [
-	"Frames per second"
-	^30
-]
-
 { #category : #'start/stop' }
 WinterGame >> stop [
+
 	scheduler terminateProcess
 ]
 
 { #category : #Accessing }
 WinterGame >> title [
-	self subclassResponsibility
+
+	^ title
 ]
 
-{ #category : #Rendering }
+{ #category : #Accessing }
+WinterGame >> title: aString [
+
+	title := aString
+]
+
+{ #category : #Updating }
 WinterGame >> updateUsing: aCanvas [ 
 	
 	scene updateUsing: aCanvas 

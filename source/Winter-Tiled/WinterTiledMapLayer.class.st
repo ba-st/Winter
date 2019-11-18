@@ -13,7 +13,7 @@ Class {
 		'parent',
 		'unitScale'
 	],
-	#category : 'Winter-Tiled'
+	#category : #'Winter-Tiled'
 }
 
 { #category : #Drawing }

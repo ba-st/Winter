@@ -1,5 +1,16 @@
 "
-Square abstraction as a WInter Component
+I am a Square shape appearing in a 2D scene, with both a visual representation and a physical simulation..
+Chipmunk2D (Native library) [ Disconnected ]
+
+Instance Variables
+- extentPoint
+
+
+Public API and Key Messages:
+
+- bounds
+- extent 
+- extent:
 "
 Class {
 	#name : #Winter2DSquare,
@@ -7,7 +18,7 @@ Class {
 	#instVars : [
 		'extentPoint'
 	],
-	#category : 'Winter-Core2D-Base'
+	#category : #'Winter-Core2D-Base'
 }
 
 { #category : #'Instance Creation' }
@@ -54,6 +65,17 @@ Winter2DSquare >> initializeOfCenter: aPoint extent: anotherPoint color: aColor 
 	extentPoint := anotherPoint.
 	color := aColor.
 	game := aGame 
+]
+
+{ #category : #printing }
+Winter2DSquare >> printOn: aStream [
+
+	aStream
+		nextPutAll:
+			( 'Square - position [<1s>] - extent: <2s> - color: <3p> '
+				expandMacrosWith: self position
+				with: self extent
+				with: self color )
 ]
 
 { #category : #private }

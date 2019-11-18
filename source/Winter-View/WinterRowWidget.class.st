@@ -1,3 +1,21 @@
+"
+Class representenging a row of widgets
+
+Public API and Key Messages
+
+- renderOn:  
+- space
+- space:
+- widgets
+- widgets:
+ 
+Internal Representation and Key Implementation Points.
+
+    Instance Variables
+		widgets 
+		space
+	
+"
 Class {
 	#name : #WinterRowWidget,
 	#superclass : #WinterWidget,
@@ -5,7 +23,7 @@ Class {
 		'widgets',
 		'space'
 	],
-	#category : 'Winter-View-ViewModel'
+	#category : #'Winter-View-ViewModel'
 }
 
 { #category : #rendering }

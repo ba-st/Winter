@@ -1,11 +1,31 @@
+"
+I represent a handler used to handle keyword events on screens
+
+Collaborators: 
+
+- screenModel
+
+Public API and Key Messages:
+
+- screenModel
+- screenModel:
+- terminateProcesses
+- visitKeyUpEvent:
+"
 Class {
 	#name : #WinterKeyboardEventHandler,
 	#superclass : #WinterEventHandler,
 	#instVars : [
 		'screenModel'
 	],
-	#category : 'Winter-Core-Event-Handlers'
+	#category : #'Winter-Core-Event-Handlers'
 }
+
+{ #category : #processing }
+WinterKeyboardEventHandler >> printOn: aStream [
+
+	aStream nextPutAll: 'Screen keywords events handler'
+]
 
 { #category : #Accessing }
 WinterKeyboardEventHandler >> screenModel [
@@ -19,13 +39,13 @@ WinterKeyboardEventHandler >> screenModel: anObject [
 	screenModel := anObject
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #processing }
 WinterKeyboardEventHandler >> terminateProcesses [
 
 	screenModel terminateProcesses
 ]
 
-{ #category : #Accessing }
+{ #category : #visiting }
 WinterKeyboardEventHandler >> visitKeyUpEvent: anEvent [
 
 	screenModel handleKeyStroke: anEvent scanCode  

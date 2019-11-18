@@ -1,7 +1,21 @@
+"
+Abstract class to represent any widget
+
+Public API and Key Messages
+
+- renderOn:  
+- updateUsing:
+ 
+Internal Representation and Key Implementation Points.
+
+    Instance Variables
+		
+	
+"
 Class {
 	#name : #WinterWidget,
 	#superclass : #Object,
-	#category : 'Winter-View-ViewModel'
+	#category : #'Winter-View-ViewModel'
 }
 
 { #category : #rendering }

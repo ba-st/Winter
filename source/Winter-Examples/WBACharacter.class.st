@@ -1,3 +1,22 @@
+"
+I represent a character in a cell 
+
+
+Public API and Key Messages:
+
+- bury
+- castSpell
+- cell 
+- cell:
+- currentFoot 
+- currentFoot:
+- die
+- direction:
+- isDead
+- isMoving
+- move:
+- renderOn:
+"
 Class {
 	#name : #WBACharacter,
 	#superclass : #WBAElement,
@@ -12,7 +31,7 @@ Class {
 		'currentFoot',
 		'game'
 	],
-	#category : 'Winter-Examples-WizardBattle'
+	#category : #'Winter-Examples-WizardBattle'
 }
 
 { #category : #animations }

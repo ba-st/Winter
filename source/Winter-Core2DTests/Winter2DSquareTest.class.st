@@ -21,11 +21,11 @@ Winter2DSquareTest >> testAccessing [
 		extent: 200 @ 0
 		color: Color red
 		in: game.
-	
+
 	self
 		assert: circle extent equals: 200 @ 0;
 		assert: circle position equals: 200 @ 560;
-		assert: circle bounds equals: (circle position extent: circle extent);
+		assert: circle bounds equals: ( circle position extent: circle extent );
 		assert: circle color equals: Color red;
 		assert: circle game equals: game
 ]
@@ -46,14 +46,14 @@ Winter2DSquareTest >> testDoNotIntersectsACircle [
 		extent: 20 @ 5
 		color: Color red
 		in: game.
-		
-	self deny: (square intersects: circle)
+
+	self deny: ( square intersects: circle )
 ]
 
 { #category : #Tests }
 Winter2DSquareTest >> testDoNotIntersectsAnotherSquare [
 
-	| game  square anotherSquare|
+	| game square anotherSquare |
 
 	game := self game.
 	square := Winter2DSquare
@@ -65,9 +65,9 @@ Winter2DSquareTest >> testDoNotIntersectsAnotherSquare [
 		ofCenter: 150 @ 500
 		extent: 20 @ 5
 		color: Color red
-		in: game.	
-			
-	self deny: (square intersects: anotherSquare )
+		in: game.
+
+	self deny: ( square intersects: anotherSquare )
 ]
 
 { #category : #Tests }
@@ -86,14 +86,14 @@ Winter2DSquareTest >> testIntersectsACircle [
 		extent: 200 @ 50
 		color: Color red
 		in: game.
-		
-	self assert: (square intersects: circle )
+
+	self assert: ( square intersects: circle )
 ]
 
 { #category : #Tests }
 Winter2DSquareTest >> testIntersectsAnotherSquare [
 
-	| game  square anotherSquare|
+	| game square anotherSquare |
 
 	game := self game.
 	square := Winter2DSquare
@@ -105,7 +105,7 @@ Winter2DSquareTest >> testIntersectsAnotherSquare [
 		ofCenter: 200 @ 560
 		extent: 20 @ 5
 		color: Color red
-		in: game.	
-			
-	self assert: (square intersects: anotherSquare )
+		in: game.
+
+	self assert: ( square intersects: anotherSquare )
 ]

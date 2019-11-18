@@ -1,13 +1,26 @@
+"
+I represent an animation on the screen
+
+Instance Variables
+- block
+
+
+Public API and Key Messages:
+
+- block
+- block: 
+- step
+"
 Class {
 	#name : #WinterScreenAnimation,
 	#superclass : #WinterAnimation,
 	#instVars : [
 		'block'
 	],
-	#category : 'Winter-Core2D-Base'
+	#category : #'Winter-Core2D-Base'
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 WinterScreenAnimation >> block [
 
 	^ block
@@ -25,8 +38,9 @@ WinterScreenAnimation >> numberOfAnimationFrame [
 	^ 10
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #evaluating }
 WinterScreenAnimation >> step [
 
-	actualStep  \\ 10 = 0 ifTrue: [ block value ]
+	actualStep \\ 10 = 0
+		ifTrue: [ block value ]
 ]

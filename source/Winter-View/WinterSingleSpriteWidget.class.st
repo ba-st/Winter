@@ -1,10 +1,26 @@
+"
+Class representenging a widget decorator for a single sprite
+
+Public API and Key Messages
+
+- renderOn:  
+- sprite
+- sprite:
+
+ 
+Internal Representation and Key Implementation Points.
+
+    Instance Variables
+		sprite
+	
+"
 Class {
 	#name : #WinterSingleSpriteWidget,
 	#superclass : #WinterWidget,
 	#instVars : [
 		'sprite'
 	],
-	#category : 'Winter-View-ViewModel'
+	#category : #'Winter-View-ViewModel'
 }
 
 { #category : #rendering }

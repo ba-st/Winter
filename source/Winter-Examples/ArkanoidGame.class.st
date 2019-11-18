@@ -1,14 +1,29 @@
+"
+I represent the arkanoid game itself
+
+Instance variables: 
+
+- playing
+
+Public API and Key Messages:
+
+- player
+- playing
+- playing:
+- resetPlayerAndBall:
+"
 Class {
 	#name : #ArkanoidGame,
 	#superclass : #WinterGame,
 	#instVars : [
 		'playing'
 	],
-	#category : 'Winter-Examples-Arkanoid'
+	#category : #'Winter-Examples-Arkanoid'
 }
 
 { #category : #Accessing }
 ArkanoidGame >> dimensions [
+
 	^ 650 @ 700
 ]
 
@@ -21,40 +36,45 @@ ArkanoidGame >> initialize [
 
 { #category : #initialization }
 ArkanoidGame >> initializeCollisionHandlers [
+
 	collisionHandlers
 		add:
-			(CollisionHandler
+			( CollisionHandler
 				between: ArkanoidBall
 				and: ArkanoidWall
 				onCollisionDo: [ :collision | 
 					collision secondComponent isHorizontal
 						ifTrue: [ collision firstComponent negateY ]
 						ifFalse: [ collision firstComponent negateX ].
-					collision firstComponent playCollisionSound ]);
+					collision firstComponent playCollisionSound
+					] );
 		add:
-			(CollisionHandler
+			( CollisionHandler
 				between: ArkanoidBall
-				and: ArkanoidBlock
+				and: ArkanoidBrick
 				onCollisionDo: [ :collision | 
 					collision secondComponent collidedByBall.
 					collision firstComponent negateY.
-					collision firstComponent playCollisionSound ]);
+					collision firstComponent playCollisionSound
+					] );
 		add:
-			(CollisionHandler
+			( CollisionHandler
 				between: ArkanoidPlayer
 				and: WinterScreen
 				onCollisionDo: [ :collision | 
 					collision firstComponent positionX = 10 negated
 						ifTrue: [ collision firstComponent moveRight ]
-						ifFalse: [ collision firstComponent moveLeft ] ]);
+						ifFalse: [ collision firstComponent moveLeft ]
+					] );
 		add:
-			(CollisionHandler
+			( CollisionHandler
 				between: ArkanoidBall
 				and: ArkanoidPlayer
 				onCollisionDo: [ :collision | 
 					collision firstComponent
 						negateY;
-						playCollisionSound ])
+						playCollisionSound
+					] )
 ]
 
 { #category : #initialization }
@@ -67,39 +87,53 @@ ArkanoidGame >> initializePlayers [
 	player
 		addInteractionOnKeyDownOf: Character arrowLeft
 			doing: [ player moveLeft.
-			playing := true ];
+			playing := true
+			];
 		addInteractionOnKeyDownOf: Character arrowRight
 			doing: [ player moveRight.
-			playing := true ].
-	
+			playing := true
+			].
+
 	self addPlayer: player
 ]
 
 { #category : #initialization }
 ArkanoidGame >> initializeResources [
+
 	| assetsSystem |
-	assetsSystem := WinterAssetManagementSystem current.
-	(assetsSystem addSprite: 'background.png' named: #background)
-		scaledToSize: self dimensions.
-	(assetsSystem addSprite: 'yellow.png' named: #yellow) scaledToSize: 38 @ 38.
-	(assetsSystem addSprite: 'green.png' named: #green) scaledToSize: 38 @ 38.
-	(assetsSystem addSprite: 'red.png' named: #red) scaledToSize: 38 @ 38.
-	(assetsSystem
+
+	assetsSystem := self assetsManagementSystem.
+	( assetsSystem addSprite: 'background.png' named: #background ) scaledToSize: self dimensions.
+	( assetsSystem addSprite: 'yellow.png' named: #yellow ) scaledToSize: 38 @ 38.
+	( assetsSystem addSprite: 'green.png' named: #green ) scaledToSize: 38 @ 38.
+	( assetsSystem addSprite: 'red.png' named: #red ) scaledToSize: 38 @ 38.
+	( assetsSystem
 		addSprite: 'arkanoid_bar.png' named: #arkanoidBar;
 		addSound: 'arkanoid_ball_collision.wav' named: #ballCollision;
-		addSprite: 'ball.png' named: #ball) scaledToSize: 38 @ 38
+		addSprite: 'ball.png' named: #ball ) scaledToSize: 38 @ 38
 ]
 
 { #category : #initialization }
 ArkanoidGame >> initializeScenes [
 
-	self scene: ArkanoidScene new
+	self
+		scene:
+			( Winter2DScene new
+				background: ( self assetsManagementSystem assetNamed: 'background' );
+				addComponent: ArkanoidBall new;
+				addComponent: ( ArkanoidWall ofCenter: 0 @ 0 extent: 626 @ 0 andColor: Color white );
+				addComponent: ( ArkanoidWall ofCenter: 0 @ 0 extent: 0 @ 600 andColor: Color white );
+				addComponent: ( ArkanoidWall ofCenter: 600 @ 0 extent: 0 @ 600 andColor: Color white );
+				addComponent: ( ArkanoidBrick yellowOn: 150 @ 150 ofExtent: 50 @ 25 );
+				addComponent: ( ArkanoidBrick greenOn: 210 @ 150 ofExtent: 50 @ 25 );
+				addComponent: ( ArkanoidBrick redOn: 90 @ 150 ofExtent: 50 @ 25 );
+				yourself )
 ]
 
 { #category : #Accessing }
 ArkanoidGame >> player [
 
-	^ scene players anyOne
+	^ scene player
 ]
 
 { #category : #Accessing }
@@ -129,5 +163,6 @@ ArkanoidGame >> resetPlayerAndBall: anArkanoidBall [
 
 { #category : #Accessing }
 ArkanoidGame >> title [
+
 	^'Arkanoid'
 ]

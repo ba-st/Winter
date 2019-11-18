@@ -7,7 +7,7 @@ Class {
 	#instVars : [
 		'layers'
 	],
-	#category : 'Winter-Tiled'
+	#category : #'Winter-Tiled'
 }
 
 { #category : #Managing }

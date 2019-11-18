@@ -1,3 +1,26 @@
+"
+Class representenging the season selection view model
+
+Public API and Key Messages
+
+
+- leftSelection
+- rightSelection
+- endScreenComputation
+- loadWidgets
+- renderWidgetsOn:
+- switchToNextScreen
+- renderWidgetsOn:
+ 
+Internal Representation and Key Implementation Points.
+
+    Instance Variables
+		currentChoice 
+		titleWidget 
+		seasonWidgets 
+		arrowWidget
+	
+"
 Class {
 	#name : #WBASeasonSelectScreenModel,
 	#superclass : #WinterMenuScreenModel,
@@ -7,13 +30,20 @@ Class {
 		'seasonWidgets',
 		'arrowWidget'
 	],
-	#category : 'Winter-Examples-WizardBattle'
+	#category : #'Winter-Examples-WizardBattle'
 }
 
 { #category : #actions }
 WBASeasonSelectScreenModel >> endScreenComputation [
-	startingGame gameDescriptor: (WBAGameDescriptor perform: ( 'demo' , startingGame players size printString ) asSymbol ).
-	startingGame gameDescriptor backgroundDescriptor: (WBABackgroundDescriptor backgroundAt: currentChoice).
+
+	| gameDescriptor |
+
+	gameDescriptor := WBAGameDescriptor
+		perform: ('demo' , startingGame players size printString) asSymbol.
+	startingGame gameDescriptor: gameDescriptor.
+	gameDescriptor
+		groundDescriptor: (WBAGroundDescriptor backgroundAt: currentChoice);
+		wallDescriptor: (WBAWallDescriptor backgroundAt: currentChoice)
 ]
 
 { #category : #initialization }
@@ -88,11 +118,14 @@ WBASeasonSelectScreenModel >> rightSelection [
 ]
 
 { #category : #'Screen Building' }
-WBASeasonSelectScreenModel >> seasonSubWidgets: num [
-	| descr grounds walls basicGroundWidget |
-	descr := WBABackgroundDescriptor backgroundAt: num.
-	grounds := descr loadGroundSpritesWith: screen surface.
-	walls := descr loadWallSpritesWith: screen surface.
+WBASeasonSelectScreenModel >> seasonSubWidgets: aNumber [
+
+	| groundDescriptor wallDescriptor grounds walls basicGroundWidget |
+	
+	groundDescriptor := WBAGroundDescriptor backgroundAt: aNumber .
+	wallDescriptor := WBAWallDescriptor  backgroundAt: aNumber .
+	grounds := groundDescriptor loadSpritesWith: screen surface using: startingGame  assetsManagementSystem.
+	walls := wallDescriptor loadSpritesWith: screen surface using: startingGame assetsManagementSystem.
 	basicGroundWidget := self newSeasonSubWidget: { grounds first }.
 	^ { 
 		self newSeasonSubWidget: { grounds first . walls first } .

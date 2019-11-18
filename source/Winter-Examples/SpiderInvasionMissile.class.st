@@ -1,7 +1,15 @@
+"
+I represent a missile fired from the spaceShipe
+
+
+Public API and Key Messages:
+
+- action
+"
 Class {
 	#name : #SpiderInvasionMissile,
 	#superclass : #SpiderInvasionAnimatedItem,
-	#category : 'Winter-Examples-SpiderInvasion'
+	#category : #'Winter-Examples-SpiderInvasion'
 }
 
 { #category : #'instance creation' }
@@ -14,8 +22,10 @@ SpiderInvasionMissile class >> atPosition: aPosition of: aScene tick: numberOfTi
 SpiderInvasionMissile >> action [
 
 	self y = scene minY
-		ifTrue: [  scene removeComponent: self. scene player reload ]
-		ifFalse: [ self position: self position - (0 @ 24) ]
+		ifTrue: [ scene player reload.
+			scene removeComponent: self
+			]
+		ifFalse: [ self position: self position - ( 0 @ 1 ) ]
 ]
 
 { #category : #initialization }
@@ -23,9 +33,9 @@ SpiderInvasionMissile >> initializeAtPosition: aPosition of: aScene tick: number
 
 	scene := aScene.
 	game := scene game.
-	collisionShape := Winter2DSquare
+	collisionShape := Winter2DCircle
 		ofCenter: aPosition
-		extent: self  spriteSize
+		radius: self spriteSize x
 		color: Color white
 		in: self game.
 	self tick: numberOfTicks
@@ -34,14 +44,5 @@ SpiderInvasionMissile >> initializeAtPosition: aPosition of: aScene tick: number
 { #category : #initialization }
 SpiderInvasionMissile >> initializeSprite [
 
-	sprite := WinterAssetManagementSystem current spriteNamed: #missile
-]
-
-{ #category : #Collision }
-SpiderInvasionMissile >> missileEnter: missile [
-
-]
-
-{ #category : #Collision }
-SpiderInvasionMissile >> spiderEnter: spider [
+	sprite := game assetsManagementSystem assetNamed: #missile
 ]

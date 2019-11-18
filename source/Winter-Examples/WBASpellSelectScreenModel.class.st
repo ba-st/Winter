@@ -1,3 +1,27 @@
+"
+Class representenging the spell selection view model
+
+Public API and Key Messages
+
+
+- hasPlayerSpecificHnalding
+- handleKeyStrokeFor:key:
+- endScreenComputation
+- loadWidgets
+- renderWidgetsOn:
+- startAnimation
+- switchToNextScreen
+- renderWidgetsOn:
+ 
+Internal Representation and Key Implementation Points.
+
+    Instance Variables
+		currentChoices 
+		titleWidget 
+		arrowWidgets 
+		spellWidgets
+	
+"
 Class {
 	#name : #WBASpellSelectScreenModel,
 	#superclass : #WinterMenuScreenModel,
@@ -7,7 +31,7 @@ Class {
 		'arrowWidgets',
 		'spellWidgets'
 	],
-	#category : 'Winter-Examples-WizardBattle'
+	#category : #'Winter-Examples-WizardBattle'
 }
 
 { #category : #actions }
@@ -35,9 +59,9 @@ WBASpellSelectScreenModel >> hasPlayerSpecificHandling [
 { #category : #'Screen Building' }
 WBASpellSelectScreenModel >> loadSpellSprites [
 	^ (1 to: 6) collect: [ :i |
-		WBASpellDescriptor new
+		WBASpellExplodeDescriptor new
 			fileName: 'spell' , i printString;
-			loadExplodeSpritesWith: screen surface ]
+			loadSpritesWith: screen surface using: startingGame  assetsManagementSystem ]
 ]
 
 { #category : #initialization }

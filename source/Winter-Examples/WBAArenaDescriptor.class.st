@@ -1,3 +1,15 @@
+"
+I represent a descriptor of how the arena will be like
+
+
+Public API and Key Messages:
+
+- cellDescriptors
+- cellDescriptors:
+- dispatchIndex:on:with:
+- windowExtent 
+- windowExtent: 
+"
 Class {
 	#name : #WBAArenaDescriptor,
 	#superclass : #Object,
@@ -5,7 +17,7 @@ Class {
 		'cellDescriptors',
 		'windowExtent'
 	],
-	#category : 'Winter-Examples-WizardBattle'
+	#category : #'Winter-Examples-WizardBattle'
 }
 
 { #category : #'2 players' }
@@ -258,7 +270,6 @@ WBAArenaDescriptor >> dispatchIndex: index on: bootstraper with: cell [
 
 { #category : #accessing }
 WBAArenaDescriptor >> expectedNumberOfPlayers [
-	"See class comment"
 	| max |
 	max := 0.
 	cellDescriptors do: [ :column |

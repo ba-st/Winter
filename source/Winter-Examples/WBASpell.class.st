@@ -1,3 +1,31 @@
+"
+I am a spell in the WBA game
+
+Instance Variables
+- scheduler 
+- sprites 
+- spellCD 
+- cooldown
+
+Public API and Key Messages:
+
+- castFrom: 
+- onCD
+- scheduler
+- scheduler:
+- spellCD
+- spellCD:
+- sprites
+- sprites:
+- updateSpellCD
+
+
+
+
+
+
+
+"
 Class {
 	#name : #WBASpell,
 	#superclass : #Object,
@@ -7,10 +35,10 @@ Class {
 		'spellCD',
 		'cooldown'
 	],
-	#category : 'Winter-Examples-WizardBattle'
+	#category : #'Winter-Examples-WizardBattle'
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : #Action }
 WBASpell >> castFrom: character [
 	| sp |
 	self onCD ifTrue: [ ^ self ].
@@ -34,42 +62,43 @@ WBASpell >> initialize [
 	cooldown := 0.8 second
 ]
 
-{ #category : #initialization }
+{ #category : #Testing }
 WBASpell >> onCD [
+
 	^ DateAndTime now - spellCD < cooldown
 ]
 
-{ #category : #initialization }
+{ #category : #Accessing }
 WBASpell >> scheduler [
 	^ scheduler
 ]
 
-{ #category : #initialization }
+{ #category : #Accessing }
 WBASpell >> scheduler: anObject [
 	scheduler := anObject
 ]
 
-{ #category : #initialization }
+{ #category : #Accessing }
 WBASpell >> spellCD [
 	^ spellCD
 ]
 
-{ #category : #initialization }
+{ #category : #Accessing }
 WBASpell >> spellCD: anObject [
 	spellCD := anObject
 ]
 
-{ #category : #initialization }
+{ #category : #Accessing }
 WBASpell >> sprites [
 	^ sprites
 ]
 
-{ #category : #initialization }
+{ #category : #Accessing }
 WBASpell >> sprites: anObject [
 	sprites := anObject
 ]
 
-{ #category : #initialization }
+{ #category : #Updating }
 WBASpell >> updateSpellCD [
 	
 	spellCD := DateAndTime now.

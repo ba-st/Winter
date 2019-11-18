@@ -1,3 +1,20 @@
+"
+I represent a casted spell from a character with a direction in the scene
+
+
+Public API and Key Messages:
+
+- cell:
+- character:
+- currentSPrite:
+- direction:
+- endExplodeAnimation
+- explodeAnimation
+- finishMoveAnimation
+- move:
+- renderOn:
+- startAnimation
+"
 Class {
 	#name : #WBACastedSpell,
 	#superclass : #WBAArenaComponent,
@@ -9,7 +26,7 @@ Class {
 		'scheduler',
 		'character'
 	],
-	#category : 'Winter-Examples-WizardBattle'
+	#category : #'Winter-Examples-WizardBattle'
 }
 
 { #category : #accessing }
@@ -100,6 +117,12 @@ WBACastedSpell >> move: startStep [
 			initialStep: startStep;
 			yourself)
 		for: self 
+]
+
+{ #category : #initialization }
+WBACastedSpell >> movingShift [
+
+	^ shift - self initialShift
 ]
 
 { #category : #animations }

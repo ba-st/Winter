@@ -1,3 +1,15 @@
+"
+I represent a container cell in the scene
+
+
+Public API and Key Messages:
+
+- element:
+- ground:
+- neightbours:
+- spells:
+
+"
 Class {
 	#name : #WBACell,
 	#superclass : #WBAArenaComponent,
@@ -7,7 +19,7 @@ Class {
 		'spells',
 		'neighbours'
 	],
-	#category : 'Winter-Examples-WizardBattle'
+	#category : #'Winter-Examples-WizardBattle'
 }
 
 { #category : #accessing }

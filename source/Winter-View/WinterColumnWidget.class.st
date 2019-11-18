@@ -1,3 +1,21 @@
+"
+Class representenging a column of widgets
+
+Public API and Key Messages
+
+- renderOn:  
+- space
+- space:
+- widgets
+- widgets:
+ 
+Internal Representation and Key Implementation Points.
+
+    Instance Variables
+		widgets 
+		space
+	
+"
 Class {
 	#name : #WinterColumnWidget,
 	#superclass : #WinterWidget,
@@ -5,10 +23,10 @@ Class {
 		'widgets',
 		'space'
 	],
-	#category : 'Winter-View-ViewModel'
+	#category : #'Winter-View-ViewModel'
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : #Rendering }
 WinterColumnWidget >> renderOn: aCanvas [
 
 	widgets do: [ :widget | 

@@ -1,3 +1,21 @@
+"
+Class representenging a widget decorator for some sprites that will toggle
+
+Public API and Key Messages
+
+- renderOn:  
+- sprites
+- sprites:
+- toggle
+
+ 
+Internal Representation and Key Implementation Points.
+
+    Instance Variables
+		sprites 
+		currentSpriteIndex
+	
+"
 Class {
 	#name : #WinterToggleSingleSpriteWidget,
 	#superclass : #WinterSingleSpriteWidget,
@@ -5,7 +23,7 @@ Class {
 		'sprites',
 		'currentSpriteIndex'
 	],
-	#category : 'Winter-View-ViewModel'
+	#category : #'Winter-View-ViewModel'
 }
 
 { #category : #initialization }

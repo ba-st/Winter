@@ -7,14 +7,15 @@ os:
 
 # Select compatible Smalltalk image(s)
 smalltalk:
-  - Pharo32-6.1 
-  - Pharo64-6.1
+  - Pharo64-8.0
   - Pharo64-7.0
   - Pharo32-7.0
-matrix:
-  allow_failures:
-  - smalltalk: Pharo64-7.0
-  - smalltalk: Pharo32-7.0
-fast_finish: true
-
+  - Pharo-6.1  
+  - Pharo64-6.1
   
+ matrix:
+  allow_failures:
+  - smalltalk: Pharo64-8.0
+  - smalltalk: Pharo-6.1 
+  - smalltalk: Pharo64-6.1
+  fast_finish: true

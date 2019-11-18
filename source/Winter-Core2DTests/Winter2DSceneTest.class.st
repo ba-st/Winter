@@ -7,7 +7,7 @@ Class {
 { #category : #'Test Support' }
 Winter2DSceneTest >> component [
 
-	^ WinterTestNonPlayer new
+	^ WinterMovableComponent new
 ]
 
 { #category : #'Test Support' }
@@ -25,12 +25,13 @@ Winter2DSceneTest >> game [
 { #category : #'Test Support' }
 Winter2DSceneTest >> player [
 
-	^ WinterTestPlayer new
+	^ WinterInteractiveMovableComponent new
 ]
 
 { #category : #'Test Support' }
 Winter2DSceneTest >> scene [
-	^ WinterTestScene new
+
+	^ Winter2DScene new
 		game: self;
 		yourself
 ]
@@ -42,16 +43,16 @@ Winter2DSceneTest >> testAccessing [
 
 	game := self game.
 	scene := game scene.
-	
-	self assert: scene backgroundColor equals: Color white.
-	scene backgroundColor: Color orange.
-	
+
+	self assert: scene background equals: Color white.
+	scene background: Color orange.
+
 	scene game: nil.
 	self assert: scene game isNil.
 	scene game: game.
-	
+
 	self
-		assert: scene backgroundColor equals: Color orange;
+		assert: scene background equals: Color orange;
 		assert: scene game equals: game;
 		assert: scene dimensions equals: game dimensions;
 		assert: scene surface notNil;
@@ -61,17 +62,17 @@ Winter2DSceneTest >> testAccessing [
 
 { #category : #Tests }
 Winter2DSceneTest >> testAddComponent [
-	
+
 	| scene game component |
-	
+
 	game := self game.
 	scene := game scene.
 	component := self component.
-	
+
 	self assert: scene components isEmpty.
-	
+
 	scene addComponent: component.
-	
+
 	self
 		assert: scene components notEmpty;
 		assert: scene components size equals: 1;
@@ -80,38 +81,38 @@ Winter2DSceneTest >> testAddComponent [
 
 { #category : #Tests }
 Winter2DSceneTest >> testAddComponents [
-	
-	| scene game component anotherComponent|
-	
+
+	| scene game component anotherComponent |
+
 	game := self game.
 	scene := game scene.
 	component := self component.
-	anotherComponent := self component .
-	
+	anotherComponent := self component.
+
 	self assert: scene components isEmpty.
-	
-	scene addComponents: (Array with: component with: anotherComponent ).
-	
+
+	scene addComponents: ( Array with: component with: anotherComponent ).
+
 	self
 		assert: scene components notEmpty;
 		assert: scene components size equals: 2;
-		assert: (scene components includes: component) ;
-		assert: (scene components includes: anotherComponent) 
+		assert: ( scene components includes: component );
+		assert: ( scene components includes: anotherComponent )
 ]
 
 { #category : #Tests }
 Winter2DSceneTest >> testAddPlayer [
-	
+
 	| scene game player |
-	
+
 	game := self game.
 	scene := game scene.
 	player := self player.
-	
+
 	self assert: scene players isEmpty.
-	
-	scene addPlayer:  player.
-	
+
+	scene addPlayer: player.
+
 	self
 		assert: scene players notEmpty;
 		assert: scene players size equals: 1;
@@ -143,23 +144,23 @@ Winter2DSceneTest >> testRemoveComponent [
 
 { #category : #Tests }
 Winter2DSceneTest >> testRemovePlayer [
-	
+
 	| scene game player |
-	
+
 	game := self game.
 	scene := game scene.
 	player := self player.
-	
+
 	self assert: scene players isEmpty.
-	
+
 	scene addPlayer: player.
-	
+
 	self
 		assert: scene players notEmpty;
 		assert: scene players size equals: 1;
 		assert: scene players first equals: player.
-	
+
 	scene removePlayer: player.
-	
+
 	self assert: scene players isEmpty
 ]

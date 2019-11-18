@@ -2,10 +2,13 @@
 I am the base class for game element that take part in a scene.
 
 Instance Variables
-	scene:		<Object>
+- scene
 
-scene
-	- xxxxx
+
+Public API and Key Messages:
+
+- scene
+- scene:
 
 "
 Class {
@@ -14,15 +17,17 @@ Class {
 	#instVars : [
 		'scene'
 	],
-	#category : 'Winter-Core-Base'
+	#category : #'Winter-Core-Base'
 }
 
 { #category : #accessing }
 WinterComponent >> scene [
+
 	^ scene
 ]
 
 { #category : #accessing }
 WinterComponent >> scene: anObject [
+
 	scene := anObject
 ]

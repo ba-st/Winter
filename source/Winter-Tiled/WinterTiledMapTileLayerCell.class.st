@@ -15,7 +15,7 @@ Class {
 		'Rotate270',
 		'Rotate90'
 	],
-	#category : 'Winter-Tiled'
+	#category : #'Winter-Tiled'
 }
 
 { #category : #initialization }

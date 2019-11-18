@@ -1,5 +1,15 @@
 "
-I am the base class for game elements that react to events in the game.
+I am the base class for game elements that are updated in the game.
+
+
+Instance Variables
+- game
+
+Public API and Key Messages:
+
+- game
+- game:
+- updateUsing:
 "
 Class {
 	#name : #WinterReactiveObject,
@@ -7,13 +17,8 @@ Class {
 	#instVars : [
 		'game'
 	],
-	#category : 'Winter-Core-Base'
+	#category : #'Winter-Core-Base'
 }
-
-{ #category : #events }
-WinterReactiveObject >> eventUpdated: anEvent [
-	
-]
 
 { #category : #Accessing }
 WinterReactiveObject >> game [
@@ -25,13 +30,6 @@ WinterReactiveObject >> game [
 WinterReactiveObject >> game: aGame [
 
 	game := aGame
-]
-
-{ #category : #events }
-WinterReactiveObject >> handleEvent: anEvent [
-
-	anEvent execute: self. 
-	
 ]
 
 { #category : #events }

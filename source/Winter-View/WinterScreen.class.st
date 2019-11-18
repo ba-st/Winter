@@ -1,3 +1,35 @@
+"
+Class representenging the screen for the visualization of the game
+
+Public API and Key Messages
+
+- createSurface  
+- createWindow
+- eventHandler:
+- extentX
+- extentY
+- model:
+- positionX
+- render
+- rootSystem
+- scheduler
+- show
+- terminateRendering
+- updateAndRender
+- window
+
+ 
+Internal Representation and Key Implementation Points.
+
+    Instance Variables
+		model 
+		window 
+		surface 
+		scheduler 
+		title 
+		rootSystem
+	
+"
 Class {
 	#name : #WinterScreen,
 	#superclass : #Object,
@@ -6,9 +38,10 @@ Class {
 		'window',
 		'surface',
 		'scheduler',
-		'title'
+		'title',
+		'rootSystem'
 	],
-	#category : 'Winter-View-View'
+	#category : #'Winter-View-View'
 }
 
 { #category : #'Instance Creation' }
@@ -65,7 +98,8 @@ WinterScreen >> initialize [
 
 	super initialize.
 	title := ''.
-	scheduler := SteppingScheduller managing:  self
+	scheduler := SteppingScheduler managing:  self.
+	rootSystem := Binding undefinedExplainedBy: 'The composite system was not installed' raising: SystemControlError
 ]
 
 { #category : #initialization }
@@ -88,6 +122,17 @@ WinterScreen >> positionX [
 	^ self window handle position x
 ]
 
+{ #category : #initialization }
+WinterScreen >> printOn: aStream [
+
+	aStream
+		nextPutAll:
+			('<1s> - title: <2s> - model: <3s>'
+				expandMacrosWith: self class name
+				with: title
+				with: model printString)
+]
+
 { #category : #rendering }
 WinterScreen >> render [
 
@@ -102,6 +147,18 @@ WinterScreen >> renderBackground: canvas color: color [
 	canvas setShape: (0@0 corner: window extent).
 	canvas setPaint: color.
 	canvas draw
+]
+
+{ #category : #Accessing }
+WinterScreen >> rootSystem [
+
+	^ rootSystem content
+]
+
+{ #category : #Accessing }
+WinterScreen >> rootSystem: aRootSystem [
+
+	^ rootSystem := Binding to: aRootSystem
 ]
 
 { #category : #Accessing }

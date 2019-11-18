@@ -1,7 +1,19 @@
+"
+I represent a descriptor of how the text will be like
+
+
+Public API and Key Messages:
+
+- classFolder
+- loadSpriteWith:using:
+- spriteSize
+
+
+"
 Class {
 	#name : #WBATextDescriptor,
-	#superclass : #WBASpriteDescriptor,
-	#category : 'Winter-Examples-WizardBattle'
+	#superclass : #WinterSpriteDescriptor,
+	#category : #'Winter-Examples-WizardBattle'
 }
 
 { #category : #Defaults }
@@ -33,10 +45,16 @@ WBATextDescriptor >> classFolder [
 ]
 
 { #category : #Bootstrap }
-WBATextDescriptor >> loadAllText [
+WBATextDescriptor >> loadSpritesWith: aSurface using: anAssetsManagementSystem [
 
-	self class availableText do: [ :key |
-		fileName := key asString.
-		self loadImageFile ].
+	self class availableText
+		do: [ :key | 
+			fileName := key asString.
+			self loadImageFileUsing: anAssetsManagementSystem ]
+]
 
+{ #category : #Bootstrap }
+WBATextDescriptor >> spriteSize [
+
+	^ 32 @ 48
 ]

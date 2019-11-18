@@ -1,10 +1,25 @@
+"
+I represent a moving animation of a spell
+
+Instance Variables
+- spell
+
+
+Public API and Key Messages:
+
+- spell
+- spell: 
+- movingElement
+- midAnimation
+
+"
 Class {
 	#name : #WBASpellMoveAnimation,
 	#superclass : #WBAMoveAnimation,
 	#instVars : [
 		'spell'
 	],
-	#category : 'Winter-Examples-WizardBattle'
+	#category : #'Winter-Examples-WizardBattle'
 }
 
 { #category : #private }

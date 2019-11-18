@@ -1,5 +1,27 @@
 "
-I am a shape appearing in a 2D scene, with both a visual representation and a physical simulation.
+I am a shape appearing in a 2D scene, with both a visual representation and a physical simulation..
+Chipmunk2D (Native library) [ Disconnected ]
+
+Instance Variables
+- position 
+- color 
+- graphicsPath 
+- graphicsPaint
+
+
+Public API and Key Messages:
+
+- bounds
+- position 
+- position: 
+- color
+- color:
+- renderOn:
+- updateUsing:
+- intersects:
+
+
+
 
 "
 Class {
@@ -11,17 +33,19 @@ Class {
 		'graphicsPath',
 		'graphicsPaint'
 	],
-	#category : 'Winter-Core2D-Base'
+	#category : #'Winter-Core2D-Base'
 }
 
 { #category : #Defaults }
 Winter2DShape class >> defaultColor [
-	^Color white
+
+	^ Color white
 ]
 
 { #category : #Defaults }
 Winter2DShape class >> defaultRadius [
-	^10
+
+	^ 10
 ]
 
 { #category : #Accessing }
@@ -50,12 +74,6 @@ Winter2DShape >> createPaintOn: aCanvas [
 Winter2DShape >> createPathOn: aCanvas [
 
 	self subclassResponsibility
-]
-
-{ #category : #Events }
-Winter2DShape >> eventUpdated: anEvent [
-
-	self updatePosition.
 ]
 
 { #category : #Initialization }
@@ -93,6 +111,13 @@ Winter2DShape >> position: aPosition [
 	position := aPosition 
 ]
 
+{ #category : #printing }
+Winter2DShape >> printOn: aStream [
+
+	aStream
+		nextPutAll: ('2D Shape - position [<1s>]' expandMacrosWith: self position)
+]
+
 { #category : #Drawing }
 Winter2DShape >> renderOn: aCanvas [
 	aCanvas pathTransform
@@ -128,5 +153,5 @@ Winter2DShape >> updatePositionBy: aPoint [
 { #category : #Events }
 Winter2DShape >> updateUsing: aCanvas [
 
-	self updatePosition.
+	self updatePosition
 ]

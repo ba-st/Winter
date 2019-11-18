@@ -1,10 +1,19 @@
+"
+I represent a wall in a cell
+
+
+Public API and Key Messages:
+
+- renderOn:
+- sprite:
+"
 Class {
 	#name : #WBAWall,
 	#superclass : #WBAElement,
 	#instVars : [
 		'sprite'
 	],
-	#category : 'Winter-Examples-WizardBattle'
+	#category : #'Winter-Examples-WizardBattle'
 }
 
 { #category : #accessing }

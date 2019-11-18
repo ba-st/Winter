@@ -11,7 +11,8 @@ Class {
 WinterGameTest >> tearDown [
 
 	[ game scheduler terminateProcess.
-	game screen scheduler terminateProcess ]
+	game screen scheduler terminateProcess
+	]
 		on: Error
 		do: [  ]
 ]
@@ -19,13 +20,18 @@ WinterGameTest >> tearDown [
 { #category : #tests }
 WinterGameTest >> testAccessing [
 
+	| scene |
 
-	game := WinterTestGame new.
+	scene := Winter2DScene new.
+	game := WinterGame new.
+	game
+		scene: scene;
+		dimensions: 650 @ 700;
+		title: 'Test'.
 
 
 	self
-		assert: (game scene isKindOf: WinterTestScene);
-		assert: game dimensions equals: 650@700;
-		assert: game stepTime equals: 30;
+		assert: game scene equals: scene;
+		assert: game dimensions equals: 650 @ 700;
 		assert: game title equals: 'Test'
 ]

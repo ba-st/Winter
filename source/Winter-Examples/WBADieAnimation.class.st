@@ -1,10 +1,25 @@
+"
+I represent the dying animation of a character
+
+Instance Variables
+- character
+
+
+Public API and Key Messages:
+
+- character
+- character: 
+- step
+- numberOfAnimationFrame
+
+"
 Class {
 	#name : #WBADieAnimation,
 	#superclass : #WinterAnimation,
 	#instVars : [
 		'character'
 	],
-	#category : 'Winter-Examples-WizardBattle'
+	#category : #'Winter-Examples-WizardBattle'
 }
 
 { #category : #Accessing }

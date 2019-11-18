@@ -7,7 +7,7 @@ Class {
 	#instVars : [
 		'extent'
 	],
-	#category : 'Winter-Examples-Resources'
+	#category : #'Winter-Examples-Resources'
 }
 
 { #category : #'Instance Creation' }
@@ -15,28 +15,6 @@ WinterBoldWallShape class >> from: positionPoint to: endPoint [
 	^ self new
 		position: positionPoint
 		endPoint: endPoint
-]
-
-{ #category : #Accessing }
-WinterBoldWallShape >> bounds [
-
-	^self position extent: self  extent.
-]
-
-{ #category : #Accessing }
-WinterBoldWallShape >> bounds: aRectangle [
-
-	self position: aRectangle origin.
-	self extent: aRectangle extent.
-]
-
-{ #category : #Drawing }
-WinterBoldWallShape >> createPathOn: aCanvas [
-	^graphicsPath  := aCanvas createPath: [ :builder |
-			builder 
-				relative;
-				moveTo: self position;
-				lineTo: self extent ]
 ]
 
 { #category : #Accessing }
@@ -57,5 +35,6 @@ WinterBoldWallShape >> position: positionPoint endPoint: endPoint [
 
 { #category : #Drawing }
 WinterBoldWallShape >> setSpecificPaint: aPaint on: aCanvas [
+
 	(aCanvas setStrokePaint: aPaint) width: 5
 ]

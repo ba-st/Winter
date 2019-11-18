@@ -1,18 +1,23 @@
 Class {
 	#name : #WinterSoundTest,
 	#superclass : #TestCase,
-	#category : 'Winter-AssetManagementTests'
+	#instVars : [
+		'fileSystem'
+	],
+	#category : #'Winter-AssetManagementTests'
 }
 
 { #category : #testing }
 WinterSoundTest >> expectedFailures [
-	^ #(testAccessing testTesting)
+
+	^ #(testAccessing)
 ]
 
-{ #category : #initialization }
+{ #category : #tests }
 WinterSoundTest >> setUp [
 
-	WinterAssetManagementSystem restart
+	super setUp.
+	fileSystem := FileSystem memory
 ]
 
 { #category : #tests }
@@ -20,7 +25,7 @@ WinterSoundTest >> testAccessing [
 
 	| sound |
 
-	sound := WinterSound fromPath: 'beep.wav' named: 'beep'.
+	sound := WinterSound fromPath: 'beep.wav' named: 'beep' using: fileSystem.
 
 	self
 		assert: sound type equals: 'wav';
@@ -30,27 +35,19 @@ WinterSoundTest >> testAccessing [
 
 { #category : #tests }
 WinterSoundTest >> testInstanceCreationFailedBecauseExtensionNotSupported [
+
 	self
-		should: [ WinterSound fromPath: 'bird2.mp3' named: 'bird'.]
-		raise: SoundExtensionNotSupported 
-		withExceptionDo: [ :ex | self assert: ex messageText equals: 'mp3 not supported, only .aiff and .wav extension supported for now' ].
+		should: [ WinterSound fromPath: 'bird2.mp3' named: 'bird' using: fileSystem ]
+		raise: SoundExtensionNotSupported
+		withExceptionDo:
+			[ :ex | self assert: ex messageText equals: 'mp3 not supported, only  .wav extension supported for now' ]
 ]
 
 { #category : #tests }
 WinterSoundTest >> testInstanceCreationFailedBecauseFileNotFound [
-	self
-		should: [ WinterSound fromPath: 'bird2.wav' named: 'bird2'.]
-		raise: FileDoesNotExist
-		withExceptionDo: [ :ex | self assert: ex messageText equals: 'File does not exist: bird2.wav' ].
-]
 
-{ #category : #tests }
-WinterSoundTest >> testTesting [
-	| sound |
-	
-	sound := WinterSound fromPath: 'beep.wav' named: 'beep'.
-	
 	self
-		assert: sound isWav;
-		deny: sound isAIFF
+		should: [ WinterSound fromPath: 'bird2.wav' named: 'bird2' using: fileSystem ]
+		raise: FileDoesNotExistException
+		withExceptionDo: [ :ex | self assert: ex messageText equals: 'File does not exist: bird2.wav' ]
 ]

@@ -7,7 +7,7 @@ Class {
 	#instVars : [
 		'ellipse'
 	],
-	#category : 'Winter-Tiled'
+	#category : #'Winter-Tiled'
 }
 
 { #category : #'Instance Creation' }

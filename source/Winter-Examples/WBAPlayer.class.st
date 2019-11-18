@@ -1,6 +1,33 @@
+"
+I am a player in the WBA game
+
+Instance Variables
+- character 
+- isMoving 
+- currentFoot 
+- keyboardCodes 
+- movementKeyDown
+
+Public API and Key Messages:
+
+- castSpell 
+- character
+- character:
+- handleKeyDown:
+- handleKeyUp:
+- maybeMove:
+- move:
+
+
+
+
+
+
+
+"
 Class {
 	#name : #WBAPlayer,
-	#superclass : #WinterPlayer,
+	#superclass : #WinterInteractiveMovableComponent,
 	#instVars : [
 		'character',
 		'isMoving',
@@ -8,7 +35,7 @@ Class {
 		'keyboardCodes',
 		'movementKeyDown'
 	],
-	#category : 'Winter-Examples-WizardBattle'
+	#category : #'Winter-Examples-WizardBattle'
 }
 
 { #category : #'as yet unclassified' }
@@ -84,7 +111,7 @@ WBAPlayer >> keyboardCodes [
 	^keyboardCodes 
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 WBAPlayer >> keyboards: aKeyboardsArray [
 	keyboardCodes := aKeyboardsArray.
 	self

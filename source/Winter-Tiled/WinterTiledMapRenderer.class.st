@@ -1,7 +1,10 @@
+"
+Represents a renderer for Tiled maps
+"
 Class {
 	#name : #WinterTiledMapRenderer,
 	#superclass : #WinterComponent,
-	#category : 'Winter-Tiled'
+	#category : #'Winter-Tiled'
 }
 
 { #category : #'Instance Creation' }

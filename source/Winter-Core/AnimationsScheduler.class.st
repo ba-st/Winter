@@ -1,51 +1,65 @@
+"
+I represent a scheduler to manage animations in the game
+
+Collaborators: 
+
+- gameStepActions
+
+Public API and Key Messages
+   
+- name
+- newGameTickAction:for: 
+- stopGameTickAction:for:.
+
+
+"
 Class {
-	#name : #AnimationsScheduller,
-	#superclass : #GameScheduller,
+	#name : #AnimationsScheduler,
+	#superclass : #GameScheduler,
 	#instVars : [
 		'gameStepActions'
 	],
-	#category : 'Winter-Core-Schedulers'
+	#category : #'Winter-Core-Schedulers'
 }
 
 { #category : #Accessing }
-AnimationsScheduller >> animationStepTime [
+AnimationsScheduler >> animationStepTime [
 
 	^ 20 milliSeconds
 ]
 
 { #category : #initialization }
-AnimationsScheduller >> executeAnimations [
+AnimationsScheduler >> executeAnimations [
 
 	^ gameStepActions keysAndValuesDo: [ :element :animation | animation animate ]
 ]
 
 { #category : #initialization }
-AnimationsScheduller >> initialize [
+AnimationsScheduler >> initialize [
 
 	super initialize.
 
 	gameStepActions := Dictionary new.
 	process := self 
 		newProcessAt: 35 
-		do: [ gameStepActions keysAndValuesDo: [ :element :animation |
-			animation animate ] ]
+		do: [ self executeAnimations ]
 		every: self animationStepTime.
 ]
 
 { #category : #Accessing }
-AnimationsScheduller >> name [
+AnimationsScheduler >> name [
 
 	^ 'Animating Scheduler Process'
 ]
 
 { #category : #'Managing-Processes' }
-AnimationsScheduller >> newGameTickAction: aBlock for: element [
+AnimationsScheduler >> newGameTickAction: aBlock for: element [
 
 	gameStepActions  at: element put: aBlock
 ]
 
 { #category : #'Managing-Processes' }
-AnimationsScheduller >> stopGameTickActionFor: element [ 
+AnimationsScheduler >> stopGameTickActionFor: element [ 
 
 	gameStepActions  removeKey: element ifAbsent: [ "Do nothing" ]
 ]

@@ -18,7 +18,7 @@ Class {
 		'FlagFlipVertically',
 		'MaskClear'
 	],
-	#category : 'Winter-Tiled'
+	#category : #'Winter-Tiled'
 }
 
 { #category : #'Instance Creation' }
@@ -84,10 +84,7 @@ WinterTiledMapLoader >> createTilesFrom: xmlElement startingId: firstgid imageWi
 								ifNotNil: [ tileImage := imageSource asFileReference / tileImageSource asPath ] ].
 					textureRegion := self textureRegionFromFile: tileImage.
 					"Should consider this for future: flipY ? -offsetY : offsetY"
-					tile := WinterTiledMapTile
-						of: textureRegion
-						havingOffsetX: offsetX
-						andOffsetY: offsetY.
+					tile := WinterTiledMapTile of: textureRegion havingOffsetX: offsetX andOffsetY: offsetY.
 					tile id: (firstgid + tileElement attributeAt: #id).
 					tileset tilesAt: tile id put: tile ] ]
 		ifNotNil: [ textureRegion := self textureRegionFromFile: image.
@@ -102,10 +99,13 @@ WinterTiledMapLoader >> createTilesFrom: xmlElement startingId: firstgid imageWi
 			stopWidth := textureRegion regionWidth - tileWidth.
 			stopHeight := textureRegion regionHeight - tileHeight.
 			id := firstgid.
-			y := margin.
-			x := margin.
-			y <= stopHeight
-				whileTrue: [ x <= stopWidth
+			margin
+				ifNil: [ y := 0.
+					x := 0 ]
+				ifNotNil: [ y := margin.
+					x := margin ].
+			[ y <= stopHeight ]
+				whileTrue: [ [ x <= stopWidth ]
 						whileTrue: [ ""
 							tileRegion := WinterTextureRegion
 								of: textureRegion texture
@@ -114,10 +114,7 @@ WinterTiledMapLoader >> createTilesFrom: xmlElement startingId: firstgid imageWi
 								width: tileWidth
 								height: tileHeight.
 							"Should consider this for future: flipY ? -offsetY : offsetY"
-							tile := WinterTiledMapTile
-								of: tileRegion
-								havingOffsetX: offsetX
-								andOffsetY: offsetY.
+							tile := WinterTiledMapTile of: tileRegion havingOffsetX: offsetX andOffsetY: offsetY.
 							tile id: id.
 							tileset tilesAt: id put: tile.
 							id := id + 1.
@@ -249,18 +246,8 @@ WinterTiledMapLoader >> loadImageLayer: aLayerElement in: aMap [
 
 { #category : #'Parsing - Layers' }
 WinterTiledMapLoader >> loadLayer: aLayerElement in: aMap [
-
-	| name |
-
-	name := aLayerElement attributeAt: #name.
-	name = 'group'
-		ifTrue: [ self loadTileGroup: aLayerElement in: aMap ].
-	name = 'layer'
-		ifTrue: [ self loadTileLayer: aLayerElement in: aMap ].
-	name = 'objectgroup'
-		ifTrue: [ self loadObjectGroup: aLayerElement in: aMap ].
-	name = 'imagelayer'
-		ifTrue: [ self loadImageLayer: aLayerElement in: aMap ]
+	"Check this later"
+	self loadTileLayer: aLayerElement in: aMap
 ]
 
 { #category : #'Parsing - Layers' }
@@ -422,22 +409,20 @@ WinterTiledMapLoader >> loadObjectGroup: aLayerElement in: aMap [
 
 { #category : #private }
 WinterTiledMapLoader >> loadProperties: aPropertiesElement in: aMapOrLayerOrMapObject [
-
 	aPropertiesElement
 		ifNil: [ "Do nothing" ]
-		ifNotNil: [ (aPropertiesElement attributeAt: #name) = 'properties'
-				ifTrue: [ | properties |
-					properties := aPropertiesElement descendantElementsNamed: #property.
-					properties
-						do: [ :property | 
-							| name value type transformedProperty |
-							name := property attributeAt: #name ifAbsent: [ nil ].
-							value := property attributeAt: #value ifAbsent: [ nil ].
-							type := property attributeAt: #type ifAbsent: [ nil ].
-							value ifNil: [ value := property firstNode ] ifNotNil: [ "Do nothing" ].
-							transformedProperty := self propertyAccordingToName: name value: value andType: type.
-							aMapOrLayerOrMapObject propertiesAt: name put: transformedProperty ] ]
-				ifFalse: [ "Do nothing" ] ]
+		ifNotNil: [ | properties |
+			properties := aPropertiesElement descendantElementsNamed: #property.
+			properties
+				do: [ :property | 
+					| name value type transformedProperty |
+					name := property attributeAt: #name ifAbsent: [ nil ].
+					value := property attributeAt: #value ifAbsent: [ nil ].
+					type := property attributeAt: #type ifAbsent: [ nil ].
+					value ifNil: [ value := property firstNode ] ifNotNil: [ "Do nothing" ].
+					transformedProperty := self propertyAccordingToName: name value: value andType: type.
+					aMapOrLayerOrMapObject propertiesAt: name put: transformedProperty ] ]
+		
 ]
 
 { #category : #'Parsing - Layers' }
@@ -506,77 +491,78 @@ WinterTiledMapLoader >> loadTileLayer: aLayerElement in: aMap [
 
 { #category : #'Parsing - Tilesets' }
 WinterTiledMapLoader >> loadTileSet: aTileSetElement in: aMap [
-	(aTileSetElement attributeAt: #name) = #tileset
-		ifTrue:
-			[ | firstgid name tileHeight tileWidth source imageSource margin spacing image offsetY offsetX imageWidth imageHeight offsetElement imageElement tileset xmlElement |
-			xmlElement := aTileSetElement.
-			firstgid := xmlElement elementAt: #firstgid.
+	| firstgid name tileHeight tileWidth source imageSource margin spacing image offsetY offsetX imageWidth imageHeight offsetElement imageElement tileset xmlElement gridElement|
+	xmlElement := aTileSetElement.
+	firstgid := (xmlElement attributeAt: #firstgid) asNumber.
+	name := xmlElement attributeAt: #name.
+	tileHeight := (xmlElement attributeAt: #tileheight) asNumber.
+	tileWidth := (xmlElement attributeAt: #tilewidth) asNumber.
+	spacing := (xmlElement attributeAt: #spacing) ifEmpty:[nil]  ifNotEmpty: [:stringNumber | stringNumber asNumber ].
+	margin := (xmlElement attributeAt: #margin) ifEmpty:[nil]  ifNotEmpty: [:stringNumber | stringNumber asNumber ].
+	source := (xmlElement attributeAt: #source) ifEmpty: [ nil ] ifNotEmpty: [:aString| aString ].
+	offsetX := 0.
+	offsetY := 0.
+	imageWidth := 0.
+	imageHeight := 0.
+	source
+		ifNil: [ offsetElement := aTileSetElement elementAt: #tileoffset.
+			offsetElement
+				ifNil: [ "Do nothing" ]
+				ifNotNil: [ offsetX := offsetElement attributeAt: #x.
+					offsetY := offsetElement attributeAt: #y ].
+				
+			gridElement := aTileSetElement elementAt: #grid.
+			gridElement
+				ifNil: [ "Do nothing" ]
+				ifNotNil: [ "Ignored by now" ].
+				
+			imageElement := aTileSetElement elementAt: #image.
+			imageElement
+				ifNil: [ "Do nothing" ]
+				ifNotNil: [ imageSource := imageElement attributeAt: #source.
+					imageWidth := (imageElement attributeAt: #width) asNumber .
+					imageHeight := (imageElement attributeAt: #height) asNumber .
+					image := imageSource asFileReference ] ]
+		ifNotNil: [ | tsxFile |
+			tsxFile := source asFileReference.
+			xmlElement := tsxFile binaryReadStreamDo: [ :stream | stream parseXML ].
 			name := xmlElement attributeAt: #name.
 			tileHeight := xmlElement attributeAt: #tileheight.
 			tileWidth := xmlElement attributeAt: #tilewidth.
 			spacing := xmlElement attributeAt: #spacing.
 			margin := xmlElement attributeAt: #margin.
-			source := xmlElement attributeAt: #source.
-			offsetX := 0.
-			offsetY := 0.
-			imageWidth := 0.
-			imageHeight := 0.
-			source
-				ifNil: [ offsetElement := aTileSetElement elementAt: #tileoffset.
-					offsetElement
-						ifNil: [ "Do nothing" ]
-						ifNotNil: [ offsetX := offsetElement attributeAt: #x.
-							offsetY := offsetElement attributeAt: #y ].
-					imageElement := aTileSetElement elementAt: #image.
-					imageElement
-						ifNil: [ "Do nothing" ]
-						ifNotNil: [ imageSource := imageElement attributeAt: #source.
-							imageWidth := imageElement attributeAt: #width.
-							imageHeight := imageElement attributeAt: #height.
-							image := imageSource asFileReference ] ]
-				ifNotNil: [ | tsxFile |
-					tsxFile := source asFileReference.
-					xmlElement := tsxFile
-						binaryReadStreamDo: [ :stream | stream parseXML ].
-					name := xmlElement attributeAt: #name.
-					tileHeight := xmlElement attributeAt: #tileheight.
-					tileWidth := xmlElement attributeAt: #tilewidth.
-					spacing := xmlElement attributeAt: #spacing.
-					margin := xmlElement attributeAt: #margin.
-					offsetElement = xmlElement elementAt: #tileoffset.
-					offsetElement
-						ifNil: [ "Do nothing" ]
-						ifNotNil: [ offsetX := offsetElement attributeAt: #x.
-							offsetY := offsetElement attributeAt: #y ].
-					imageElement := xmlElement elementAt: #image.
-					imageElement
-						ifNil: [ "Do nothing" ]
-						ifNotNil: [ imageSource := imageElement attributeAt: #source.
-							imageWidth := imageElement attributeAt: #width.
-							imageHeight := imageElement attributeAt: #height.
-							image := imageSource asFileReference ] ].
-			tileset := WinterTiledMapTileSet named: name.
-			tileset propertiesAt: 'firstgid' put: firstgid.
-			self
-				createTilesFrom: xmlElement
-				startingId: firstgid
-				imageWidth: imageWidth
-				imageHeight: imageHeight
-				tileHeight: tileHeight
-				tileWidth: tileWidth
-				offsetX: offsetX
-				offsetY: offsetY
-				spacing: spacing
-				margin: margin
-				image: image
-				imageSource: imageSource
-				andLoadIn: tileset
-			 ]
+			offsetElement = xmlElement elementAt: #tileoffset.
+			offsetElement
+				ifNil: [ "Do nothing" ]
+				ifNotNil: [ offsetX := offsetElement attributeAt: #x.
+					offsetY := offsetElement attributeAt: #y ].
+			imageElement := xmlElement elementAt: #image.
+			imageElement
+				ifNil: [ "Do nothing" ]
+				ifNotNil: [ imageSource := imageElement attributeAt: #source.
+					imageWidth := imageElement attributeAt: #width.
+					imageHeight := imageElement attributeAt: #height.
+					image := imageSource asFileReference ] ].
+	tileset := WinterTiledMapTileSet named: name.
+	tileset propertiesAt: 'firstgid' put: firstgid.
+	self
+		createTilesFrom: xmlElement
+		startingId: firstgid
+		imageWidth: imageWidth
+		imageHeight: imageHeight
+		tileHeight: tileHeight
+		tileWidth: tileWidth
+		offsetX: offsetX
+		offsetY: offsetY
+		spacing: spacing
+		margin: margin
+		image: image
+		imageSource: imageSource
+		andLoadIn: tileset
 ]
 
 { #category : #'Parsing - Layers' }
 WinterTiledMapLoader >> propertyAccordingToName: aName value: aValue andType: aType [
-
 	^ aType
 		ifNil: [ aValue ]
 		ifNotNil: [ aType = 'int'
@@ -586,18 +572,7 @@ WinterTiledMapLoader >> propertyAccordingToName: aName value: aValue andType: aT
 						ifFalse: [ aType = 'bool'
 								ifTrue: [ Boolean readFrom: aValue ]
 								ifFalse: [ aType = 'color'
-										ifTrue: [ 
-											"Tiled uses the format #AARRGGBB"
-											| r g b alpha |
-											r := aValue copyFrom: 4 to: 5.
-											g := aValue copyFrom: 6 to: 7.
-											b := aValue copyFrom: 8 to: 9.
-											alpha := aValue copyFrom: 2 to: 3.
-											Color
-												r: r
-												g: g
-												b: b
-												alpha: alpha ]
+										ifTrue: [ Color fromString: aValue ]
 										ifFalse: [ Error
 												signal: ('Wrong type given for property <1s>, given : <2s>, supported : string, bool, int, float, color' expandMacrosWith: aName with: aType) ] ] ] ] ]
 ]
@@ -613,6 +588,11 @@ WinterTiledMapLoader >> textureFiles [
 			imageSource := (tileSet descendantElementsNamed: #image) anyOne.
 			self imageFrom: (imageSource  attributeAt: #source) ].
 	^ images
+]
+
+{ #category : #private }
+WinterTiledMapLoader >> textureRegionFromFile: aFileReference [
+	^ WinterTextureRegion of: (WinterTexture from: aFileReference)
 ]
 
 { #category : #'Parsing - Tilesets' }
@@ -667,32 +647,37 @@ WinterTiledMapLoader >> tileIdsFrom: aLayerElement accordingToWidth: aWidth heig
 { #category : #Parsing }
 WinterTiledMapLoader >> tiledMap [
 
-	| map tileSets layers mapOrientation mapWidth mapHeight tileWidth tileHeight hexSideLength staggerAxis staggerIndex  mapBackgroundColor  |
+	| map tileSets layers objectGroups mapOrientation mapWidth mapHeight tileWidth tileHeight hexSideLength staggerAxis staggerIndex  mapBackgroundColor  nextlayerid nextobjectid |
 
 	map := WinterTiledMap new.
-	mapOrientation := xmlParsed attributeAt: #orientation.
-	mapWidth := xmlParsed attributeAt: #width.
-	mapHeight := xmlParsed attributeAt: #height.
-	tileWidth := xmlParsed attributeAt: #tilewidth.
-	tileHeight := xmlParsed attributeAt: #tileheight.
-	hexSideLength := xmlParsed attributeAt: #hexsidelength.
-	staggerAxis := xmlParsed attributeAt: #staggeraxis.
-	staggerIndex := xmlParsed attributeAt: #staggerindex.
-	mapBackgroundColor := xmlParsed attributeAt: #backgroundcolor.
-
+	xmlParsed := xmlParsed elementAt: #map.
+	mapOrientation := xmlParsed attributeAt: #orientation ifAbsent: [nil].
+	mapWidth := (xmlParsed attributeAt: #width ifAbsent: [0]) asNumber .
+	mapHeight := (xmlParsed attributeAt: #height ifAbsent: [0]) asNumber.
+	tileWidth := (xmlParsed attributeAt: #tilewidth ifAbsent: [0]) asNumber.
+	tileHeight := (xmlParsed attributeAt: #tileheight ifAbsent: [0]) asNumber.
+	hexSideLength := (xmlParsed attributeAt: #hexsidelength ifAbsent: [0]) asNumber.
+	staggerAxis := xmlParsed attributeAt: #staggeraxis ifAbsent: [nil].
+	staggerIndex := xmlParsed attributeAt: #staggerindex ifAbsent: [nil].
+	mapBackgroundColor := xmlParsed attributeAt: #backgroundcolor ifAbsent: [nil].
+	nextlayerid := (xmlParsed attributeAt: #nextlayerid) asNumber.
+	nextobjectid := (xmlParsed attributeAt: #nextobjectid) asNumber.
+	
 	mapOrientation ifNil: [ "Do nothing" ] ifNotNil: [ map propertiesAt: #orientation put: mapOrientation ].
 
 	map
 		propertiesAt: #width put: mapWidth;
 		propertiesAt: #height put: mapHeight;
 		propertiesAt: #tilewidth put: tileWidth;
-		propertiesAt: #tileheight put: tileHeight;
-		propertiesAt: #hexsidelength put: hexSideLength.
-
-	staggerAxis ifNil: [ "Do nothing" ] ifNotNil: [ map propertiesAt: #staggeraxis put: staggerAxis ].
-	staggerIndex ifNil: [ "Do nothing" ] ifNotNil: [ map propertiesAt: #staggerIndex put: staggerIndex ].
+		propertiesAt: #tileheight put: tileHeight.
+		
+	hexSideLength ifNil: [ "Do nothing, Only for hexagonal maps" ] ifNotNil: [ map propertiesAt: #hexsidelength put: hexSideLength ].
+	staggerAxis ifNil: [ "Do nothing, For staggered and hexagonal maps" ] ifNotNil: [ map propertiesAt: #staggeraxis put: staggerAxis ].
+	staggerIndex ifNil: [ "Do nothing, For staggered and hexagonal maps" ] ifNotNil: [ map propertiesAt: #staggerIndex put: staggerIndex ].
 	mapBackgroundColor ifNil: [ "Do nothing" ] ifNotNil: [ map propertiesAt: #backgroundcolor put: mapBackgroundColor ].
-
+	nextlayerid ifNil: [ "Do nothing, available since v 1.2" ] ifNotNil: [ map propertiesAt: #nextlayerid put: nextlayerid  ].
+	nextobjectid ifNil: [ "Do nothing, available since v 0.11" ] ifNotNil: [ map propertiesAt: #nextobjectid put: nextobjectid  ].
+	
 	mapTileWidth := tileWidth.
 	mapTileHeight := tileHeight.
 	mapWidthInPixels := mapWidth * tileWidth.
@@ -710,6 +695,9 @@ WinterTiledMapLoader >> tiledMap [
 
 	layers := xmlParsed descendantElementsNamed: #layer.
 	layers do: [ :layer | self loadLayer: layer in: map ].
+	
+	objectGroups := xmlParsed descendantElementsNamed: #objectgroup.
+	objectGroups do: [ :objectGroup | self loadObjectGroup: objectGroup  in: map ].
 	
 	^ map
 ]

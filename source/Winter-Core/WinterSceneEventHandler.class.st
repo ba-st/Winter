@@ -1,3 +1,20 @@
+"
+I represent a handler for user inputs during the scene game
+
+Collaborators: 
+
+- players
+- schedulers
+
+Public API and Key Messages:
+
+- players
+- players:
+- schedulers:
+- terminateProcesses
+- visitKeyUpEvent:
+- visitKeyDownEvent:
+"
 Class {
 	#name : #WinterSceneEventHandler,
 	#superclass : #WinterEventHandler,
@@ -5,10 +22,10 @@ Class {
 		'players',
 		'schedulers'
 	],
-	#category : 'Winter-Core-Event-Handlers'
+	#category : #'Winter-Core-Event-Handlers'
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 WinterSceneEventHandler >> players [
 
 	^ players
@@ -20,13 +37,19 @@ WinterSceneEventHandler >> players: aPlayersCollection [
 	players := aPlayersCollection 
 ]
 
+{ #category : #printing }
+WinterSceneEventHandler >> printOn: aStream [
+
+	aStream nextPutAll: 'Scene keywords events handler'
+]
+
 { #category : #accessing }
 WinterSceneEventHandler >> schedulers: aSchedulersCollection [
 
 	schedulers := aSchedulersCollection
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #processing }
 WinterSceneEventHandler >> terminateProcesses [
 
 	schedulers do: [ :sc | sc terminateProcess ].

@@ -7,7 +7,7 @@ Class {
 	#instVars : [
 		'vertices'
 	],
-	#category : 'Winter-Examples-Resources'
+	#category : #'Winter-Examples-Resources'
 }
 
 { #category : #'Instance Creation' }
@@ -16,9 +16,16 @@ WinterPolygonWallShape class >> vertices: clockwiseConvexPoints [
 		initializeVertices: clockwiseConvexPoints
 ]
 
+{ #category : #Accessing }
+WinterPolygonWallShape >> bounds [
+
+	^ Polygon vertices: vertices
+]
+
 { #category : #Drawing }
 WinterPolygonWallShape >> createPathOn: aCanvas [
-	^ graphicsPath := aCanvas
+
+	graphicsPath := aCanvas
 		createPath: [ :builder | 
 			builder
 				absolute;
@@ -35,5 +42,6 @@ WinterPolygonWallShape >> initializeVertices: aPointsArray [
 
 { #category : #Drawing }
 WinterPolygonWallShape >> setSpecificPaint: aPaint on: aCanvas [
+
 	aCanvas setPaint: aPaint
 ]

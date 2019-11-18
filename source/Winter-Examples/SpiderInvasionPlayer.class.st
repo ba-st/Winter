@@ -1,10 +1,28 @@
+"
+I represent the space ship player in the spider invasion scene
+
+Instance variables: 
+
+- loaded
+
+Public API and Key Messages:
+
+- checkCollisions
+- fire
+- moveLeft
+- moveRight
+- positionX
+- positionY
+- reload
+- spaceShipSprite
+"
 Class {
 	#name : #SpiderInvasionPlayer,
-	#superclass : #WinterPlayer,
+	#superclass : #WinterInteractiveMovableComponent,
 	#instVars : [
 		'loaded'
 	],
-	#category : 'Winter-Examples-SpiderInvasion'
+	#category : #'Winter-Examples-SpiderInvasion'
 }
 
 { #category : #'Instance Creation' }
@@ -16,19 +34,19 @@ SpiderInvasionPlayer class >> on: aGame [
 { #category : #Collisions }
 SpiderInvasionPlayer >> checkCollisions [
 
-	(CollisionAgainstMapBordersChecker for: self)
-		value: #x
+	CollisionAgainstMapBordersChecker new checkFor: self onAxis: #x
 ]
 
 { #category : #actions }
 SpiderInvasionPlayer >> fire [
 
-	| missilePos |
-
 	loaded
-		ifTrue: [ loaded := false.
-			missilePos := self position - (0 @ 24).
-			scene addComponent: (SpiderInvasionMissile atPosition: missilePos of: scene tick: 5) ]
+		ifTrue: [ | missilePos |
+
+			loaded := false.
+			missilePos := self position - ( 0 @ 1 ).
+			scene addComponent: ( SpiderInvasionMissile atPosition: missilePos of: scene tick: 5 )
+			]
 ]
 
 { #category : #initialization }
@@ -89,5 +107,5 @@ SpiderInvasionPlayer >> reload [
 { #category : #Accessing }
 SpiderInvasionPlayer >> spaceShipSprite [
 
-	^ WinterAssetManagementSystem current spriteNamed: #spaceShip
+	^game assetsManagementSystem  assetNamed: #spaceShip
 ]

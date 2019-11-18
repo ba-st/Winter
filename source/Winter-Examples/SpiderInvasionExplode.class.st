@@ -1,7 +1,15 @@
+"
+I represent an explosion to cover scene when game is over
+
+
+Public API and Key Messages:
+
+- action
+"
 Class {
 	#name : #SpiderInvasionExplode,
 	#superclass : #SpiderInvasionAnimatedItem,
-	#category : 'Winter-Examples-SpiderInvasion'
+	#category : #'Winter-Examples-SpiderInvasion'
 }
 
 { #category : #accessing }
@@ -23,7 +31,7 @@ SpiderInvasionExplode >> initializeAtPosition: aPosition of: aScene tick: number
 	game := scene game.
 	collisionShape := Winter2DSquare
 		ofCenter: aPosition
-		extent: self  spriteSize
+		extent: self spriteSize
 		color: Color black
 		in: self game.
 	self tick: numberOfTicks
@@ -32,5 +40,5 @@ SpiderInvasionExplode >> initializeAtPosition: aPosition of: aScene tick: number
 { #category : #initialization }
 SpiderInvasionExplode >> initializeSprite [
 
-	sprite := WinterAssetManagementSystem current spriteNamed: #explode
+	sprite := game assetsManagementSystem assetNamed: #explode
 ]
