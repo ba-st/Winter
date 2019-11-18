@@ -1,60 +1,40 @@
-# Winter [![Build Status](https://travis-ci.org/apiorno/Winter.svg?branch=master)](https://travis-ci.org/apiorno/Winter) [![Coverage Status](https://coveralls.io/repos/github/apiorno/Winter/badge.svg)](https://coveralls.io/github/apiorno/Winter)
-<img src="./logo/winter.png" height="48" width="48" >   
+<p align="center"><img src="assets/logos/winter.png">
+ <h1 align="center">Winter</h1>
+  <p align="center">
+    Winter is a framework to develop games in 2D using Smalltalk.
+    <br>
+    <a href="docs/"><strong>Explore the docs »</strong></a>
+    <br>
+    <br>
+    <a href="https://github.com/ba-st/Winter/issues/new?labels=Type%3A+Defect">Report a defect</a>
+    |
+    <a href="https://github.com/ba-st/Winter/issues/new?labels=Type%3A+Feature">Request feature</a>
+  </p>
+</p>
 
- Winter is the new and updated version of [Storm][] from [Esteban][] . It is a framework to develop games in 2D using Smalltalk.
-  
-## Supported Media Files
- 
-### Sound 
-      At the moment .aiff and .wav sound extensions are supported
-### Images
-      .bmp , .gif, .jpeg and .png image extensions are supported.
-        
-## Features
- <img src="./images/features.png" >  
- 
-## Future Work
+[![Build Status](https://travis-ci.org/ba-st/Winter.svg?branch=master)](https://travis-ci.org/ba-st/Winter) [![Coverage Status](https://coveralls.io/repos/github/ba-st/Winter/badge.svg)](https://coveralls.io/github/ba-st/Winter)
 
-- Tiled Maps
+It's built on top of [Storm][] from [Esteban][], providing a conceptual framework to simplify the creation of games in two dimensions.
 
-- Camera
+## License
+- The code is licensed under [MIT](LICENSE).
+- The documentation is licensed under [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/).
 
-- Physics with native library
+## Quick Start
 
-- Network API (LAN & Online)
+- Download the latest [Pharo 32](https://get.pharo.org/) or [64 bits VM](https://get.pharo.org/64/).
+- Download a ready to use image from the [release page](https://github.com/ba-st/Winter/releases/latest)
+- Explore the [documentation](docs/)
 
-- Particles Effect
+## Installation
 
-## Unresolved issues
-   
-#### Sound does not work on pharo for linux distributions, framework works fine but you will not hear sounds on Linux.
-   
-## Instructions
-  
-  - Open a Playground and evaluate:
+To load the project in a Pharo image, or declare it as a dependency of your own project follow this [instructions](docs/Installation.md).
 
-```smalltalk
-Metacello new
-  baseline: 'Winter';
-  repository: 'github://apiorno/Winter:master/source';
-  load
-```
-## Run Arkanoid example
-  Copy files on "Game Examples files" to the image directory
-  And then run this on playground:
-  
-```smalltalk
-ArkanoidGame new start
-```
+## Contributing
 
-## Run Wizar Battle Arena
-  Orginally developed by [Clement Bera][]
+Check the [Contribution Guidelines](CONTRIBUTING.md)
 
-```smalltalk
-WBAGame start
-```	
 
-[clement bera]: https://github.com/clementbera
 [esteban]: https://github.com/estebanlm
 [storm]: https://github.com/cdlm/pharo-storm
 [chipmunk2d physics engine]:https://chipmunk-physics.net/

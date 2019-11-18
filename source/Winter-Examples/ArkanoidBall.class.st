@@ -113,3 +113,10 @@ ArkanoidBall >> updateUsing: aCanvas [
 			super updateUsing: aCanvas .
 			collisionShape updatePositionBy: deltaPoint ]
 ]
+
+{ #category : #Events }
+ArkanoidBall >> updateUsing: aCanvas [
+	game playing
+		ifTrue: [ collisionShape updatePositionBy: deltaPoint.
+			self checkCollisions ]
+]
