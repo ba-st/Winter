@@ -12,7 +12,7 @@
   </p>
 </p>
 
-[![Build Status](https://travis-ci.org/ba-st/Winter.svg?branch=master)](https://travis-ci.org/ba-st/Winter) [![Coverage Status](https://coveralls.io/repos/github/ba-st/Winter/badge.svg)](https://coveralls.io/github/ba-st/Winter)
+[![Build Status](https://travis-ci.org/ba-st/Winter.svg?branch=release-candidate)](https://travis-ci.org/ba-st/Winter) [![Coverage Status](https://coveralls.io/repos/github/ba-st/Winter/badge.svg?branch=release-candidate)](https://coveralls.io/github/ba-st/Winter?branch=release-candidate)
 
 It's built on top of [Storm][] from [Esteban][], providing a conceptual framework to simplify the creation of games in two dimensions.
 
