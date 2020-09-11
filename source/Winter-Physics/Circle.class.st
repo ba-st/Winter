@@ -13,38 +13,34 @@ Public API and Key Messages:
 - radius:
 "
 Class {
-	#name : #Winter2DCircle,
-	#superclass : #Winter2DShape,
+	#name : #Circle,
+	#superclass : #GameShape,
 	#instVars : [
 		'radius'
 	],
-	#category : #'Winter-Core2D-Base'
+	#category : #'Winter-Physics-Shapes'
 }
 
 { #category : #'Instance Creation' }
-Winter2DCircle class >> ofCenter: aPoint radius: aFloat color: aColor in: aGame [
+Circle class >> ofCenter: aPoint radius: aFloat color: aColor [
 
-	^ self new
-		initializeOfCenter: aPoint
-		radius: aFloat
-		color: aColor
-		in: aGame
+	^ self new initializeOfCenter: aPoint radius: aFloat color: aColor
 ]
 
 { #category : #Accessing }
-Winter2DCircle >> bounds [
+Circle >> bounds [
 
 	^ position extent: radius @ radius
 ]
 
 { #category : #private }
-Winter2DCircle >> createPaintOn: aCanvas [
+Circle >> createPaintOn: aCanvas [
 
 	^ graphicsPaint := self color
 ]
 
 { #category : #private }
-Winter2DCircle >> createPathOn: aCanvas [
+Circle >> createPathOn: aCanvas [
 
 	^ graphicsPath := aCanvas
 		createPath: [ :builder | 
@@ -63,47 +59,46 @@ Winter2DCircle >> createPathOn: aCanvas [
 			]
 ]
 
+{ #category : #private }
+Circle >> drawShape: aShape on: aCanvas [
+
+	aCanvas drawShape: aShape
+]
+
 { #category : #Initialization }
-Winter2DCircle >> initializeOfCenter: aPoint radius: aFloat color: aColor in: aGame [
+Circle >> initializeOfCenter: aPoint radius: aFloat color: aColor [
 
 	position := aPoint.
 	radius := aFloat.
-	color := aColor.
-	game := aGame
+	color := aColor
 ]
 
 { #category : #printing }
-Winter2DCircle >> printOn: aStream [
+Circle >> printOn: aStream [
 
 	aStream
 		nextPutAll:
 			( 'Circle - position [<1s>] - radius: <2s> - color: <3p> '
-				expandMacrosWith: self position
-				with: self radius
-				with: self color )
+				expandMacrosWith: self position printString
+				with: self radius printString
+				with: self color printString )
 ]
 
 { #category : #Accessing }
-Winter2DCircle >> radius [
+Circle >> radius [
 
 	^ radius ifNil: [ radius := self class defaultRadius ]
 ]
 
 { #category : #Accessing }
-Winter2DCircle >> radius: aNumber [
+Circle >> radius: aNumber [
 
 	radius := aNumber.
 	graphicsPath := nil
 ]
 
 { #category : #private }
-Winter2DCircle >> renderShape: aShape on: aCanvas [
-
-	aCanvas drawShape: aShape
-]
-
-{ #category : #private }
-Winter2DCircle >> setSpecificPaint: aPaint on: aCanvas [
+Circle >> setSpecificPaint: aPaint on: aCanvas [
 
 	aCanvas setPaint: aPaint
 ]

@@ -25,133 +25,119 @@ Public API and Key Messages:
 
 "
 Class {
-	#name : #Winter2DShape,
-	#superclass : #WinterShape,
+	#name : #GameShape,
+	#superclass : #Object,
 	#instVars : [
 		'position',
 		'color',
 		'graphicsPath',
 		'graphicsPaint'
 	],
-	#category : #'Winter-Core2D-Base'
+	#category : #'Winter-Physics-Shapes'
 }
 
 { #category : #Defaults }
-Winter2DShape class >> defaultColor [
+GameShape class >> defaultColor [
 
 	^ Color white
 ]
 
 { #category : #Defaults }
-Winter2DShape class >> defaultRadius [
+GameShape class >> defaultRadius [
 
 	^ 10
 ]
 
 { #category : #Accessing }
-Winter2DShape >> bounds [
+GameShape >> bounds [
 	self subclassResponsibility 
 ]
 
 { #category : #Accessing }
-Winter2DShape >> color [
+GameShape >> color [
 	^color ifNil: [ color := self class defaultColor ].
 ]
 
 { #category : #Accessing }
-Winter2DShape >> color: aColor [
+GameShape >> color: aColor [
 	color := aColor.
 	graphicsPaint := nil.
 ]
 
 { #category : #private }
-Winter2DShape >> createPaintOn: aCanvas [
+GameShape >> createPaintOn: aCanvas [
 
 	self subclassResponsibility
 ]
 
 { #category : #private }
-Winter2DShape >> createPathOn: aCanvas [
+GameShape >> createPathOn: aCanvas [
+
+	self subclassResponsibility
+]
+
+{ #category : #private }
+GameShape >> drawShape: aShape on: aCanvas [
 
 	self subclassResponsibility
 ]
 
 { #category : #Initialization }
-Winter2DShape >> initialize [
+GameShape >> initialize [
 
 	color := self class defaultColor.
 	position := 0 @ 0
 ]
 
 { #category : #Collisions }
-Winter2DShape >> intersects: aWinter2DShape [
+GameShape >> intersects: aWinter2DShape [
 
 	^ self bounds intersects: aWinter2DShape bounds
 ]
 
 { #category : #Drawing }
-Winter2DShape >> paintOn: aCanvas [
-	^ graphicsPaint ifNil:
-		[ self createPaintOn: aCanvas ]
+GameShape >> paintOn: aCanvas [
+
+	^ graphicsPaint ifNil: [ self createPaintOn: aCanvas ]
 ]
 
 { #category : #Drawing }
-Winter2DShape >> pathOn: aCanvas [
+GameShape >> pathOn: aCanvas [
 
 	^ graphicsPath ifNil: [ self createPathOn: aCanvas ]
 ]
 
 { #category : #Accessing }
-Winter2DShape >> position [
+GameShape >> position [
+
 	^ position
 ]
 
 { #category : #Accessing }
-Winter2DShape >> position: aPosition [
-	position := aPosition 
+GameShape >> position: aPosition [
+
+	position := aPosition
 ]
 
 { #category : #printing }
-Winter2DShape >> printOn: aStream [
+GameShape >> printOn: aStream [
 
 	aStream
 		nextPutAll: ('2D Shape - position [<1s>]' expandMacrosWith: self position)
 ]
 
 { #category : #Drawing }
-Winter2DShape >> renderOn: aCanvas [
+GameShape >> renderOn: aCanvas [
+
 	aCanvas pathTransform
 		restoreAfter: [ aCanvas pathTransform translateBy: self position.
-			self setSpecificPaint: (self paintOn: aCanvas) on: aCanvas.
-			self renderShape: (self pathOn: aCanvas) on: aCanvas ]
+			self setSpecificPaint: ( self paintOn: aCanvas ) on: aCanvas.
+			self drawShape: ( self pathOn: aCanvas ) on: aCanvas
+			]
 ]
 
 { #category : #private }
-Winter2DShape >> renderShape: aShape on: aCanvas [
+GameShape >> setSpecificPaint: aPaint on: aCanvas [
 
 	self subclassResponsibility
-]
-
-{ #category : #private }
-Winter2DShape >> setSpecificPaint: aPaint on: aCanvas [
-
-	self subclassResponsibility
-]
-
-{ #category : #Updating }
-Winter2DShape >> updatePosition [
-
-"should reimplement if want to update position form here automatically"
-]
-
-{ #category : #Updating }
-Winter2DShape >> updatePositionBy: aPoint [
-
-	position := position + aPoint
-]
-
-{ #category : #Events }
-Winter2DShape >> updateUsing: aCanvas [
-
-	self updatePosition
 ]
