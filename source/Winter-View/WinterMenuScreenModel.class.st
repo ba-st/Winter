@@ -90,7 +90,7 @@ WinterMenuScreenModel >> enterCode [
 { #category : #'event handling' }
 WinterMenuScreenModel >> eventHandler [
 
-	^ WinterKeyboardEventHandler new
+	^ ( KeyboardEventHandler of: startingGame )
 		screenModel: self;
 		yourself
 ]
@@ -98,7 +98,7 @@ WinterMenuScreenModel >> eventHandler [
 { #category : #Accessing }
 WinterMenuScreenModel >> eventHandlerFor: aWinterScreen [
 
-	^ WinterKeyboardEventHandler new
+	^ ( KeyboardEventHandler of: startingGame )
 		screenModel: self;
 		yourself
 ]
@@ -108,7 +108,7 @@ WinterMenuScreenModel >> every10GameTickDo: aBlock [
 
 	startingGame scheduler
 		newGameTickAction:
-			(WinterScreenAnimation new
+			(ScreenAnimation new
 				block: aBlock;
 				yourself)
 		for: self
@@ -167,9 +167,9 @@ WinterMenuScreenModel >> leftSelection [
 { #category : #initialization }
 WinterMenuScreenModel >> loadCadreSprites: numPlayers [
 
-	^ (WBACadreDescriptor for: numPlayers)
+	^ ( WBACadreDescriptor for: numPlayers )
 		loadSpritesWith: screen surface
-		using: startingGame  assetsManagementSystem
+		using: startingGame assetsManager
 ]
 
 { #category : #private }

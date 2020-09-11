@@ -34,7 +34,7 @@ SpiderInvasionSpider >> checkCollisions [
 		do: [ :component | 
 			component = self
 				ifFalse: [ component position = self position
-						ifTrue: [ ( Collision between: self and: component ) applyOnGame ]
+						ifTrue: [ ( CollisionOcurred between: self and: component ) signal ]
 					]
 			]
 ]
@@ -51,16 +51,12 @@ SpiderInvasionSpider >> initializeAtPosition: aPosition of: aScene tick: numberO
 
 	scene := aScene.
 	game := scene game.
-	collisionShape := Winter2DSquare
-		ofCenter: aPosition
-		extent: self spriteSize
-		color: Color black
-		in: self game.
+	collisionShape := Square ofCenter: aPosition extent: self spriteSize color: Color black.
 	self tick: numberOfTicks
 ]
 
 { #category : #initialization }
 SpiderInvasionSpider >> initializeSprite [
 
-	sprite := game assetsManagementSystem  assetNamed: #spider
+	sprite := game assetsManager  assetNamed: #spider
 ]

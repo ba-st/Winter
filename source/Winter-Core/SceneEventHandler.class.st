@@ -16,8 +16,8 @@ Public API and Key Messages:
 - visitKeyDownEvent:
 "
 Class {
-	#name : #WinterSceneEventHandler,
-	#superclass : #WinterEventHandler,
+	#name : #SceneEventHandler,
+	#superclass : #BasicEventHandler,
 	#instVars : [
 		'players',
 		'schedulers'
@@ -26,44 +26,44 @@ Class {
 }
 
 { #category : #accessing }
-WinterSceneEventHandler >> players [
+SceneEventHandler >> players [
 
 	^ players
 ]
 
 { #category : #accessing }
-WinterSceneEventHandler >> players: aPlayersCollection [
+SceneEventHandler >> players: aPlayersCollection [
 
 	players := aPlayersCollection 
 ]
 
 { #category : #printing }
-WinterSceneEventHandler >> printOn: aStream [
+SceneEventHandler >> printOn: aStream [
 
 	aStream nextPutAll: 'Scene keywords events handler'
 ]
 
 { #category : #accessing }
-WinterSceneEventHandler >> schedulers: aSchedulersCollection [
+SceneEventHandler >> schedulers: aSchedulersCollection [
 
 	schedulers := aSchedulersCollection
 ]
 
 { #category : #processing }
-WinterSceneEventHandler >> terminateProcesses [
+SceneEventHandler >> terminateProcesses [
 
 	schedulers do: [ :sc | sc terminateProcess ].
 ]
 
 { #category : #visiting }
-WinterSceneEventHandler >> visitKeyDownEvent: anEvent [
+SceneEventHandler >> visitKeyDownEvent: anEvent [
 
 	players do: [ :each |
 		each handleKeyDown: anEvent  ]
 ]
 
 { #category : #visiting }
-WinterSceneEventHandler >> visitKeyUpEvent: anEvent [
+SceneEventHandler >> visitKeyUpEvent: anEvent [
 
 	players do: [ :each |
 		each handleKeyUp: anEvent]

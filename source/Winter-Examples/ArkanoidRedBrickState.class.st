@@ -14,19 +14,13 @@ Class {
 }
 
 { #category : #Collisions }
-ArkanoidRedBrickState >> affectCollisionWithBallTo: anArkanoidBlock [
+ArkanoidRedBrickState >> affectCollisionWithBallTo: anArkanoidBlock in: aGame [
 
-	anArkanoidBlock changeColorStateTo: ArkanoidYellowBrickState new
+	anArkanoidBlock changeColorStateTo: ( ArkanoidYellowBrickState representedWith: game yellowBrick )
 ]
 
 { #category : #Accessing }
 ArkanoidRedBrickState >> color [
 
 	^ Color red
-]
-
-{ #category : #Accessing }
-ArkanoidRedBrickState >> sprite [
-
-	^ game assetsManagementSystem  assetNamed: #red
 ]

@@ -16,7 +16,7 @@ Internal Representation and Key Implementation Points.
 "
 Class {
 	#name : #WBACadreDescriptor,
-	#superclass : #WinterSpriteDescriptor,
+	#superclass : #GameSpriteDescriptor,
 	#instVars : [
 		'numberOfPlayers'
 	],

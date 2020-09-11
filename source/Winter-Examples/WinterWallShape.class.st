@@ -3,7 +3,7 @@ An abstract 2D wall shape
 "
 Class {
 	#name : #WinterWallShape,
-	#superclass : #Winter2DShape,
+	#superclass : #GameShape,
 	#category : #'Winter-Examples-Resources'
 }
 
@@ -27,13 +27,19 @@ WinterWallShape >> createPaintOn: aCanvas [
 { #category : #Drawing }
 WinterWallShape >> createPathOn: aCanvas [
 
-	graphicsPath  := aCanvas createPath: [ :builder |
+	^graphicsPath  := aCanvas createPath: [ :builder |
 			builder 
 				relative;
 				moveTo: self position;
 				lineTo: self extent.
 				"Check this."
 				builder close ]
+]
+
+{ #category : #private }
+WinterWallShape >> drawShape: aShape on: aCanvas [
+
+	aCanvas drawShape: aShape
 ]
 
 { #category : #Drawing }

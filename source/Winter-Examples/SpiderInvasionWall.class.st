@@ -19,15 +19,11 @@ SpiderInvasionWall >> initializeInPosition: aPosition of: aSene [
 
 	scene := aSene.
 	game := scene game.
-	collisionShape := Winter2DSquare
-		ofCenter: aPosition
-		extent: self spriteSize
-		color: Color black
-		in: self game
+	collisionShape := Square ofCenter: aPosition extent: self spriteSize color: Color black
 ]
 
 { #category : #initialization }
 SpiderInvasionWall >> initializeSprite [
 
-	sprite := game assetsManagementSystem  assetNamed: #wall
+	sprite := game assetsManager  assetNamed: #wall
 ]

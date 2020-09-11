@@ -136,7 +136,7 @@ WBAArenaBootstrap >> bootstrapWallCell: cell [
 { #category : #Loading }
 WBAArenaBootstrap >> eventHandler: screen [
 
-	^ WinterSceneEventHandler new
+	^ SceneEventHandler new
 		players: startGame players;
 		schedulers:
 			{startGame scheduler.
@@ -148,7 +148,7 @@ WBAArenaBootstrap >> eventHandler: screen [
 WBAArenaBootstrap >> loadDescriptor: descr surface: surface into: class [
 
 	^ class new
-		sprites: ( descr loadSpritesWith: surface using: startGame assetsManagementSystem );
+		sprites: ( descr loadSpritesWith: surface using: startGame assetsManager );
 		scheduler: startGame scheduler;
 		yourself
 ]
@@ -156,11 +156,11 @@ WBAArenaBootstrap >> loadDescriptor: descr surface: surface into: class [
 { #category : #Loading }
 WBAArenaBootstrap >> loadSprites: gameDescr surface: surface [
 
-	| assetsManagementSystem |
+	| assetsManager |
 
-	assetsManagementSystem := startGame assetsManagementSystem.
-	grounds := gameDescr groundDescriptor loadSpritesWith: surface using: assetsManagementSystem.
-	walls := ( gameDescr wallDescriptor loadSpritesWith: surface using: assetsManagementSystem )
+	assetsManager := startGame assetsManager.
+	grounds := gameDescr groundDescriptor loadSpritesWith: surface using: assetsManager.
+	walls := ( gameDescr wallDescriptor loadSpritesWith: surface using: assetsManager )
 		collect: [ :each | 
 			WBAWall new
 				sprite: each;

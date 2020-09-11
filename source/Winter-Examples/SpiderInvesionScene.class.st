@@ -15,7 +15,7 @@ Public API and Key Messages:
 "
 Class {
 	#name : #SpiderInvesionScene,
-	#superclass : #Winter2DScene,
+	#superclass : #GameScene,
 	#category : #'Winter-Examples-SpiderInvasion'
 }
 

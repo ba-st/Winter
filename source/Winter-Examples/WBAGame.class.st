@@ -20,10 +20,13 @@ Public API and Key Messages:
 "
 Class {
 	#name : #WBAGame,
-	#superclass : #WinterGame,
+	#superclass : #Game,
 	#instVars : [
+		'scheduler',
 		'descriptor',
-		'gameDescriptor'
+		'gameDescriptor',
+		'assetsManager',
+		'players'
 	],
 	#category : #'Winter-Examples-WizardBattle'
 }
@@ -34,6 +37,12 @@ WBAGame class >> start [
 	^WBANumberPlayerSelectScreenModel new
 		screen: WinterScreen new;
 		display
+]
+
+{ #category : #Accessing }
+WBAGame >> assetsManager [
+
+	^ assetsManager 
 ]
 
 { #category : #Validating }
@@ -48,6 +57,7 @@ WBAGame >> checkEndGame [
 
 { #category : #Accessing }
 WBAGame >> dimensions [
+
 	^ descriptor windowExtent
 ]
 
@@ -63,48 +73,78 @@ WBAGame >> endScreen: winner [
 
 { #category : #Accessing }
 WBAGame >> gameDescriptor [
-	^gameDescriptor
+
+	^ gameDescriptor
 ]
 
 { #category : #Accessing }
 WBAGame >> gameDescriptor: anObject [
+
 	gameDescriptor := anObject
+]
+
+{ #category : #initialization }
+WBAGame >> initialize [
+
+	super initialize.
+	self
+		initializeResources;
+		initializeSchedulers
 ]
 
 { #category : #initialization }
 WBAGame >> initializeResources [
 
-	WBATextDescriptor new loadSpritesWith: nil using: self assetsManagementSystem
-]
-
-{ #category : #initialization }
-WBAGame >> initializeScenes [
-
-	self scene: Winter2DScene new
+	assetsManager := AssetsManager new.
+	WBATextDescriptor new loadSpritesWith: nil using: assetsManager
 ]
 
 { #category : #initialization }
 WBAGame >> initializeSchedulers [
 
-	super initializeSchedulers .
 	scheduler  := AnimationsScheduler new.
 ]
 
 { #category : #Accessing }
 WBAGame >> players [
-	^scene players
+
+	^ players
 ]
 
 { #category : #Accessing }
-WBAGame >> players: aPlayersCollection [ 
-aPlayersCollection do: [ :each | self addPlayer: each ].
+WBAGame >> players: aPlayersCollection [
 
+	players := aPlayersCollection
 ]
 
 { #category : #Accessing }
-WBAGame >> textSpritesAt: aName [ 
+WBAGame >> scheduler [
 
-	^self assetsManagementSystem  assetNamed: aName
+	^ scheduler
+]
+
+{ #category : #initialization }
+WBAGame >> start [
+
+	super start.
+	scheduler  startProcess
+	
+]
+
+{ #category : #initialization }
+WBAGame >> stop [
+
+	super stop.
+	scheduler
+		ifNotNil: [ scheduler terminateProcess.
+			scheduler := nil
+			]
+]
+
+{ #category : #Accessing }
+WBAGame >> textSpritesAt: aName [
+
+	^ assetsManager assetNamed: aName
 ]
 
 { #category : #Accessing }

@@ -3,7 +3,7 @@ Represents a renderer for Tiled maps
 "
 Class {
 	#name : #WinterTiledMapRenderer,
-	#superclass : #WinterComponent,
+	#superclass : #GameActor,
 	#category : #'Winter-Tiled'
 }
 

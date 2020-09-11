@@ -1,7 +1,7 @@
-Extension { #name : #WinterGame }
+Extension { #name : #Game }
 
 { #category : #'*Winter-View' }
-WinterGame >> buildWindow [
+Game >> buildWindow [
 
 	screen := WinterScreen  onModel: self .
 ]

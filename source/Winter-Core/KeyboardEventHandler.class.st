@@ -13,8 +13,8 @@ Public API and Key Messages:
 - visitKeyUpEvent:
 "
 Class {
-	#name : #WinterKeyboardEventHandler,
-	#superclass : #WinterEventHandler,
+	#name : #KeyboardEventHandler,
+	#superclass : #BasicEventHandler,
 	#instVars : [
 		'screenModel'
 	],
@@ -22,31 +22,31 @@ Class {
 }
 
 { #category : #processing }
-WinterKeyboardEventHandler >> printOn: aStream [
+KeyboardEventHandler >> printOn: aStream [
 
 	aStream nextPutAll: 'Screen keywords events handler'
 ]
 
 { #category : #Accessing }
-WinterKeyboardEventHandler >> screenModel [
+KeyboardEventHandler >> screenModel [
 
 	^ screenModel
 ]
 
 { #category : #Accessing }
-WinterKeyboardEventHandler >> screenModel: anObject [
+KeyboardEventHandler >> screenModel: anObject [
 
 	screenModel := anObject
 ]
 
 { #category : #processing }
-WinterKeyboardEventHandler >> terminateProcesses [
+KeyboardEventHandler >> terminateProcesses [
 
 	screenModel terminateProcesses
 ]
 
 { #category : #visiting }
-WinterKeyboardEventHandler >> visitKeyUpEvent: anEvent [
+KeyboardEventHandler >> visitKeyUpEvent: anEvent [
 
 	screenModel handleKeyStroke: anEvent scanCode  
 ]

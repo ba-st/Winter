@@ -16,8 +16,8 @@ Public API and Key Messages:
 
 "
 Class {
-	#name : #WinterSpriteDescriptor,
-	#superclass : #WinterReactiveObject,
+	#name : #GameSpriteDescriptor,
+	#superclass : #GameActor,
 	#instVars : [
 		'fileName',
 		'position'
@@ -26,7 +26,7 @@ Class {
 }
 
 { #category : #Bootstrap }
-WinterSpriteDescriptor >> basicLoadImageFileUsing: anAssetManagementSystem [
+GameSpriteDescriptor >> basicLoadImageFileUsing: anAssetManagementSystem [
 
 	^ anAssetManagementSystem
 		addSprite:
@@ -35,7 +35,7 @@ WinterSpriteDescriptor >> basicLoadImageFileUsing: anAssetManagementSystem [
 ]
 
 { #category : #Bootstrap }
-WinterSpriteDescriptor >> classFolder [
+GameSpriteDescriptor >> classFolder [
 
 	"Empty by defult, should reimplement"
 
@@ -43,19 +43,19 @@ WinterSpriteDescriptor >> classFolder [
 ]
 
 { #category : #Bootstrap }
-WinterSpriteDescriptor >> fileName [
+GameSpriteDescriptor >> fileName [
 
 	^ fileName
 ]
 
 { #category : #Bootstrap }
-WinterSpriteDescriptor >> fileName: anObject [
+GameSpriteDescriptor >> fileName: anObject [
 
 	fileName := anObject
 ]
 
 { #category : #Bootstrap }
-WinterSpriteDescriptor >> loadImageFileUsing: anAssetManagementSystem [
+GameSpriteDescriptor >> loadImageFileUsing: anAssetManagementSystem [
 
 	^ anAssetManagementSystem 
 		assetNamed: fileName
@@ -63,26 +63,26 @@ WinterSpriteDescriptor >> loadImageFileUsing: anAssetManagementSystem [
 ]
 
 { #category : #Bootstrap }
-WinterSpriteDescriptor >> loadSpritesWith: aSurface using: anAssetsManagementSystem [
+GameSpriteDescriptor >> loadSpritesWith: aSurface using: anAssetsManagementSystem [
 
 	"Answers the sprites corresponding to the descriptor"
 	self subclassResponsibility.
 ]
 
 { #category : #Bootstrap }
-WinterSpriteDescriptor >> position [
+GameSpriteDescriptor >> position [
 
 	^ position
 ]
 
 { #category : #Bootstrap }
-WinterSpriteDescriptor >> position: anObject [
+GameSpriteDescriptor >> position: anObject [
 
 	position := anObject
 ]
 
 { #category : #printing }
-WinterSpriteDescriptor >> printOn: aStream [
+GameSpriteDescriptor >> printOn: aStream [
 
 	aStream
 		nextPutAll:
@@ -94,7 +94,7 @@ WinterSpriteDescriptor >> printOn: aStream [
 ]
 
 { #category : #Bootstrap }
-WinterSpriteDescriptor >> resourceFolder [
+GameSpriteDescriptor >> resourceFolder [
 
 	"By default is resources but can be re implemented to change this"
 
@@ -102,7 +102,7 @@ WinterSpriteDescriptor >> resourceFolder [
 ]
 
 { #category : #Bootstrap }
-WinterSpriteDescriptor >> spriteSize [
+GameSpriteDescriptor >> spriteSize [
 
 	"Answers a point of the size of the sprite"
 

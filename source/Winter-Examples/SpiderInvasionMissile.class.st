@@ -33,16 +33,12 @@ SpiderInvasionMissile >> initializeAtPosition: aPosition of: aScene tick: number
 
 	scene := aScene.
 	game := scene game.
-	collisionShape := Winter2DCircle
-		ofCenter: aPosition
-		radius: self spriteSize x
-		color: Color white
-		in: self game.
+	collisionShape := Circle ofCenter: aPosition radius: self spriteSize x color: Color white.
 	self tick: numberOfTicks
 ]
 
 { #category : #initialization }
 SpiderInvasionMissile >> initializeSprite [
 
-	sprite := game assetsManagementSystem assetNamed: #missile
+	sprite := game assetsManager assetNamed: #missile
 ]

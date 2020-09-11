@@ -15,7 +15,7 @@ Public API and Key Messages:
 "
 Class {
 	#name : #WBADieAnimation,
-	#superclass : #WinterAnimation,
+	#superclass : #GameAnimation,
 	#instVars : [
 		'character'
 	],

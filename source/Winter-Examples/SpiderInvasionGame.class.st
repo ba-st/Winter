@@ -12,7 +12,7 @@ Public API and Key Messages:
 "
 Class {
 	#name : #SpiderInvasionGame,
-	#superclass : #WinterGame,
+	#superclass : #Game,
 	#category : #'Winter-Examples-SpiderInvasion'
 }
 
@@ -80,7 +80,7 @@ SpiderInvasionGame >> initializePlayers [
 { #category : #initialization }
 SpiderInvasionGame >> initializeResources [
 
-	self assetsManagementSystem
+	self assetsManager
 		addSprite: 'spider.png' named: #spider;
 		addSprite: 'wall.png' named: #wall;
 		addSprite: 'missile.png' named: #missile;

@@ -1,43 +1,42 @@
 Class {
-	#name : #WinterPlayerComponentTest,
+	#name : #GameMovableActorTest,
 	#superclass : #TestCase,
-	#category : 'Winter-CoreTests'
+	#category : #'Winter-CoreTests-Base'
 }
 
 { #category : #'Test Support' }
-WinterPlayerComponentTest >> collisionShapeOn: aGame [
+GameMovableActorTest >> collisionShapeOn: aGame [
 
-	^ Winter2DCircle
+	^ Circle
 		ofCenter: 250 @ 530
 		radius: 15
 		color: Color red
-		in: aGame
 ]
 
 { #category : #'Test Support' }
-WinterPlayerComponentTest >> game [
+GameMovableActorTest >> game [
 
-	^ self
+	^self
 ]
 
 { #category : #'Test Support' }
-WinterPlayerComponentTest >> position [
+GameMovableActorTest >> position [
 
-	^ 200 @ 200
+	^200@200
 ]
 
 { #category : #'Test Support' }
-WinterPlayerComponentTest >> scene [
+GameMovableActorTest >> scene [
 
-	^ self
+	^self 
 ]
 
 { #category : #Tests }
-WinterPlayerComponentTest >> testAccessing [
+GameMovableActorTest >> testAccessing [
 
 	| component game scene collisionShape position |
 
-	component := WinterInteractiveMovableComponent new.
+	component := GameMovableActor new.
 	game := self game.
 	scene := self scene.
 	collisionShape := self collisionShapeOn: game.

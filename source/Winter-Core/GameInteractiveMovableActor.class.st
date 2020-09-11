@@ -15,8 +15,8 @@ Public API and Key Messages:
 - addInteractionOnKeyUpOf::doing:
 "
 Class {
-	#name : #WinterInteractiveMovableComponent,
-	#superclass : #WinterMovableComponent,
+	#name : #GameInteractiveMovableActor,
+	#superclass : #GameMovableActor,
 	#instVars : [
 		'interactionEvents',
 		'keyDownInteractions',
@@ -26,19 +26,19 @@ Class {
 }
 
 { #category : #Interactions }
-WinterInteractiveMovableComponent >> addInteractionOnKeyDownOf: aKeywordCharacter doing: anActionBlock [
+GameInteractiveMovableActor >> addInteractionOnKeyDownOf: aKeywordCharacter doing: anActionBlock [
 
 	keyDownInteractions at: aKeywordCharacter put: anActionBlock  
 ]
 
 { #category : #Interactions }
-WinterInteractiveMovableComponent >> addInteractionOnKeyUpOf: aKeywordCharacter doing: anActionBlock [
+GameInteractiveMovableActor >> addInteractionOnKeyUpOf: aKeywordCharacter doing: anActionBlock [
 
 	keyUpInteractions at: aKeywordCharacter put: anActionBlock  
 ]
 
 { #category : #Events }
-WinterInteractiveMovableComponent >> handleKeyDown: anEvent [
+GameInteractiveMovableActor >> handleKeyDown: anEvent [
 
 	keyDownInteractions
 		at: anEvent character
@@ -47,7 +47,7 @@ WinterInteractiveMovableComponent >> handleKeyDown: anEvent [
 ]
 
 { #category : #Events }
-WinterInteractiveMovableComponent >> handleKeyUp: anEvent [
+GameInteractiveMovableActor >> handleKeyUp: anEvent [
 
 	keyUpInteractions
 		at: anEvent character
@@ -56,7 +56,7 @@ WinterInteractiveMovableComponent >> handleKeyUp: anEvent [
 ]
 
 { #category : #initialization }
-WinterInteractiveMovableComponent >> initialize [
+GameInteractiveMovableActor >> initialize [
 
 	super initialize.
 	keyDownInteractions := Dictionary new.
@@ -65,7 +65,7 @@ WinterInteractiveMovableComponent >> initialize [
 ]
 
 { #category : #printing }
-WinterInteractiveMovableComponent >> printOn: aStream [
+GameInteractiveMovableActor >> printOn: aStream [
 
 	aStream
 		nextPutAll: ( '<1s> - position [<2s>]' expandMacrosWith: self class name with: self position )

@@ -58,10 +58,13 @@ WBASpellSelectScreenModel >> hasPlayerSpecificHandling [
 
 { #category : #'Screen Building' }
 WBASpellSelectScreenModel >> loadSpellSprites [
-	^ (1 to: 6) collect: [ :i |
-		WBASpellExplodeDescriptor new
-			fileName: 'spell' , i printString;
-			loadSpritesWith: screen surface using: startingGame  assetsManagementSystem ]
+
+	^ ( 1 to: 6 )
+		collect: [ :i | 
+			WBASpellExplodeDescriptor new
+				fileName: 'spell' , i printString;
+				loadSpritesWith: screen surface using: startingGame assetsManager
+			]
 ]
 
 { #category : #initialization }

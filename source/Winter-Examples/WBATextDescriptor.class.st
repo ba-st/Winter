@@ -12,7 +12,7 @@ Public API and Key Messages:
 "
 Class {
 	#name : #WBATextDescriptor,
-	#superclass : #WinterSpriteDescriptor,
+	#superclass : #GameSpriteDescriptor,
 	#category : #'Winter-Examples-WizardBattle'
 }
 

@@ -17,8 +17,8 @@ Public API and Key Messages:
 
 "
 Class {
-	#name : #WinterMovableComponent,
-	#superclass : #WinterComponent,
+	#name : #GameMovableActor,
+	#superclass : #GameActor,
 	#instVars : [
 		'sprite',
 		'collisionShape'
@@ -27,7 +27,7 @@ Class {
 }
 
 { #category : #Collisions }
-WinterMovableComponent >> checkCollisions [
+GameMovableActor >> checkCollisions [
 
 	"re implement if you want to do something"
 
@@ -35,19 +35,19 @@ WinterMovableComponent >> checkCollisions [
 ]
 
 { #category : #Accessing }
-WinterMovableComponent >> collisionShape [
+GameMovableActor >> collisionShape [
 
 	^ collisionShape
 ]
 
 { #category : #Accessing }
-WinterMovableComponent >> collisionShape: aCollisionshape [
+GameMovableActor >> collisionShape: aCollisionshape [
 
 	collisionShape := aCollisionshape
 ]
 
 { #category : #initialization }
-WinterMovableComponent >> initialize [
+GameMovableActor >> initialize [
 
 	super initialize.
 	self
@@ -57,7 +57,7 @@ WinterMovableComponent >> initialize [
 ]
 
 { #category : #initialization }
-WinterMovableComponent >> initializeCollisionShape [
+GameMovableActor >> initializeCollisionShape [
 
 	"re implement if you want to do something"
 
@@ -65,7 +65,7 @@ WinterMovableComponent >> initializeCollisionShape [
 ]
 
 { #category : #initialization }
-WinterMovableComponent >> initializeResources [
+GameMovableActor >> initializeResources [
 
 	"re implement if you want to do something"
 
@@ -73,7 +73,7 @@ WinterMovableComponent >> initializeResources [
 ]
 
 { #category : #initialization }
-WinterMovableComponent >> initializeSprite [
+GameMovableActor >> initializeSprite [
 
 	"re implement if you want to do something"
 
@@ -81,19 +81,19 @@ WinterMovableComponent >> initializeSprite [
 ]
 
 { #category : #Accessing }
-WinterMovableComponent >> position [
+GameMovableActor >> position [
 
 	^ collisionShape position
 ]
 
 { #category : #Accessing }
-WinterMovableComponent >> position: aPosition [
+GameMovableActor >> position: aPosition [
 
 	collisionShape position: aPosition
 ]
 
 { #category : #Rendering }
-WinterMovableComponent >> renderOn: aCanvas [
+GameMovableActor >> renderOn: aCanvas [
 
 	sprite
 		ifNil: [  collisionShape  renderOn: aCanvas ]
@@ -101,7 +101,7 @@ WinterMovableComponent >> renderOn: aCanvas [
 ]
 
 { #category : #Rendering }
-WinterMovableComponent >> renderSpriteOn: aCanvas [
+GameMovableActor >> renderSpriteOn: aCanvas [
 
 	aCanvas pathTransform
 		restoreAfter: [ aCanvas pathTransform translateBy: self translation.
@@ -110,14 +110,13 @@ WinterMovableComponent >> renderSpriteOn: aCanvas [
 ]
 
 { #category : #Accessing }
-WinterMovableComponent >> translation [
+GameMovableActor >> translation [
 
 	^ self position
 ]
 
 { #category : #Events }
-WinterMovableComponent >> updateUsing: aCanvas [
+GameMovableActor >> update [
 
-	collisionShape updateUsing: aCanvas.
 	self checkCollisions
 ]

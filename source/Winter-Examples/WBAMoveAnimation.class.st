@@ -16,7 +16,7 @@ Public API and Key Messages:
 "
 Class {
 	#name : #WBAMoveAnimation,
-	#superclass : #WinterAnimation,
+	#superclass : #GameAnimation,
 	#instVars : [
 		'shiftIncr'
 	],
