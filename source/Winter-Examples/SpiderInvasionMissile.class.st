@@ -13,32 +13,26 @@ Class {
 }
 
 { #category : #'instance creation' }
-SpiderInvasionMissile class >> atPosition: aPosition of: aScene tick: numberOfTicks [
+SpiderInvasionMissile class >> atPosition: aPosition of: aGame tick: numberOfTicks [
 
-	^ self new initializeAtPosition: aPosition of: aScene tick: numberOfTicks
+	^ self new initializeAtPosition: aPosition of: aGame tick: numberOfTicks
 ]
 
 { #category : #Actions }
 SpiderInvasionMissile >> action [
 
-	self y = scene minY
-		ifTrue: [ scene player reload.
-			scene removeComponent: self
+	self y = game minY
+		ifTrue: [ game player reload.
+			self die
 			]
 		ifFalse: [ self position: self position - ( 0 @ 1 ) ]
 ]
 
 { #category : #initialization }
-SpiderInvasionMissile >> initializeAtPosition: aPosition of: aScene tick: numberOfTicks [
+SpiderInvasionMissile >> initializeAtPosition: aPosition of: aGame tick: numberOfTicks [
 
-	scene := aScene.
-	game := scene game.
+	game := aGame.
+	sprite := game assetsManager assetNamed: #missile.
 	collisionShape := Circle ofCenter: aPosition radius: self spriteSize x color: Color white.
 	self tick: numberOfTicks
-]
-
-{ #category : #initialization }
-SpiderInvasionMissile >> initializeSprite [
-
-	sprite := game assetsManager assetNamed: #missile
 ]

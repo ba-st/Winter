@@ -13,28 +13,22 @@ Class {
 }
 
 { #category : #accessing }
-SpiderInvasionExplode class >> atPosition: aPosition of: aScene tick: numberOfTicks [
+SpiderInvasionExplode class >> atPosition: aPosition of: aGame tick: numberOfTicks [
 
-	^ self new initializeAtPosition: aPosition of: aScene tick: numberOfTicks
+	^ self new initializeAtPosition: aPosition of: aGame tick: numberOfTicks
 ]
 
 { #category : #Actions }
 SpiderInvasionExplode >> action [
 
-	game scene removeComponent: self
+	self die
 ]
 
 { #category : #initialization }
-SpiderInvasionExplode >> initializeAtPosition: aPosition of: aScene tick: numberOfTicks [
+SpiderInvasionExplode >> initializeAtPosition: aPosition of: aGame tick: numberOfTicks [
 
-	scene := aScene.
-	game := scene game.
+	game := aGame.
+	sprite := game assetsManager assetNamed: #explode.
 	collisionShape := Square ofCenter: aPosition extent: self spriteSize color: Color black.
 	self tick: numberOfTicks
-]
-
-{ #category : #initialization }
-SpiderInvasionExplode >> initializeSprite [
-
-	sprite := game assetsManager assetNamed: #explode
 ]

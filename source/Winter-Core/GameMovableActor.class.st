@@ -52,7 +52,6 @@ GameMovableActor >> initialize [
 	super initialize.
 	self
 		initializeCollisionShape;
-		initializeSprite;
 		initializeResources
 ]
 
@@ -66,14 +65,6 @@ GameMovableActor >> initializeCollisionShape [
 
 { #category : #initialization }
 GameMovableActor >> initializeResources [
-
-	"re implement if you want to do something"
-
-	
-]
-
-{ #category : #initialization }
-GameMovableActor >> initializeSprite [
 
 	"re implement if you want to do something"
 

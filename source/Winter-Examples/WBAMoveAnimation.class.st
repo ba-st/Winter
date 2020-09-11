@@ -39,6 +39,12 @@ WBAMoveAnimation >> initialStep: startStep [
 	self movingElement shiftBy: (startStep * shiftIncr)
 ]
 
+{ #category : #private }
+WBAMoveAnimation >> midAnimation [
+
+	self subclassResponsibility
+]
+
 { #category : #Accessing }
 WBAMoveAnimation >> movingElement [
 	self subclassResponsibility 

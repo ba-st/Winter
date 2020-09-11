@@ -45,7 +45,7 @@ SpiderInvasionPlayer >> fire [
 
 			loaded := false.
 			missilePos := self position - ( 0 @ 1 ).
-			scene addComponent: ( SpiderInvasionMissile atPosition: missilePos of: scene tick: 5 )
+			scene addComponent: ( SpiderInvasionMissile atPosition: missilePos of: game tick: 5 )
 			]
 ]
 
@@ -62,8 +62,7 @@ SpiderInvasionPlayer >> initializeCollisionShape [
 SpiderInvasionPlayer >> initializeOn: aGame [
 
 	game := aGame.
-	collisionShape game: game.
-	sprite := self spaceShipSprite .
+	sprite := self spaceShipSprite.
 	loaded := true
 ]
 

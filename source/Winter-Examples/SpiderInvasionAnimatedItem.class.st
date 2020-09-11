@@ -52,8 +52,8 @@ SpiderInvasionAnimatedItem >> tick: anObject [
 ]
 
 { #category : #Events }
-SpiderInvasionAnimatedItem >> updateUsing: aCanvas [
+SpiderInvasionAnimatedItem >> update [
 
 	self doTick.
-	super updateUsing: aCanvas
+	super update
 ]

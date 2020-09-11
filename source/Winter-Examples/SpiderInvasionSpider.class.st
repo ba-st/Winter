@@ -14,27 +14,27 @@ Class {
 }
 
 { #category : #accessing }
-SpiderInvasionSpider class >> atPosition: aPosition of: aScene tick: numberOfTicks [
+SpiderInvasionSpider class >> atPosition: aPosition of: aGame tick: numberOfTicks [
 
-	^ self new initializeAtPosition: aPosition of: aScene tick: numberOfTicks
+	^ self new initializeAtPosition: aPosition of: aGame tick: numberOfTicks
 ]
 
 { #category : #Actions }
 SpiderInvasionSpider >> action [
 
-	self y = scene maxY
-		ifTrue: [ scene lostGame ]
+	self y = game maxY
+		ifTrue: [ game lostGame ]
 		ifFalse: [ self position: self position + ( 0 @ 1 ) ]
 ]
 
 { #category : #Collisions }
 SpiderInvasionSpider >> checkCollisions [
 
-	scene components
-		do: [ :component | 
-			component = self
-				ifFalse: [ component position = self position
-						ifTrue: [ ( CollisionOcurred between: self and: component ) signal ]
+	game actors
+		do: [ :actor | 
+			actor = self
+				ifFalse: [ actor position = self position
+						ifTrue: [ ( CollisionOcurred between: self and: actor ) signal ]
 					]
 			]
 ]
@@ -47,16 +47,10 @@ SpiderInvasionSpider >> die [
 ]
 
 { #category : #initialization }
-SpiderInvasionSpider >> initializeAtPosition: aPosition of: aScene tick: numberOfTicks [
+SpiderInvasionSpider >> initializeAtPosition: aPosition of: aGame tick: numberOfTicks [
 
-	scene := aScene.
-	game := scene game.
+	game := aGame.
+	sprite := game assetsManager  assetNamed: #spider.
 	collisionShape := Square ofCenter: aPosition extent: self spriteSize color: Color black.
 	self tick: numberOfTicks
-]
-
-{ #category : #initialization }
-SpiderInvasionSpider >> initializeSprite [
-
-	sprite := game assetsManager  assetNamed: #spider
 ]
