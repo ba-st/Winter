@@ -13,7 +13,7 @@ Public API and Key Messages:
 "
 Class {
 	#name : #WBACharacterDescriptor,
-	#superclass : #WinterSpriteDescriptor,
+	#superclass : #GameSpriteDescriptor,
 	#category : #'Winter-Examples-WizardBattle'
 }
 

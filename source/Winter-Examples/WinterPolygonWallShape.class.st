@@ -25,7 +25,7 @@ WinterPolygonWallShape >> bounds [
 { #category : #Drawing }
 WinterPolygonWallShape >> createPathOn: aCanvas [
 
-	graphicsPath := aCanvas
+	^graphicsPath := aCanvas
 		createPath: [ :builder | 
 			builder
 				absolute;

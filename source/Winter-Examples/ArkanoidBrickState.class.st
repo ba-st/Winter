@@ -10,12 +10,21 @@ Public API and Key Messages:
 "
 Class {
 	#name : #ArkanoidBrickState,
-	#superclass : #WinterReactiveObject,
+	#superclass : #GameActor,
+	#instVars : [
+		'sprite'
+	],
 	#category : #'Winter-Examples-Arkanoid'
 }
 
+{ #category : #'as yet unclassified' }
+ArkanoidBrickState class >> representedWith: aSprite [
+
+	^ self new initializeRepresendtadWith: aSprite
+]
+
 { #category : #Collisions }
-ArkanoidBrickState >> affectCollisionWithBallTo: anArkanoidBlock [
+ArkanoidBrickState >> affectCollisionWithBallTo: anArkanoidBlock in: aGame [
 
 	self subclassResponsibility
 ]
@@ -27,6 +36,12 @@ ArkanoidBrickState >> color [
 ]
 
 { #category : #Accessing }
+ArkanoidBrickState >> initializeRepresendtadWith: aSprite [
+
+	sprite := aSprite
+]
+
+{ #category : #Accessing }
 ArkanoidBrickState >> printOn: aStream [
 
 	aStream nextPutAll: ( 'ArkanoidBrickState - [<1p>]' expandMacrosWith: self color )
@@ -35,5 +50,5 @@ ArkanoidBrickState >> printOn: aStream [
 { #category : #Accessing }
 ArkanoidBrickState >> sprite [
 
-	self subclassResponsibility
+	^ sprite
 ]

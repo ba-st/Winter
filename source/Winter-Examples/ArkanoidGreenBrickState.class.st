@@ -14,19 +14,13 @@ Class {
 }
 
 { #category : #Collisions }
-ArkanoidGreenBrickState >> affectCollisionWithBallTo: anArkanoidBlock [
+ArkanoidGreenBrickState >> affectCollisionWithBallTo: anArkanoidBlock in: aGame [
 
-	anArkanoidBlock destroy
+	aGame removeActor: anArkanoidBlock
 ]
 
 { #category : #Accessing }
 ArkanoidGreenBrickState >> color [
 
 	^ Color green
-]
-
-{ #category : #Accessing }
-ArkanoidGreenBrickState >> sprite [
-
-	^ game assetsManagementSystem  assetNamed: #green
 ]

@@ -16,7 +16,7 @@ Public API and Key Messages:
 "
 Class {
 	#name : #ArkanoidBrick,
-	#superclass : #WinterMovableComponent,
+	#superclass : #GameMovableActor,
 	#instVars : [
 		'colorState'
 	],
@@ -24,9 +24,12 @@ Class {
 }
 
 { #category : #'Instance Creation' }
-ArkanoidBrick class >> greenOn: aPoint ofExtent: anotherPoint [
+ArkanoidBrick class >> greenRepresentedWith: aSprite on: aPoint ofExtent: anotherPoint [
 
-	^ self on: aPoint ofExtent: anotherPoint inState: ArkanoidGreenBrickState new
+	^ self
+		on: aPoint
+		ofExtent: anotherPoint
+		inState: ( ArkanoidGreenBrickState representedWith: aSprite )
 ]
 
 { #category : #private }
@@ -36,15 +39,21 @@ ArkanoidBrick class >> on: aPoint ofExtent: anotherPoint inState: aBlockState [
 ]
 
 { #category : #'Instance Creation' }
-ArkanoidBrick class >> redOn: aPoint ofExtent: anotherPoint [
+ArkanoidBrick class >> redRepresentedWith: aSprite on: aPoint ofExtent: anotherPoint [
 
-	^ self on: aPoint ofExtent: anotherPoint inState: ArkanoidRedBrickState new
+	^ self
+		on: aPoint
+		ofExtent: anotherPoint
+		inState: ( ArkanoidRedBrickState representedWith: aSprite )
 ]
 
 { #category : #'Instance Creation' }
-ArkanoidBrick class >> yellowOn: aPoint ofExtent: anotherPoint [
+ArkanoidBrick class >> yellowRepresentedWith: aSprite on: aPoint ofExtent: anotherPoint [
 
-	^ self on: aPoint ofExtent: anotherPoint inState: ArkanoidYellowBrickState new
+	^ self
+		on: aPoint
+		ofExtent: anotherPoint
+		inState: ( ArkanoidYellowBrickState representedWith: aSprite )
 ]
 
 { #category : #Updating }
@@ -56,25 +65,15 @@ ArkanoidBrick >> changeColorStateTo: anArkanoidColorState [
 ]
 
 { #category : #Collisions }
-ArkanoidBrick >> collidedByBall [
+ArkanoidBrick >> collidedByBallIn: aGame [
 
-	colorState affectCollisionWithBallTo: self
-]
-
-{ #category : #Updating }
-ArkanoidBrick >> destroy [
-
-	scene removeComponent: self.
+	colorState affectCollisionWithBallTo: self in: aGame
 ]
 
 { #category : #Initialization }
 ArkanoidBrick >> initializeOn: aPoint ofExtent: anotherPoint inState: aBlockState [
 
-	collisionShape := Winter2DSquare
-		ofCenter: aPoint
-		extent: anotherPoint
-		color: aBlockState color
-		in: game.
+	collisionShape := Square ofCenter: aPoint extent: anotherPoint color: aBlockState color.
 	colorState := aBlockState.
 	sprite := colorState sprite
 ]

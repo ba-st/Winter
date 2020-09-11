@@ -18,7 +18,7 @@ Public API and Key Messages:
 "
 Class {
 	#name : #SpiderInvasionPlayer,
-	#superclass : #WinterInteractiveMovableComponent,
+	#superclass : #GameInteractiveMovableActor,
 	#instVars : [
 		'loaded'
 	],
@@ -34,7 +34,7 @@ SpiderInvasionPlayer class >> on: aGame [
 { #category : #Collisions }
 SpiderInvasionPlayer >> checkCollisions [
 
-	CollisionAgainstMapBordersChecker new checkFor: self onAxis: #x
+	CollisionChecker new checkFor: self onAxis: #x
 ]
 
 { #category : #actions }
@@ -45,26 +45,24 @@ SpiderInvasionPlayer >> fire [
 
 			loaded := false.
 			missilePos := self position - ( 0 @ 1 ).
-			scene addComponent: ( SpiderInvasionMissile atPosition: missilePos of: scene tick: 5 )
+			scene addComponent: ( SpiderInvasionMissile atPosition: missilePos of: game tick: 5 )
 			]
 ]
 
 { #category : #initialization }
 SpiderInvasionPlayer >> initializeCollisionShape [
 
-	collisionShape := Winter2DSquare
+	collisionShape := Square
 		ofCenter: (384 "game dimensions x" / 2) @ 672 "game dimensions y" - (48@48)
 		extent: 48@48 "game spriteSize"
 		color: Color red
-		in: game
 ]
 
 { #category : #initialization }
 SpiderInvasionPlayer >> initializeOn: aGame [
 
 	game := aGame.
-	collisionShape game: game.
-	sprite := self spaceShipSprite .
+	sprite := self spaceShipSprite.
 	loaded := true
 ]
 
@@ -107,5 +105,5 @@ SpiderInvasionPlayer >> reload [
 { #category : #Accessing }
 SpiderInvasionPlayer >> spaceShipSprite [
 
-	^game assetsManagementSystem  assetNamed: #spaceShip
+	^game assetsManager  assetNamed: #spaceShip
 ]

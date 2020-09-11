@@ -12,7 +12,7 @@ Public API and Key Messages:
 "
 Class {
 	#name : #WBASpellExplodeDescriptor,
-	#superclass : #WinterSpriteDescriptor,
+	#superclass : #GameSpriteDescriptor,
 	#category : #'Winter-Examples-WizardBattle'
 }
 

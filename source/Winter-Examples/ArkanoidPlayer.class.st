@@ -14,51 +14,26 @@ Public API and Key Messages:
 "
 Class {
 	#name : #ArkanoidPlayer,
-	#superclass : #WinterInteractiveMovableComponent,
+	#superclass : #GameInteractiveMovableActor,
 	#category : #'Winter-Examples-Arkanoid'
 }
 
 { #category : #'Instance Creation' }
-ArkanoidPlayer class >> on: aGame [
+ArkanoidPlayer class >> representedWith: aSprite [
 
-	^ self new initializeOn: aGame
-]
-
-{ #category : #Accessing }
-ArkanoidPlayer >> arkanoidBarSprite [
-
-	^ game assetsManagementSystem  assetNamed: #arkanoidBar
-]
-
-{ #category : #Collisions }
-ArkanoidPlayer >> checkCollisions [
-
-	CollisionAgainstMapBordersChecker new checkFor: self onAxis: #x
+	^ self new initializeRepresendtadWith: aSprite
 ]
 
 { #category : #Initialization }
 ArkanoidPlayer >> initializeCollisionShape [
 
-	collisionShape := Winter2DSquare
-		ofCenter: 200 @ 560
-		extent: 200 @ 0
-		color: Color red
-		in: game
+	collisionShape := Square ofCenter: 250 @ 530 extent: 200 @ 0 color: Color red
 ]
 
 { #category : #Initialization }
-ArkanoidPlayer >> initializeOn: aGame [
+ArkanoidPlayer >> initializeRepresendtadWith: aSprite [
 
-	game := aGame.
-	collisionShape game: game.
-	sprite := self arkanoidBarSprite
-]
-
-{ #category : #Initialization }
-ArkanoidPlayer >> initializeSprite [
-
-	sprite := game assetsManagementSystem  assetNamed: #arkanoidBar
-	
+	sprite := aSprite
 ]
 
 { #category : #Movement }
@@ -95,10 +70,4 @@ ArkanoidPlayer >> positionY [
 ArkanoidPlayer >> resetPosition [
 
 	collisionShape position: 200 @ 560
-]
-
-{ #category : #Movement }
-ArkanoidPlayer >> startGame [
-
-	game playing: true
 ]

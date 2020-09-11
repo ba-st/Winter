@@ -12,14 +12,14 @@ Public API and Key Messages:
 "
 Class {
 	#name : #SpiderInvasionItem,
-	#superclass : #WinterMovableComponent,
+	#superclass : #GameMovableActor,
 	#category : #'Winter-Examples-SpiderInvasion'
 }
 
 { #category : #Actions }
 SpiderInvasionItem >> die [
 
-	game removeComponent: self
+	game removeActor: self
 ]
 
 { #category : #Testing }

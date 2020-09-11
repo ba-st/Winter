@@ -16,7 +16,7 @@ Public API and Key Messages:
 "
 Class {
 	#name : #WBAMoveAnimation,
-	#superclass : #WinterAnimation,
+	#superclass : #GameAnimation,
 	#instVars : [
 		'shiftIncr'
 	],
@@ -37,6 +37,12 @@ WBAMoveAnimation >> direction: index [
 WBAMoveAnimation >> initialStep: startStep [
 	super initialStep: startStep.
 	self movingElement shiftBy: (startStep * shiftIncr)
+]
+
+{ #category : #private }
+WBAMoveAnimation >> midAnimation [
+
+	self subclassResponsibility
 ]
 
 { #category : #Accessing }

@@ -80,7 +80,7 @@ WBANumberPlayerSelectScreenModel >> renderWidgetsOn: canvas [
 { #category : #accessing }
 WBANumberPlayerSelectScreenModel >> screen: sc [
 	super screen: sc.
-	self setUpGame.
+	startingGame screen: screen.
 ]
 
 { #category : #accessing }

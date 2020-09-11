@@ -9,25 +9,15 @@ Class {
 }
 
 { #category : #'Instance Creation' }
-SpiderInvasionWall class >> inPosition: aPosition of: aSene [
+SpiderInvasionWall class >> inPosition: aPosition of: aGame [
 
-	^ self new initializeInPosition: aPosition of: aSene
+	^ self new initializeInPosition: aPosition of: aGame
 ]
 
 { #category : #initialization }
-SpiderInvasionWall >> initializeInPosition: aPosition of: aSene [
+SpiderInvasionWall >> initializeInPosition: aPosition of: aGame [
 
-	scene := aSene.
-	game := scene game.
-	collisionShape := Winter2DSquare
-		ofCenter: aPosition
-		extent: self spriteSize
-		color: Color black
-		in: self game
-]
-
-{ #category : #initialization }
-SpiderInvasionWall >> initializeSprite [
-
-	sprite := game assetsManagementSystem  assetNamed: #wall
+	game := aGame.
+	collisionShape := Square ofCenter: aPosition extent: self spriteSize color: Color black.
+	sprite := game assetsManager  assetNamed: #wall
 ]

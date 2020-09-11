@@ -47,7 +47,7 @@ WBACharacterSelectScreenModel >> characterWidgets: cood [
 			sprites := WBACharacterDescriptor new
 				fileName: 'perso' , i printString;
 				position: cood;
-				loadShortSpritesWith: screen surface using: startingGame assetsManagementSystem.
+				loadShortSpritesWith: screen surface using: startingGame assetsManager.
 			self newAnimatedWidget: sprites
 			]
 ]

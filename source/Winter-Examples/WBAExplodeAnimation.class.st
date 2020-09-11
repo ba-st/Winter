@@ -15,7 +15,7 @@ Public API and Key Messages:
 "
 Class {
 	#name : #WBAExplodeAnimation,
-	#superclass : #WinterAnimation,
+	#superclass : #GameAnimation,
 	#instVars : [
 		'spell'
 	],

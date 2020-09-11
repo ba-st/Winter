@@ -117,6 +117,12 @@ WinterScreen >> model: aViewModel [
 ]
 
 { #category : #Accessing }
+WinterScreen >> position [
+
+	^ self window handle position
+]
+
+{ #category : #Accessing }
 WinterScreen >> positionX [
 
 	^ self window handle position x
@@ -171,7 +177,7 @@ WinterScreen >> scheduler [
 WinterScreen >> show [
 
 	self extent: model dimensions .
-	self eventHandler: (model eventHandlerFor: self).
+	self eventHandler: model eventHandler.
 	scheduler startProcess 
 ]
 

@@ -121,23 +121,28 @@ WBASeasonSelectScreenModel >> rightSelection [
 WBASeasonSelectScreenModel >> seasonSubWidgets: aNumber [
 
 	| groundDescriptor wallDescriptor grounds walls basicGroundWidget |
-	
-	groundDescriptor := WBAGroundDescriptor backgroundAt: aNumber .
-	wallDescriptor := WBAWallDescriptor  backgroundAt: aNumber .
-	grounds := groundDescriptor loadSpritesWith: screen surface using: startingGame  assetsManagementSystem.
-	walls := wallDescriptor loadSpritesWith: screen surface using: startingGame assetsManagementSystem.
-	basicGroundWidget := self newSeasonSubWidget: { grounds first }.
-	^ { 
-		self newSeasonSubWidget: { grounds first . walls first } .
-		basicGroundWidget .
-		self newSeasonSubWidget: { grounds first . walls second } .
-		basicGroundWidget .
-		self newSeasonSubWidget: { grounds first . walls third } .
-		basicGroundWidget .
-		self newSeasonSubWidget: { grounds second } .
-	}
-	
-	
+
+	groundDescriptor := WBAGroundDescriptor backgroundAt: aNumber.
+	wallDescriptor := WBAWallDescriptor backgroundAt: aNumber.
+	grounds := groundDescriptor loadSpritesWith: screen surface using: startingGame assetsManager.
+	walls := wallDescriptor loadSpritesWith: screen surface using: startingGame assetsManager.
+	basicGroundWidget := self newSeasonSubWidget: {grounds first}.
+	^ {( self
+		newSeasonSubWidget:
+			{grounds first.
+			walls first} ).
+	basicGroundWidget.
+	( self
+		newSeasonSubWidget:
+			{grounds first.
+			walls second} ).
+	basicGroundWidget.
+	( self
+		newSeasonSubWidget:
+			{grounds first.
+			walls third} ).
+	basicGroundWidget.
+	( self newSeasonSubWidget: {grounds second} )}
 ]
 
 { #category : #actions }
