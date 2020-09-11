@@ -48,7 +48,7 @@ BaselineOfWinter >> setUpDependenciesFor: spec [
 BaselineOfWinter >> setUpGroupsFor: spec [
 
 	^ spec
-		group: 'Tests' with: #('Winter-AssetManagementTests' 'Winter-CoreTests' 'Winter-EcsTest' 'Winter-PhysicsTests' 'Winter-TiledTests');
+		group: 'Tests' with: #('Winter-AssetManagementTests' 'Winter-CoreTests' 'Winter-EcsTests' 'Winter-PhysicsTests' 'Winter-TiledTests');
 		group: 'Deployment'
 			with: #('Winter-AssetManagement' 'Winter-Core' 'Winter-Ecs' 'Winter-View' 'Winter-Physics' 'Winter-Tiled' 'Winter-Examples');
 		group: 'Development' with: #('Deployment' 'Tests');
@@ -65,7 +65,7 @@ BaselineOfWinter >> setUpPackagesFor: spec [
 		package: 'Winter-Core';
 		package: 'Winter-CoreTests' with: [ spec requires: #('Winter-Core') ];
 		package: 'Winter-Ecs';
-		package: 'Winter-EcsTest' with: [ spec requires: #('Winter-Ecs') ];
+		package: 'Winter-EcsTests' with: [ spec requires: #('Winter-Ecs') ];
 		package: 'Winter-Physics';
 		package: 'Winter-PhysicsTests' with: [ spec requires: #('Winter-Physics') ];
 		package: 'Winter-View' with: [ spec requires: #('Winter-Core' 'Buoy') ];
