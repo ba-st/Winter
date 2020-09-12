@@ -70,7 +70,5 @@ BaselineOfWinter >> setUpPackagesFor: spec [
 		package: 'Winter-Physics';
 		package: 'Winter-PhysicsTests' with: [ spec requires: #('Winter-Physics') ];
 		package: 'Winter-View' with: [ spec requires: #('Winter-Core' 'Buoy') ];
-		package: 'Winter-Examples' with: [ spec requires: #('Winter-View' 'Winter-Physics' 'Winter-AssetManagement') ];
-		package: 'Winter-Tiled' with: [ spec requires: #('XMLParser') ];
-		package: 'Winter-TiledTests' with: [ spec requires: #('Winter-Tiled') ]
+		package: 'Winter-Examples' with: [ spec requires: #('Winter-View' 'Winter-Physics' 'Winter-AssetManagement') ]
 ]
