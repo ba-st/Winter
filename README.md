@@ -12,7 +12,6 @@
   </p>
 </p>
 
-[![Build Status](https://travis-ci.org/ba-st/Winter.svg?branch=release-candidate)](https://travis-ci.org/ba-st/Winter) 
 [![Build Status](https://github.com/ba-st/Winter/workflows/Build/badge.svg?branch=release-candidate)](https://github.com/ba-st/Winter/actions?query=workflow%3ABuild)
 [![Coverage Status](https://codecov.io/github/ba-st/Winter/coverage.svg?branch=release-candidate)](https://codecov.io/gh/ba-st/Winter/branch/release-candidate)
 [![Pharo 6.1](https://img.shields.io/badge/Pharo-6.1-informational)](https://pharo.org)
