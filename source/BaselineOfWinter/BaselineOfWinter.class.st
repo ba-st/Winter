@@ -13,6 +13,12 @@ BaselineOfWinter >> baseline: spec [
 		do: [ self setUpDependenciesFor: spec.
 			self setUpPackagesFor: spec.
 			self setUpGroupsFor: spec
+			].
+	spec
+		for: #'pharo6.x'
+		do: [ spec
+				package: 'Winter-Pharo6-Support';
+				group: 'Tests' with: 'Winter-Pharo6-Support'
 			]
 ]
 
@@ -31,11 +37,6 @@ BaselineOfWinter >> setUpDependenciesFor: spec [
 				versionString: #stable;
 				repository: 'http://smalltalkhub.com/mc/PharoExtras/Sound/main'
 			];
-		configuration: 'XMLParser'
-			with: [ spec
-				versionString: #stable;
-				repository: 'http://smalltalkhub.com/mc/PharoExtras/XMLParser/main'
-			];
 		baseline: 'Buoy'
 			with: [ spec
 				repository: 'github://ba-st/Buoy:v5.4.0/source';
@@ -48,9 +49,9 @@ BaselineOfWinter >> setUpDependenciesFor: spec [
 BaselineOfWinter >> setUpGroupsFor: spec [
 
 	^ spec
-		group: 'Tests' with: #('Winter-AssetManagementTests' 'Winter-CoreTests' 'Winter-EcsTest' 'Winter-PhysicsTests' 'Winter-TiledTests');
+		group: 'Tests' with: #('Winter-AssetManagementTests' 'Winter-CoreTests' 'Winter-EcsTest' 'Winter-PhysicsTests');
 		group: 'Deployment'
-			with: #('Winter-AssetManagement' 'Winter-Core' 'Winter-Ecs' 'Winter-View' 'Winter-Physics' 'Winter-Tiled' 'Winter-Examples');
+			with: #('Winter-AssetManagement' 'Winter-Core' 'Winter-Ecs' 'Winter-View' 'Winter-Physics' 'Winter-Examples');
 		group: 'Development' with: #('Deployment' 'Tests');
 		group: 'CI' with: 'Tests';
 		group: 'default' with: #('Development')
