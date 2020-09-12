@@ -71,7 +71,9 @@ GameEngine >> removeAllEntitiesSatisfying: aFilter [
 { #category : #'Managing - Systems' }
 GameEngine >> removeAllSystems [
 
-	systems do: [ :system | self removeSystem: system ]
+	"Fix for P8 failing remove"
+
+	[ systems notEmpty ] whileTrue: [ systems do: [ :system | self removeSystem: system ] ]
 ]
 
 { #category : #'Managing - Entities' }
