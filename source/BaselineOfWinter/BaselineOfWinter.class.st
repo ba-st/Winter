@@ -32,17 +32,17 @@ BaselineOfWinter >> projectClass [
 BaselineOfWinter >> setUpDependenciesFor: spec [
 
 	spec
+		baseline: 'Buoy' with: [ spec repository: 'github://ba-st/Buoy:v6/source' ];
+		project: 'Buoy-Deployment' copyFrom: 'Buoy' with: [ spec loads: 'Deployment' ];
+		project: 'Buoy-SUnit' copyFrom: 'Buoy' with: [ spec loads: 'Dependent-SUnit-Extensions' ];
+		project: 'Buoy-Tools' copyFrom: 'Buoy' with: [ spec loads: 'Tools' ].
+		
+	spec
 		configuration: 'PharoSound'
-			with: [ spec
+		with: [ spec
 				versionString: #stable;
 				repository: 'http://smalltalkhub.com/mc/PharoExtras/Sound/main'
-			];
-		baseline: 'Buoy'
-			with: [ spec
-				repository: 'github://ba-st/Buoy:v6.0.0/source';
-				loads: #('Deployment')
-			];
-		import: 'Buoy'
+			]
 ]
 
 { #category : #baseline }
