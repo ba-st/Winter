@@ -15,7 +15,6 @@ Class {
 	#name : #GameActor,
 	#superclass : #Object,
 	#instVars : [
-		'scene',
 		'game'
 	],
 	#category : #'Winter-Core-Base'
@@ -31,18 +30,6 @@ GameActor >> game [
 GameActor >> game: aGame [
 
 	game := aGame
-]
-
-{ #category : #accessing }
-GameActor >> scene [
-
-	^ scene
-]
-
-{ #category : #accessing }
-GameActor >> scene: anObject [
-
-	scene := anObject
 ]
 
 { #category : #events }
