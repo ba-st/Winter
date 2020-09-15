@@ -34,17 +34,20 @@ CollisionHandler class >> between: aType and: anotherType onCollisionDo: anActio
 CollisionHandler >> canHandle: aCollission [
 
 	| firstComponent secondComponent |
-	
+
 	firstComponent := aCollission firstComponent.
 	secondComponent := aCollission secondComponent.
-	^ ((firstComponent isKindOf: firstType) and: [ secondComponent isKindOf: secondType ])
-		or: [ (secondComponent isKindOf: firstType) and: [ firstComponent isKindOf: secondType ] ]
+	
+	^ ( ( firstComponent isA: firstType ) and: [ secondComponent isA: secondType ] )
+		or: [ ( secondComponent isA: firstType ) and: [ firstComponent isA: secondType ] ]
 ]
 
 { #category : #Evaluating }
 CollisionHandler >> handle: aCollision [
 
-	^ action cull: aCollision
+	^ ( self canHandle: aCollision )
+		ifTrue: [ action cull: aCollision ]
+		ifFalse: [  ]
 ]
 
 { #category : #Evaluating }

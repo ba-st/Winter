@@ -59,8 +59,6 @@ WinterMenuScreenModel >> dimensions [
 { #category : #rendering }
 WinterMenuScreenModel >> display [
 
-	screen extent: self dimensions .
-	screen eventHandler: self eventHandler.
 	self loadWidgets.
 	self startAnimation.
 	screen model: self.
@@ -90,27 +88,19 @@ WinterMenuScreenModel >> enterCode [
 { #category : #'event handling' }
 WinterMenuScreenModel >> eventHandler [
 
-	^ ( KeyboardEventHandler of: startingGame )
-		screenModel: self;
-		yourself
-]
+	| handler |
 
-{ #category : #Accessing }
-WinterMenuScreenModel >> eventHandlerFor: aWinterScreen [
+	handler := BasicEventHandler of: startingGame.
+	handler registerObserver: self.
 
-	^ ( KeyboardEventHandler of: startingGame )
-		screenModel: self;
-		yourself
+	^ handler
 ]
 
 { #category : #animations }
 WinterMenuScreenModel >> every10GameTickDo: aBlock [
 
 	startingGame scheduler
-		newGameTickAction:
-			(ScreenAnimation new
-				block: aBlock;
-				yourself)
+		newGameTickAction: ( ConfigurableAnimation doing: aBlock every: 10 )
 		for: self
 ]
 
@@ -130,19 +120,19 @@ WinterMenuScreenModel >> handleGenericKeyStroke: code [
 ]
 
 { #category : #'event handling' }
-WinterMenuScreenModel >> handleKeyStroke: code [
+WinterMenuScreenModel >> handleKeyStrokeFor: playerIndex key: index [ 
+
+	"overide if you use player specific shortcuts"
+
+]
+
+{ #category : #'event handling' }
+WinterMenuScreenModel >> handleKeyUp: code [
 
 	code = self enterCode ifTrue: [ self nextScreen ].
 	self hasPlayerSpecificHandling
 		ifTrue: [ self handlePlayersKeyStroke: code ]
 		ifFalse: [ self handleGenericKeyStroke: code ]
-]
-
-{ #category : #'event handling' }
-WinterMenuScreenModel >> handleKeyStrokeFor: playerIndex key: index [ 
-
-	"overide if you use player specific shortcuts"
-
 ]
 
 { #category : #'event handling' }
@@ -309,17 +299,16 @@ WinterMenuScreenModel >> startingGame: anObject [
 	startingGame := anObject
 ]
 
+{ #category : #'event handling' }
+WinterMenuScreenModel >> stop [
+
+	startingGame stop
+]
+
 { #category : #'screen building' }
 WinterMenuScreenModel >> switchToNextScreen [
 
 	self subclassResponsibility 
-]
-
-{ #category : #'event handling' }
-WinterMenuScreenModel >> terminateProcesses [
-
-	screen terminateRendering.
-	startingGame scheduler terminateProcess.
 ]
 
 { #category : #private }

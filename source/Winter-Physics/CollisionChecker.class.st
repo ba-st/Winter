@@ -24,7 +24,7 @@ CollisionChecker >> assertIsAnAxisSymbol: aSymbol [
 
 	symbol := aSymbol asLowercase.
 	( #(#x #y) includes: symbol )
-		ifFalse: [ Error signal: 'Symbol passed to border checker should be x, X, y or Y' ]
+		ifFalse: [ AssertionFailed signal: 'Symbol passed to border checker should be x, X, y or Y' ]
 ]
 
 { #category : #'Checking - Components' }
@@ -41,16 +41,6 @@ CollisionChecker >> checkFor: aComponent and: aGame onAxis: anAxisSymbol [
 
 	self assertIsAnAxisSymbol: anAxisSymbol.
 	( self component: aComponent collidesWithBordersOf: aGame onAxis: anAxisSymbol )
-		ifTrue: [ ( CollisionOcurred of: aComponent onWindowAxis: anAxisSymbol ) signal ]
-]
-
-{ #category : #'Checking - Window borders' }
-CollisionChecker >> checkFor: aComponent onAxis: anAxisSymbol [
-
-	"Axis symbol should be #x , #X , #y or #Y"
-
-	self assertIsAnAxisSymbol: anAxisSymbol.
-	( self component: aComponent collidesOnPositionOrExtentOfAxis: anAxisSymbol )
 		ifTrue: [ ( CollisionOcurred of: aComponent onWindowAxis: anAxisSymbol ) signal ]
 ]
 

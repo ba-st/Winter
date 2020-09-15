@@ -34,7 +34,7 @@ SpiderInvasionPlayer class >> on: aGame [
 { #category : #Collisions }
 SpiderInvasionPlayer >> checkCollisions [
 
-	CollisionChecker new checkFor: self onAxis: #x
+	CollisionChecker new checkFor: self and: game onAxis: #x
 ]
 
 { #category : #actions }
