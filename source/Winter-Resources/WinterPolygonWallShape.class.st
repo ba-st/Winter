@@ -7,7 +7,7 @@ Class {
 	#instVars : [
 		'vertices'
 	],
-	#category : #'Winter-Examples-Resources'
+	#category : #'Winter-Resources-Resources'
 }
 
 { #category : #'Instance Creation' }
