@@ -61,14 +61,15 @@ BaselineOfWinter >> setUpGroupsFor: spec [
 BaselineOfWinter >> setUpPackagesFor: spec [
 
 	spec
-		package: 'Winter-AssetManagement' with: [ spec requires: #('PharoSound') ];
-		package: 'Winter-AssetManagementTests' with: [ spec requires: #('Winter-AssetManagement') ];
+		package: 'Winter-AssetManagement' with: 'PharoSound';
+		package: 'Winter-AssetManagementTests' with: 'Winter-AssetManagement';
 		package: 'Winter-Core';
-		package: 'Winter-CoreTests' with: [ spec requires: #('Winter-Core') ];
+		package: 'Winter-CoreTests' with: 'Winter-Core';
 		package: 'Winter-Ecs';
-		package: 'Winter-EcsTest' with: [ spec requires: #('Winter-Ecs') ];
-		package: 'Winter-Physics';
-		package: 'Winter-PhysicsTests' with: [ spec requires: #('Winter-Physics') ];
-		package: 'Winter-View' with: [ spec requires: #('Winter-Core' 'Buoy') ];
-		package: 'Winter-Examples' with: [ spec requires: #('Winter-View' 'Winter-Physics' 'Winter-AssetManagement') ]
+		package: 'Winter-EcsTest' with: 'Winter-Ecs';
+		package: 'Winter-Physics' with: 'Buoy-Deployment';
+		package: 'Winter-PhysicsTests' with: 'Winter-Physics';
+		package: 'Winter-View' with: 'Winter-Core';
+		package: 'Winter-Examples'
+			with: [ spec requires: #('Winter-View' 'Winter-Physics' 'Winter-AssetManagement') ]
 ]
