@@ -39,7 +39,7 @@ BaselineOfWinter >> setUpDependenciesFor: spec [
 			];
 		baseline: 'Buoy'
 			with: [ spec
-				repository: 'github://ba-st/Buoy:v5.4.0/source';
+				repository: 'github://ba-st/Buoy:v6.0.0/source';
 				loads: #('Deployment')
 			];
 		import: 'Buoy'
