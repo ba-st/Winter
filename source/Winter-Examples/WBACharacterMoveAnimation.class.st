@@ -24,21 +24,25 @@ Class {
 
 { #category : #Accessing }
 WBACharacterMoveAnimation >> character [
+
 	^ character
 ]
 
 { #category : #Accessing }
 WBACharacterMoveAnimation >> character: aCharacter [
-	 character := aCharacter 
+
+	character := aCharacter
 ]
 
 { #category : #private }
 WBACharacterMoveAnimation >> midAnimation [
+
 	character switchFoot.
 	shiftIncr := character switchCell: shiftIncr
 ]
 
 { #category : #Accessing }
 WBACharacterMoveAnimation >> movingElement [
-	^ character 
+
+	^ character
 ]

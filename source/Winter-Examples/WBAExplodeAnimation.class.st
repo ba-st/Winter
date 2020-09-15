@@ -24,21 +24,27 @@ Class {
 
 { #category : #Accessing }
 WBAExplodeAnimation >> numberOfAnimationFrame [
-	^ super numberOfAnimationFrame * 1.5
+
+	^ 16 * 1.5
 ]
 
 { #category : #Accessing }
 WBAExplodeAnimation >> spell [
-	^spell
+
+	^ spell
 ]
 
 { #category : #Accessing }
 WBAExplodeAnimation >> spell: anObject [
+
 	spell := anObject
 ]
 
 { #category : #Stepping }
 WBAExplodeAnimation >> step [
-	self isEndAnimation ifTrue: [ spell endExplodeAnimation ].
-	(self isAnimationSplit: 3) ifTrue: [ spell nextSprite ]
+
+	self isEndAnimation
+		ifTrue: [ spell endExplodeAnimation ].
+	( self isAnimationSplit: 3 )
+		ifTrue: [ spell nextSprite ]
 ]

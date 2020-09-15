@@ -23,21 +23,25 @@ Class {
 }
 
 { #category : #private }
-WBASpellMoveAnimation >> midAnimation [	
+WBASpellMoveAnimation >> midAnimation [
+
 	spell switchCell: shiftIncr
 ]
 
 { #category : #Accessing }
 WBASpellMoveAnimation >> movingElement [
+
 	^ spell
 ]
 
 { #category : #Accessing }
 WBASpellMoveAnimation >> spell [
+
 	^ spell
 ]
 
 { #category : #Accessing }
 WBASpellMoveAnimation >> spell: aSpell [
-	 spell := aSpell 
+
+	spell := aSpell
 ]

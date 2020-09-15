@@ -53,12 +53,6 @@ GameScheduler >> printOn: aStream [
 aStream nextPutAll: self name
 ]
 
-{ #category : #accessing }
-GameScheduler >> process [
-
-	^ process
-]
-
 { #category : #'Managing-Processes' }
 GameScheduler >> startProcess [
 

@@ -112,7 +112,7 @@ WBAArenaBootstrap >> bootstrapGame: startingGame on: screen [
 	arena := WBAArena new.
 	startGame := startingGame.
 	screen extent: startingGame gameDescriptor arenaDescriptor windowExtent.
-	screen eventHandler: ( self eventHandler: screen ).
+	screen eventHandler: self eventHandler.
 	self loadSprites: startingGame gameDescriptor surface: screen surface.
 	self bootstrapArena: startingGame gameDescriptor arenaDescriptor.
 	screen model: arena.
@@ -134,14 +134,15 @@ WBAArenaBootstrap >> bootstrapWallCell: cell [
 ]
 
 { #category : #Loading }
-WBAArenaBootstrap >> eventHandler: screen [
+WBAArenaBootstrap >> eventHandler [
 
-	^ SceneEventHandler new
-		players: startGame players;
-		schedulers:
-			{startGame scheduler.
-			screen scheduler};
-		yourself
+	| handler |
+
+	handler := BasicEventHandler of: startGame.
+
+	startGame players do: [ :each | handler registerObserver: each ].
+
+	^ handler
 ]
 
 { #category : #Loading }

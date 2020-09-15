@@ -32,17 +32,19 @@ BaselineOfWinter >> projectClass [
 BaselineOfWinter >> setUpDependenciesFor: spec [
 
 	spec
-		configuration: 'PharoSound'
-			with: [ spec
-				versionString: #stable;
-				repository: 'http://smalltalkhub.com/mc/PharoExtras/Sound/main'
-			];
 		baseline: 'Buoy'
 			with: [ spec
-				repository: 'github://ba-st/Buoy:v5.4.0/source';
+				repository: 'github://ba-st/Buoy:v6/source';
 				loads: #('Deployment')
 			];
-		import: 'Buoy'
+		import: 'Buoy'.
+
+	spec
+		configuration: 'PharoSound'
+		with: [ spec
+				versionString: #stable;
+				repository: 'http://smalltalkhub.com/mc/PharoExtras/Sound/main'
+			]
 ]
 
 { #category : #baseline }
@@ -67,8 +69,9 @@ BaselineOfWinter >> setUpPackagesFor: spec [
 		package: 'Winter-CoreTests' with: [ spec requires: #('Winter-Core') ];
 		package: 'Winter-Ecs';
 		package: 'Winter-EcsTest' with: [ spec requires: #('Winter-Ecs') ];
-		package: 'Winter-Physics';
+		package: 'Winter-Physics' with: [ spec requires: #('Buoy') ];
 		package: 'Winter-PhysicsTests' with: [ spec requires: #('Winter-Physics') ];
-		package: 'Winter-View' with: [ spec requires: #('Winter-Core' 'Buoy') ];
-		package: 'Winter-Examples' with: [ spec requires: #('Winter-View' 'Winter-Physics' 'Winter-AssetManagement') ]
+		package: 'Winter-View' with: [ spec requires: #('Winter-Core') ];
+		package: 'Winter-Examples'
+			with: [ spec requires: #('Winter-View' 'Winter-Physics' 'Winter-AssetManagement') ]
 ]

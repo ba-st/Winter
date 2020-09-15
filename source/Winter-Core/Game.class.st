@@ -79,12 +79,6 @@ Game >> renderOn: aCanvas [
 ]
 
 { #category : #Accessing }
-Game >> scheduler [
-
-	^ scheduler
-]
-
-{ #category : #Accessing }
 Game >> screen [
 
 	screen isNil

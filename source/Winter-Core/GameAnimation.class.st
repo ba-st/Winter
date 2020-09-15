@@ -23,19 +23,19 @@ Class {
 	#category : #'Winter-Core-Animations'
 }
 
+{ #category : #accessing }
+GameAnimation >> actualStep: aValue [
+
+	actualStep  := aValue
+
+	
+]
+
 { #category : #evaluating }
 GameAnimation >> animate [
 
 	actualStep := actualStep + 1.
 	self step
-]
-
-{ #category : #accessing }
-GameAnimation >> initialStep: aValue [
-
-	actualStep  := aValue
-
-	
 ]
 
 { #category : #initialization }
@@ -67,7 +67,7 @@ GameAnimation >> isMidAnimation [
 { #category : #accessing }
 GameAnimation >> numberOfAnimationFrame [
 
-	^ 16
+	^ self subclassResponsibility
 ]
 
 { #category : #evaluating }

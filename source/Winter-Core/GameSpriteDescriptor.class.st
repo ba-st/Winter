@@ -55,11 +55,11 @@ GameSpriteDescriptor >> fileName: anObject [
 ]
 
 { #category : #Bootstrap }
-GameSpriteDescriptor >> loadImageFileUsing: anAssetManagementSystem [
+GameSpriteDescriptor >> loadImageFileUsing: anAssetManager [
 
-	^ anAssetManagementSystem 
+	^ anAssetManager 
 		assetNamed: fileName
-		ifAbsent: [ self basicLoadImageFileUsing: anAssetManagementSystem ]
+		ifAbsent: [ self basicLoadImageFileUsing: anAssetManager ]
 ]
 
 { #category : #Bootstrap }

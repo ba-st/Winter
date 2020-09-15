@@ -2,7 +2,8 @@ Class {
 	#name : #SteppingSchedulerTest,
 	#superclass : #TestCase,
 	#instVars : [
-		'scheduler'
+		'scheduler',
+		'updatedAndRendered'
 	],
 	#category : #'Winter-CoreTests-Schedulers'
 }
@@ -12,23 +13,42 @@ SteppingSchedulerTest >> setUp [
 
 	super setUp.
 	scheduler := SteppingScheduler managing: self.
+	updatedAndRendered := false.
 ]
 
 { #category : #running }
 SteppingSchedulerTest >> tearDown [
 
 	super tearDown.
-	scheduler terminateProcess
+	scheduler terminateProcess.
+	updatedAndRendered := false.
 ]
 
-{ #category : #running }
+{ #category : #tests }
 SteppingSchedulerTest >> testName [
 
 	self assert: scheduler name equals: 'Upating and Rendering Scheduler Process'
 ]
 
-{ #category : #running }
+{ #category : #tests }
 SteppingSchedulerTest >> testPrinting [
 
 	self assert: scheduler printString equals: scheduler name
+]
+
+{ #category : #tests }
+SteppingSchedulerTest >> testProcessing [
+
+	self deny: updatedAndRendered.
+
+	scheduler startProcess.
+	( Delay forMilliseconds: 50 ) wait.
+	
+	self assert: updatedAndRendered
+]
+
+{ #category : #support }
+SteppingSchedulerTest >> updateAndRender [
+
+	updatedAndRendered := true
 ]

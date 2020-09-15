@@ -114,7 +114,7 @@ WBACastedSpell >> move: startStep [
 		newGameTickAction: (WBASpellMoveAnimation new
 			spell: self;
 			direction: direction;
-			initialStep: startStep;
+			actualStep: startStep;
 			yourself)
 		for: self 
 ]

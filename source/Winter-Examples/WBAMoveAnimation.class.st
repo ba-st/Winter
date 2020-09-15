@@ -23,20 +23,23 @@ Class {
 	#category : #'Winter-Examples-WizardBattle'
 }
 
+{ #category : #initialization }
+WBAMoveAnimation >> actualStep: startStep [
+
+	super actualStep: startStep.
+	self movingElement shiftBy: startStep * shiftIncr
+]
+
 { #category : #Accessing }
 WBAMoveAnimation >> cellSize [
-	^ 48@32
+
+	^ 48 @ 32
 ]
 
 { #category : #Accessing }
 WBAMoveAnimation >> direction: index [
-	shiftIncr := self shiftIncrForDirection: index
-]
 
-{ #category : #initialization }
-WBAMoveAnimation >> initialStep: startStep [
-	super initialStep: startStep.
-	self movingElement shiftBy: (startStep * shiftIncr)
+	shiftIncr := self shiftIncrForDirection: index
 ]
 
 { #category : #private }
@@ -47,7 +50,14 @@ WBAMoveAnimation >> midAnimation [
 
 { #category : #Accessing }
 WBAMoveAnimation >> movingElement [
-	self subclassResponsibility 
+
+	self subclassResponsibility
+]
+
+{ #category : #Accessing }
+WBAMoveAnimation >> numberOfAnimationFrame [
+
+	^ 16
 ]
 
 { #category : #Accessing }
@@ -63,7 +73,10 @@ WBAMoveAnimation >> shiftIncrForDirection: index [
 
 { #category : #Stepping }
 WBAMoveAnimation >> step [
+
 	self movingElement shiftBy: shiftIncr.
-	self isMidAnimation ifTrue: [ self midAnimation ].
-	self isEndAnimation ifTrue: [ self movingElement finishMoveAnimation ] 
+	self isMidAnimation
+		ifTrue: [ self midAnimation ].
+	self isEndAnimation
+		ifTrue: [ self movingElement finishMoveAnimation ]
 ]
