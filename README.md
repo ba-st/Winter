@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/logos/winter.png">
+<p align="center"><img src="assets/logos/128x128.png">
  <h1 align="center">Winter</h1>
   <p align="center">
     Winter is a framework to develop games in 2D using Smalltalk.
@@ -29,6 +29,10 @@ It's built on top of [Storm][] from [Esteban][], providing a conceptual framewor
 - Download the latest [Pharo 32](https://get.pharo.org/) or [64 bits VM](https://get.pharo.org/64/).
 - Download a ready to use image from the [release page](https://github.com/ba-st/Winter/releases/latest)
 - Explore the [documentation](docs/)
+
+## Examples
+
+To find some premade examples visit <a href="https://github.com/apiorno/Winter-Examples">Winter Examples</a>
 
 ## Installation
 
