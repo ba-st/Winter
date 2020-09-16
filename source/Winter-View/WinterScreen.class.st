@@ -146,10 +146,10 @@ WinterScreen >> render [
 ]
 
 { #category : #rendering }
-WinterScreen >> renderBackground: canvas color: color [
+WinterScreen >> renderBackground: aPaint on: canvas [
 
 	canvas setShape: (0@0 corner: window extent).
-	canvas setPaint: color.
+	canvas setPaint: aPaint.
 	canvas draw
 ]
 
@@ -189,7 +189,7 @@ WinterScreen >> title: aTitle [
 WinterScreen >> updateAndRender [
 
 	surface drawDuring: [ :canvas |
-		model updateUsing: canvas.
+		model update.
 		model renderOn: canvas ].
 	self window handle handle updateWindowSurface
 ]

@@ -16,7 +16,7 @@ Internal Representation and Key Implementation Points.
 "
 Class {
 	#name : #WinterSingleSpriteWidget,
-	#superclass : #WinterWidget,
+	#superclass : #BaseWidget,
 	#instVars : [
 		'sprite'
 	],

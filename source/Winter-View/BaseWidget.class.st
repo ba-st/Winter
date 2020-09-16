@@ -13,17 +13,17 @@ Internal Representation and Key Implementation Points.
 	
 "
 Class {
-	#name : #WinterWidget,
+	#name : #BaseWidget,
 	#superclass : #Object,
 	#category : #'Winter-View-ViewModel'
 }
 
 { #category : #rendering }
-WinterWidget >> renderOn: aCanvas [
+BaseWidget >> renderOn: aCanvas [
 ]
 
 { #category : #rendering }
-WinterWidget >> renderOn: aCanvas temporarilyTranslatedBy: aPoint [ 
+BaseWidget >> renderOn: aCanvas temporarilyTranslatedBy: aPoint [ 
 
 	aCanvas pathTransform translateBy: aPoint.
 	self renderOn: aCanvas.
@@ -31,12 +31,12 @@ WinterWidget >> renderOn: aCanvas temporarilyTranslatedBy: aPoint [
 ]
 
 { #category : #rendering }
-WinterWidget >> renderOn: aCanvas translatedBy: aPoint [ 
+BaseWidget >> renderOn: aCanvas translatedBy: aPoint [ 
 
 	aCanvas pathTransform translateBy: aPoint.
 	self renderOn: aCanvas.
 ]
 
-{ #category : #rendering }
-WinterWidget >> updateUsing: aCanvas [
+{ #category : #updating }
+BaseWidget >> update [
 ]
