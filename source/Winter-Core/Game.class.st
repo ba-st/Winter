@@ -115,6 +115,6 @@ Game >> stop [
 ]
 
 { #category : #Updating }
-Game >> updateUsing: aCanvas [ 
+Game >> update [
 	
 ]

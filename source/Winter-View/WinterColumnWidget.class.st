@@ -18,7 +18,7 @@ Internal Representation and Key Implementation Points.
 "
 Class {
 	#name : #WinterColumnWidget,
-	#superclass : #WinterWidget,
+	#superclass : #BaseWidget,
 	#instVars : [
 		'widgets',
 		'space'
