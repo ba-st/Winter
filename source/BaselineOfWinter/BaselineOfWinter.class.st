@@ -15,10 +15,10 @@ BaselineOfWinter >> baseline: spec [
 			self setUpGroupsFor: spec
 			].
 	spec
-		for: #'pharo6.x'
+		for: #'pharo7.x'
 		do: [ spec
-				package: 'Winter-Pharo6-Support';
-				group: 'Tests' with: 'Winter-Pharo6-Support'
+				package: 'Winter-Pharo7-Support';
+				group: 'Tests' with: 'Winter-Pharo7-Support'
 			]
 ]
 

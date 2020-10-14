@@ -14,9 +14,8 @@
 
 [![Build Status](https://github.com/ba-st/Winter/workflows/Build/badge.svg?branch=release-candidate)](https://github.com/ba-st/Winter/actions?query=workflow%3ABuild)
 [![Coverage Status](https://codecov.io/github/ba-st/Winter/coverage.svg?branch=release-candidate)](https://codecov.io/gh/ba-st/Winter/branch/release-candidate)
-[![Pharo 6.1](https://img.shields.io/badge/Pharo-6.1-informational)](https://pharo.org)
 [![Pharo 7.0](https://img.shields.io/badge/Pharo-7.0-informational)](https://pharo.org)
-[![Pharo 8.0](https://img.shields.io/badge/Pharo-8.0-informational)](https://pharo.org)
+[![Pharo 9.0](https://img.shields.io/badge/Pharo-9.0-informational)](https://pharo.org)
 
 It's built on top of [Storm][] from [Esteban][], providing a conceptual framework to simplify the creation of games in two dimensions.
 
