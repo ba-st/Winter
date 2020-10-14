@@ -52,7 +52,7 @@ WinterScreen class >> onModel: aModel [
 { #category : #private }
 WinterScreen >> createSurface [
 
-	surface := AthensCairoSDLSurface fromSDLSurface: self window handle handle getWindowSurface
+	surface := AthensCairoSDLSurface fromSDLSurface: self window validHandle sdl2Window getWindowSurface
 ]
 
 { #category : #private }
@@ -188,10 +188,10 @@ WinterScreen >> title: aTitle [
 { #category : #rendering }
 WinterScreen >> updateAndRender [
 
-	surface drawDuring: [ :canvas |
+	surface drawDuring: [ :canvas | 
 		model update.
 		model renderOn: canvas ].
-	self window handle handle updateWindowSurface
+	self window validHandle sdl2Window updateWindowSurface
 ]
 
 { #category : #Accessing }
