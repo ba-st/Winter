@@ -7,26 +7,18 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        smalltalk: [ Pharo64-9.0, Pharo64-7.0]
+        smalltalk: [ Pharo64-8.0, Pharo64-7.0, Pharo32-7.0]
     name: ${{ matrix.smalltalk }}
     steps:
       - uses: actions/checkout@v2
-      - uses: hpi-swa/setup-smalltalkCI@v1
+      - uses: ba-st-actions/setup-smalltalkCI@v1.0.0
         with:
           smalltalk-version: ${{ matrix.smalltalk }}
-      - name: Load Image and Run Tests
-        run: smalltalkci -s ${{ matrix.smalltalk }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: smalltalkci -s ${{ matrix.smalltalk }}
         timeout-minutes: 15
+      - run: echo "::set-env name=SCI_COVERAGE_FILE_LOCATION::${HOME}/.smalltalkCI/_builds/coveralls_results.json"
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v1
+        uses: codecov/codecov-action@v1.0.6
         with:
-          name: ${{matrix.os}}-${{matrix.smalltalk}}
           token: ${{ secrets.CODECOV_TOKEN }}
-          
-          
- 
-        
-     
-   
+          file: ${{ env.SCI_COVERAGE_FILE_LOCATION }}

@@ -8,18 +8,20 @@ Class {
 BaselineOfWinter >> baseline: spec [
 
 	<baseline>
-	spec
-		for: #pharo
-		do: [ self setUpDependenciesFor: spec.
-			self setUpPackagesFor: spec.
-			self setUpGroupsFor: spec
-			].
-	spec
-		for: #'pharo7.x'
-		do: [ spec
-				package: 'Winter-Pharo7-Support';
-				group: 'Tests' with: 'Winter-Pharo7-Support'
-			]
+	spec for: #pharo do: [ 
+		self setUpDependenciesFor: spec.
+		self setUpPackagesFor: spec.
+		self setUpGroupsFor: spec ].
+	
+	spec for: #'pharo7.x' do: [ 
+		spec
+			package: 'Winter-Pharo7-Support';
+			group: 'Development' with: 'Winter-Pharo7-Support' ].
+		
+	spec for: #'pharo9.x' do: [ 
+		spec
+			package: 'Winter-Pharo9-Support';
+			group: 'Development' with: 'Winter-Pharo9-Support' ]
 ]
 
 { #category : #accessing }
