@@ -176,7 +176,8 @@ WinterScreen >> surface [
 { #category : #rendering }
 WinterScreen >> terminateRendering [
 
-	scheduler terminateProcess
+	scheduler terminateProcess.
+	window destroy
 ]
 
 { #category : #Accessing }
